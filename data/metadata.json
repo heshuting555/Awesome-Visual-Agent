@@ -1,0 +1,14 @@
+{
+  "snapshot_date": "2026-09-26",
+  "assembled_at": "2026-09-27",
+  "article_title": "Seeing the Horizon of Vision Agent: A Survey",
+  "bibliography_keys": 497,
+  "nonpaper_records": 1,
+  "unique_works": 471,
+  "active_citation_keys": 261,
+  "provenance_only_keys": 236,
+  "arxiv_links": 454,
+  "code_links": 305,
+  "bibliography_sha256": "470d6c750520c9500654f7886352853631f0d65e9a3c3ada829d7be7abc5a3bf",
+  "reference_presentation": "https://github.com/HJYao00/Awesome-Agentic-MLLMs"
+}
