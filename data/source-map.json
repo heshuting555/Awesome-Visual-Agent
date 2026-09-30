@@ -3,9 +3,12 @@
   "overrides": [
     "output/section-3-1-paradigms-20260926/section_3_1.tex",
     "output/section-3-2-paradigms/section_3_2.tex",
-    "vision_harness_section_3_3_paradigms.tex"
+    "vision_harness_section_3_3_paradigms.tex",
+    "manuscript-9/Secs/3_skill.tex",
+    "manuscript-9/Secs/3_verification.tex",
+    "manuscript-9/Secs/3_orchestration.tex"
   ],
-  "method": "Actual LaTeX input graph with 3.1–3.3 replaced by latest individually audited paradigm fragments. Citation positions retain their deepest explicit section; overview/table citations stay at their parent section. A paper may appear in several sections. Dormant files are excluded.",
+  "method": "Actual LaTeX input graph with 3.1–3.3 replaced by latest individually audited paradigm fragments. Citation positions retain their deepest explicit section; overview/table citations stay at their parent section. A paper may appear in several sections. Dormant files are excluded. Sections 3.4–3.6 were synchronized from manuscript ZIP revision 9 on 2026-09-30. Existing assignments were preserved; new placements use actual citation locations in the three supplied section files.",
   "citation_locations": {
     "zhang2025adaptive": [
       {
@@ -114,6 +117,11 @@
         "section": "3.1.2",
         "source": "output/section-3-1-paradigms-20260926/section_3_1.tex",
         "line": 18
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24
       }
     ],
     "li2025screenspot": [
@@ -216,6 +224,16 @@
         "section": "1",
         "source": "output/all-bib-merge-20260926/compile-check/Figures/figure1_harnesses.tex",
         "line": 78
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 35
       }
     ],
     "ding2026videozoomer": [
@@ -572,6 +590,11 @@
         "section": "3.3",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 6
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40
       }
     ],
     "song2026coact": [
@@ -601,6 +624,11 @@
         "section": "3.3",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 6
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15
       }
     ],
     "zhao2025pyvision": [
@@ -656,6 +684,11 @@
         "section": "3.3.1",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 14
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31
       }
     ],
     "hou2026codev": [
@@ -685,6 +718,11 @@
         "section": "3.3.1",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 16
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22
       }
     ],
     "zhang2025gamagent": [
@@ -952,6 +990,11 @@
         "section": "5.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 23
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31
       }
     ],
     "mao2026kestrel": [
@@ -1300,6 +1343,16 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 63
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40
       }
     ],
     "fan2026skill": [
@@ -1782,6 +1835,11 @@
         "section": "5.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 21
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33
       }
     ],
     "u_avis": [
@@ -1856,6 +1914,11 @@
         "section": "5.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 25
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11
       }
     ],
     "va_c105_2025": [
@@ -1883,6 +1946,16 @@
         "section": "7.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/7_Future_Directions.tex",
         "line": 16
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22
       }
     ],
     "u_clova": [
@@ -2243,6 +2316,11 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 61
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51
       }
     ],
     "va_c309_2024": [
@@ -2264,6 +2342,11 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 61
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24
       }
     ],
     "guiagent070": [
@@ -2528,6 +2611,11 @@
         "section": "7.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/7_Future_Directions.tex",
         "line": 14
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13
       }
     ],
     "va_c120_2025": [
@@ -3218,6 +3306,777 @@
         "source": "output/all-bib-merge-20260926/compile-check/Secs/6_Benchmark.tex",
         "line": 47
       }
+    ],
+    "shen2023hugginggpt": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31
+      }
+    ],
+    "ma2025latte": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      }
+    ],
+    "liu2024llava": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      }
+    ],
+    "zheng2026deepeyes": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      }
+    ],
+    "su2026pixel": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      }
+    ],
+    "hu2024visual": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      }
+    ],
+    "wang2026forgeryvcr": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      }
+    ],
+    "goswami2025plotedit": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      }
+    ],
+    "shen2026imagagent": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24
+      }
+    ],
+    "liu2024ok": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42
+      }
+    ],
+    "huang2025visualtoolagent": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31
+      }
+    ],
+    "chen2026perfguard": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31
+      }
+    ],
+    "suris2023vipergpt": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11
+      }
+    ],
+    "gao2024clova": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33
+      }
+    ],
+    "he2025rsagent": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24
+      }
+    ],
+    "lu2025octotools": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11
+      }
+    ],
+    "liang2023code": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40
+      }
+    ],
+    "shah2025bumble": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42
+      }
+    ],
+    "zhu2025learning": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44
+      }
+    ],
+    "liang2024skilldiffuser": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40
+      }
+    ],
+    "shi2025hi": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37
+      }
+    ],
+    "belkhale2024rt": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42
+      }
+    ],
+    "rui2026diagnosing": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44
+      }
+    ],
+    "zhou2024spire": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44
+      }
+    ],
+    "zhang2025agentcpm": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51
+      }
+    ],
+    "cheng2024seeclick": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51
+      }
+    ],
+    "gou2025navigating": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51
+      }
+    ],
+    "wu2025atlas": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51
+      }
+    ],
+    "liu2024moka": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51
+      }
+    ],
+    "yuan2024robopoint": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51
+      }
+    ],
+    "yang2025magma": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51
+      }
+    ],
+    "huang2023voxposer": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53
+      }
+    ],
+    "huang2024rekep": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53
+      }
+    ],
+    "li2025hamster": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53
+      }
+    ],
+    "brohan2023rt": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55
+      }
+    ],
+    "kim2024openvla": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55
+      }
+    ],
+    "team2024octo": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55
+      }
+    ],
+    "black2024pi_0": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55
+      }
+    ],
+    "qu2025spatialvla": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55
+      }
+    ],
+    "gou2024critic": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11
+      }
+    ],
+    "xiong2025lllava": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11
+      }
+    ],
+    "min2026improving": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11
+      }
+    ],
+    "wu2026oracle": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11
+      }
+    ],
+    "bu2024closed": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13
+      }
+    ],
+    "agia2024unpacking": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13
+      }
+    ],
+    "grislain2025failsense": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13
+      }
+    ],
+    "pacaud2025guardian": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13
+      }
+    ],
+    "rosset2026art": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15
+      }
+    ],
+    "dai2026prore": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15
+      }
+    ],
+    "liu2023reflect": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22
+      }
+    ],
+    "duan2024aha": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22
+      }
+    ],
+    "qi2026self": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22
+      }
+    ],
+    "ying2026robofailring": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22
+      }
+    ],
+    "zeng2026diagnose": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22
+      }
+    ],
+    "wu2024dettoolchain": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24
+      }
+    ],
+    "wu2024vdebugger": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24
+      }
+    ],
+    "sun2025marmot": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24
+      }
+    ],
+    "lin2025failsafe": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26
+      }
+    ],
+    "ye2025robofac": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26
+      }
+    ],
+    "zhao2026flare": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26
+      }
+    ],
+    "ma2026cyclevla": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26
+      }
+    ],
+    "xu2026reaction": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26
+      }
+    ],
+    "ahmad2025unified": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26
+      }
+    ],
+    "cheng2025kairos": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37
+      }
+    ],
+    "he2025uncertainty": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33
+      }
+    ],
+    "xu2025can": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33
+      }
+    ],
+    "fan2025agentic": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 35
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24
+      }
+    ],
+    "ren2023robots": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37
+      }
+    ],
+    "liang2024introspective": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37
+      }
+    ],
+    "yuan2026act": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37
+      }
+    ],
+    "zhao2025conformalized": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37
+      }
+    ],
+    "vaidya2025nova": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11
+      }
+    ],
+    "chen2025emos": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13
+      }
+    ],
+    "ahn2024autort": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35
+      }
+    ],
+    "kim2024mdagents": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13
+      }
+    ],
+    "zhang2024building": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15
+      }
+    ],
+    "sivakumaran2026dart": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22
+      }
+    ],
+    "venkatesh2026crea": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15
+      }
+    ],
+    "huiminagentmv": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22
+      }
+    ],
+    "chang2025partnr": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15
+      }
+    ],
+    "lin2025onetwovla": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22
+      }
+    ],
+    "kwok2025robomonkey": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22
+      }
+    ],
+    "wang2025videotree": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24
+      }
+    ],
+    "wang2024videoagent": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24
+      }
+    ],
+    "xu2026vla": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24
+      }
+    ],
+    "yang2026efficientvla": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24
+      }
+    ],
+    "yang2026paravt": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26
+      }
+    ],
+    "black2026real": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26
+      }
+    ],
+    "wang2026real": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26
+      }
+    ],
+    "yu2026minim": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33
+      }
+    ],
+    "evtimov2026wasp": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33
+      }
+    ],
+    "debenedetti2024agentdojo": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33
+      }
+    ],
+    "kuntz2026harm": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33
+      }
+    ],
+    "mozannar2025magentic": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37
+      }
+    ],
+    "ravichandran2026safety": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35
+      }
+    ],
+    "jeong2025robots": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35
+      }
+    ],
+    "zhang2026safevla": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35
+      }
+    ],
+    "huq2025cowpilot": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37
+      }
     ]
   },
   "assignment_evidence": {
@@ -3226,6 +4085,12 @@
         "section": "3.3",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 6,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
         "classification": "active-citation"
       }
     ],
@@ -3253,6 +4118,12 @@
         "source": "all_references.bib",
         "line": 43,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
+        "classification": "active-citation"
       }
     ],
     "ahmad2025unified": [
@@ -3262,6 +4133,12 @@
         "source": "all_references.bib",
         "line": 51,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation"
       }
     ],
     "ahn2024autort": [
@@ -3271,6 +4148,18 @@
         "source": "all_references.bib",
         "line": 61,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35,
+        "classification": "active-citation"
       }
     ],
     "alonso2024diamond": [
@@ -3603,6 +4492,12 @@
         "source": "all_references.bib",
         "line": 287,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26,
+        "classification": "active-citation"
       }
     ],
     "bo2025agentic": [
@@ -3658,6 +4553,12 @@
         "source": "all_references.bib",
         "line": 313,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation"
       }
     ],
     "brooks2023instructpix2pix": [
@@ -3684,6 +4585,12 @@
         "source": "all_references.bib",
         "line": 340,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
+        "classification": "active-citation"
       }
     ],
     "caesar2020nuscenes": [
@@ -3714,6 +4621,12 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly benchmarks planning/agents/interactive execution; §6.2 covers evaluation of planning and execution."
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation"
       }
     ],
     "chen2024internvl": [
@@ -3753,6 +4666,12 @@
         "source": "all_references.bib",
         "line": 385,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13,
+        "classification": "active-citation"
       }
     ],
     "chen2025less": [
@@ -3837,6 +4756,12 @@
         "source": "all_references.bib",
         "line": 445,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
+        "classification": "active-citation"
       }
     ],
     "chen2026recursive": [
@@ -3904,6 +4829,18 @@
         "source": "all_references.bib",
         "line": 491,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation"
       }
     ],
     "cheng2025vision": [
@@ -4069,6 +5006,12 @@
         "source": "all_references.bib",
         "line": 643,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15,
+        "classification": "active-citation"
       }
     ],
     "dauner2024navsim": [
@@ -4185,6 +5128,12 @@
         "source": "all_references.bib",
         "line": 731,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation"
       }
     ],
     "duan2026last": [
@@ -4372,6 +5321,12 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "A security prompt-injection benchmark evaluates defensive control rather than a harness implementation."
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation"
       }
     ],
     "fallahpour2025medrax": [
@@ -4410,6 +5365,18 @@
         "source": "all_references.bib",
         "line": 909,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 35,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "fan2025embodied": [
@@ -4562,6 +5529,12 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly identifies image/video/chart generation or editing as the application; the broad harness-source fallback obscures the actual application family."
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
       }
     ],
     "grislain2025failsense": [
@@ -4571,6 +5544,12 @@
         "source": "all_references.bib",
         "line": 1025,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
+        "classification": "active-citation"
       }
     ],
     "guiagent002": [
@@ -4578,6 +5557,12 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 61,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
         "classification": "active-citation"
       }
     ],
@@ -4723,6 +5708,12 @@
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 21,
         "classification": "active-citation"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation"
       }
     ],
     "gupta2026molmoweb": [
@@ -4791,6 +5782,18 @@
         "source": "all_references.bib",
         "line": 1216,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "he2025uncertainty": [
@@ -4800,6 +5803,12 @@
         "source": "all_references.bib",
         "line": 1224,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33,
+        "classification": "active-citation"
       }
     ],
     "he2025visplay": [
@@ -4915,6 +5924,12 @@
         "source": "all_references.bib",
         "line": 1311,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
       }
     ],
     "hu2025automated": [
@@ -4947,6 +5962,12 @@
         "source": "all_references.bib",
         "line": 1341,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53,
+        "classification": "active-citation"
       }
     ],
     "huang2024rekep": [
@@ -4956,6 +5977,12 @@
         "source": "all_references.bib",
         "line": 1349,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53,
+        "classification": "active-citation"
       }
     ],
     "huang2024vbench": [
@@ -4995,6 +6022,12 @@
         "source": "all_references.bib",
         "line": 1379,
         "bibliography_source": "vision_harness_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
+        "classification": "active-citation"
       }
     ],
     "huang2026VIRD": [
@@ -5051,6 +6084,18 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly identifies image/video/chart generation or editing as the application; the broad harness-source fallback obscures the actual application family."
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation"
       }
     ],
     "huq2025cowpilot": [
@@ -5060,6 +6105,12 @@
         "source": "all_references.bib",
         "line": 1429,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37,
+        "classification": "active-citation"
       }
     ],
     "jain2026weaver": [
@@ -5078,6 +6129,12 @@
         "source": "all_references.bib",
         "line": 1446,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35,
+        "classification": "active-citation"
       }
     ],
     "jia2026driveworldvla": [
@@ -5215,6 +6272,12 @@
         "source": "all_references.bib",
         "line": 1554,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation"
       }
     ],
     "lehrach2026code": [
@@ -5284,6 +6347,12 @@
         "source": "all_references.bib",
         "line": 1606,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53,
+        "classification": "active-citation"
       }
     ],
     "li2025insight": [
@@ -5461,6 +6530,12 @@
         "source": "all_references.bib",
         "line": 1746,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation"
       }
     ],
     "liang2024introspective": [
@@ -5470,6 +6545,12 @@
         "source": "all_references.bib",
         "line": 1756,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation"
       }
     ],
     "lin2025failsafe": [
@@ -5479,6 +6560,12 @@
         "source": "all_references.bib",
         "line": 1766,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation"
       }
     ],
     "lin2025showui": [
@@ -5486,6 +6573,12 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 61,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
         "classification": "active-citation"
       }
     ],
@@ -5556,6 +6649,12 @@
         "source": "all_references.bib",
         "line": 1809,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation"
       }
     ],
     "liu2023visual": [
@@ -5588,6 +6687,12 @@
         "source": "all_references.bib",
         "line": 1835,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation"
       }
     ],
     "liu2024ok": [
@@ -5597,6 +6702,18 @@
         "source": "all_references.bib",
         "line": 1843,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42,
+        "classification": "active-citation"
       }
     ],
     "liu2025agent0": [
@@ -5822,6 +6939,18 @@
         "source": "all_references.bib",
         "line": 2002,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11,
+        "classification": "active-citation"
       }
     ],
     "lu2026webgen": [
@@ -5844,6 +6973,12 @@
         "source": "output/section-3-1-paradigms-20260926/section_3_1.tex",
         "line": 18,
         "classification": "active-citation"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "ma2025latte": [
@@ -5853,6 +6988,12 @@
         "source": "all_references.bib",
         "line": 2030,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
       }
     ],
     "ma2026cyclevla": [
@@ -5862,6 +7003,12 @@
         "source": "all_references.bib",
         "line": 2039,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation"
       }
     ],
     "ma2026talk2image": [
@@ -5997,6 +7144,18 @@
         "source": "all_references.bib",
         "line": 2125,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37,
+        "classification": "active-citation"
       }
     ],
     "nabati2024preference": [
@@ -6059,6 +7218,12 @@
         "source": "all_references.bib",
         "line": 2165,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
+        "classification": "active-citation"
       }
     ],
     "panagopoulou2025viunit": [
@@ -6066,6 +7231,12 @@
         "section": "5.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 25,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
         "classification": "active-citation"
       }
     ],
@@ -6153,6 +7324,12 @@
         "source": "all_references.bib",
         "line": 2231,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation"
       }
     ],
     "qin2025robofactory": [
@@ -6189,6 +7366,12 @@
         "source": "all_references.bib",
         "line": 2272,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35,
+        "classification": "active-citation"
       }
     ],
     "ren2023robots": [
@@ -6198,6 +7381,12 @@
         "source": "all_references.bib",
         "line": 2281,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation"
       }
     ],
     "ren2026scope": [
@@ -6241,6 +7430,12 @@
         "source": "all_references.bib",
         "line": 2328,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15,
+        "classification": "active-citation"
       }
     ],
     "rui2026diagnosing": [
@@ -6250,6 +7445,12 @@
         "source": "all_references.bib",
         "line": 2336,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44,
+        "classification": "active-citation"
       }
     ],
     "rusu2016policy": [
@@ -6301,6 +7502,18 @@
         "source": "all_references.bib",
         "line": 2371,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42,
+        "classification": "active-citation"
       }
     ],
     "shao2024visual": [
@@ -6336,6 +7549,18 @@
         "source": "all_references.bib",
         "line": 2409,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
+        "classification": "active-citation"
       }
     ],
     "shen2026agentic": [
@@ -6359,6 +7584,18 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly identifies image/video/chart generation or editing as the application; the broad harness-source fallback obscures the actual application family."
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "shi2025hi": [
@@ -6368,6 +7605,30 @@
         "source": "all_references.bib",
         "line": 2435,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37,
+        "classification": "active-citation"
       }
     ],
     "shiri2026design": [
@@ -6406,6 +7667,18 @@
         "source": "all_references.bib",
         "line": 2459,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation"
       }
     ],
     "son2025world": [
@@ -6422,6 +7695,12 @@
         "section": "3.3.1",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 14,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
         "classification": "active-citation"
       }
     ],
@@ -6472,6 +7751,12 @@
         "source": "all_references.bib",
         "line": 2520,
         "bibliography_source": "4_ref.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
       }
     ],
     "subhani2026resam": [
@@ -6489,6 +7774,12 @@
         "source": "all_references.bib",
         "line": 2539,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "sun2025seagent": [
@@ -6551,6 +7842,18 @@
         "source": "all_references.bib",
         "line": 2563,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11,
+        "classification": "active-citation"
       }
     ],
     "sutton1999between": [
@@ -6572,6 +7875,18 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 63,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
         "classification": "active-citation"
       }
     ],
@@ -6837,6 +8152,18 @@
         "source": "output/all-bib-merge-20260926/compile-check/Secs/7_Future_Directions.tex",
         "line": 16,
         "classification": "active-citation"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation"
       }
     ],
     "va_c106_2025": [
@@ -6850,6 +8177,12 @@
         "section": "7.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/7_Future_Directions.tex",
         "line": 14,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
         "classification": "active-citation"
       }
     ],
@@ -7780,6 +9113,12 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly identifies automated histopathology analysis."
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11,
+        "classification": "active-citation"
       }
     ],
     "venkatesh2026crea": [
@@ -7789,6 +9128,12 @@
         "source": "all_references.bib",
         "line": 3547,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation"
       }
     ],
     "wang2024genartist": [
@@ -7830,6 +9175,12 @@
         "source": "all_references.bib",
         "line": 3585,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "wang2025code": [
@@ -7936,6 +9287,12 @@
         "source": "all_references.bib",
         "line": 3637,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "wang2026activescope": [
@@ -7983,6 +9340,12 @@
         "source": "all_references.bib",
         "line": 3673,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
       }
     ],
     "wang2026ovod": [
@@ -8041,6 +9404,12 @@
         "source": "all_references.bib",
         "line": 3706,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26,
+        "classification": "active-citation"
       }
     ],
     "wang2026vagen": [
@@ -8116,6 +9485,12 @@
         "source": "all_references.bib",
         "line": 3776,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "wu2024self": [
@@ -8133,6 +9508,12 @@
         "source": "all_references.bib",
         "line": 3796,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation"
       }
     ],
     "wu2025mmsearch": [
@@ -8186,6 +9567,12 @@
         "source": "all_references.bib",
         "line": 3833,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation"
       }
     ],
     "wu2026spacemind": [
@@ -8223,6 +9610,12 @@
         "section": "5.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 23,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
         "classification": "active-citation"
       }
     ],
@@ -8383,6 +9776,12 @@
         "source": "all_references.bib",
         "line": 3954,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation"
       }
     ],
     "xu2026videoharness": [
@@ -8481,6 +9880,12 @@
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 16,
         "classification": "active-citation"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation"
       }
     ],
     "yang2026omniactor": [
@@ -8499,6 +9904,12 @@
         "source": "all_references.bib",
         "line": 4040,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26,
+        "classification": "active-citation"
       }
     ],
     "yang2026rise": [
@@ -8574,6 +9985,12 @@
         "source": "all_references.bib",
         "line": 4089,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation"
       }
     ],
     "yeo2026worldmm": [
@@ -8676,6 +10093,12 @@
         "source": "all_references.bib",
         "line": 4168,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation"
       }
     ],
     "yuan2025enhancing": [
@@ -8818,6 +10241,12 @@
         "source": "all_references.bib",
         "line": 4284,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation"
       }
     ],
     "zhang2025appagent": [
@@ -8869,6 +10298,12 @@
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 6,
         "classification": "active-citation"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15,
+        "classification": "active-citation"
       }
     ],
     "zhang2025thyme": [
@@ -8904,6 +10339,12 @@
         "source": "all_references.bib",
         "line": 4353,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35,
+        "classification": "active-citation"
       }
     ],
     "zhang2026self": [
@@ -8958,6 +10399,12 @@
         "source": "all_references.bib",
         "line": 4395,
         "bibliography_source": "vision_harness_references.bib"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
       }
     ],
     "zheng2026dream": [
@@ -9001,6 +10448,18 @@
         "classification": "figure-taxonomy",
         "source": "output/all-bib-merge-20260926/compile-check/Figures/figure1_harnesses.tex",
         "line": 78
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 35,
+        "classification": "active-citation"
       }
     ],
     "zhou2024calibrated": [
@@ -9066,6 +10525,18 @@
         "source": "all_references.bib",
         "line": 4477,
         "bibliography_source": "harness_346_references.bib"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44,
+        "classification": "active-citation"
       }
     ],
     "zhu2025wmpo": [
@@ -9142,26 +10613,272 @@
         "line": 4527,
         "bibliography_source": "harness_346_references.bib"
       }
+    ],
+    "liu2024llava": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation"
+      }
+    ],
+    "gao2024clova": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation"
+      }
+    ],
+    "liang2024skilldiffuser": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation"
+      }
+    ],
+    "belkhale2024rt": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42,
+        "classification": "active-citation"
+      }
+    ],
+    "zhou2024spire": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44,
+        "classification": "active-citation"
+      }
+    ],
+    "cheng2024seeclick": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation"
+      }
+    ],
+    "gou2025navigating": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation"
+      }
+    ],
+    "wu2025atlas": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation"
+      }
+    ],
+    "yuan2024robopoint": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation"
+      }
+    ],
+    "yang2025magma": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation"
+      }
+    ],
+    "kim2024openvla": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation"
+      }
+    ],
+    "team2024octo": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation"
+      }
+    ],
+    "black2024pi_0": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation"
+      }
+    ],
+    "qu2025spatialvla": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation"
+      }
+    ],
+    "gou2024critic": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation"
+      }
+    ],
+    "xiong2025lllava": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation"
+      }
+    ],
+    "min2026improving": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation"
+      }
+    ],
+    "ying2026robofailring": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation"
+      }
+    ],
+    "zeng2026diagnose": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation"
+      }
+    ],
+    "zhao2026flare": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation"
+      }
+    ],
+    "xu2025can": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33,
+        "classification": "active-citation"
+      }
+    ],
+    "yuan2026act": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation"
+      }
+    ],
+    "zhao2025conformalized": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation"
+      }
+    ],
+    "kim2024mdagents": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13,
+        "classification": "active-citation"
+      }
+    ],
+    "zhang2024building": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation"
+      }
+    ],
+    "lin2025onetwovla": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation"
+      }
+    ],
+    "xu2026vla": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation"
+      }
+    ],
+    "yang2026efficientvla": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation"
+      }
+    ],
+    "debenedetti2024agentdojo": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation"
+      }
+    ],
+    "kuntz2026harm": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation"
+      }
     ]
   },
   "effective_sections_by_citation_key": {
     "agashe2025agent": [
-      "3.3"
+      "3.3",
+      "3.4.2"
     ],
     "agashe2025agent2": [
-      "3.3"
+      "3.3",
+      "3.4.2"
     ],
     "agashe2025agent_s": [
       "5.3"
     ],
     "agia2024unpacking": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "ahmad2025unified": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "ahn2024autort": [
-      "3"
+      "3",
+      "3.6.1",
+      "3.6.3"
     ],
     "alonso2024diamond": [
       "5.2"
@@ -9221,6 +10938,7 @@
       "6.2"
     ],
     "bench_osharm": [
+      "3.6.3",
       "6.3"
     ],
     "bench_osworld": [
@@ -9241,7 +10959,8 @@
       "3"
     ],
     "black2026real": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "bo2025agentic": [
       "4.2.1",
@@ -9256,11 +10975,13 @@
     ],
     "brohan2023rt": [
       "2",
-      "3"
+      "3",
+      "3.4.3"
     ],
     "cvbg_rt2": [
       "2",
-      "3"
+      "3",
+      "3.4.3"
     ],
     "brooks2023instructpix2pix": [
       "5.2"
@@ -9269,12 +10990,14 @@
       "5.2"
     ],
     "bu2024closed": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "caesar2020nuscenes": [
       "5.4"
     ],
     "chang2025partnr": [
+      "3.6.1",
       "6.2"
     ],
     "chen2024internvl": [
@@ -9284,7 +11007,8 @@
       "6"
     ],
     "chen2025emos": [
-      "3"
+      "3",
+      "3.6.1"
     ],
     "chen2025less": [
       "3"
@@ -9306,9 +11030,11 @@
       "3.3.1"
     ],
     "chen2026perfguard": [
+      "3.4.1",
       "5.2"
     ],
     "va_c817_2026": [
+      "3.4.1",
       "5.2"
     ],
     "chen2026recursive": [
@@ -9336,7 +11062,8 @@
       "3"
     ],
     "cheng2025kairos": [
-      "3"
+      "3",
+      "3.5.3"
     ],
     "cheng2025vision": [
       "4.1",
@@ -9393,14 +11120,19 @@
     ],
     "cvbg_vipergpt": [
       "2",
-      "3"
+      "3",
+      "3.4.1",
+      "3.6.1"
     ],
     "suris2023vipergpt": [
       "2",
-      "3"
+      "3",
+      "3.4.1",
+      "3.6.1"
     ],
     "dai2026prore": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "dauner2024navsim": [
       "6.2"
@@ -9431,7 +11163,8 @@
       "3.2"
     ],
     "duan2024aha": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "duan2026last": [
       "4.1",
@@ -9460,9 +11193,11 @@
       "7.1"
     ],
     "emb_m_hamster": [
+      "3.4.3",
       "5.4"
     ],
     "li2025hamster": [
+      "3.4.3",
       "5.4"
     ],
     "emb_m_liberoplus26": [
@@ -9490,6 +11225,7 @@
       "5.4"
     ],
     "evtimov2026wasp": [
+      "3.6.3",
       "6.3"
     ],
     "fallahpour2025medrax": [
@@ -9502,7 +11238,9 @@
       "3.2.1"
     ],
     "fan2025agentic": [
-      "3"
+      "3",
+      "3.5.3",
+      "3.6.2"
     ],
     "fan2025embodied": [
       "3.2.2"
@@ -9541,12 +11279,15 @@
       "3.3.3"
     ],
     "goswami2025plotedit": [
+      "3.4.1",
       "5.2"
     ],
     "grislain2025failsense": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "guiagent002": [
+      "3.4.3",
       "5.3"
     ],
     "guiagent009": [
@@ -9554,6 +11295,7 @@
       "7.1"
     ],
     "guiagent043": [
+      "3.4.3",
       "5.3"
     ],
     "guiagent058": [
@@ -9599,6 +11341,7 @@
       "4.3.2"
     ],
     "gupta2023visual": [
+      "3.4.1",
       "5.1"
     ],
     "gupta2026molmoweb": [
@@ -9624,10 +11367,13 @@
       "4.3.3"
     ],
     "he2025rsagent": [
-      "3"
+      "3",
+      "3.4.1",
+      "3.5.2"
     ],
     "he2025uncertainty": [
-      "3"
+      "3",
+      "3.5.3"
     ],
     "he2025visplay": [
       "4.2.4",
@@ -9665,9 +11411,11 @@
       "5.2"
     ],
     "hu2024visual": [
+      "3.4.1",
       "5.1"
     ],
     "u_sketchpad": [
+      "3.4.1",
       "5.1"
     ],
     "hu2025automated": [
@@ -9677,10 +11425,12 @@
       "6"
     ],
     "huang2023voxposer": [
-      "3"
+      "3",
+      "3.4.3"
     ],
     "huang2024rekep": [
-      "3"
+      "3",
+      "3.4.3"
     ],
     "huang2024vbench": [
       "6"
@@ -9689,7 +11439,8 @@
       "6"
     ],
     "huang2025visualtoolagent": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "huang2026VIRD": [
       "3"
@@ -9705,16 +11456,20 @@
       "5.2"
     ],
     "huiminagentmv": [
+      "3.6.1",
+      "3.6.2",
       "5.2"
     ],
     "huq2025cowpilot": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "jain2026weaver": [
       "5.2"
     ],
     "jeong2025robots": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "jia2026driveworldvla": [
       "5.2"
@@ -9758,7 +11513,8 @@
       "5.2"
     ],
     "kwok2025robomonkey": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "lehrach2026code": [
       "3"
@@ -9827,15 +11583,19 @@
       "5.2"
     ],
     "liang2023code": [
-      "3"
+      "3",
+      "3.4.2"
     ],
     "liang2024introspective": [
-      "3"
+      "3",
+      "3.5.3"
     ],
     "lin2025failsafe": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "lin2025showui": [
+      "3.6.2",
       "5.3"
     ],
     "lin2025storm": [
@@ -9852,7 +11612,8 @@
       "6.3"
     ],
     "liu2023reflect": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "liu2023visual": [
       "2.1"
@@ -9861,10 +11622,13 @@
       "4.5"
     ],
     "liu2024moka": [
-      "3"
+      "3",
+      "3.4.3"
     ],
     "liu2024ok": [
-      "3"
+      "3",
+      "3.4.1",
+      "3.4.2"
     ],
     "liu2025agent0": [
       "4.2.2",
@@ -9933,19 +11697,24 @@
       "3"
     ],
     "lu2025octotools": [
-      "3"
+      "3",
+      "3.4.1",
+      "3.6.1"
     ],
     "lu2026webgen": [
       "3.3.3"
     ],
     "luo2025visual": [
-      "3.1.2"
+      "3.1.2",
+      "3.6.2"
     ],
     "ma2025latte": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "ma2026cyclevla": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "ma2026talk2image": [
       "5.2"
@@ -9974,7 +11743,8 @@
       "3.1.2"
     ],
     "mozannar2025magentic": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "nabati2024preference": [
       "5.2"
@@ -9989,9 +11759,11 @@
       "6.2"
     ],
     "pacaud2025guardian": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "panagopoulou2025viunit": [
+      "3.5.1",
       "5.1"
     ],
     "parashar2026planning": [
@@ -10014,7 +11786,8 @@
       "3.3.3"
     ],
     "qi2026self": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "qin2025robofactory": [
       "3"
@@ -10023,10 +11796,12 @@
       "5.2"
     ],
     "ravichandran2026safety": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "ren2023robots": [
-      "3"
+      "3",
+      "3.5.3"
     ],
     "ren2026scope": [
       "5.2"
@@ -10038,10 +11813,12 @@
       "4.2.5"
     ],
     "rosset2026art": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "rui2026diagnosing": [
-      "3"
+      "3",
+      "3.4.2"
     ],
     "rusu2016policy": [
       "4.3.2"
@@ -10053,7 +11830,8 @@
       "6.1"
     ],
     "shah2025bumble": [
-      "3"
+      "3",
+      "3.4.2"
     ],
     "shao2024visual": [
       "3"
@@ -10068,16 +11846,23 @@
       "5.3"
     ],
     "shen2023hugginggpt": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "shen2026agentic": [
       "3.3"
     ],
     "shen2026imagagent": [
+      "3.4.1",
+      "3.5.2",
       "5.2"
     ],
     "shi2025hi": [
-      "3"
+      "3",
+      "3.4.2",
+      "3.4.3",
+      "3.6.1",
+      "3.6.3"
     ],
     "shiri2026design": [
       "5.1"
@@ -10087,13 +11872,16 @@
       "4.3.1"
     ],
     "sivakumaran2026dart": [
-      "3"
+      "3",
+      "3.6.1",
+      "3.6.2"
     ],
     "son2025world": [
       "5.2"
     ],
     "song2026adareasoner": [
-      "3.3.1"
+      "3.3.1",
+      "3.4.1"
     ],
     "song2026coact": [
       "3.3",
@@ -10109,13 +11897,15 @@
       "3.2"
     ],
     "su2026pixel": [
+      "3.4.1",
       "4"
     ],
     "subhani2026resam": [
       "4.2.5"
     ],
     "sun2025marmot": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "sun2025seagent": [
       "4.2.1",
@@ -10131,6 +11921,8 @@
       "4.2.2"
     ],
     "tan2024cradle": [
+      "3.4.1",
+      "3.4.2",
       "4.2.2",
       "5.3"
     ],
@@ -10160,6 +11952,7 @@
       "5.1"
     ],
     "u_clova": [
+      "3.4.1",
       "5.1"
     ],
     "u_gca": [
@@ -10178,9 +11971,11 @@
       "5.1"
     ],
     "u_videoagent_wang": [
+      "3.6.2",
       "5.1"
     ],
     "wang2024videoagent": [
+      "3.6.2",
       "5.1"
     ],
     "u_vstar": [
@@ -10194,11 +11989,14 @@
       "5.1"
     ],
     "va_c105_2025": [
+      "3.5.1",
+      "3.5.2",
       "5.1",
       "6.3",
       "7.1"
     ],
     "va_c106_2025": [
+      "3.5.1",
       "5.4",
       "7.1"
     ],
@@ -10304,6 +12102,7 @@
       "7.1"
     ],
     "va_c182_2024": [
+      "3.6.1",
       "5.5"
     ],
     "va_c1845_2025": [
@@ -10317,9 +12116,11 @@
       "5.2"
     ],
     "va_c1895_2025": [
+      "3.6.1",
       "5.2"
     ],
     "venkatesh2026crea": [
+      "3.6.1",
       "5.2"
     ],
     "va_c1903_2024": [
@@ -10456,6 +12257,7 @@
       "5.6"
     ],
     "vaidya2025nova": [
+      "3.6.1",
       "5.5"
     ],
     "wang2024genartist": [
@@ -10487,7 +12289,8 @@
       "3"
     ],
     "wang2025videotree": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "wang2026activescope": [
       "4.1",
@@ -10500,7 +12303,8 @@
       "5.2"
     ],
     "wang2026forgeryvcr": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "wang2026planning": [
       "4.2.1",
@@ -10509,7 +12313,8 @@
       "4.3.2"
     ],
     "wang2026real": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "wang2026vagen": [
       "3.3"
@@ -10534,13 +12339,15 @@
       "4.2.3"
     ],
     "wu2024dettoolchain": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "wu2024self": [
       "5.2"
     ],
     "wu2024vdebugger": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "wu2025mmsearch": [
       "3"
@@ -10553,7 +12360,8 @@
       "4"
     ],
     "wu2026oracle": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "wu2026spacemind": [
       "4"
@@ -10562,6 +12370,7 @@
       "5.2"
     ],
     "wu2026vtool": [
+      "3.4.1",
       "4.1",
       "4.2.2",
       "5.1"
@@ -10587,6 +12396,7 @@
       "3.3"
     ],
     "xiong2025llava": [
+      "3.5.1",
       "4.3.1"
     ],
     "xu2024rldg": [
@@ -10603,7 +12413,8 @@
       "5.2"
     ],
     "xu2026reaction": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "xu2026videoharness": [
       "4.2.3",
@@ -10626,13 +12437,15 @@
       "3.1.1"
     ],
     "yang2026gta1": [
-      "3.3.1"
+      "3.3.1",
+      "3.6.2"
     ],
     "yang2026omniactor": [
       "3"
     ],
     "yang2026paravt": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "yang2026rise": [
       "4.2.4",
@@ -10651,7 +12464,8 @@
       "5.2"
     ],
     "ye2025robofac": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "yeo2026worldmm": [
       "3.2.1"
@@ -10678,7 +12492,8 @@
       "6"
     ],
     "yu2026minim": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "yuan2025enhancing": [
       "3"
@@ -10719,7 +12534,8 @@
       "4"
     ],
     "zhang2025agentcpm": [
-      "3"
+      "3",
+      "3.4.3"
     ],
     "zhang2025appagent": [
       "4.1",
@@ -10733,7 +12549,8 @@
       "4.1"
     ],
     "zhang2025robochemist": [
-      "3.3"
+      "3.3",
+      "3.5.1"
     ],
     "zhang2025thyme": [
       "3"
@@ -10745,7 +12562,8 @@
       "3"
     ],
     "zhang2026safevla": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "zhang2026self": [
       "4.2.3"
@@ -10760,7 +12578,8 @@
       "3.2.2"
     ],
     "zheng2026deepeyes": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "zheng2026dream": [
       "4.4.2"
@@ -10769,7 +12588,8 @@
       "3.1.1"
     ],
     "zhi2025videoagent2": [
-      "3.1"
+      "3.1",
+      "3.5.3"
     ],
     "zhou2024calibrated": [
       "4.2.4",
@@ -10789,7 +12609,8 @@
       "5.2"
     ],
     "zhu2025learning": [
-      "3"
+      "3",
+      "3.4.2"
     ],
     "zhu2025wmpo": [
       "5.4",
@@ -10810,6 +12631,101 @@
     ],
     "zou2025autotool": [
       "3"
+    ],
+    "kuntz2026harm": [
+      "3.6.3",
+      "6.3"
+    ],
+    "gou2025navigating": [
+      "3.4.3",
+      "5.3"
+    ],
+    "gao2024clova": [
+      "3.4.1",
+      "5.1"
+    ],
+    "kim2024mdagents": [
+      "3.6.1",
+      "5.5"
+    ],
+    "xiong2025lllava": [
+      "3.5.1",
+      "4.3.1"
+    ],
+    "belkhale2024rt": [
+      "3.4.2"
+    ],
+    "black2024pi_0": [
+      "3.4.3"
+    ],
+    "cheng2024seeclick": [
+      "3.4.3"
+    ],
+    "debenedetti2024agentdojo": [
+      "3.6.3"
+    ],
+    "gou2024critic": [
+      "3.5.1"
+    ],
+    "kim2024openvla": [
+      "3.4.3"
+    ],
+    "liang2024skilldiffuser": [
+      "3.4.2"
+    ],
+    "lin2025onetwovla": [
+      "3.6.2"
+    ],
+    "liu2024llava": [
+      "3.4.1"
+    ],
+    "min2026improving": [
+      "3.5.1"
+    ],
+    "qu2025spatialvla": [
+      "3.4.3"
+    ],
+    "team2024octo": [
+      "3.4.3"
+    ],
+    "wu2025atlas": [
+      "3.4.3"
+    ],
+    "xu2025can": [
+      "3.5.3"
+    ],
+    "xu2026vla": [
+      "3.6.2"
+    ],
+    "yang2025magma": [
+      "3.4.3"
+    ],
+    "yang2026efficientvla": [
+      "3.6.2"
+    ],
+    "ying2026robofailring": [
+      "3.5.2"
+    ],
+    "yuan2024robopoint": [
+      "3.4.3"
+    ],
+    "yuan2026act": [
+      "3.5.3"
+    ],
+    "zeng2026diagnose": [
+      "3.5.2"
+    ],
+    "zhang2024building": [
+      "3.6.1"
+    ],
+    "zhao2025conformalized": [
+      "3.5.3"
+    ],
+    "zhao2026flare": [
+      "3.5.2"
+    ],
+    "zhou2024spire": [
+      "3.4.2"
     ]
   },
   "assignment_note": "Assignment evidence retains original and later topical records. Effective sections reflect alias merging and precedence; see papers.json."

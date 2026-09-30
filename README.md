@@ -4,11 +4,11 @@
 
 A collection of papers, code, and benchmarks on vision agents, organized by the chapters and subsections of our survey.
 
-**471 unique works** · **454 arXiv entries** · **305 works with code** · **497 BibTeX keys**
+**496 unique works** · **454 arXiv entries** · **305 works with code** · **527 BibTeX keys**
 
 ## Overview
 
-The collection covers the foundations of vision agents, runtime harnesses, capability acquisition and evolution, applications, evaluation, and open challenges. Section 3 follows the latest paradigm-based organization of visual evidence acquisition, visual memory, and grounded reasoning and planning.
+The collection covers the foundations of vision agents, runtime harnesses, capability acquisition and evolution, applications, evaluation, and open challenges. Section 3 follows the latest paradigm-based organization of visual evidence acquisition, visual memory, grounded reasoning and planning, capability acquisition and action execution, verification and self-correction, and runtime orchestration.
 
 **How to read the tables.** Years follow the bibliography, except for primary-source corrections recorded in the catalogue; arXiv versions may have an earlier date. A dash (—) means that a link has not been identified and verified for this catalogue; it does not mean that a paper or implementation does not exist. Code links come from the paper, its author project, or a repository that identifies the paper. “Unavailable” marks an author-linked repository that could not be accessed at the snapshot date. The same work can appear in several relevant sections; duplicate BibTeX keys are merged in each table.
 
@@ -25,6 +25,9 @@ The collection covers the foundations of vision agents, runtime harnesses, capab
   - [3.1. Active Visual Evidence Acquisition](#section-3-1)
   - [3.2. Visual Memory and State Management](#section-3-2)
   - [3.3. Evidence-Grounded Reasoning and Planning](#section-3-3)
+  - [3.4. Visual Capability Acquisition and Action Execution](#section-3-4)
+  - [3.5. Visual Verification, Feedback, and Self-Correction](#section-3-5)
+  - [3.6. Adaptive Orchestration and Runtime Infrastructure](#section-3-6)
 - [4. Capability Acquisition and Evolution in Vision Agents](#section-4)
   - [4.1. From Capability Acquisition to Self-Evolution](#section-4-1)
   - [4.2. Targets of Self-Evolution](#section-4-2)
@@ -352,6 +355,207 @@ References for this framing section are listed under their relevant topics in th
 | 2025 | MobileUse: A Hierarchical Reflection-Driven GUI Agent for Autonomous Mobile Operation | [arXiv](https://arxiv.org/abs/2507.16853) | [Code](https://github.com/MadeAgents/mobile-use) |
 | 2025 | Scaling Agents for Computer Use | [arXiv](https://arxiv.org/abs/2510.02250) | — |
 | 2025 | ViReSkill: Vision-Grounded Replanning with Skill Memory for LLM-Based Planning in Lifelong Robot Learning | [arXiv](https://arxiv.org/abs/2509.24219) | — |
+
+<a id="section-3-4"></a>
+
+### 3.4. Visual Capability Acquisition and Action Execution
+
+<a id="section-3-4-1"></a>
+
+#### 3.4.1. Visual Tools and Capability Selection
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2026 | AdaReasoner: Dynamic Tool Orchestration for Iterative Visual Reasoning | [arXiv](https://arxiv.org/abs/2601.18631) | [Code](https://github.com/ssmisya/AdaReasoner) |
+| 2026 | DeepEyes: Incentivizing "Thinking with Images" via Reinforcement Learning | [arXiv](https://arxiv.org/abs/2505.14362) | [Code](https://github.com/Visual-Agent/DeepEyes) |
+| 2026 | ForgeryVCR: Visual-Centric Reasoning via Efficient Forensic Tools in MLLMs for Image Forgery Detection and Localization | [arXiv](https://arxiv.org/abs/2602.14098) | [Code](https://github.com/youqiwong/ForgeryVCR) |
+| 2026 | IMAGAgent: Orchestrating Multi-Turn Image Editing via Constraint-Aware Planning and Reflection | [arXiv](https://arxiv.org/abs/2603.29602) | [Code](https://github.com/hackermmzz/IMAGAgent) |
+| 2026 | PerfGuard: A Performance-Aware Agent for Visual Content Generation | [arXiv](https://arxiv.org/abs/2601.22571) | [Code](https://github.com/FelixChan9527/PerfGuard) |
+| 2026 | Pixel Reasoner: Incentivizing Pixel-Space Reasoning with Curiosity-Driven Reinforcement Learning | [arXiv](https://arxiv.org/abs/2505.15966) · [Project](https://tiger-ai-lab.github.io/Pixel-Reasoner/) | [Code](https://github.com/TIGER-AI-Lab/Pixel-Reasoner) |
+| 2026 | VTool-R1: VLMs Learn to Think with Images via Reinforcement Learning on Multimodal Tool Use | [arXiv](https://arxiv.org/abs/2505.19255) | [Code](https://github.com/VTOOL-R1/vtool-r1) |
+| 2025 | LATTE: Learning to Think with Vision Specialists | [arXiv](https://arxiv.org/abs/2412.05479) | — |
+| 2025 | OctoTools: An Agentic Framework with Extensible Tools for Complex Reasoning | [arXiv](https://arxiv.org/abs/2502.11271) · [Project](https://octotools.github.io/) | [Code](https://github.com/octotools/octotools) |
+| 2025 | PlotEdit: Natural Language-Driven Accessible Chart Editing in PDFs via Multimodal LLM Agents | [arXiv](https://arxiv.org/abs/2501.11233) | — |
+| 2025 | RSAgent: Learning to Reason and Act for Text-Guided Segmentation via Multi-Turn Tool Invocations | [arXiv](https://arxiv.org/abs/2512.24023) | — |
+| 2025 | VisualToolAgent (VisTA): A Reinforcement Learning Framework for Visual Tool Selection | [arXiv](https://arxiv.org/abs/2505.20289) | — |
+| 2024 | CLOVA: A Closed-Loop Visual Assistant with Tool Usage and Update | [arXiv](https://arxiv.org/abs/2312.10908) | [Code](https://github.com/clova-tool/CLOVA-tool) |
+| 2024 | Cradle: Empowering Foundation Agents Towards General Computer Control | [arXiv](https://arxiv.org/abs/2403.03186) | [Code](https://github.com/BAAI-Agents/Cradle) |
+| 2024 | Llava-plus: Learning to use tools for creating multimodal agents | — | — |
+| 2024 | OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics | [arXiv](https://arxiv.org/abs/2401.12202) · [Project](https://ok-robot.github.io) | [Code](https://github.com/ok-robot/ok-robot) |
+| 2024 | Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models | [arXiv](https://arxiv.org/abs/2406.09403) · [Paper](https://doi.org/10.52202/079017-4423) · [Project](https://visualsketchpad.github.io/) | [Code](https://github.com/Yushi-Hu/VisualSketchpad) |
+| 2023 | HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face | [arXiv](https://arxiv.org/abs/2303.17580) | [Code](https://github.com/microsoft/JARVIS) |
+| 2023 | ViperGPT: Visual Inference via Python Execution for Reasoning | [arXiv](https://arxiv.org/abs/2303.08128) · [Project](https://viper.cs.columbia.edu/) | [Code](https://github.com/cvlab-columbia/viper) |
+| 2023 | Visual Programming: Compositional visual reasoning without training | [arXiv](https://arxiv.org/abs/2211.11559) | [Code](https://github.com/allenai/visprog) |
+
+<a id="section-3-4-2"></a>
+
+#### 3.4.2. Reusable Visual Skills and Workflow Composition
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2026 | Diagnosing Semantic Handoff Failures in Agent-Orchestrated Vision-Language-Action Skill Composition | [arXiv](https://arxiv.org/abs/2607.06256) | — |
+| 2025 | Agent S2: A Compositional Generalist-Specialist Framework for Computer Use Agents | [arXiv](https://arxiv.org/abs/2504.00906) | [Code](https://github.com/simular-ai/Agent-S) |
+| 2025 | BUMBLE: Unifying Reasoning and Acting with Vision-Language Models for Building-wide Mobile Manipulation | [arXiv](https://arxiv.org/abs/2410.06237) · [Project](https://robin-lab.cs.utexas.edu/BUMBLE/) | [Code](https://github.com/UT-Austin-RobIn/BUMBLE) |
+| 2025 | Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models | [arXiv](https://arxiv.org/abs/2502.19417) · [Project](https://www.pi.website/research/hirobot) | — |
+| 2025 | Learning Semantic Atomic Skills for Multi-Task Robotic Manipulation | [arXiv](https://arxiv.org/abs/2512.18368) · [Project](https://atom-skill.github.io) | — |
+| 2024 | Cradle: Empowering Foundation Agents Towards General Computer Control | [arXiv](https://arxiv.org/abs/2403.03186) | [Code](https://github.com/BAAI-Agents/Cradle) |
+| 2024 | OK-Robot: What Really Matters in Integrating Open-Knowledge Models for Robotics | [arXiv](https://arxiv.org/abs/2401.12202) · [Project](https://ok-robot.github.io) | [Code](https://github.com/ok-robot/ok-robot) |
+| 2024 | Rt-h: Action hierarchies using language | — | — |
+| 2024 | Skilldiffuser: Interpretable hierarchical planning via skill abstractions in diffusion-based task execution | — | — |
+| 2024 | SPIRE: Synergistic planning, imitation, and reinforcement learning for long-horizon manipulation | — | — |
+| 2023 | Code as Policies: Language Model Programs for Embodied Control | [arXiv](https://arxiv.org/abs/2209.07753) · [Project](https://code-as-policies.github.io) | [Code](https://github.com/google-research/google-research/tree/master/code_as_policies) |
+
+<a id="section-3-4-3"></a>
+
+#### 3.4.3. Action Grounding and Interactive Execution
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2025 | AgentCPM-GUI: Building Mobile-Use Agents with Reinforcement Fine-Tuning | [arXiv](https://arxiv.org/abs/2506.01391) | [Code](https://github.com/OpenBMB/AgentCPM-GUI) |
+| 2025 | HAMSTER: Hierarchical Action Models For Open-World Robot Manipulation | [arXiv](https://arxiv.org/abs/2502.05485) · [Project](https://hamster-robot.github.io/) | [Code](https://github.com/liyi14/HAMSTER_beta) |
+| 2025 | Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models | [arXiv](https://arxiv.org/abs/2502.19417) · [Project](https://www.pi.website/research/hirobot) | — |
+| 2025 | Magma: A foundation model for multimodal ai agents | — | — |
+| 2025 | Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents | [arXiv](https://arxiv.org/abs/2410.05243) · [Paper](https://doi.org/10.48550/arxiv.2410.05243) · [Project](https://osu-nlp-group.github.io/UGround/) | [Code](https://github.com/OSU-NLP-Group/UGround) |
+| 2025 | OS-ATLAS: Foundation action model for generalist GUI agents | — | — |
+| 2025 | Spatialvla: Exploring spatial representations for visual-language-action model | — | — |
+| 2024 | CogAgent: A Visual Language Model for GUI Agents | [arXiv](https://arxiv.org/abs/2312.08914) | [CogVLM](https://github.com/zai-org/CogVLM) · [CogAgent](https://github.com/zai-org/CogAgent) |
+| 2024 | MOKA: Open-World Robotic Manipulation through Mark-Based Visual Prompting | [arXiv](https://arxiv.org/abs/2403.03174) | — |
+| 2024 | Octo: An open-source generalist robot policy | — | — |
+| 2024 | Openvla: An open-source vision-language-action model | — | — |
+| 2024 | ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation | [arXiv](https://arxiv.org/abs/2409.01652) · [Project](https://rekep-robot.github.io/) | [Code](https://github.com/huangwl18/ReKep) |
+| 2024 | Robopoint: A vision-language model for spatial affordance prediction for robotics | — | — |
+| 2024 | Seeclick: Harnessing gui grounding for advanced visual gui agents | — | — |
+| 2024 | π0: A Vision-Language-Action Flow Model for General Robot Control | — | — |
+| 2023 | RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control | [arXiv](https://arxiv.org/abs/2307.15818) · [Project](https://robotics-transformer.github.io/) | — |
+| 2023 | VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models | [arXiv](https://arxiv.org/abs/2307.05973) · [Project](https://voxposer.github.io) | [Code](https://github.com/huangwl18/VoxPoser) |
+
+<a id="section-3-5"></a>
+
+### 3.5. Visual Verification, Feedback, and Self-Correction
+
+<a id="section-3-5-1"></a>
+
+#### 3.5.1. Visual Evidence Verification and Outcome Assessment
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2026 | Improving Vision-language Models with Perception-centric Process Reward Models | — | — |
+| 2026 | OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models | [arXiv](https://arxiv.org/abs/2512.16295) | [Code](https://github.com/numbmelon/OS-Oracle) |
+| 2026 | ProRe: A Proactive Reward System for GUI Agents via Reasoner-Actor Collaboration | [arXiv](https://arxiv.org/abs/2509.21823) | [Code](https://github.com/V-Droid-Agent/ProRe) |
+| 2026 | The Art of Building Verifiers for Computer Use Agents | [arXiv](https://arxiv.org/abs/2604.06240) | [Code](https://github.com/microsoft/fara) |
+| 2025 | Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection | [arXiv](https://arxiv.org/abs/2412.04455) · [Project](https://zhoues.github.io/Code-as-Monitor/) | — |
+| 2025 | Guardian: Detecting Robotic Planning and Execution Errors with Vision-Language Models | [arXiv](https://arxiv.org/abs/2512.01946) · [Project](https://www.di.ens.fr/willow/research/guardian/) | [Code](https://github.com/paulpacaud/Guardian-FailCot) |
+| 2025 | I-FailSense: Towards General Robotic Failure Detection with Vision-Language Models | [arXiv](https://arxiv.org/abs/2509.16072) · [Project](https://clemgris.github.io/I-FailSense/) | [Code](https://github.com/clemgris/I-FailSense) |
+| 2025 | LLaVA-Critic: Learning to Evaluate Multimodal Models | [arXiv](https://arxiv.org/abs/2410.02712) · [Project](https://llava-vl.github.io/blog/2024-10-03-llava-critic) | [Code](https://github.com/LLaVA-VL/LLaVA-NeXT) |
+| 2025 | RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation | [arXiv](https://arxiv.org/abs/2509.08820) · [Project](https://zzongzheng0918.github.io/RoboChemist.github.io/) | — |
+| 2025 | VISCO: Benchmarking Fine-Grained Critique and Correction Towards Self-Improvement in Visual Reasoning | [arXiv](https://arxiv.org/abs/2412.02172) · [Project](https://visco-benchmark.github.io/) | [Code](https://github.com/PlusLabNLP/VISCO) |
+| 2025 | ViUniT: Visual Unit Tests for More Robust Visual Programming | [arXiv](https://arxiv.org/abs/2412.08859) | [Code](https://github.com/SalesforceAIResearch/visual-unit-testing) |
+| 2024 | Closed-Loop Visuomotor Control with Generative Expectation for Robotic Manipulation | [arXiv](https://arxiv.org/abs/2409.09016) | [Code](https://github.com/OpenDriveLab/CLOVER) |
+| 2024 | Critic: Large language models can self-correct with tool-interactive critiquing | — | — |
+| 2024 | Unpacking Failure Modes of Generative Policies: Runtime Monitoring of Consistency and Progress | [arXiv](https://arxiv.org/abs/2410.04640) · [Project](https://sites.google.com/stanford.edu/sentinel) | [Code](https://github.com/agiachris/sentinel) |
+
+<a id="section-3-5-2"></a>
+
+#### 3.5.2. Failure Diagnosis and Corrective Feedback
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2026 | CycleVLA: Proactive Self-Correcting Vision-Language-Action Models via Subtask Backtracking and Minimum Bayes Risk Decoding | [arXiv](https://arxiv.org/abs/2601.02295) · [Project](https://dannymcy.github.io/cyclevla/) | [Code](https://github.com/dannymcy/cyclevla_code) |
+| 2026 | Diagnose, correct, and learn from manipulation failures via visual symbols | — | — |
+| 2026 | FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation | — | — |
+| 2026 | From Reaction to Anticipation: Proactive Failure Recovery through Agentic Task Graph for Robotic Manipulation | [arXiv](https://arxiv.org/abs/2605.11951) · [Project](https://shengxu.net/AgentChord/) | [Code](https://github.com/EDEM-AI/AgentChord) |
+| 2026 | IMAGAgent: Orchestrating Multi-Turn Image Editing via Constraint-Aware Planning and Reflection | [arXiv](https://arxiv.org/abs/2603.29602) | [Code](https://github.com/hackermmzz/IMAGAgent) |
+| 2026 | RoboFailRing: Retrieval-Augmented and Language Grounding Failure Detection for VLM-enabled Robotic Manipulation | — | — |
+| 2026 | Self-Refining Vision Language Model for Robotic Failure Detection and Reasoning | [arXiv](https://arxiv.org/abs/2602.12405) · [Project](https://sites.google.com/utexas.edu/armor) | — |
+| 2025 | A Unified Framework for Real-Time Failure Handling in Robotics Using Vision-Language Models, Reactive Planner and Behavior Trees | [arXiv](https://arxiv.org/abs/2503.15202) | — |
+| 2025 | FailSafe: Reasoning and Recovery from Failures in Vision-Language-Action Models | [arXiv](https://arxiv.org/abs/2510.01642) · [Project](https://jimntu.github.io/FailSafe) | — |
+| 2025 | Marmot: Object-Level Self-Correction via Multi-Agent Reasoning | [arXiv](https://arxiv.org/abs/2504.20054) | — |
+| 2025 | RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction | [arXiv](https://arxiv.org/abs/2505.12224) | [Code](https://github.com/MINT-SJTU/RoboFAC) |
+| 2025 | RSAgent: Learning to Reason and Act for Text-Guided Segmentation via Multi-Turn Tool Invocations | [arXiv](https://arxiv.org/abs/2512.24023) | — |
+| 2025 | VISCO: Benchmarking Fine-Grained Critique and Correction Towards Self-Improvement in Visual Reasoning | [arXiv](https://arxiv.org/abs/2412.02172) · [Project](https://visco-benchmark.github.io/) | [Code](https://github.com/PlusLabNLP/VISCO) |
+| 2024 | AHA: A Vision-Language-Model for Detecting and Reasoning Over Failures in Robotic Manipulation | [arXiv](https://arxiv.org/abs/2410.00371) · [Project](https://aha-vlm.github.io/) | [Code](https://github.com/NVlabs/AHA/tree/main) |
+| 2024 | DetToolChain: A New Prompting Paradigm to Unleash Detection Ability of MLLM | [arXiv](https://arxiv.org/abs/2403.12488) | — |
+| 2024 | VDebugger: Harnessing Execution Feedback for Debugging Visual Programs | [arXiv](https://arxiv.org/abs/2406.13444) | [Code](https://github.com/shirley-wu/vdebugger/) |
+| 2023 | REFLECT: Summarizing Robot Experiences for Failure Explanation and Correction | [arXiv](https://arxiv.org/abs/2306.15724) · [Project](https://robot-reflect.github.io/) | [Code](https://github.com/real-stanford/reflect) |
+
+<a id="section-3-5-3"></a>
+
+#### 3.5.3. Uncertainty-aware Decision Making and Human Intervention
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2026 | When to act, ask, or learn: Uncertainty-aware policy steering | — | — |
+| 2025 | Agentic Keyframe Search for Video Question Answering | [arXiv](https://arxiv.org/abs/2503.16032) | [Code](https://github.com/fansunqi/AKeyS) |
+| 2025 | Can we detect failures without failure data? uncertainty-aware runtime failure detection for imitation learning policies | — | — |
+| 2025 | Conformalized interactive imitation learning: Handling expert shift and intermittent feedback | — | — |
+| 2025 | OS-Kairos: Adaptive Interaction for MLLM-Powered GUI Agents | [arXiv](https://arxiv.org/abs/2503.16465) | [Code](https://github.com/Wuzheng02/OS-Kairos) |
+| 2025 | Uncertainty Comes for Free: Human-in-the-Loop Policies with Diffusion Models | [arXiv](https://arxiv.org/abs/2503.01876) | — |
+| 2025 | VideoAgent2: Enhancing the LLM-Based Agent System for Long-Form Video Understanding by Uncertainty-Aware CoT | [arXiv](https://arxiv.org/abs/2504.04471) | — |
+| 2024 | Introspective Planning: Aligning Robots' Uncertainty with Inherent Task Ambiguity | [arXiv](https://arxiv.org/abs/2402.06529) · [Project](https://introplan.github.io) | [Code](https://github.com/kevinliang888/IntroPlan) |
+| 2023 | Robots That Ask For Help: Uncertainty Alignment for Large Language Model Planners | [arXiv](https://arxiv.org/abs/2307.01928) · [Project](https://robot-help.github.io) | [Code](https://github.com/google-research/google-research/tree/master/language_model_uncertainty) |
+
+<a id="section-3-6"></a>
+
+### 3.6. Adaptive Orchestration and Runtime Infrastructure
+
+<a id="section-3-6-1"></a>
+
+#### 3.6.1. Single- and Multi-Agent Coordination
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2026 | CREA: A Collaborative Multi-Agent Framework for Creative Image Editing and Generation | [arXiv](https://arxiv.org/abs/2504.05306) · [Paper](https://doi.org/10.52202/085713-5705) | — |
+| 2026 | DART: Leveraging Multi-Agent Disagreement for Tool Recruitment in Multimodal Reasoning | [arXiv](https://arxiv.org/abs/2512.07132) | [Code](https://github.com/nsivaku/dart) |
+| 2025 | EMOS: Embodiment-aware Heterogeneous Multi-robot Operating System with LLM Agents | [arXiv](https://arxiv.org/abs/2410.22662) | — |
+| 2025 | Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models | [arXiv](https://arxiv.org/abs/2502.19417) · [Project](https://www.pi.website/research/hirobot) | — |
+| 2025 | NOVA: An Agentic Framework for Automated Histopathology Analysis and Discovery | [arXiv](https://arxiv.org/abs/2511.11324) | [Code](https://github.com/microsoft/nova-agent) |
+| 2025 | OctoTools: An Agentic Framework with Extensible Tools for Complex Reasoning | [arXiv](https://arxiv.org/abs/2502.11271) · [Project](https://octotools.github.io/) | [Code](https://github.com/octotools/octotools) |
+| 2025 | PARTNR: A Benchmark for Planning and Reasoning in Embodied Multi-agent Tasks | [arXiv](https://arxiv.org/abs/2411.00081) | [Code](https://github.com/facebookresearch/partnr-planner) |
+| 2024 | AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents | [arXiv](https://arxiv.org/abs/2401.12963) | — |
+| 2024 | Building cooperative embodied agents modularly with large language models | — | — |
+| 2024 | MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making | [arXiv](https://arxiv.org/abs/2404.15155) · [Paper](https://doi.org/10.52202/079017-2522) | [Code](https://github.com/mitmedialab/MDAgents) |
+| 2023 | ViperGPT: Visual Inference via Python Execution for Reasoning | [arXiv](https://arxiv.org/abs/2303.08128) · [Project](https://viper.cs.columbia.edu/) | [Code](https://github.com/cvlab-columbia/viper) |
+|  | AgentMV: A State-Guided Multi-Agent Framework for Budget-Aware Music Video Generation | [arXiv](https://arxiv.org/abs/2605.10723) | — |
+
+<a id="section-3-6-2"></a>
+
+#### 3.6.2. Resource-aware Runtime Adaptation
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2026 | DART: Leveraging Multi-Agent Disagreement for Tool Recruitment in Multimodal Reasoning | [arXiv](https://arxiv.org/abs/2512.07132) | [Code](https://github.com/nsivaku/dart) |
+| 2026 | Efficientvla: Training-free acceleration and compression for vision-language-action models | — | — |
+| 2026 | GTA1: GUI Test-time Scaling Agent | [arXiv](https://arxiv.org/abs/2507.05791) | [Code](https://github.com/Yan98/GTA1) |
+| 2026 | ParaVT: Taming the Tool Prior Paradox for Parallel Tool Use in Agentic Video Reinforcement Learning | [arXiv](https://arxiv.org/abs/2605.20342) · [Project](https://evolvinglmms-lab.github.io/ParaVT/) | [Code](https://github.com/EvolvingLMMs-Lab/ParaVT) |
+| 2026 | Real-Time Execution of Action Chunking Flow Policies | [arXiv](https://arxiv.org/abs/2506.07339) · [Project](https://pi.website/research/real_time_chunking) | [Code](https://github.com/Physical-Intelligence/real-time-chunking-kinetix) |
+| 2026 | Real-Time Robot Execution with Masked Action Chunking | [arXiv](https://arxiv.org/abs/2601.20130) · [Project](https://remac-async.github.io/) | [Code](https://github.com/hatchetProject/REMAC) |
+| 2026 | Vla-cache: Efficient vision-language-action manipulation via adaptive token caching | — | — |
+| 2025 | Agentic Keyframe Search for Video Question Answering | [arXiv](https://arxiv.org/abs/2503.16032) | [Code](https://github.com/fansunqi/AKeyS) |
+| 2025 | Onetwovla: A unified vision-language-action model with adaptive reasoning | — | — |
+| 2025 | RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models | [arXiv](https://arxiv.org/abs/2506.17811) | — |
+| 2025 | ShowUI: One Vision-Language-Action Model for GUI Visual Agent | [arXiv](https://arxiv.org/abs/2411.17465) | [Code](https://github.com/showlab/ShowUI) |
+| 2025 | VideoTree: Adaptive Tree-based Video Representation for LLM Reasoning on Long Videos | [arXiv](https://arxiv.org/abs/2405.19209) · [Project](https://videotree2024.github.io/) | [Code](https://github.com/Ziyang412/VideoTree) |
+| 2025 | Visual Test-time Scaling for GUI Agent Grounding | [arXiv](https://arxiv.org/abs/2505.00684) | [Code](https://github.com/tiangeluo/RegionFocus) |
+| 2024 | VideoAgent: Long-form Video Understanding with Large Language Model as Agent | [arXiv](https://arxiv.org/abs/2403.10517) | — |
+|  | AgentMV: A State-Guided Multi-Agent Framework for Budget-Aware Music Video Generation | [arXiv](https://arxiv.org/abs/2605.10723) | — |
+
+<a id="section-3-6-3"></a>
+
+#### 3.6.3. Safety Control and Human-Agent Collaboration
+
+| Year | Title | Paper | Code |
+| :---: | --- | :---: | :---: |
+| 2026 | Minim: Privacy-Aware Minimal View for Agents via Trusted Local Sanitization | [arXiv](https://arxiv.org/abs/2606.13949) | [Code](https://github.com/yyyyhx/MINIM) |
+| 2026 | Safety Guardrails for LLM-Enabled Robots | [arXiv](https://arxiv.org/abs/2503.07885) · [Project](https://robo-guard.github.io/) | [Code](https://github.com/KumarRobotics/RoboGuard) |
+| 2026 | SafeVLA: Towards Safety Alignment of Vision-Language-Action Model via Constrained Learning | [arXiv](https://arxiv.org/abs/2503.03480) · [Project](https://pku-safevla.github.io) | [Code](https://github.com/PKU-Alignment/SafeVLA) |
+| 2026 | WASP: Benchmarking Web Agent Security Against Prompt Injection Attacks | [arXiv](https://arxiv.org/abs/2504.18575) | [Code](https://github.com/facebookresearch/wasp) |
+| 2025 | CowPilot: A Framework for Autonomous and Human-Agent Collaborative Web Navigation | [arXiv](https://arxiv.org/abs/2501.16609) · [Project](https://oaishi.github.io/cowpilot.html) | [Code](https://github.com/oaishi/CowPilot) |
+| 2025 | Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models | [arXiv](https://arxiv.org/abs/2502.19417) · [Project](https://www.pi.website/research/hirobot) | — |
+| 2025 | Magentic-UI: Towards Human-in-the-loop Agentic Systems | [arXiv](https://arxiv.org/abs/2507.22358) | [Code](https://github.com/microsoft/magentic-ui/tree/magentic-ui-0.1) |
+| 2025 | OS-Harm: A Benchmark for Measuring Safety of Computer Use Agents | [arXiv](https://arxiv.org/abs/2506.14866) | [Code](https://github.com/tml-epfl/os-harm) |
+| 2025 | Robots that Suggest Safe Alternatives | [arXiv](https://arxiv.org/abs/2409.09883) | — |
+| 2024 | Agentdojo: A dynamic environment to evaluate prompt injection attacks and defenses for llm agents | — | — |
+| 2024 | AutoRT: Embodied Foundation Models for Large Scale Orchestration of Robotic Agents | [arXiv](https://arxiv.org/abs/2401.12963) | — |
 
 <a id="section-4"></a>
 

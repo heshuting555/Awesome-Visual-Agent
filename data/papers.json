@@ -8,7 +8,8 @@
       "agashe2025agent2"
     ],
     "sections": [
-      "3.3"
+      "3.3",
+      "3.4.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2504.00906",
     "paper_url": null,
@@ -38,6 +39,13 @@
         "line": 25,
         "bibliography_source": "harness_346_references.bib",
         "citation_key": "agashe2025agent2"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation",
+        "citation_key": "agashe2025agent"
       }
     ],
     "bib_titles": [
@@ -215,7 +223,8 @@
       "agia2024unpacking"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2410.04640",
     "paper_url": null,
@@ -238,6 +247,13 @@
         "source": "all_references.bib",
         "line": 43,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "agia2024unpacking"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
+        "classification": "active-citation",
         "citation_key": "agia2024unpacking"
       }
     ],
@@ -298,7 +314,8 @@
       "ahmad2025unified"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2503.15202",
     "paper_url": null,
@@ -320,6 +337,13 @@
         "source": "all_references.bib",
         "line": 51,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "ahmad2025unified"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation",
         "citation_key": "ahmad2025unified"
       }
     ],
@@ -362,7 +386,9 @@
       "ahn2024autort"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.1",
+      "3.6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2401.12963",
     "paper_url": null,
@@ -384,6 +410,20 @@
         "source": "all_references.bib",
         "line": 61,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "ahn2024autort"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13,
+        "classification": "active-citation",
+        "citation_key": "ahn2024autort"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35,
+        "classification": "active-citation",
         "citation_key": "ahn2024autort"
       }
     ],
@@ -1932,9 +1972,11 @@
     "title": "OS-Harm: A Benchmark for Measuring Safety of Computer Use Agents",
     "year": "2025",
     "citation_keys": [
-      "bench_osharm"
+      "bench_osharm",
+      "kuntz2026harm"
     ],
     "sections": [
+      "3.6.3",
       "6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2506.14866",
@@ -1964,13 +2006,22 @@
         "line": 47,
         "classification": "active-citation",
         "citation_key": "bench_osharm"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "kuntz2026harm"
       }
     ],
     "bib_titles": [
-      "OS-Harm: A Benchmark for Measuring Safety of Computer Use Agents"
+      "OS-Harm: A Benchmark for Measuring Safety of Computer Use Agents",
+      "Os-harm: A benchmark for measuring safety of computer use agents"
     ],
     "bib_years": [
-      "2025"
+      "2025",
+      "2026"
     ],
     "link_evidence": [
       {
@@ -2474,7 +2525,8 @@
       "black2026real"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2506.07339",
     "paper_url": null,
@@ -2498,6 +2550,13 @@
         "source": "all_references.bib",
         "line": 287,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "black2026real"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26,
+        "classification": "active-citation",
         "citation_key": "black2026real"
       }
     ],
@@ -2750,7 +2809,8 @@
     ],
     "sections": [
       "2",
-      "3"
+      "3",
+      "3.4.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2307.15818",
     "paper_url": null,
@@ -2781,6 +2841,13 @@
         "line": 604,
         "bibliography_source": "background_references.bib",
         "citation_key": "cvbg_rt2"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation",
+        "citation_key": "brohan2023rt"
       }
     ],
     "bib_titles": [
@@ -2980,7 +3047,8 @@
       "bu2024closed"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2409.09016",
     "paper_url": null,
@@ -3002,6 +3070,13 @@
         "source": "all_references.bib",
         "line": 340,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "bu2024closed"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
+        "classification": "active-citation",
         "citation_key": "bu2024closed"
       }
     ],
@@ -3160,6 +3235,7 @@
       "chang2025partnr"
     ],
     "sections": [
+      "3.6.1",
       "6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2411.00081",
@@ -3191,6 +3267,13 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly benchmarks planning/agents/interactive execution; §6.2 covers evaluation of planning and execution.",
+        "citation_key": "chang2025partnr"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation",
         "citation_key": "chang2025partnr"
       }
     ],
@@ -3441,7 +3524,8 @@
       "chen2025emos"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2410.22662",
     "paper_url": null,
@@ -3463,6 +3547,13 @@
         "source": "all_references.bib",
         "line": 385,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "chen2025emos"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13,
+        "classification": "active-citation",
         "citation_key": "chen2025emos"
       }
     ],
@@ -3967,6 +4058,7 @@
       "va_c817_2026"
     ],
     "sections": [
+      "3.4.1",
       "5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2601.22571",
@@ -3997,6 +4089,13 @@
         "line": 43,
         "classification": "active-citation",
         "citation_key": "va_c817_2026"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
+        "classification": "active-citation",
+        "citation_key": "chen2026perfguard"
       }
     ],
     "bib_titles": [
@@ -4490,7 +4589,8 @@
       "cheng2025kairos"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2503.16465",
     "paper_url": null,
@@ -4512,6 +4612,20 @@
         "source": "all_references.bib",
         "line": 491,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "cheng2025kairos"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "cheng2025kairos"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation",
         "citation_key": "cheng2025kairos"
       }
     ],
@@ -5799,7 +5913,9 @@
     ],
     "sections": [
       "2",
-      "3"
+      "3",
+      "3.4.1",
+      "3.6.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2303.08128",
     "paper_url": null,
@@ -5830,6 +5946,20 @@
         "source": "all_references.bib",
         "line": 2563,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "suris2023vipergpt"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "suris2023vipergpt"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11,
+        "classification": "active-citation",
         "citation_key": "suris2023vipergpt"
       }
     ],
@@ -5927,7 +6057,8 @@
       "dai2026prore"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2509.21823",
     "paper_url": null,
@@ -5949,6 +6080,13 @@
         "source": "all_references.bib",
         "line": 643,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "dai2026prore"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15,
+        "classification": "active-citation",
         "citation_key": "dai2026prore"
       }
     ],
@@ -6683,7 +6821,8 @@
       "duan2024aha"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2410.00371",
     "paper_url": null,
@@ -6706,6 +6845,13 @@
         "source": "all_references.bib",
         "line": 731,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "duan2024aha"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation",
         "citation_key": "duan2024aha"
       }
     ],
@@ -7404,6 +7550,7 @@
       "li2025hamster"
     ],
     "sections": [
+      "3.4.3",
       "5.4"
     ],
     "arxiv_url": "https://arxiv.org/abs/2502.05485",
@@ -7434,6 +7581,13 @@
         "source": "all_references.bib",
         "line": 1606,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "li2025hamster"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53,
+        "classification": "active-citation",
         "citation_key": "li2025hamster"
       }
     ],
@@ -8164,6 +8318,7 @@
       "evtimov2026wasp"
     ],
     "sections": [
+      "3.6.3",
       "6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2504.18575",
@@ -8193,6 +8348,13 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "A security prompt-injection benchmark evaluates defensive control rather than a harness implementation.",
+        "citation_key": "evtimov2026wasp"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation",
         "citation_key": "evtimov2026wasp"
       }
     ],
@@ -8469,7 +8631,9 @@
       "fan2025agentic"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.3",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2503.16032",
     "paper_url": null,
@@ -8491,6 +8655,20 @@
         "source": "all_references.bib",
         "line": 909,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "fan2025agentic"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 35,
+        "classification": "active-citation",
+        "citation_key": "fan2025agentic"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation",
         "citation_key": "fan2025agentic"
       }
     ],
@@ -9453,6 +9631,7 @@
       "goswami2025plotedit"
     ],
     "sections": [
+      "3.4.1",
       "5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2501.11233",
@@ -9482,6 +9661,13 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly identifies image/video/chart generation or editing as the application; the broad harness-source fallback obscures the actual application family.",
+        "citation_key": "goswami2025plotedit"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
         "citation_key": "goswami2025plotedit"
       }
     ],
@@ -9524,7 +9710,8 @@
       "grislain2025failsense"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2509.16072",
     "paper_url": null,
@@ -9547,6 +9734,13 @@
         "source": "all_references.bib",
         "line": 1025,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "grislain2025failsense"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
+        "classification": "active-citation",
         "citation_key": "grislain2025failsense"
       }
     ],
@@ -9607,6 +9801,7 @@
       "guiagent002"
     ],
     "sections": [
+      "3.4.3",
       "5.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2312.08914",
@@ -9629,6 +9824,13 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 61,
+        "classification": "active-citation",
+        "citation_key": "guiagent002"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
         "classification": "active-citation",
         "citation_key": "guiagent002"
       }
@@ -9769,9 +9971,11 @@
     "title": "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
     "year": "2025",
     "citation_keys": [
-      "guiagent043"
+      "guiagent043",
+      "gou2025navigating"
     ],
     "sections": [
+      "3.4.3",
       "5.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2410.05243",
@@ -9795,10 +9999,18 @@
         "line": 61,
         "classification": "active-citation",
         "citation_key": "guiagent043"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation",
+        "citation_key": "gou2025navigating"
       }
     ],
     "bib_titles": [
-      "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents"
+      "Navigating the Digital World as Humans Do: Universal Visual Grounding for GUI Agents",
+      "Navigating the digital world as humans do: Universal visual grounding for gui agents"
     ],
     "bib_years": [
       "2025"
@@ -10766,6 +10978,7 @@
       "gupta2023visual"
     ],
     "sections": [
+      "3.4.1",
       "5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2211.11559",
@@ -10788,6 +11001,13 @@
         "section": "5.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 21,
+        "classification": "active-citation",
+        "citation_key": "gupta2023visual"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
         "classification": "active-citation",
         "citation_key": "gupta2023visual"
       }
@@ -11448,7 +11668,9 @@
       "he2025rsagent"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.1",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2512.24023",
     "paper_url": null,
@@ -11470,6 +11692,20 @@
         "source": "all_references.bib",
         "line": 1216,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "he2025rsagent"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "he2025rsagent"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation",
         "citation_key": "he2025rsagent"
       }
     ],
@@ -11512,7 +11748,8 @@
       "he2025uncertainty"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2503.01876",
     "paper_url": null,
@@ -11534,6 +11771,13 @@
         "source": "all_references.bib",
         "line": 1224,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "he2025uncertainty"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33,
+        "classification": "active-citation",
         "citation_key": "he2025uncertainty"
       }
     ],
@@ -12367,6 +12611,7 @@
       "u_sketchpad"
     ],
     "sections": [
+      "3.4.1",
       "5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2406.09403",
@@ -12398,6 +12643,13 @@
         "line": 23,
         "classification": "active-citation",
         "citation_key": "u_sketchpad"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
+        "citation_key": "hu2024visual"
       }
     ],
     "bib_titles": [
@@ -12662,7 +12914,8 @@
       "huang2023voxposer"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2307.05973",
     "paper_url": null,
@@ -12685,6 +12938,13 @@
         "source": "all_references.bib",
         "line": 1341,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "huang2023voxposer"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53,
+        "classification": "active-citation",
         "citation_key": "huang2023voxposer"
       }
     ],
@@ -12743,7 +13003,8 @@
       "huang2024rekep"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2409.01652",
     "paper_url": null,
@@ -12766,6 +13027,13 @@
         "source": "all_references.bib",
         "line": 1349,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "huang2024rekep"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 53,
+        "classification": "active-citation",
         "citation_key": "huang2024rekep"
       }
     ],
@@ -13006,7 +13274,8 @@
       "huang2025visualtoolagent"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2505.20289",
     "paper_url": null,
@@ -13028,6 +13297,13 @@
         "source": "all_references.bib",
         "line": 1379,
         "bibliography_source": "vision_harness_references.bib",
+        "citation_key": "huang2025visualtoolagent"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
+        "classification": "active-citation",
         "citation_key": "huang2025visualtoolagent"
       }
     ],
@@ -13767,6 +14043,8 @@
       "huiminagentmv"
     ],
     "sections": [
+      "3.6.1",
+      "3.6.2",
       "5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2605.10723",
@@ -13796,6 +14074,20 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly identifies image/video/chart generation or editing as the application; the broad harness-source fallback obscures the actual application family.",
+        "citation_key": "huiminagentmv"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation",
+        "citation_key": "huiminagentmv"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation",
         "citation_key": "huiminagentmv"
       }
     ],
@@ -13838,7 +14130,8 @@
       "huq2025cowpilot"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2501.16609",
     "paper_url": null,
@@ -13862,6 +14155,13 @@
         "source": "all_references.bib",
         "line": 1429,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "huq2025cowpilot"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37,
+        "classification": "active-citation",
         "citation_key": "huq2025cowpilot"
       }
     ],
@@ -14009,7 +14309,8 @@
       "jeong2025robots"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2409.09883",
     "paper_url": null,
@@ -14031,6 +14332,13 @@
         "source": "all_references.bib",
         "line": 1446,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "jeong2025robots"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35,
+        "classification": "active-citation",
         "citation_key": "jeong2025robots"
       }
     ],
@@ -15061,7 +15369,8 @@
       "kwok2025robomonkey"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2506.17811",
     "paper_url": null,
@@ -15083,6 +15392,13 @@
         "source": "all_references.bib",
         "line": 1554,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "kwok2025robomonkey"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation",
         "citation_key": "kwok2025robomonkey"
       }
     ],
@@ -16739,7 +17055,8 @@
       "liang2023code"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2209.07753",
     "paper_url": null,
@@ -16762,6 +17079,13 @@
         "source": "all_references.bib",
         "line": 1746,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "liang2023code"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation",
         "citation_key": "liang2023code"
       }
     ],
@@ -16820,7 +17144,8 @@
       "liang2024introspective"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2402.06529",
     "paper_url": null,
@@ -16843,6 +17168,13 @@
         "source": "all_references.bib",
         "line": 1756,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "liang2024introspective"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation",
         "citation_key": "liang2024introspective"
       }
     ],
@@ -16903,7 +17235,8 @@
       "lin2025failsafe"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2510.01642",
     "paper_url": null,
@@ -16925,6 +17258,13 @@
         "source": "all_references.bib",
         "line": 1766,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "lin2025failsafe"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation",
         "citation_key": "lin2025failsafe"
       }
     ],
@@ -16969,6 +17309,7 @@
       "lin2025showui"
     ],
     "sections": [
+      "3.6.2",
       "5.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2411.17465",
@@ -16991,6 +17332,13 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 61,
+        "classification": "active-citation",
+        "citation_key": "lin2025showui"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
         "classification": "active-citation",
         "citation_key": "lin2025showui"
       }
@@ -17320,7 +17668,8 @@
       "liu2023reflect"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2306.15724",
     "paper_url": null,
@@ -17343,6 +17692,13 @@
         "source": "all_references.bib",
         "line": 1809,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "liu2023reflect"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation",
         "citation_key": "liu2023reflect"
       }
     ],
@@ -17583,7 +17939,8 @@
       "liu2024moka"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2403.03174",
     "paper_url": null,
@@ -17605,6 +17962,13 @@
         "source": "all_references.bib",
         "line": 1835,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "liu2024moka"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation",
         "citation_key": "liu2024moka"
       }
     ],
@@ -17647,7 +18011,9 @@
       "liu2024ok"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.1",
+      "3.4.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2401.12202",
     "paper_url": null,
@@ -17669,6 +18035,20 @@
         "source": "all_references.bib",
         "line": 1843,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "liu2024ok"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
+        "citation_key": "liu2024ok"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42,
+        "classification": "active-citation",
         "citation_key": "liu2024ok"
       }
     ],
@@ -19411,7 +19791,9 @@
       "lu2025octotools"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.1",
+      "3.6.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2502.11271",
     "paper_url": null,
@@ -19434,6 +19816,20 @@
         "source": "all_references.bib",
         "line": 2002,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "lu2025octotools"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "lu2025octotools"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11,
+        "classification": "active-citation",
         "citation_key": "lu2025octotools"
       }
     ],
@@ -19579,7 +19975,8 @@
       "luo2025visual"
     ],
     "sections": [
-      "3.1.2"
+      "3.1.2",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2505.00684",
     "paper_url": null,
@@ -19606,6 +20003,13 @@
         "section": "3.1.2",
         "source": "output/section-3-1-paradigms-20260926/section_3_1.tex",
         "line": 18,
+        "classification": "active-citation",
+        "citation_key": "luo2025visual"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
         "classification": "active-citation",
         "citation_key": "luo2025visual"
       }
@@ -19664,7 +20068,8 @@
       "ma2025latte"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2412.05479",
     "paper_url": null,
@@ -19686,6 +20091,13 @@
         "source": "all_references.bib",
         "line": 2030,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "ma2025latte"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
         "citation_key": "ma2025latte"
       }
     ],
@@ -19728,7 +20140,8 @@
       "ma2026cyclevla"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2601.02295",
     "paper_url": null,
@@ -19751,6 +20164,13 @@
         "source": "all_references.bib",
         "line": 2039,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "ma2026cyclevla"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation",
         "citation_key": "ma2026cyclevla"
       }
     ],
@@ -20422,7 +20842,8 @@
       "mozannar2025magentic"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2507.22358",
     "paper_url": null,
@@ -20447,6 +20868,20 @@
         "source": "all_references.bib",
         "line": 2125,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "mozannar2025magentic"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "mozannar2025magentic"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37,
+        "classification": "active-citation",
         "citation_key": "mozannar2025magentic"
       }
     ],
@@ -20849,7 +21284,8 @@
       "pacaud2025guardian"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2512.01946",
     "paper_url": null,
@@ -20872,6 +21308,13 @@
         "source": "all_references.bib",
         "line": 2165,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "pacaud2025guardian"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
+        "classification": "active-citation",
         "citation_key": "pacaud2025guardian"
       }
     ],
@@ -20932,6 +21375,7 @@
       "panagopoulou2025viunit"
     ],
     "sections": [
+      "3.5.1",
       "5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2412.08859",
@@ -20955,6 +21399,13 @@
         "section": "5.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 25,
+        "classification": "active-citation",
+        "citation_key": "panagopoulou2025viunit"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
         "classification": "active-citation",
         "citation_key": "panagopoulou2025viunit"
       }
@@ -21443,7 +21894,8 @@
       "qi2026self"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2602.12405",
     "paper_url": null,
@@ -21465,6 +21917,13 @@
         "source": "all_references.bib",
         "line": 2231,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "qi2026self"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation",
         "citation_key": "qi2026self"
       }
     ],
@@ -21657,7 +22116,8 @@
       "ravichandran2026safety"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2503.07885",
     "paper_url": null,
@@ -21680,6 +22140,13 @@
         "source": "all_references.bib",
         "line": 2272,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "ravichandran2026safety"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35,
+        "classification": "active-citation",
         "citation_key": "ravichandran2026safety"
       }
     ],
@@ -21740,7 +22207,8 @@
       "ren2023robots"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2307.01928",
     "paper_url": null,
@@ -21763,6 +22231,13 @@
         "source": "all_references.bib",
         "line": 2281,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "ren2023robots"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation",
         "citation_key": "ren2023robots"
       }
     ],
@@ -22278,7 +22753,8 @@
       "rosset2026art"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2604.06240",
     "paper_url": null,
@@ -22300,6 +22776,13 @@
         "source": "all_references.bib",
         "line": 2328,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "rosset2026art"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15,
+        "classification": "active-citation",
         "citation_key": "rosset2026art"
       }
     ],
@@ -22357,7 +22840,8 @@
       "rui2026diagnosing"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2607.06256",
     "paper_url": null,
@@ -22379,6 +22863,13 @@
         "source": "all_references.bib",
         "line": 2336,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "rui2026diagnosing"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44,
+        "classification": "active-citation",
         "citation_key": "rui2026diagnosing"
       }
     ],
@@ -22691,7 +23182,8 @@
       "shah2025bumble"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2410.06237",
     "paper_url": null,
@@ -22714,6 +23206,20 @@
         "source": "all_references.bib",
         "line": 2371,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "shah2025bumble"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation",
+        "citation_key": "shah2025bumble"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42,
+        "classification": "active-citation",
         "citation_key": "shah2025bumble"
       }
     ],
@@ -23041,7 +23547,8 @@
       "shen2023hugginggpt"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2303.17580",
     "paper_url": null,
@@ -23065,6 +23572,20 @@
         "source": "all_references.bib",
         "line": 2409,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "shen2023hugginggpt"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
+        "citation_key": "shen2023hugginggpt"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
+        "classification": "active-citation",
         "citation_key": "shen2023hugginggpt"
       }
     ],
@@ -23198,6 +23719,8 @@
       "shen2026imagagent"
     ],
     "sections": [
+      "3.4.1",
+      "3.5.2",
       "5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2603.29602",
@@ -23227,6 +23750,20 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly identifies image/video/chart generation or editing as the application; the broad harness-source fallback obscures the actual application family.",
+        "citation_key": "shen2026imagagent"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
+        "citation_key": "shen2026imagagent"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation",
         "citation_key": "shen2026imagagent"
       }
     ],
@@ -23282,7 +23819,11 @@
       "shi2025hi"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.2",
+      "3.4.3",
+      "3.6.1",
+      "3.6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2502.19417",
     "paper_url": null,
@@ -23304,6 +23845,34 @@
         "source": "all_references.bib",
         "line": 2435,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "shi2025hi"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42,
+        "classification": "active-citation",
+        "citation_key": "shi2025hi"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation",
+        "citation_key": "shi2025hi"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13,
+        "classification": "active-citation",
+        "citation_key": "shi2025hi"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 37,
+        "classification": "active-citation",
         "citation_key": "shi2025hi"
       }
     ],
@@ -23490,7 +24059,9 @@
       "sivakumaran2026dart"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.1",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2512.07132",
     "paper_url": null,
@@ -23512,6 +24083,20 @@
         "source": "all_references.bib",
         "line": 2459,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "sivakumaran2026dart"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation",
+        "citation_key": "sivakumaran2026dart"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation",
         "citation_key": "sivakumaran2026dart"
       }
     ],
@@ -23648,7 +24233,8 @@
       "song2026adareasoner"
     ],
     "sections": [
-      "3.3.1"
+      "3.3.1",
+      "3.4.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2601.18631",
     "paper_url": null,
@@ -23670,6 +24256,13 @@
         "section": "3.3.1",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 14,
+        "classification": "active-citation",
+        "citation_key": "song2026adareasoner"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
         "classification": "active-citation",
         "citation_key": "song2026adareasoner"
       }
@@ -24182,6 +24775,7 @@
       "su2026pixel"
     ],
     "sections": [
+      "3.4.1",
       "4"
     ],
     "arxiv_url": "https://arxiv.org/abs/2505.15966",
@@ -24209,6 +24803,13 @@
         "source": "all_references.bib",
         "line": 2520,
         "bibliography_source": "4_ref.bib",
+        "citation_key": "su2026pixel"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
         "citation_key": "su2026pixel"
       }
     ],
@@ -24367,7 +24968,8 @@
       "sun2025marmot"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2504.20054",
     "paper_url": null,
@@ -24389,6 +24991,13 @@
         "source": "all_references.bib",
         "line": 2539,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "sun2025marmot"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation",
         "citation_key": "sun2025marmot"
       }
     ],
@@ -24685,6 +25294,8 @@
       "tan2024cradle"
     ],
     "sections": [
+      "3.4.1",
+      "3.4.2",
       "4.2.2",
       "5.3"
     ],
@@ -24715,6 +25326,20 @@
         "section": "5.3",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 63,
+        "classification": "active-citation",
+        "citation_key": "tan2024cradle"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
+        "citation_key": "tan2024cradle"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
         "classification": "active-citation",
         "citation_key": "tan2024cradle"
       }
@@ -25365,9 +25990,11 @@
     "title": "CLOVA: A Closed-Loop Visual Assistant with Tool Usage and Update",
     "year": "2024",
     "citation_keys": [
-      "u_clova"
+      "u_clova",
+      "gao2024clova"
     ],
     "sections": [
+      "3.4.1",
       "5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2312.10908",
@@ -25392,10 +26019,18 @@
         "line": 27,
         "classification": "active-citation",
         "citation_key": "u_clova"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "gao2024clova"
       }
     ],
     "bib_titles": [
-      "CLOVA: A Closed-LOop Visual Assistant with Tool Usage and Update"
+      "CLOVA: A Closed-LOop Visual Assistant with Tool Usage and Update",
+      "Clova: A closed-loop visual assistant with tool usage and update"
     ],
     "bib_years": [
       "2024"
@@ -25793,6 +26428,7 @@
       "wang2024videoagent"
     ],
     "sections": [
+      "3.6.2",
       "5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2403.10517",
@@ -25822,6 +26458,13 @@
         "source": "all_references.bib",
         "line": 3585,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "wang2024videoagent"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation",
         "citation_key": "wang2024videoagent"
       }
     ],
@@ -26112,6 +26755,8 @@
       "va_c105_2025"
     ],
     "sections": [
+      "3.5.1",
+      "3.5.2",
       "5.1",
       "6.3",
       "7.1"
@@ -26163,6 +26808,20 @@
         "section": "7.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/7_Future_Directions.tex",
         "line": 16,
+        "classification": "active-citation",
+        "citation_key": "va_c105_2025"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation",
+        "citation_key": "va_c105_2025"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
         "classification": "active-citation",
         "citation_key": "va_c105_2025"
       }
@@ -26224,6 +26883,7 @@
       "va_c106_2025"
     ],
     "sections": [
+      "3.5.1",
       "5.4",
       "7.1"
     ],
@@ -26252,6 +26912,13 @@
         "section": "7.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/7_Future_Directions.tex",
         "line": 14,
+        "classification": "active-citation",
+        "citation_key": "va_c106_2025"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 13,
         "classification": "active-citation",
         "citation_key": "va_c106_2025"
       }
@@ -28554,9 +29221,11 @@
     "title": "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
     "year": "2024",
     "citation_keys": [
-      "va_c182_2024"
+      "va_c182_2024",
+      "kim2024mdagents"
     ],
     "sections": [
+      "3.6.1",
       "5.5"
     ],
     "arxiv_url": "https://arxiv.org/abs/2404.15155",
@@ -28579,10 +29248,18 @@
         "line": 105,
         "classification": "active-citation",
         "citation_key": "va_c182_2024"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 13,
+        "classification": "active-citation",
+        "citation_key": "kim2024mdagents"
       }
     ],
     "bib_titles": [
-      "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making"
+      "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+      "Mdagents: An adaptive collaboration of llms for medical decision-making"
     ],
     "bib_years": [
       "2024"
@@ -28889,6 +29566,7 @@
       "venkatesh2026crea"
     ],
     "sections": [
+      "3.6.1",
       "5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2504.05306",
@@ -28918,6 +29596,13 @@
         "source": "all_references.bib",
         "line": 3547,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "venkatesh2026crea"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation",
         "citation_key": "venkatesh2026crea"
       }
     ],
@@ -31688,6 +32373,7 @@
       "vaidya2025nova"
     ],
     "sections": [
+      "3.6.1",
       "5.5"
     ],
     "arxiv_url": "https://arxiv.org/abs/2511.11324",
@@ -31719,6 +32405,13 @@
         "classification": "editorial-topic",
         "source": "all_references.bib",
         "reason": "The title explicitly identifies automated histopathology analysis.",
+        "citation_key": "vaidya2025nova"
+      },
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 11,
+        "classification": "active-citation",
         "citation_key": "vaidya2025nova"
       }
     ],
@@ -32444,7 +33137,8 @@
       "wang2025videotree"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2405.19209",
     "paper_url": null,
@@ -32467,6 +33161,13 @@
         "source": "all_references.bib",
         "line": 3637,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "wang2025videotree"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation",
         "citation_key": "wang2025videotree"
       }
     ],
@@ -32767,7 +33468,8 @@
       "wang2026forgeryvcr"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2602.14098",
     "paper_url": null,
@@ -32789,6 +33491,13 @@
         "source": "all_references.bib",
         "line": 3673,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "wang2026forgeryvcr"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
         "citation_key": "wang2026forgeryvcr"
       }
     ],
@@ -32953,7 +33662,8 @@
       "wang2026real"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2601.20130",
     "paper_url": null,
@@ -32976,6 +33686,13 @@
         "source": "all_references.bib",
         "line": 3706,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "wang2026real"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26,
+        "classification": "active-citation",
         "citation_key": "wang2026real"
       }
     ],
@@ -33540,7 +34257,8 @@
       "wu2024dettoolchain"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2403.12488",
     "paper_url": null,
@@ -33562,6 +34280,13 @@
         "source": "all_references.bib",
         "line": 3776,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "wu2024dettoolchain"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation",
         "citation_key": "wu2024dettoolchain"
       }
     ],
@@ -33667,7 +34392,8 @@
       "wu2024vdebugger"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2406.13444",
     "paper_url": null,
@@ -33689,6 +34415,13 @@
         "source": "all_references.bib",
         "line": 3796,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "wu2024vdebugger"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 24,
+        "classification": "active-citation",
         "citation_key": "wu2024vdebugger"
       }
     ],
@@ -34055,7 +34788,8 @@
       "wu2026oracle"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2512.16295",
     "paper_url": null,
@@ -34077,6 +34811,13 @@
         "source": "all_references.bib",
         "line": 3833,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "wu2026oracle"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation",
         "citation_key": "wu2026oracle"
       }
     ],
@@ -34275,6 +35016,7 @@
       "wu2026vtool"
     ],
     "sections": [
+      "3.4.1",
       "4.1",
       "4.2.2",
       "5.1"
@@ -34311,6 +35053,13 @@
         "section": "5.1",
         "source": "output/all-bib-merge-20260926/compile-check/Secs/5_Application.tex",
         "line": 23,
+        "classification": "active-citation",
+        "citation_key": "wu2026vtool"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 31,
         "classification": "active-citation",
         "citation_key": "wu2026vtool"
       }
@@ -34723,9 +35472,11 @@
     "title": "LLaVA-Critic: Learning to Evaluate Multimodal Models",
     "year": "2025",
     "citation_keys": [
-      "xiong2025llava"
+      "xiong2025llava",
+      "xiong2025lllava"
     ],
     "sections": [
+      "3.5.1",
       "4.3.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2410.02712",
@@ -34749,10 +35500,18 @@
         "line": 89,
         "classification": "active-citation",
         "citation_key": "xiong2025llava"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation",
+        "citation_key": "xiong2025lllava"
       }
     ],
     "bib_titles": [
-      "LLaVA-critic: Learning to evaluate multimodal models"
+      "LLaVA-critic: Learning to evaluate multimodal models",
+      "LLLaVA-critic: Learning to evaluate multimodal models"
     ],
     "bib_years": [
       "2025"
@@ -35116,7 +35875,8 @@
       "xu2026reaction"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2605.11951",
     "paper_url": null,
@@ -35139,6 +35899,13 @@
         "source": "all_references.bib",
         "line": 3954,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "xu2026reaction"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation",
         "citation_key": "xu2026reaction"
       }
     ],
@@ -35705,7 +36472,8 @@
       "yang2026gta1"
     ],
     "sections": [
-      "3.3.1"
+      "3.3.1",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2507.05791",
     "paper_url": null,
@@ -35734,6 +36502,13 @@
         "section": "3.3.1",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 16,
+        "classification": "active-citation",
+        "citation_key": "yang2026gta1"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
         "classification": "active-citation",
         "citation_key": "yang2026gta1"
       }
@@ -35861,7 +36636,8 @@
       "yang2026paravt"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2605.20342",
     "paper_url": null,
@@ -35884,6 +36660,13 @@
         "source": "all_references.bib",
         "line": 4040,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "yang2026paravt"
+      },
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 26,
+        "classification": "active-citation",
         "citation_key": "yang2026paravt"
       }
     ],
@@ -36385,7 +37168,8 @@
       "ye2025robofac"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.5.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2505.12224",
     "paper_url": null,
@@ -36407,6 +37191,13 @@
         "source": "all_references.bib",
         "line": 4089,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "ye2025robofac"
+      },
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation",
         "citation_key": "ye2025robofac"
       }
     ],
@@ -37088,7 +37879,8 @@
       "yu2026minim"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2606.13949",
     "paper_url": null,
@@ -37110,6 +37902,13 @@
         "source": "all_references.bib",
         "line": 4168,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "yu2026minim"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation",
         "citation_key": "yu2026minim"
       }
     ],
@@ -38169,7 +38968,8 @@
       "zhang2025agentcpm"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2506.01391",
     "paper_url": null,
@@ -38191,6 +38991,13 @@
         "source": "all_references.bib",
         "line": 4284,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "zhang2025agentcpm"
+      },
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation",
         "citation_key": "zhang2025agentcpm"
       }
     ],
@@ -38493,7 +39300,8 @@
       "zhang2025robochemist"
     ],
     "sections": [
-      "3.3"
+      "3.3",
+      "3.5.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2509.08820",
     "paper_url": null,
@@ -38513,6 +39321,13 @@
         "section": "3.3",
         "source": "vision_harness_section_3_3_paradigms.tex",
         "line": 6,
+        "classification": "active-citation",
+        "citation_key": "zhang2025robochemist"
+      },
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 15,
         "classification": "active-citation",
         "citation_key": "zhang2025robochemist"
       }
@@ -38815,7 +39630,8 @@
       "zhang2026safevla"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.6.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2503.03480",
     "paper_url": null,
@@ -38838,6 +39654,13 @@
         "source": "all_references.bib",
         "line": 4353,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "zhang2026safevla"
+      },
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 35,
+        "classification": "active-citation",
         "citation_key": "zhang2026safevla"
       }
     ],
@@ -39239,7 +40062,8 @@
       "zheng2026deepeyes"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.1"
     ],
     "arxiv_url": "https://arxiv.org/abs/2505.14362",
     "paper_url": null,
@@ -39263,6 +40087,13 @@
         "source": "all_references.bib",
         "line": 4395,
         "bibliography_source": "vision_harness_references.bib",
+        "citation_key": "zheng2026deepeyes"
+      },
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
         "citation_key": "zheng2026deepeyes"
       }
     ],
@@ -39565,7 +40396,8 @@
       "zhi2025videoagent2"
     ],
     "sections": [
-      "3.1"
+      "3.1",
+      "3.5.3"
     ],
     "arxiv_url": "https://arxiv.org/abs/2504.04471",
     "paper_url": null,
@@ -39586,6 +40418,20 @@
         "classification": "figure-taxonomy",
         "source": "output/all-bib-merge-20260926/compile-check/Figures/figure1_harnesses.tex",
         "line": 78,
+        "citation_key": "zhi2025videoagent2"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "zhi2025videoagent2"
+      },
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 35,
+        "classification": "active-citation",
         "citation_key": "zhi2025videoagent2"
       }
     ],
@@ -40023,7 +40869,8 @@
       "zhu2025learning"
     ],
     "sections": [
-      "3"
+      "3",
+      "3.4.2"
     ],
     "arxiv_url": "https://arxiv.org/abs/2512.18368",
     "paper_url": null,
@@ -40045,6 +40892,20 @@
         "source": "all_references.bib",
         "line": 4477,
         "bibliography_source": "harness_346_references.bib",
+        "citation_key": "zhu2025learning"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation",
+        "citation_key": "zhu2025learning"
+      },
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44,
+        "classification": "active-citation",
         "citation_key": "zhu2025learning"
       }
     ],
@@ -40571,5 +41432,1146 @@
         ]
       }
     ]
+  },
+  {
+    "id": "belkhale2024rt",
+    "title": "Rt-h: Action hierarchies using language",
+    "year": "2024",
+    "citation_keys": [
+      "belkhale2024rt"
+    ],
+    "sections": [
+      "3.4.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2403.01823",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 42,
+        "classification": "active-citation",
+        "citation_key": "belkhale2024rt"
+      }
+    ],
+    "bib_titles": [
+      "Rt-h: Action hierarchies using language"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "belkhale2024rt",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "black2024pi_0",
+    "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+    "year": "2024",
+    "citation_keys": [
+      "black2024pi_0"
+    ],
+    "sections": [
+      "3.4.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2410.24164",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation",
+        "citation_key": "black2024pi_0"
+      }
+    ],
+    "bib_titles": [
+      "$$\\backslash$pi\\_0 $: A Vision-Language-Action Flow Model for General Robot Control"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "black2024pi_0",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "cheng2024seeclick",
+    "title": "Seeclick: Harnessing gui grounding for advanced visual gui agents",
+    "year": "2024",
+    "citation_keys": [
+      "cheng2024seeclick"
+    ],
+    "sections": [
+      "3.4.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation",
+        "citation_key": "cheng2024seeclick"
+      }
+    ],
+    "bib_titles": [
+      "Seeclick: Harnessing gui grounding for advanced visual gui agents"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "cheng2024seeclick",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "debenedetti2024agentdojo",
+    "title": "Agentdojo: A dynamic environment to evaluate prompt injection attacks and defenses for llm agents",
+    "year": "2024",
+    "citation_keys": [
+      "debenedetti2024agentdojo"
+    ],
+    "sections": [
+      "3.6.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.6.3",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "debenedetti2024agentdojo"
+      }
+    ],
+    "bib_titles": [
+      "Agentdojo: A dynamic environment to evaluate prompt injection attacks and defenses for llm agents"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "debenedetti2024agentdojo",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "gou2024critic",
+    "title": "Critic: Large language models can self-correct with tool-interactive critiquing",
+    "year": "2024",
+    "citation_keys": [
+      "gou2024critic"
+    ],
+    "sections": [
+      "3.5.1"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation",
+        "citation_key": "gou2024critic"
+      }
+    ],
+    "bib_titles": [
+      "Critic: Large language models can self-correct with tool-interactive critiquing"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "gou2024critic",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "kim2024openvla",
+    "title": "Openvla: An open-source vision-language-action model",
+    "year": "2024",
+    "citation_keys": [
+      "kim2024openvla"
+    ],
+    "sections": [
+      "3.4.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2406.09246",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation",
+        "citation_key": "kim2024openvla"
+      }
+    ],
+    "bib_titles": [
+      "Openvla: An open-source vision-language-action model"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "kim2024openvla",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "liang2024skilldiffuser",
+    "title": "Skilldiffuser: Interpretable hierarchical planning via skill abstractions in diffusion-based task execution",
+    "year": "2024",
+    "citation_keys": [
+      "liang2024skilldiffuser"
+    ],
+    "sections": [
+      "3.4.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 40,
+        "classification": "active-citation",
+        "citation_key": "liang2024skilldiffuser"
+      }
+    ],
+    "bib_titles": [
+      "Skilldiffuser: Interpretable hierarchical planning via skill abstractions in diffusion-based task execution"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "liang2024skilldiffuser",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "lin2025onetwovla",
+    "title": "Onetwovla: A unified vision-language-action model with adaptive reasoning",
+    "year": "2025",
+    "citation_keys": [
+      "lin2025onetwovla"
+    ],
+    "sections": [
+      "3.6.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2505.11917",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 22,
+        "classification": "active-citation",
+        "citation_key": "lin2025onetwovla"
+      }
+    ],
+    "bib_titles": [
+      "Onetwovla: A unified vision-language-action model with adaptive reasoning"
+    ],
+    "bib_years": [
+      "2025"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "lin2025onetwovla",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "liu2024llava",
+    "title": "Llava-plus: Learning to use tools for creating multimodal agents",
+    "year": "2024",
+    "citation_keys": [
+      "liu2024llava"
+    ],
+    "sections": [
+      "3.4.1"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.4.1",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 29,
+        "classification": "active-citation",
+        "citation_key": "liu2024llava"
+      }
+    ],
+    "bib_titles": [
+      "Llava-plus: Learning to use tools for creating multimodal agents"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "liu2024llava",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "min2026improving",
+    "title": "Improving Vision-language Models with Perception-centric Process Reward Models",
+    "year": "2026",
+    "citation_keys": [
+      "min2026improving"
+    ],
+    "sections": [
+      "3.5.1"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2604.24583",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.5.1",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 11,
+        "classification": "active-citation",
+        "citation_key": "min2026improving"
+      }
+    ],
+    "bib_titles": [
+      "Improving Vision-language Models with Perception-centric Process Reward Models"
+    ],
+    "bib_years": [
+      "2026"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "min2026improving",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "qu2025spatialvla",
+    "title": "Spatialvla: Exploring spatial representations for visual-language-action model",
+    "year": "2025",
+    "citation_keys": [
+      "qu2025spatialvla"
+    ],
+    "sections": [
+      "3.4.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2501.15830",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation",
+        "citation_key": "qu2025spatialvla"
+      }
+    ],
+    "bib_titles": [
+      "Spatialvla: Exploring spatial representations for visual-language-action model"
+    ],
+    "bib_years": [
+      "2025"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "qu2025spatialvla",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "team2024octo",
+    "title": "Octo: An open-source generalist robot policy",
+    "year": "2024",
+    "citation_keys": [
+      "team2024octo"
+    ],
+    "sections": [
+      "3.4.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2405.12213",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 55,
+        "classification": "active-citation",
+        "citation_key": "team2024octo"
+      }
+    ],
+    "bib_titles": [
+      "Octo: An open-source generalist robot policy"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "team2024octo",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "wu2025atlas",
+    "title": "OS-ATLAS: Foundation action model for generalist GUI agents",
+    "year": "2025",
+    "citation_keys": [
+      "wu2025atlas"
+    ],
+    "sections": [
+      "3.4.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation",
+        "citation_key": "wu2025atlas"
+      }
+    ],
+    "bib_titles": [
+      "OS-ATLAS: Foundation action model for generalist GUI agents"
+    ],
+    "bib_years": [
+      "2025"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "wu2025atlas",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "xu2025can",
+    "title": "Can we detect failures without failure data? uncertainty-aware runtime failure detection for imitation learning policies",
+    "year": "2025",
+    "citation_keys": [
+      "xu2025can"
+    ],
+    "sections": [
+      "3.5.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2503.08558",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 33,
+        "classification": "active-citation",
+        "citation_key": "xu2025can"
+      }
+    ],
+    "bib_titles": [
+      "Can we detect failures without failure data? uncertainty-aware runtime failure detection for imitation learning policies"
+    ],
+    "bib_years": [
+      "2025"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "xu2025can",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "xu2026vla",
+    "title": "Vla-cache: Efficient vision-language-action manipulation via adaptive token caching",
+    "year": "2026",
+    "citation_keys": [
+      "xu2026vla"
+    ],
+    "sections": [
+      "3.6.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation",
+        "citation_key": "xu2026vla"
+      }
+    ],
+    "bib_titles": [
+      "Vla-cache: Efficient vision-language-action manipulation via adaptive token caching"
+    ],
+    "bib_years": [
+      "2026"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "xu2026vla",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "yang2025magma",
+    "title": "Magma: A foundation model for multimodal ai agents",
+    "year": "2025",
+    "citation_keys": [
+      "yang2025magma"
+    ],
+    "sections": [
+      "3.4.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation",
+        "citation_key": "yang2025magma"
+      }
+    ],
+    "bib_titles": [
+      "Magma: A foundation model for multimodal ai agents"
+    ],
+    "bib_years": [
+      "2025"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "yang2025magma",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "yang2026efficientvla",
+    "title": "Efficientvla: Training-free acceleration and compression for vision-language-action models",
+    "year": "2026",
+    "citation_keys": [
+      "yang2026efficientvla"
+    ],
+    "sections": [
+      "3.6.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.6.2",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 24,
+        "classification": "active-citation",
+        "citation_key": "yang2026efficientvla"
+      }
+    ],
+    "bib_titles": [
+      "Efficientvla: Training-free acceleration and compression for vision-language-action models"
+    ],
+    "bib_years": [
+      "2026"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "yang2026efficientvla",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "ying2026robofailring",
+    "title": "RoboFailRing: Retrieval-Augmented and Language Grounding Failure Detection for VLM-enabled Robotic Manipulation",
+    "year": "2026",
+    "citation_keys": [
+      "ying2026robofailring"
+    ],
+    "sections": [
+      "3.5.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation",
+        "citation_key": "ying2026robofailring"
+      }
+    ],
+    "bib_titles": [
+      "RoboFailRing: Retrieval-Augmented and Language Grounding Failure Detection for VLM-enabled Robotic Manipulation"
+    ],
+    "bib_years": [
+      "2026"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "ying2026robofailring",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "yuan2024robopoint",
+    "title": "Robopoint: A vision-language model for spatial affordance prediction for robotics",
+    "year": "2024",
+    "citation_keys": [
+      "yuan2024robopoint"
+    ],
+    "sections": [
+      "3.4.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2406.10721",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.4.3",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 51,
+        "classification": "active-citation",
+        "citation_key": "yuan2024robopoint"
+      }
+    ],
+    "bib_titles": [
+      "Robopoint: A vision-language model for spatial affordance prediction for robotics"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "yuan2024robopoint",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "yuan2026act",
+    "title": "When to act, ask, or learn: Uncertainty-aware policy steering",
+    "year": "2026",
+    "citation_keys": [
+      "yuan2026act"
+    ],
+    "sections": [
+      "3.5.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2602.22474",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation",
+        "citation_key": "yuan2026act"
+      }
+    ],
+    "bib_titles": [
+      "When to act, ask, or learn: Uncertainty-aware policy steering"
+    ],
+    "bib_years": [
+      "2026"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "yuan2026act",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "zeng2026diagnose",
+    "title": "Diagnose, correct, and learn from manipulation failures via visual symbols",
+    "year": "2026",
+    "citation_keys": [
+      "zeng2026diagnose"
+    ],
+    "sections": [
+      "3.5.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 22,
+        "classification": "active-citation",
+        "citation_key": "zeng2026diagnose"
+      }
+    ],
+    "bib_titles": [
+      "Diagnose, correct, and learn from manipulation failures via visual symbols"
+    ],
+    "bib_years": [
+      "2026"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "zeng2026diagnose",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "zhang2024building",
+    "title": "Building cooperative embodied agents modularly with large language models",
+    "year": "2024",
+    "citation_keys": [
+      "zhang2024building"
+    ],
+    "sections": [
+      "3.6.1"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.6.1",
+        "source": "manuscript-9/Secs/3_orchestration.tex",
+        "line": 15,
+        "classification": "active-citation",
+        "citation_key": "zhang2024building"
+      }
+    ],
+    "bib_titles": [
+      "Building cooperative embodied agents modularly with large language models"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "zhang2024building",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "zhao2025conformalized",
+    "title": "Conformalized interactive imitation learning: Handling expert shift and intermittent feedback",
+    "year": "2025",
+    "citation_keys": [
+      "zhao2025conformalized"
+    ],
+    "sections": [
+      "3.5.3"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.5.3",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 37,
+        "classification": "active-citation",
+        "citation_key": "zhao2025conformalized"
+      }
+    ],
+    "bib_titles": [
+      "Conformalized interactive imitation learning: Handling expert shift and intermittent feedback"
+    ],
+    "bib_years": [
+      "2025"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "zhao2025conformalized",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "zhao2026flare",
+    "title": "FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation",
+    "year": "2026",
+    "citation_keys": [
+      "zhao2026flare"
+    ],
+    "sections": [
+      "3.5.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [],
+    "assignments": [
+      {
+        "section": "3.5.2",
+        "source": "manuscript-9/Secs/3_verification.tex",
+        "line": 26,
+        "classification": "active-citation",
+        "citation_key": "zhao2026flare"
+      }
+    ],
+    "bib_titles": [
+      "FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation"
+    ],
+    "bib_years": [
+      "2026"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "zhao2026flare",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
+  },
+  {
+    "id": "zhou2024spire",
+    "title": "SPIRE: Synergistic planning, imitation, and reinforcement learning for long-horizon manipulation",
+    "year": "2024",
+    "citation_keys": [
+      "zhou2024spire"
+    ],
+    "sections": [
+      "3.4.2"
+    ],
+    "arxiv_url": null,
+    "paper_url": null,
+    "code_url": null,
+    "additional_code_urls": [],
+    "project_url": null,
+    "additional_project_urls": [],
+    "arxiv_status": "not_identified",
+    "unavailable_code_urls": [],
+    "code_status": "not_identified",
+    "source_urls": [],
+    "candidates": [
+      {
+        "url": "https://arxiv.org/abs/2410.18065",
+        "status": "unverified_bibliography_candidate",
+        "source": "manuscript-9/harness_346_references.bib"
+      }
+    ],
+    "assignments": [
+      {
+        "section": "3.4.2",
+        "source": "manuscript-9/Secs/3_skill.tex",
+        "line": 44,
+        "classification": "active-citation",
+        "citation_key": "zhou2024spire"
+      }
+    ],
+    "bib_titles": [
+      "SPIRE: Synergistic planning, imitation, and reinforcement learning for long-horizon manipulation"
+    ],
+    "bib_years": [
+      "2024"
+    ],
+    "link_evidence": [],
+    "bibliography_evidence": {
+      "source": "manuscript-9/harness_346_references.bib",
+      "citation_key": "zhou2024spire",
+      "verification": "Imported from supplied manuscript bibliography; publication metadata and links not independently verified."
+    }
   }
 ]

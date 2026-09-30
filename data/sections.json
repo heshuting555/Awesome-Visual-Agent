@@ -108,6 +108,78 @@
     "parent": "3.3"
   },
   {
+    "id": "3.4",
+    "title": "Visual Capability Acquisition and Action Execution",
+    "depth": 2,
+    "parent": "3"
+  },
+  {
+    "id": "3.4.1",
+    "title": "Visual Tools and Capability Selection",
+    "depth": 3,
+    "parent": "3.4"
+  },
+  {
+    "id": "3.4.2",
+    "title": "Reusable Visual Skills and Workflow Composition",
+    "depth": 3,
+    "parent": "3.4"
+  },
+  {
+    "id": "3.4.3",
+    "title": "Action Grounding and Interactive Execution",
+    "depth": 3,
+    "parent": "3.4"
+  },
+  {
+    "id": "3.5",
+    "title": "Visual Verification, Feedback, and Self-Correction",
+    "depth": 2,
+    "parent": "3"
+  },
+  {
+    "id": "3.5.1",
+    "title": "Visual Evidence Verification and Outcome Assessment",
+    "depth": 3,
+    "parent": "3.5"
+  },
+  {
+    "id": "3.5.2",
+    "title": "Failure Diagnosis and Corrective Feedback",
+    "depth": 3,
+    "parent": "3.5"
+  },
+  {
+    "id": "3.5.3",
+    "title": "Uncertainty-aware Decision Making and Human Intervention",
+    "depth": 3,
+    "parent": "3.5"
+  },
+  {
+    "id": "3.6",
+    "title": "Adaptive Orchestration and Runtime Infrastructure",
+    "depth": 2,
+    "parent": "3"
+  },
+  {
+    "id": "3.6.1",
+    "title": "Single- and Multi-Agent Coordination",
+    "depth": 3,
+    "parent": "3.6"
+  },
+  {
+    "id": "3.6.2",
+    "title": "Resource-aware Runtime Adaptation",
+    "depth": 3,
+    "parent": "3.6"
+  },
+  {
+    "id": "3.6.3",
+    "title": "Safety Control and Human-Agent Collaboration",
+    "depth": 3,
+    "parent": "3.6"
+  },
+  {
     "id": "4",
     "title": "Capability Acquisition and Evolution in Vision Agents",
     "depth": 1,
