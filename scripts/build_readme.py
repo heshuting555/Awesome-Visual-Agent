@@ -1,112 +1,137 @@
 #!/usr/bin/env python3
-"""Render README and chapter pages from the public catalogue (Python 3.9+)."""
-import json
+"""Render the year/venue catalogue and secondary survey topic archive."""
 import hashlib
+import json
 import re
 from collections import Counter
 from pathlib import Path
+from bibtex_utils import parse
 
 ROOT = Path(__file__).resolve().parents[1]
+PREPRINTS = {'arXiv', 'OpenReview Preprint', 'Preprints.org', 'Venue Unspecified'}
+NONPAPERS = {'Official Release', 'Blog'}
+
 
 def read(name):
     return json.loads((ROOT / 'data' / name).read_text(encoding='utf-8'))
 
-def cell(s):
-    return str(s).replace('|', '&#124;').replace('\n', ' ').replace('<', '&lt;').replace('>', '&gt;')
 
-def anchor(s):
-    return 'section-' + s.replace('.', '-')
+def cell(value):
+    return str(value).replace('|', '&#124;').replace('\n', ' ').replace('<', '&lt;').replace('>', '&gt;').replace('[', '&#91;').replace(']', '&#93;')
+
+
+def anchor(section):
+    return 'section-' + section.replace('.', '-')
+
+
+def venue_anchor(year, venue):
+    return 'year-' + str(year) + '-' + re.sub(r'[^a-z0-9]+', '-', venue.lower()).strip('-')
+
+
+def venue_order(venue):
+    return (2 if venue in NONPAPERS else 1 if venue in PREPRINTS else 0, venue.casefold())
+
 
 def rows(papers):
-    out = ['| Year | Title | Paper | Code |', '| :---: | --- | :---: | :---: |']
-    for p in sorted(papers, key=lambda p: (-int(p['year'] or 0), p['title'].casefold())):
-        paper = []
-        if p.get('arxiv_url'):
-            paper.append('[arXiv](' + p['arxiv_url'] + ')')
-        if p.get('paper_url') and p['paper_url'] != p.get('arxiv_url'):
-            paper.append('[Paper](' + p['paper_url'] + ')')
-        if p.get('project_url'):
-            paper.append('[Project](' + p['project_url'] + ')')
-        codes = ([p['code_url']] if p.get('code_url') else []) + p.get('additional_code_urls', [])
-        code = ' · '.join('[' + (u.rstrip('/').rsplit('/', 1)[-1] if len(codes) > 1 else 'Code') + '](' + u + ')' for u in codes) or ('Unavailable' if p.get('code_status') == 'official_link_unavailable' else '—')
-        out.append('| ' + ' | '.join([cell(p['year']), cell(p['title']), ' · '.join(paper) or '—', code]) + ' |')
+    out = ['| Year | Venue | Paper Abbr | Paper Title | Project/Code |', '| :---: | :---: | :---: | --- | :---: |']
+    for p in sorted(papers, key=lambda p: (-int(p['year']), p['title'].casefold(), p['id'])):
+        url = p.get('paper_url') or p.get('arxiv_url') or p.get('project_url') or p.get('code_url')
+        title = '[' + cell(p['title']) + '](' + url + ')' if url else cell(p['title'])
+        if p.get('arxiv_url') and p['arxiv_url'] != url:
+            title += ' · [arXiv](' + p['arxiv_url'] + ')'
+        projects = list(dict.fromkeys(([p['project_url']] if p.get('project_url') else []) + p.get('additional_project_urls', [])))
+        codes = list(dict.fromkeys(([p['code_url']] if p.get('code_url') else []) + p.get('additional_code_urls', [])))
+        resources = []
+        for label, urls in [('Project', projects), ('Code', codes)]:
+            resources += ['[' + (label if len(urls) == 1 else label + ' ' + str(i + 1)) + '](' + u + ')' for i, u in enumerate(urls)]
+        resource_cell = ' · '.join(resources) or ('Unavailable' if p.get('code_status') == 'official_link_unavailable' else '—')
+        out.append('| ' + ' | '.join([cell(p['year']), cell(p['venue']), cell(p.get('abbreviation', '—')), title, resource_cell]) + ' |')
     return '\n'.join(out)
 
+
 def render():
-    papers = read('papers.json')
-    sections = read('sections.json')
-    meta = read('metadata.json')
-    by_section = {s['id']: [p for p in papers if s['id'] in p['sections']] for s in sections}
-    top = [s for s in sections if s['depth'] == 1]
-    nc = sum(bool(p['code_url']) for p in papers)
+    papers, sections, meta = read('papers.json'), read('sections.json'), read('metadata.json')
+    entries, _, errors, _ = parse(ROOT / 'references.bib')
+    assert not errors, errors
+    keys = {e['key'] for e in entries if e['type'] != 'ieeetranbstctl'}
     na = sum(bool(p['arxiv_url']) for p in papers)
-    bib = (ROOT / 'references.bib').read_bytes()
-    bib_keys = {key.strip() for kind, key in re.findall(r'@([a-zA-Z]+)\s*\{\s*([^,]+),', bib.decode('utf-8')) if kind.lower() not in {'comment', 'string', 'preamble', 'ieeetranbstctl'}}
-    meta.update(unique_works=len(papers), arxiv_links=na, code_links=nc, bibliography_keys=len(bib_keys), bibliography_sha256=hashlib.sha256(bib).hexdigest())
-    (ROOT / 'data' / 'metadata.json').write_text(json.dumps(meta, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    nc = sum(bool(p['code_url']) for p in papers)
+    years = sorted({p['year'] for p in papers}, key=int, reverse=True)
+    counts = Counter(p['year'] for p in papers)
+    venues = {year: sorted({p['venue'] for p in papers if p['year'] == year}, key=venue_order) for year in years}
+    meta.update(unique_works=len(papers), arxiv_links=na, code_links=nc, bibliography_keys=len(keys), bibliography_sha256=hashlib.sha256((ROOT / 'references.bib').read_bytes()).hexdigest(), organization='year_then_venue', year_counts={year: counts[year] for year in years})
+    (ROOT / 'data/metadata.json').write_text(json.dumps(meta, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
     main = [
-        '# Awesome Vision Agents', '',
-        '**Seeing the Horizon of Vision Agent: A Survey**', '',
-        'A collection of papers, code, and benchmarks on vision agents, organized by the chapters and subsections of our survey.', '',
-        f'**{len(papers)} unique works** · **{na} arXiv entries** · **{nc} works with code** · **{meta["bibliography_keys"]} BibTeX keys**', '',
-        '## Overview', '',
-        'The collection covers the foundations of vision agents, runtime harnesses, capability acquisition and evolution, applications, evaluation, and open challenges. Section 3 follows the latest paradigm-based organization of visual evidence acquisition, visual memory, and grounded reasoning and planning.', '',
-        '**How to read the tables.** Years follow the bibliography, except for primary-source corrections recorded in the catalogue; arXiv versions may have an earlier date. A dash (—) means that a link has not been identified and verified for this catalogue; it does not mean that a paper or implementation does not exist. Code links come from the paper, its author project, or a repository that identifies the paper. “Unavailable” marks an author-linked repository that could not be accessed at the snapshot date. The same work can appear in several relevant sections; duplicate BibTeX keys are merged in each table.', '',
-        '[Full bibliography](references.bib) · [Machine-readable catalogue](data/papers.json) · [Coverage and provenance](docs/COVERAGE.md) · [Contributing](CONTRIBUTING.md)', '',
-        '## Table of Contents', ''
+        '# 🔍 Seeing the Horizon of Vision Agent: A Survey', '',
+        '**Awesome Vision Agents** — papers, benchmarks, projects, and code.', '',
+        f'**{len(papers)} unique works** · **{na} arXiv links** · **{nc} works with code links** · **{len(keys)} BibTeX keys**', '',
+        '💡 Welcome! This collection accompanies our survey on vision agents. It covers visual perception and reasoning, agent harnesses, memory, capability evolution, GUI and embodied applications, and evaluation.', '',
+        '📌 Corrections and additions are welcome through [issues](https://github.com/heshuting555/Awesome-Vision-Agent/issues) or pull requests. See the [contribution guide](CONTRIBUTING.md).', '',
+        '[📖 Full bibliography](references.bib) · [📦 Machine-readable catalogue](data/papers.json) · [🔎 Coverage and provenance](docs/COVERAGE.md) · [🗂 Survey topic archive](docs/TOPICS.md)', '',
+        '## Introduction', '',
+        'Papers are currently organized by **year, newest first**, then by **conference or publication venue**. Each work appears once in the main list. The table format follows [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications).', '',
+        '**Reading the tables.** Years and venues follow the bibliography; venue names are standardized. Workshops, Findings, and Demos are labeled separately. Preprints have their own groups, and journals and official releases retain distinct labels. A published version takes precedence over its preprint when both refer to the same work; all BibTeX keys are retained. A dash (—) means a name or link has not been identified, rather than that no implementation exists. Paper abbreviations use names present in the title. Code/project links retain primary-source evidence and check dates. Newly added author-supplied code URLs are distinguished from previously checked repositories in the catalogue.', '',
+        f'Bibliography snapshot: **{meta["snapshot_date"]}**. Venue/year fields have not all been independently re-audited; supporting evidence is tracked in [coverage notes](docs/COVERAGE.md).', '',
+        '## 📚 Table of Contents', ''
     ]
-    for s in sections:
-        if s['depth'] <= 2:
-            main.append('  ' * (s['depth'] - 1) + '- [' + s['id'] + '. ' + s['title'] + '](#' + anchor(s['id']) + ')')
-    main += ['', '## Paper List', '']
-    for chapter in top:
-        sid = chapter['id']
-        children = [s for s in sections if s['id'] == sid or s['id'].startswith(sid + '.')]
-        chapter_lines = ['# ' + sid + '. ' + chapter['title'], '', '[← Main catalogue](../../README.md)', '']
-        for s in children:
-            heading = ('##' if s['depth'] == 1 else '###' if s['depth'] == 2 else '####') + ' ' + s['id'] + '. ' + s['title']
-            block = ['<a id="' + anchor(s['id']) + '"></a>', '', heading, '']
-            items = by_section[s['id']]
-            if items:
-                block += [rows(items), '']
-            elif not any(by_section[t['id']] for t in sections if t['id'].startswith(s['id'] + '.')):
-                block += ['References for this framing section are listed under their relevant topics in the catalogue.', '']
-            main += block
-            chapter_lines += block
-        (ROOT / 'docs' / 'chapters' / (sid + '.md')).write_text('\n'.join(chapter_lines), encoding='utf-8')
-    main += [
-        '## Acknowledgements', '',
-        'The hierarchical table-of-contents and paper-table presentation is inspired by [Awesome-Agentic-MLLMs](https://github.com/HJYao00/Awesome-Agentic-MLLMs). The categories and bibliography here follow our own survey. Linked papers and software retain their respective authorship and licenses.', '',
-        '## Citation', '',
-        'Use [references.bib](references.bib) to cite the individual works. A citation for the survey will be added when its public bibliographic record is available.', ''
-    ]
+    for year in years:
+        main += ['- [' + year + '](#year-' + year + ') — ' + str(counts[year]) + (' work' if counts[year] == 1 else ' works'), '  - ' + ' · '.join('[' + venue + '](#' + venue_anchor(year, venue) + ')' for venue in venues[year])]
+    main += ['', '## 📑 Paper List', '']
+    for year in years:
+        main += ['<a id="year-' + year + '"></a>', '', '## 📅 ' + year, '']
+        for venue in venues[year]:
+            items = [p for p in papers if p['year'] == year and p['venue'] == venue]
+            main += ['<a id="' + venue_anchor(year, venue) + '"></a>', '', '### ' + venue, '', rows(items), '']
+    main += ['## 🙏 Acknowledgements', '', 'The table presentation is inspired by [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications). The earlier topic archive also drew on [Awesome-Agentic-MLLMs](https://github.com/HJYao00/Awesome-Agentic-MLLMs). Linked papers and software retain their respective authorship and licenses.', '', '## 📝 Citation', '', 'Use [references.bib](references.bib) to cite the individual works. A citation for the survey will be added when its public bibliographic record is available.', '']
     (ROOT / 'README.md').write_text('\n'.join(main), encoding='utf-8')
+    # Keep prior topic links and evidence available as a secondary view.
+    by_section = {s['id']: [p for p in papers if s['id'] in p['sections']] for s in sections}
+    topic_index = ['# Survey topic archive', '', '[← Year and venue catalogue](../README.md)', '', 'Existing topic assignments retain their evidence. Newly imported works with a topic assignment still to review are listed in the additional-reference appendix.', '']
+    for chapter in [s for s in sections if s['depth'] == 1]:
+        sid = chapter['id']
+        topic_index.append('- [' + sid + '. ' + chapter['title'] + '](chapters/' + sid + '.md)')
+        lines = ['# ' + sid + '. ' + chapter['title'], '', '[← Main catalogue](../../README.md) · [Topic archive](../TOPICS.md)', '']
+        for s in [s for s in sections if s['id'] == sid or s['id'].startswith(sid + '.')]:
+            lines += ['<a id="' + anchor(s['id']) + '"></a>', '', '#' * min(s['depth'] + 1, 4) + ' ' + s['id'] + '. ' + s['title'], '']
+            if by_section[s['id']]:
+                lines += [rows(by_section[s['id']]), '']
+            elif not any(by_section[t['id']] for t in sections if t['id'].startswith(s['id'] + '.')):
+                lines += ['References for this framing section are listed under their relevant topics.', '']
+        (ROOT / 'docs/chapters' / (sid + '.md')).write_text('\n'.join(lines), encoding='utf-8')
+    (ROOT / 'docs/TOPICS.md').write_text('\n'.join(topic_index) + '\n', encoding='utf-8')
+    audit = read('bibliography-update.json')
     coverage = [
         '# Catalogue coverage and provenance', '',
-        f'Bibliography snapshot: **{meta["snapshot_date"]}**. Catalogue assembled: **{meta.get("assembled_at", meta["snapshot_date"])}**. Individual link-check dates are retained in the evidence.', '',
+        f'Bibliography snapshot and catalogue update: **{meta["snapshot_date"]}**. Original catalogue assembled: **{meta["assembled_at"]}**. Historical evidence retains its original dates.', '',
         '| Item | Count |', '| --- | ---: |',
-        f'| Bibliographic keys | {meta["bibliography_keys"]} |',
+        f'| Bibliographic keys | {len(keys)} |',
         f'| Non-paper BibTeX control records (excluded) | {meta["nonpaper_records"]} |',
         f'| Unique works after merging aliases | {len(papers)} |',
+        f'| Existing works preserved | {audit["preserved_existing_works"]} |',
+        f'| Newly imported works | {audit["imported_works"]} |',
         f'| Works with an arXiv link | {na} |',
-        f'| Works with a verified code link | {nc} |',
-        f'| Works without an identified arXiv link | {len(papers)-na} |',
-        f'| Works without a verified code link | {len(papers)-nc} |', '',
-        '## Organization', '',
-        'The chapter and subsection names follow the manuscript input graph, with the latest separate revisions of Sections 3.1–3.3. Dormant manuscript fragments do not create new numbered sections. Figure citations can be placed under their corresponding harness topic. References not cited in the active manuscript are retained under the relevant chapter using their bibliography source or an explicitly recorded topical assignment; this is not evidence that the manuscript cites them in that section.', '',
-        'Each record in [papers.json](../data/papers.json) preserves all citation-key aliases, section assignments and their basis, source URLs, and link status. [sections.json](../data/sections.json) lists the exact hierarchy. [source-map.json](../data/source-map.json) records source-file identifiers and mapping evidence. The additional-reference appendix holds work whose place in the main chapter taxonomy is not yet established. No unpublished manuscript body is bundled here.', '',
-        '## Links', '',
-        'arXiv identities were checked against primary-source titles; documented title variants were checked separately. Code links require an author-supplied link from a paper/project page or repository evidence identifying that paper. Project pages and model pages are not silently relabeled as code. A working URL alone does not establish paper identity. Repository identity checks do not verify that every experiment is reproducible.', '',
-        'Missing links remain open curation items. Neither “missing” nor “not identified” means that no preprint or code was released. Venue/year fields in the original bibliography have not been comprehensively re-audited in this catalogue.', '',
-        '## Citation aliases', '',
-        '| Work | Citation keys |', '| --- | --- |'
+        f'| Works with code links | {nc} |',
+        f'| Works without an identified paper or arXiv link | {sum(not p["arxiv_url"] and not p["paper_url"] for p in papers)} |',
+        f'| Works without an identified code link | {len(papers)-nc} |', '',
+        '## Organization and bibliography', '',
+        'The main README groups each unique work by bibliography year and normalized venue. Workshops, Findings, Demos, preprints, journals, and official releases are labeled separately. For a verified preprint/published pair, the published record supplies the displayed year, venue, and title. All current BibTeX keys are preserved in references.bib, including the string definitions and bibliography control record.', '',
+        'The [topic archive](TOPICS.md) preserves previous survey-section assignments. New works whose topic has not been reviewed are assigned to the additional-reference appendix. Active-citation positions in [source-map.json](../data/source-map.json) were refreshed from the current manuscript input graph. Filenames and citation positions are retained without publishing manuscript prose.', '',
+        '## Identity corrections and aliases', '',
+        'The historical catalogue used `chen2026reflect` for Reflect-R1 (arXiv:2606.27922). The current bibliography uses that key for Reflect, Revise, Reuse (arXiv:2609.17653). Reflect-R1 is now recorded under `chen2026reflectr1`; these remain separate works with their own links and evidence.', '',
+        'MMBench-GUI and MobileUse each have a preprint title and a published title for the same arXiv identity. Each pair appears once in the README, while both current BibTeX keys are preserved. Historical aliases and original assignment keys remain in the catalogue evidence. The [bibliography update record](../data/bibliography-update.json) lists migrations, imports, and identity repairs.', '',
+        '| Work | Current citation keys |', '| --- | --- |'
     ]
     for p in papers:
         if len(p['citation_keys']) > 1:
             coverage.append('| ' + cell(p['title']) + ' | ' + ', '.join('`' + k + '`' for k in p['citation_keys']) + ' |')
-    coverage += ['', '## arXiv links still to identify', '', rows([p for p in papers if not p['arxiv_url']]), '', '## Code links still to identify', '', rows([p for p in papers if not p['code_url']]), '']
-    (ROOT / 'docs' / 'COVERAGE.md').write_text('\n'.join(coverage), encoding='utf-8')
-    print(f'Rendered {len(papers)} works in {len(sections)} sections; arXiv={na}, code={nc}.')
+    coverage += ['', '## Verification scope', '',
+        'The merged bibliography passed syntax, duplicate-key, manuscript-reference, and BibTeX compilation checks in the source workspace. Selected title, author, and publication details were corrected using official arXiv and conference/publisher metadata before import. These checks do not establish that every venue/year label in the full library has been independently re-audited.', '',
+        'arXiv links preserve previously verified identities or official citation-title checks. New code links may come directly from an author abstract; these use `verified_author_supplied_link` and do not claim a fresh repository availability check. Existing repository checks retain their original dates. Project/model pages remain separate from code. Missing links are curation items; working links do not establish experimental reproducibility.', '',
+        '## Paper links still to identify', '', rows([p for p in papers if not p['arxiv_url'] and not p['paper_url']]), '',
+        '<details>', '<summary>Code links still to identify</summary>', '', rows([p for p in papers if not p['code_url']]), '', '</details>', '']
+    (ROOT / 'docs/COVERAGE.md').write_text('\n'.join(coverage), encoding='utf-8')
+    print(f'Rendered {len(papers)} works in {len(years)} years; arXiv={na}, code={nc}.')
+
 
 if __name__ == '__main__':
     render()
