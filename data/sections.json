@@ -1,302 +1,331 @@
 [
   {
-    "id": "1",
-    "title": "Introduction",
+    "id": "internal",
+    "title": "Internal Capabilities of Vision-Centric Agents",
     "depth": 1,
-    "parent": null
+    "parent": null,
+    "section_label": "sec:internal-capabilities"
   },
   {
-    "id": "2",
-    "title": "Background",
+    "id": "internal.perception",
+    "title": "Vision Perception Capability",
+    "depth": 2,
+    "parent": "internal",
+    "section_label": "sec:vision-perception"
+  },
+  {
+    "id": "vision-perception-grounded",
+    "title": "Grounded Perception",
+    "depth": 3,
+    "parent": "internal.perception",
+    "section_label": "sec:vision-perception-grounded"
+  },
+  {
+    "id": "vision-perception-temporal",
+    "title": "Temporal Perception",
+    "depth": 3,
+    "parent": "internal.perception",
+    "section_label": "sec:vision-perception-temporal"
+  },
+  {
+    "id": "vision-perception-spatial",
+    "title": "Spatial Perception",
+    "depth": 3,
+    "parent": "internal.perception",
+    "section_label": "sec:vision-perception-spatial"
+  },
+  {
+    "id": "internal.reasoning",
+    "title": "Vision Reasoning Capability",
+    "depth": 2,
+    "parent": "internal",
+    "section_label": "sec:vision-reasoning"
+  },
+  {
+    "id": "reasoning-interleaved",
+    "title": "Interleaved Multimodal Reasoning",
+    "depth": 3,
+    "parent": "internal.reasoning",
+    "section_label": "sec:reasoning-interleaved"
+  },
+  {
+    "id": "reasoning-grounded",
+    "title": "Visually Grounded Reasoning",
+    "depth": 3,
+    "parent": "internal.reasoning",
+    "section_label": "sec:reasoning-grounded"
+  },
+  {
+    "id": "reasoning-tool-augmented",
+    "title": "Tool-Augmented Visual Reasoning",
+    "depth": 3,
+    "parent": "internal.reasoning",
+    "section_label": "sec:reasoning-tool-augmented"
+  },
+  {
+    "id": "reasoning-programmatic",
+    "title": "Programmatic Visual Reasoning",
+    "depth": 3,
+    "parent": "internal.reasoning",
+    "section_label": "sec:reasoning-programmatic"
+  },
+  {
+    "id": "internal.world",
+    "title": "Simulation of World Dynamics",
+    "depth": 2,
+    "parent": "internal",
+    "section_label": "sec:world_dynamics_simulation"
+  },
+  {
+    "id": "simulation-video",
+    "title": "Video Simulation",
+    "depth": 3,
+    "parent": "internal.world",
+    "section_label": "sec:simulation-video"
+  },
+  {
+    "id": "simulation-spatial",
+    "title": "Spatial Simulation",
+    "depth": 3,
+    "parent": "internal.world",
+    "section_label": "sec:simulation-spatial"
+  },
+  {
+    "id": "simulation-latent",
+    "title": "Latent Simulation",
+    "depth": 3,
+    "parent": "internal.world",
+    "section_label": "sec:simulation-latent"
+  },
+  {
+    "id": "simulation-semantic",
+    "title": "Semantic Simulation",
+    "depth": 3,
+    "parent": "internal.world",
+    "section_label": "sec:simulation-semantic"
+  },
+  {
+    "id": "internal.evaluation",
+    "title": "Visual Evaluation and Correction Abilities",
+    "depth": 2,
+    "parent": "internal",
+    "section_label": "sec:visual_evaluation_abilities"
+  },
+  {
+    "id": "visual-evaluation-evidence",
+    "title": "Visual Evidence Evaluation",
+    "depth": 3,
+    "parent": "internal.evaluation",
+    "section_label": "sec:visual-evaluation-evidence"
+  },
+  {
+    "id": "visual-evaluation-process",
+    "title": "Visually Grounded Process Evaluation",
+    "depth": 3,
+    "parent": "internal.evaluation",
+    "section_label": "sec:visual-evaluation-process"
+  },
+  {
+    "id": "visual-evaluation-outcome",
+    "title": "Visual Outcome Evaluation",
+    "depth": 3,
+    "parent": "internal.evaluation",
+    "section_label": "sec:visual-evaluation-outcome"
+  },
+  {
+    "id": "visual-evaluation-self-correction",
+    "title": "Visual-Based Self-Correction",
+    "depth": 3,
+    "parent": "internal.evaluation",
+    "section_label": "sec:visual-evaluation-self-correction"
+  },
+  {
+    "id": "internal.evolving",
+    "title": "Evolving Abilities",
+    "depth": 2,
+    "parent": "internal",
+    "section_label": "sec:capability_evolution"
+  },
+  {
+    "id": "evolving-diagnosis",
+    "title": "Visual Capability Gap Diagnosis",
+    "depth": 3,
+    "parent": "internal.evolving",
+    "section_label": "sec:evolving-diagnosis"
+  },
+  {
+    "id": "evolving-signals",
+    "title": "Visual Improvement Signal Generation",
+    "depth": 3,
+    "parent": "internal.evolving",
+    "section_label": "sec:evolving-signals"
+  },
+  {
+    "id": "evolving-optimization",
+    "title": "Vision-Guided Optimization Adaptation",
+    "depth": 3,
+    "parent": "internal.evolving",
+    "section_label": "sec:evolving-optimization"
+  },
+  {
+    "id": "evolving-infrastructure",
+    "title": "Self-Modification of Visual Interaction Infrastructure",
+    "depth": 3,
+    "parent": "internal.evolving",
+    "section_label": "sec:evolving-infrastructure"
+  },
+  {
+    "id": "external",
+    "title": "Harness Infrastructure for Vision-Centric Agents",
     "depth": 1,
-    "parent": null
+    "parent": null,
+    "section_label": "sec:harness-infrastructure"
   },
   {
-    "id": "2.1",
-    "title": "From Visual Models to Vision Agents",
+    "id": "external.planning",
+    "title": "Vision Planning and Orchestration Infrastructure",
     "depth": 2,
-    "parent": "2"
+    "parent": "external",
+    "section_label": "sec:vision-planning-orchestration"
   },
   {
-    "id": "2.2",
-    "title": "Agent Models, Harnesses, and Environments",
-    "depth": 2,
-    "parent": "2"
-  },
-  {
-    "id": "2.3",
-    "title": "Runtime Interaction and Capability Evolution",
-    "depth": 2,
-    "parent": "2"
-  },
-  {
-    "id": "3",
-    "title": "Vision Agent Harnesses",
-    "depth": 1,
-    "parent": null
-  },
-  {
-    "id": "3.1",
-    "title": "Active Visual Evidence Acquisition",
-    "depth": 2,
-    "parent": "3"
-  },
-  {
-    "id": "3.1.1",
-    "title": "View-Centric Acquisition",
+    "id": "planning-task-workflow",
+    "title": "Task and Workflow Planning",
     "depth": 3,
-    "parent": "3.1"
+    "parent": "external.planning",
+    "section_label": "sec:planning-task-workflow"
   },
   {
-    "id": "3.1.2",
-    "title": "Target-Centric Acquisition",
+    "id": "planning-trajectory-search",
+    "title": "Trajectory Search and Deliberation",
     "depth": 3,
-    "parent": "3.1"
+    "parent": "external.planning",
+    "section_label": "sec:planning-trajectory-search"
   },
   {
-    "id": "3.1.3",
-    "title": "Time-Centric Acquisition",
+    "id": "planning-multiagent-coordination",
+    "title": "Multi-Agent Planning and Coordination",
     "depth": 3,
-    "parent": "3.1"
+    "parent": "external.planning",
+    "section_label": "sec:planning-multiagent-coordination"
   },
   {
-    "id": "3.2",
-    "title": "Visual Memory and State Management",
+    "id": "external.memory",
+    "title": "Vision Memory Infrastructure",
     "depth": 2,
-    "parent": "3"
+    "parent": "external",
+    "section_label": "sec:vision-memory"
   },
   {
-    "id": "3.2.1",
-    "title": "Evidence-Based Visual Memory",
+    "id": "vision-memory-text",
+    "title": "Visual-to-Text",
     "depth": 3,
-    "parent": "3.2"
+    "parent": "external.memory",
+    "section_label": "sec:vision-memory-text"
   },
   {
-    "id": "3.2.2",
-    "title": "State-Based Visual Memory",
+    "id": "vision-memory-evidence",
+    "title": "Visual Evidence Store",
     "depth": 3,
-    "parent": "3.2"
+    "parent": "external.memory",
+    "section_label": "sec:vision-memory-evidence"
   },
   {
-    "id": "3.2.3",
-    "title": "Experience-Based Visual Memory",
+    "id": "vision-memory-compression",
+    "title": "Visual Compression Layer",
     "depth": 3,
-    "parent": "3.2"
+    "parent": "external.memory",
+    "section_label": "sec:vision-memory-compression"
   },
   {
-    "id": "3.3",
-    "title": "Evidence-Grounded Reasoning and Planning",
-    "depth": 2,
-    "parent": "3"
-  },
-  {
-    "id": "3.3.1",
-    "title": "Observation-Grounded Reasoning and Evidence Acquisition",
+    "id": "vision-memory-experience",
+    "title": "Visual Experience Repository",
     "depth": 3,
-    "parent": "3.3"
+    "parent": "external.memory",
+    "section_label": "sec:vision-memory-experience"
   },
   {
-    "id": "3.3.2",
-    "title": "Simulation-Grounded Planning and Lookahead",
+    "id": "external.tools",
+    "title": "Visual Tools",
+    "depth": 2,
+    "parent": "external",
+    "section_label": "sec:visual-tools-survey"
+  },
+  {
+    "id": "visual-tools-observation",
+    "title": "Observation Tools",
     "depth": 3,
-    "parent": "3.3"
+    "parent": "external.tools",
+    "section_label": "sec:visual-tools-observation"
   },
   {
-    "id": "3.3.3",
-    "title": "Execution-Grounded Search and Plan Repair",
+    "id": "visual-tools-search",
+    "title": "Search Tools",
     "depth": 3,
-    "parent": "3.3"
+    "parent": "external.tools",
+    "section_label": "sec:visual-tools-search"
   },
   {
-    "id": "4",
-    "title": "Capability Acquisition and Evolution in Vision Agents",
-    "depth": 1,
-    "parent": null
-  },
-  {
-    "id": "4.1",
-    "title": "From Capability Acquisition to Self-Evolution",
-    "depth": 2,
-    "parent": "4"
-  },
-  {
-    "id": "4.2",
-    "title": "Targets of Self-Evolution",
-    "depth": 2,
-    "parent": "4"
-  },
-  {
-    "id": "4.2.1",
-    "title": "Visual Memory and Knowledge",
+    "id": "visual-tools-generation",
+    "title": "Generation Tools",
     "depth": 3,
-    "parent": "4.2"
+    "parent": "external.tools",
+    "section_label": "sec:visual-tools-generation"
   },
   {
-    "id": "4.2.2",
-    "title": "Tools and Skills",
+    "id": "external.verification",
+    "title": "Vision Verification Infrastructure",
+    "depth": 2,
+    "parent": "external",
+    "section_label": "sec:vision_verification_infrastructure"
+  },
+  {
+    "id": "verification-evidence",
+    "title": "Evidence Verification",
     "depth": 3,
-    "parent": "4.2"
+    "parent": "external.verification",
+    "section_label": "sec:verification-evidence"
   },
   {
-    "id": "4.2.3",
-    "title": "Harness and Workflow",
+    "id": "verification-process",
+    "title": "Process Verification",
     "depth": 3,
-    "parent": "4.2"
+    "parent": "external.verification",
+    "section_label": "sec:verification-process"
   },
   {
-    "id": "4.2.4",
-    "title": "Models and Policies",
+    "id": "verification-outcome",
+    "title": "Outcome Verification",
     "depth": 3,
-    "parent": "4.2"
+    "parent": "external.verification",
+    "section_label": "sec:verification-outcome"
   },
   {
-    "id": "4.2.5",
-    "title": "Learning Substrate",
+    "id": "external.safety",
+    "title": "Safety Infrastructure",
+    "depth": 2,
+    "parent": "external",
+    "section_label": "sec:safety_infrastructure"
+  },
+  {
+    "id": "safety-visual-information",
+    "title": "Visual Information Safeguard",
     "depth": 3,
-    "parent": "4.2"
+    "parent": "external.safety",
+    "section_label": "sec:safety-visual-information"
   },
   {
-    "id": "4.3",
-    "title": "Mechanisms and Timescales of Evolution",
-    "depth": 2,
-    "parent": "4"
-  },
-  {
-    "id": "4.3.1",
-    "title": "Feedback Sources",
+    "id": "safety-constrained-execution",
+    "title": "Safety-Constrained Execution",
     "depth": 3,
-    "parent": "4.3"
+    "parent": "external.safety",
+    "section_label": "sec:safety-constrained-execution"
   },
   {
-    "id": "4.3.2",
-    "title": "Update Operators",
+    "id": "safety-runtime-oversight",
+    "title": "Runtime Oversight and Traceability",
     "depth": 3,
-    "parent": "4.3"
-  },
-  {
-    "id": "4.3.3",
-    "title": "Adaptation Timescales",
-    "depth": 3,
-    "parent": "4.3"
-  },
-  {
-    "id": "4.4",
-    "title": "Toward Recursive Self-Improvement",
-    "depth": 2,
-    "parent": "4"
-  },
-  {
-    "id": "4.4.1",
-    "title": "Bounded Closed-loop Self-Improvement",
-    "depth": 3,
-    "parent": "4.4"
-  },
-  {
-    "id": "4.4.2",
-    "title": "Recursive Meta-Improvement",
-    "depth": 3,
-    "parent": "4.4"
-  },
-  {
-    "id": "4.5",
-    "title": "Challenges in Capability Evolution",
-    "depth": 2,
-    "parent": "4"
-  },
-  {
-    "id": "5",
-    "title": "Applications of Vision Agents",
-    "depth": 1,
-    "parent": null
-  },
-  {
-    "id": "5.1",
-    "title": "Visual Understanding and Reasoning",
-    "depth": 2,
-    "parent": "5"
-  },
-  {
-    "id": "5.2",
-    "title": "Visual Generation, Editing, and World Construction",
-    "depth": 2,
-    "parent": "5"
-  },
-  {
-    "id": "5.3",
-    "title": "GUI and Digital Environment Interaction",
-    "depth": 2,
-    "parent": "5"
-  },
-  {
-    "id": "5.4",
-    "title": "Embodied Agents and Autonomous Systems",
-    "depth": 2,
-    "parent": "5"
-  },
-  {
-    "id": "5.5",
-    "title": "Medical",
-    "depth": 2,
-    "parent": "5"
-  },
-  {
-    "id": "5.6",
-    "title": "Scientific Agent",
-    "depth": 2,
-    "parent": "5"
-  },
-  {
-    "id": "6",
-    "title": "Evaluation and Benchmarks",
-    "depth": 1,
-    "parent": null
-  },
-  {
-    "id": "6.1",
-    "title": "Evaluating Evidence and State Management",
-    "depth": 2,
-    "parent": "6"
-  },
-  {
-    "id": "6.2",
-    "title": "Evaluating Planning and Execution",
-    "depth": 2,
-    "parent": "6"
-  },
-  {
-    "id": "6.3",
-    "title": "Evaluating Feedback and Adaptive Control",
-    "depth": 2,
-    "parent": "6"
-  },
-  {
-    "id": "7",
-    "title": "Challenges and Outlooks",
-    "depth": 1,
-    "parent": null
-  },
-  {
-    "id": "7.1",
-    "title": "Open Challenges",
-    "depth": 2,
-    "parent": "7"
-  },
-  {
-    "id": "7.2",
-    "title": "Future Directions",
-    "depth": 2,
-    "parent": "7"
-  },
-  {
-    "id": "8",
-    "title": "Conclusion",
-    "depth": 1,
-    "parent": null
-  },
-  {
-    "id": "A",
-    "title": "Additional Related References",
-    "depth": 1,
-    "parent": null
+    "parent": "external.safety",
+    "section_label": "sec:safety-runtime-oversight"
   }
 ]

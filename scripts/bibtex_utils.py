@@ -64,7 +64,7 @@ def tex_text(value):
     value = re.sub(r'\\["\']\{?([A-Za-z])\}?', lambda m: unicodedata.normalize('NFC', m[1] + ('\u0308' if m[0][1] == '"' else '\u0301')), value)
     value = value.replace(r'\&', '&').replace(r'\%', '%').replace(r'\_', '_')
     value = value.replace(r'\pi', 'π').replace(r'\textendash', '–')
-    value = re.sub(r'\\(?:textit|textbf|mathrm|textrm)\s*', '', value)
+    value = re.sub(r'\\(?:textit|textbf|mathrm|textrm|text)\s*', '', value)
     value = value.replace('K$^{2}$', 'K²').replace('$', '').replace('{', '').replace('}', '')
     return re.sub(r'\s+', ' ', value).strip()
 
