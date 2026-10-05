@@ -1,107 +1,93 @@
-# Figure 1 framework navigation
+# Vision-agent topic navigation
 
-[← Main catalogue](../README.md)
+[← Selected catalogue](../README.md)
 
-This navigation follows the current Figure 1. Topic IDs come from its section labels; the exact hierarchy and representative selections are recorded in [taxonomy.json](../data/taxonomy.json). Each link opens the corresponding topic table in the README.
+The hierarchy follows the survey framework. Reading-list selections are maintained independently from manuscript examples; each selected work has one primary topic.
 
 - [Internal Capabilities of Vision-Centric Agents](../README.md#branch-internal)
   - [Vision Perception Capability](../README.md#category-perception)
-    - [Grounded Perception](../README.md#topic-vision-perception-grounded) — 77 works
-    - [Temporal Perception](../README.md#topic-vision-perception-temporal) — 35 works
-    - [Spatial Perception](../README.md#topic-vision-perception-spatial) — 28 works
+    - [Grounded Perception](../README.md#topic-vision-perception-grounded) — 10 papers
+    - [Temporal Perception](../README.md#topic-vision-perception-temporal) — 7 papers
+    - [Spatial Perception](../README.md#topic-vision-perception-spatial) — 6 papers
   - [Vision Reasoning Capability](../README.md#category-reasoning)
-    - [Interleaved Multimodal Reasoning](../README.md#topic-reasoning-interleaved) — 18 works
-    - [Visually Grounded Reasoning](../README.md#topic-reasoning-grounded) — 81 works
-    - [Tool-Augmented Visual Reasoning](../README.md#topic-reasoning-tool-augmented) — 43 works
-    - [Programmatic Visual Reasoning](../README.md#topic-reasoning-programmatic) — 17 works
+    - [Interleaved Multimodal Reasoning](../README.md#topic-reasoning-interleaved) — 7 papers
+    - [Visually Grounded Reasoning](../README.md#topic-reasoning-grounded) — 7 papers
+    - [Tool-Augmented Visual Reasoning](../README.md#topic-reasoning-tool-augmented) — 6 papers
+    - [Programmatic Visual Reasoning](../README.md#topic-reasoning-programmatic) — 6 papers
   - [Simulation of World Dynamics](../README.md#category-world)
-    - [Video Simulation](../README.md#topic-simulation-video) — 36 works
-    - [Spatial Simulation](../README.md#topic-simulation-spatial) — 17 works
-    - [Latent Simulation](../README.md#topic-simulation-latent) — 12 works
-    - [Semantic Simulation](../README.md#topic-simulation-semantic) — 13 works
+    - [Video Simulation](../README.md#topic-simulation-video) — 8 papers
+    - [Spatial Simulation](../README.md#topic-simulation-spatial) — 5 papers
+    - [Latent Simulation](../README.md#topic-simulation-latent) — 5 papers
+    - [Semantic Simulation](../README.md#topic-simulation-semantic) — 5 papers
   - [Visual Evaluation and Correction Abilities](../README.md#category-evaluation)
-    - [Visual Evidence Evaluation](../README.md#topic-visual-evaluation-evidence) — 13 works
-    - [Visually Grounded Process Evaluation](../README.md#topic-visual-evaluation-process) — 19 works
-    - [Visual Outcome Evaluation](../README.md#topic-visual-evaluation-outcome) — 19 works
-    - [Visual-Based Self-Correction](../README.md#topic-visual-evaluation-self-correction) — 38 works
+    - [Visual Evidence Evaluation](../README.md#topic-visual-evaluation-evidence) — 4 papers
+    - [Visually Grounded Process Evaluation](../README.md#topic-visual-evaluation-process) — 4 papers
+    - [Visual Outcome Evaluation](../README.md#topic-visual-evaluation-outcome) — 4 papers
+    - [Visual-Based Self-Correction](../README.md#topic-visual-evaluation-self-correction) — 5 papers
   - [Evolving Abilities](../README.md#category-evolving)
-    - [Visual Capability Gap Diagnosis](../README.md#topic-evolving-diagnosis) — 17 works
-    - [Visual Improvement Signal Generation](../README.md#topic-evolving-signals) — 48 works
-    - [Vision-Guided Optimization Adaptation](../README.md#topic-evolving-optimization) — 104 works
-    - [Self-Modification of Visual Interaction Infrastructure](../README.md#topic-evolving-infrastructure) — 48 works
+    - [Visual Capability Gap Diagnosis](../README.md#topic-evolving-diagnosis) — 4 papers
+    - [Visual Improvement Signal Generation](../README.md#topic-evolving-signals) — 5 papers
+    - [Vision-Guided Optimization Adaptation](../README.md#topic-evolving-optimization) — 5 papers
+    - [Self-Modification of Visual Interaction Infrastructure](../README.md#topic-evolving-infrastructure) — 6 papers
 - [Harness Infrastructure for Vision-Centric Agents](../README.md#branch-external)
   - [Vision Planning and Orchestration Infrastructure](../README.md#category-planning)
-    - [Task and Workflow Planning](../README.md#topic-planning-task-workflow) — 86 works
-    - [Trajectory Search and Deliberation](../README.md#topic-planning-trajectory-search) — 23 works
-    - [Multi-Agent Planning and Coordination](../README.md#topic-planning-multiagent-coordination) — 31 works
+    - [Task and Workflow Planning](../README.md#topic-planning-task-workflow) — 9 papers
+    - [Trajectory Search and Deliberation](../README.md#topic-planning-trajectory-search) — 6 papers
+    - [Multi-Agent Planning and Coordination](../README.md#topic-planning-multiagent-coordination) — 6 papers
   - [Vision Memory Infrastructure](../README.md#category-memory)
-    - [Visual-to-Text](../README.md#topic-vision-memory-text) — 14 works
-    - [Visual Evidence Store](../README.md#topic-vision-memory-evidence) — 19 works
-    - [Visual Compression Layer](../README.md#topic-vision-memory-compression) — 15 works
-    - [Visual Experience Repository](../README.md#topic-vision-memory-experience) — 42 works
+    - [Visual-to-Text](../README.md#topic-vision-memory-text) — 4 papers
+    - [Visual Evidence Store](../README.md#topic-vision-memory-evidence) — 6 papers
+    - [Visual Compression Layer](../README.md#topic-vision-memory-compression) — 5 papers
+    - [Visual Experience Repository](../README.md#topic-vision-memory-experience) — 7 papers
   - [Visual Tools](../README.md#category-tools)
-    - [Observation Tools](../README.md#topic-visual-tools-observation) — 27 works
-    - [Search Tools](../README.md#topic-visual-tools-search) — 14 works
-    - [Generation Tools](../README.md#topic-visual-tools-generation) — 54 works
+    - [Observation Tools](../README.md#topic-visual-tools-observation) — 5 papers
+    - [Search Tools](../README.md#topic-visual-tools-search) — 5 papers
+    - [Generation Tools](../README.md#topic-visual-tools-generation) — 7 papers
   - [Vision Verification Infrastructure](../README.md#category-verification)
-    - [Evidence Verification](../README.md#topic-verification-evidence) — 13 works
-    - [Process Verification](../README.md#topic-verification-process) — 13 works
-    - [Outcome Verification](../README.md#topic-verification-outcome) — 39 works
+    - [Evidence Verification](../README.md#topic-verification-evidence) — 3 papers
+    - [Process Verification](../README.md#topic-verification-process) — 4 papers
+    - [Outcome Verification](../README.md#topic-verification-outcome) — 7 papers
   - [Safety Infrastructure](../README.md#category-safety)
-    - [Visual Information Safeguard](../README.md#topic-safety-visual-information) — 9 works
-    - [Safety-Constrained Execution](../README.md#topic-safety-constrained-execution) — 21 works
-    - [Runtime Oversight and Traceability](../README.md#topic-safety-runtime-oversight) — 15 works
+    - [Visual Information Safeguard](../README.md#topic-safety-visual-information) — 3 papers
+    - [Safety-Constrained Execution](../README.md#topic-safety-constrained-execution) — 5 papers
+    - [Runtime Oversight and Traceability](../README.md#topic-safety-runtime-oversight) — 4 papers
 
-## Topic IDs for contributors
+## Topic IDs
 
-| Topic ID | Branch | Category | Topic |
-| --- | --- | --- | --- |
-| `vision-perception-grounded` | Internal Capabilities of Vision-Centric Agents | Vision Perception Capability | Grounded Perception |
-| `vision-perception-temporal` | Internal Capabilities of Vision-Centric Agents | Vision Perception Capability | Temporal Perception |
-| `vision-perception-spatial` | Internal Capabilities of Vision-Centric Agents | Vision Perception Capability | Spatial Perception |
-| `reasoning-interleaved` | Internal Capabilities of Vision-Centric Agents | Vision Reasoning Capability | Interleaved Multimodal Reasoning |
-| `reasoning-grounded` | Internal Capabilities of Vision-Centric Agents | Vision Reasoning Capability | Visually Grounded Reasoning |
-| `reasoning-tool-augmented` | Internal Capabilities of Vision-Centric Agents | Vision Reasoning Capability | Tool-Augmented Visual Reasoning |
-| `reasoning-programmatic` | Internal Capabilities of Vision-Centric Agents | Vision Reasoning Capability | Programmatic Visual Reasoning |
-| `simulation-video` | Internal Capabilities of Vision-Centric Agents | Simulation of World Dynamics | Video Simulation |
-| `simulation-spatial` | Internal Capabilities of Vision-Centric Agents | Simulation of World Dynamics | Spatial Simulation |
-| `simulation-latent` | Internal Capabilities of Vision-Centric Agents | Simulation of World Dynamics | Latent Simulation |
-| `simulation-semantic` | Internal Capabilities of Vision-Centric Agents | Simulation of World Dynamics | Semantic Simulation |
-| `visual-evaluation-evidence` | Internal Capabilities of Vision-Centric Agents | Visual Evaluation and Correction Abilities | Visual Evidence Evaluation |
-| `visual-evaluation-process` | Internal Capabilities of Vision-Centric Agents | Visual Evaluation and Correction Abilities | Visually Grounded Process Evaluation |
-| `visual-evaluation-outcome` | Internal Capabilities of Vision-Centric Agents | Visual Evaluation and Correction Abilities | Visual Outcome Evaluation |
-| `visual-evaluation-self-correction` | Internal Capabilities of Vision-Centric Agents | Visual Evaluation and Correction Abilities | Visual-Based Self-Correction |
-| `evolving-diagnosis` | Internal Capabilities of Vision-Centric Agents | Evolving Abilities | Visual Capability Gap Diagnosis |
-| `evolving-signals` | Internal Capabilities of Vision-Centric Agents | Evolving Abilities | Visual Improvement Signal Generation |
-| `evolving-optimization` | Internal Capabilities of Vision-Centric Agents | Evolving Abilities | Vision-Guided Optimization Adaptation |
-| `evolving-infrastructure` | Internal Capabilities of Vision-Centric Agents | Evolving Abilities | Self-Modification of Visual Interaction Infrastructure |
-| `planning-task-workflow` | Harness Infrastructure for Vision-Centric Agents | Vision Planning and Orchestration Infrastructure | Task and Workflow Planning |
-| `planning-trajectory-search` | Harness Infrastructure for Vision-Centric Agents | Vision Planning and Orchestration Infrastructure | Trajectory Search and Deliberation |
-| `planning-multiagent-coordination` | Harness Infrastructure for Vision-Centric Agents | Vision Planning and Orchestration Infrastructure | Multi-Agent Planning and Coordination |
-| `vision-memory-text` | Harness Infrastructure for Vision-Centric Agents | Vision Memory Infrastructure | Visual-to-Text |
-| `vision-memory-evidence` | Harness Infrastructure for Vision-Centric Agents | Vision Memory Infrastructure | Visual Evidence Store |
-| `vision-memory-compression` | Harness Infrastructure for Vision-Centric Agents | Vision Memory Infrastructure | Visual Compression Layer |
-| `vision-memory-experience` | Harness Infrastructure for Vision-Centric Agents | Vision Memory Infrastructure | Visual Experience Repository |
-| `visual-tools-observation` | Harness Infrastructure for Vision-Centric Agents | Visual Tools | Observation Tools |
-| `visual-tools-search` | Harness Infrastructure for Vision-Centric Agents | Visual Tools | Search Tools |
-| `visual-tools-generation` | Harness Infrastructure for Vision-Centric Agents | Visual Tools | Generation Tools |
-| `verification-evidence` | Harness Infrastructure for Vision-Centric Agents | Vision Verification Infrastructure | Evidence Verification |
-| `verification-process` | Harness Infrastructure for Vision-Centric Agents | Vision Verification Infrastructure | Process Verification |
-| `verification-outcome` | Harness Infrastructure for Vision-Centric Agents | Vision Verification Infrastructure | Outcome Verification |
-| `safety-visual-information` | Harness Infrastructure for Vision-Centric Agents | Safety Infrastructure | Visual Information Safeguard |
-| `safety-constrained-execution` | Harness Infrastructure for Vision-Centric Agents | Safety Infrastructure | Safety-Constrained Execution |
-| `safety-runtime-oversight` | Harness Infrastructure for Vision-Centric Agents | Safety Infrastructure | Runtime Oversight and Traceability |
-
-## Legacy manuscript chapter archive
-
-These files preserve an earlier draft’s section assignments and historical evidence. They are not the current catalogue classification.
-
-- [1](chapters/1.md)
-- [2](chapters/2.md)
-- [3](chapters/3.md)
-- [4](chapters/4.md)
-- [5](chapters/5.md)
-- [6](chapters/6.md)
-- [7](chapters/7.md)
-- [8](chapters/8.md)
-- [A](chapters/A.md)
+| Topic ID | Category | Topic |
+| --- | --- | --- |
+| `vision-perception-grounded` | Vision Perception Capability | Grounded Perception |
+| `vision-perception-temporal` | Vision Perception Capability | Temporal Perception |
+| `vision-perception-spatial` | Vision Perception Capability | Spatial Perception |
+| `reasoning-interleaved` | Vision Reasoning Capability | Interleaved Multimodal Reasoning |
+| `reasoning-grounded` | Vision Reasoning Capability | Visually Grounded Reasoning |
+| `reasoning-tool-augmented` | Vision Reasoning Capability | Tool-Augmented Visual Reasoning |
+| `reasoning-programmatic` | Vision Reasoning Capability | Programmatic Visual Reasoning |
+| `simulation-video` | Simulation of World Dynamics | Video Simulation |
+| `simulation-spatial` | Simulation of World Dynamics | Spatial Simulation |
+| `simulation-latent` | Simulation of World Dynamics | Latent Simulation |
+| `simulation-semantic` | Simulation of World Dynamics | Semantic Simulation |
+| `visual-evaluation-evidence` | Visual Evaluation and Correction Abilities | Visual Evidence Evaluation |
+| `visual-evaluation-process` | Visual Evaluation and Correction Abilities | Visually Grounded Process Evaluation |
+| `visual-evaluation-outcome` | Visual Evaluation and Correction Abilities | Visual Outcome Evaluation |
+| `visual-evaluation-self-correction` | Visual Evaluation and Correction Abilities | Visual-Based Self-Correction |
+| `evolving-diagnosis` | Evolving Abilities | Visual Capability Gap Diagnosis |
+| `evolving-signals` | Evolving Abilities | Visual Improvement Signal Generation |
+| `evolving-optimization` | Evolving Abilities | Vision-Guided Optimization Adaptation |
+| `evolving-infrastructure` | Evolving Abilities | Self-Modification of Visual Interaction Infrastructure |
+| `planning-task-workflow` | Vision Planning and Orchestration Infrastructure | Task and Workflow Planning |
+| `planning-trajectory-search` | Vision Planning and Orchestration Infrastructure | Trajectory Search and Deliberation |
+| `planning-multiagent-coordination` | Vision Planning and Orchestration Infrastructure | Multi-Agent Planning and Coordination |
+| `vision-memory-text` | Vision Memory Infrastructure | Visual-to-Text |
+| `vision-memory-evidence` | Vision Memory Infrastructure | Visual Evidence Store |
+| `vision-memory-compression` | Vision Memory Infrastructure | Visual Compression Layer |
+| `vision-memory-experience` | Vision Memory Infrastructure | Visual Experience Repository |
+| `visual-tools-observation` | Visual Tools | Observation Tools |
+| `visual-tools-search` | Visual Tools | Search Tools |
+| `visual-tools-generation` | Visual Tools | Generation Tools |
+| `verification-evidence` | Vision Verification Infrastructure | Evidence Verification |
+| `verification-process` | Vision Verification Infrastructure | Process Verification |
+| `verification-outcome` | Vision Verification Infrastructure | Outcome Verification |
+| `safety-visual-information` | Safety Infrastructure | Visual Information Safeguard |
+| `safety-constrained-execution` | Safety Infrastructure | Safety-Constrained Execution |
+| `safety-runtime-oversight` | Safety Infrastructure | Runtime Oversight and Traceability |

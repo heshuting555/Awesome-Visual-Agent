@@ -1,0 +1,128 @@
+{
+  "han2026vista": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2610.02200",
+    "checked_title": "VISTA: A Visual Harness for Reasoning in an Interactive World",
+    "checked_at": "2026-10-05",
+    "project_url": "https://vista-research.github.io/",
+    "code_url": "https://github.com/joshhhhhan/VISTA",
+    "code_identity_source": "https://vista-research.github.io/",
+    "code_checked_at": "2026-10-05"
+  },
+  "fan2026screenshots": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2608.03327",
+    "checked_title": "Screenshots or Tools? Eliciting Tool Use and Managing Multimodal Context in Hybrid GUI-MCP Computer-Use Agents",
+    "checked_at": "2026-10-05"
+  },
+  "liu2026atmem": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2606.31612",
+    "checked_title": "What Memory Do GUI Agents Really Need? From Passive Records to Active Task-Driving States",
+    "checked_at": "2026-10-05"
+  },
+  "lu2026qwencua": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2608.02352",
+    "checked_title": "Qwen-CUA: Native Computer Use for (almost) Everything",
+    "checked_at": "2026-10-05"
+  },
+  "chen2026showharness": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2609.10522",
+    "checked_title": "Show-Harness: Just a VLM Agent Can Play Robots",
+    "checked_at": "2026-10-05"
+  },
+  "shi2026navharnessgoals": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2609.39915",
+    "checked_title": "NavHarness: Adaptive Goals for Agentic Vision-Language Navigation",
+    "checked_at": "2026-10-05"
+  },
+  "zhao2026navharnesslifelong": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2609.34276",
+    "checked_title": "NavHarness: Towards Lifelong Embodied Navigation",
+    "checked_at": "2026-10-05"
+  },
+  "chen2026harnessvln": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2609.15195",
+    "checked_title": "HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness",
+    "checked_at": "2026-10-05"
+  },
+  "groundingvln2026": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2609.18581",
+    "checked_title": "GroundingVLN: Reasoning and Acting with Grounding for Vision-Language Navigation",
+    "checked_at": "2026-10-05"
+  },
+  "roboharnessk12026": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2609.29389",
+    "checked_title": "Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation",
+    "checked_at": "2026-10-05"
+  },
+  "li2026roboclaw": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2603.11558",
+    "checked_title": "RoboClaw: An Agentic Framework for Scalable Long-Horizon Robotic Tasks",
+    "checked_at": "2026-10-05"
+  },
+  "mvagent2026": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2609.30609",
+    "checked_title": "MVAgent: Multi-Agent Video Generation via Consistent Condition Construction and Shot-Level Policy Optimization",
+    "checked_at": "2026-10-05"
+  },
+  "yan2026admemo": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2609.38641",
+    "checked_title": "Vision-Language-Action Autonomous Driving Agent with Language-based Memory",
+    "checked_at": "2026-10-05"
+  },
+  "guan2026cuwm": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2602.17365",
+    "checked_title": "Computer-Using World Model",
+    "checked_at": "2026-10-05"
+  },
+  "cao2026mobiledreamer": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2601.04035",
+    "checked_title": "MobileDreamer: Generative Sketch World Model for GUI Agent",
+    "checked_at": "2026-10-05"
+  },
+  "li2026lingbotva": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://arxiv.org/abs/2601.21998",
+    "checked_title": "Causal World Modeling for Robot Control",
+    "checked_at": "2026-10-05",
+    "code_url": "https://github.com/robbyant/lingbot-va",
+    "code_identity_source": "https://arxiv.org/abs/2601.21998",
+    "code_checked_at": "2026-10-05"
+  },
+  "xu2025aguvis": {
+    "kind": "official_abstract_and_identity_check",
+    "source_url": "https://proceedings.mlr.press/v267/xu25ae.html",
+    "checked_title": "Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction",
+    "checked_at": "2026-10-05",
+    "arxiv_url": "https://arxiv.org/abs/2412.04454",
+    "project_url": "https://aguvis-project.github.io/",
+    "project_checked_at": "2026-10-05",
+    "code_url": "https://github.com/xlang-ai/aguvis",
+    "code_identity_source": "https://aguvis-project.github.io/",
+    "code_checked_at": "2026-10-05"
+  },
+  "wang2025opencua": {
+    "kind": "official_project_and_identity_check",
+    "source_url": "https://opencua.xlang.ai/",
+    "checked_title": "OpenCUA: Open Foundations for Computer-Use Agents",
+    "checked_at": "2026-10-05",
+    "arxiv_url": "https://arxiv.org/abs/2508.09123",
+    "project_url": "https://opencua.xlang.ai/",
+    "code_url": "https://github.com/xlang-ai/OpenCUA",
+    "code_identity_source": "https://opencua.xlang.ai/",
+    "code_checked_at": "2026-10-05"
+  }
+}

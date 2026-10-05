@@ -1,0 +1,2286 @@
+{
+  "snapshot_date": "2026-10-05",
+  "minimum_publication_year": 2024,
+  "decisions": {
+    "hong2024cogagent": {
+      "status": "selected",
+      "work_id": "hong2024cogagent",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Screenshot understanding and visual GUI action grounding"
+    },
+    "cheng2024seeclick": {
+      "status": "selected",
+      "work_id": "cheng2024seeclick",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Ground instructions to clickable screen coordinates"
+    },
+    "gou2025navigating": {
+      "status": "selected",
+      "work_id": "gou2025navigating",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Universal visual grounding across desktop and mobile interfaces"
+    },
+    "lin2025showui": {
+      "status": "selected",
+      "work_id": "lin2025showui",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Visual token selection and vision-language-action GUI control"
+    },
+    "wu2026gui": {
+      "status": "selected",
+      "work_id": "wu2026gui",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Coordinate-free attention-based GUI grounding"
+    },
+    "chen2026ui": {
+      "status": "selected",
+      "work_id": "chen2026ui",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Multi-perspective visual reasoning for instruction grounding"
+    },
+    "he2025rsagent": {
+      "status": "selected",
+      "work_id": "he2025rsagent",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Iterative segmentation through visual tool calls"
+    },
+    "li2025screenspot": {
+      "status": "selected",
+      "work_id": "li2025screenspot",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Evaluate grounding on professional high-resolution screens"
+    },
+    "u_vstar": {
+      "status": "selected",
+      "work_id": "u_vstar",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Search image regions for fine-grained visual evidence"
+    },
+    "zhu2025active": {
+      "status": "selected",
+      "work_id": "zhu2025active",
+      "primary_topic": "vision-perception-grounded",
+      "reason": "Learn active perception through visual inspection actions"
+    },
+    "wang2024videoagent": {
+      "status": "selected",
+      "work_id": "wang2024videoagent",
+      "primary_topic": "vision-perception-temporal",
+      "reason": "Iteratively retrieve video evidence for long-form understanding"
+    },
+    "fan2025agentic": {
+      "status": "selected",
+      "work_id": "fan2025agentic",
+      "primary_topic": "vision-perception-temporal",
+      "reason": "Agent-controlled keyframe search for video questions"
+    },
+    "liu2026videomind": {
+      "status": "selected",
+      "work_id": "liu2026videomind",
+      "primary_topic": "vision-perception-temporal",
+      "reason": "Localize and verify temporal evidence with a video agent"
+    },
+    "ding2026videozoomer": {
+      "status": "selected",
+      "work_id": "ding2026videozoomer",
+      "primary_topic": "vision-perception-temporal",
+      "reason": "Learn where to resample dense clips for temporal detail"
+    },
+    "yuan2025videoexplorer": {
+      "status": "selected",
+      "work_id": "yuan2025videoexplorer",
+      "primary_topic": "vision-perception-temporal",
+      "reason": "Explore video evidence through iterative tool use"
+    },
+    "u_lenswalk": {
+      "status": "selected",
+      "work_id": "u_lenswalk",
+      "primary_topic": "vision-perception-temporal",
+      "reason": "Plan how to inspect video before answering"
+    },
+    "emb_n_navid": {
+      "status": "selected",
+      "work_id": "emb_n_navid",
+      "primary_topic": "vision-perception-temporal",
+      "reason": "Use video observations to choose navigation actions"
+    },
+    "emb_m_activevla26": {
+      "status": "selected",
+      "work_id": "emb_m_activevla26",
+      "primary_topic": "vision-perception-spatial",
+      "reason": "Active viewpoint selection for precise 3D manipulation"
+    },
+    "qu2025spatialvla": {
+      "status": "selected",
+      "work_id": "qu2025spatialvla",
+      "primary_topic": "vision-perception-spatial",
+      "reason": "Encode spatial representations for visual robot actions"
+    },
+    "yuan2024robopoint": {
+      "status": "selected",
+      "work_id": "yuan2024robopoint",
+      "primary_topic": "vision-perception-spatial",
+      "reason": "Predict spatial affordances from visual observations"
+    },
+    "emb_n_sgnav": {
+      "status": "selected",
+      "work_id": "emb_n_sgnav",
+      "primary_topic": "vision-perception-spatial",
+      "reason": "Build online 3D scene graphs for object navigation"
+    },
+    "u_realm": {
+      "status": "selected",
+      "work_id": "u_realm",
+      "primary_topic": "vision-perception-spatial",
+      "reason": "Agentic reasoning, segmentation, and editing in Gaussian-splat scenes"
+    },
+    "yang2025look": {
+      "status": "selected",
+      "work_id": "yang2025look",
+      "primary_topic": "vision-perception-spatial",
+      "reason": "Control visual zoom and viewpoint for embodied perception"
+    },
+    "hu2024visual": {
+      "status": "selected",
+      "work_id": "hu2024visual",
+      "primary_topic": "reasoning-interleaved",
+      "reason": "Interleave reasoning with generated visual sketches"
+    },
+    "su2026pixel": {
+      "status": "selected",
+      "work_id": "su2026pixel",
+      "primary_topic": "reasoning-interleaved",
+      "reason": "Choose pixel-space inspection actions while reasoning"
+    },
+    "zheng2026deepeyes": {
+      "status": "selected",
+      "work_id": "zheng2026deepeyes",
+      "primary_topic": "reasoning-interleaved",
+      "reason": "Interleave text reasoning with image crops and magnification"
+    },
+    "hong2026deepeyesv2": {
+      "status": "selected",
+      "work_id": "hong2026deepeyesv2",
+      "primary_topic": "reasoning-interleaved",
+      "reason": "Combine multimodal reasoning with agentic tool interaction"
+    },
+    "hou2026codev": {
+      "status": "selected",
+      "work_id": "hou2026codev",
+      "primary_topic": "reasoning-interleaved",
+      "reason": "Interleave images and executable code for visual reasoning"
+    },
+    "yan2026videochat": {
+      "status": "selected",
+      "work_id": "yan2026videochat",
+      "primary_topic": "reasoning-interleaved",
+      "reason": "Iterative perception for video reasoning at test time"
+    },
+    "va_c1167_2026": {
+      "status": "selected",
+      "work_id": "va_c1167_2026",
+      "primary_topic": "reasoning-interleaved",
+      "reason": "Evaluate agentic thinking with images and visual tools"
+    },
+    "huang2024rekep": {
+      "status": "selected",
+      "work_id": "huang2024rekep",
+      "primary_topic": "reasoning-grounded",
+      "reason": "Plan manipulation using visual relational keypoint constraints"
+    },
+    "liu2024moka": {
+      "status": "selected",
+      "work_id": "liu2024moka",
+      "primary_topic": "reasoning-grounded",
+      "reason": "Convert mark-based visual prompts into robot actions"
+    },
+    "shah2025bumble": {
+      "status": "selected",
+      "work_id": "shah2025bumble",
+      "primary_topic": "reasoning-grounded",
+      "reason": "Ground reasoning and actions in building-wide visual observations"
+    },
+    "groundingvln2026": {
+      "status": "selected",
+      "work_id": "groundingvln2026",
+      "primary_topic": "reasoning-grounded",
+      "reason": "Ground navigation reasoning and actions in observed scenes"
+    },
+    "zheng2026driveagentr1": {
+      "status": "selected",
+      "work_id": "zheng2026driveagentr1",
+      "primary_topic": "reasoning-grounded",
+      "reason": "Active visual perception and hybrid reasoning for driving"
+    },
+    "emb_d_simlingo": {
+      "status": "selected",
+      "work_id": "emb_d_simlingo",
+      "primary_topic": "reasoning-grounded",
+      "reason": "Align visual driving observations with language and actions"
+    },
+    "emb_m_pi05": {
+      "status": "selected",
+      "work_id": "emb_m_pi05",
+      "primary_topic": "reasoning-grounded",
+      "reason": "Generalize vision-language-action control to open-world tasks"
+    },
+    "fallahpour2025medrax": {
+      "status": "selected",
+      "work_id": "fallahpour2025medrax",
+      "primary_topic": "reasoning-tool-augmented",
+      "reason": "Invoke chest X-ray specialists for image-grounded reasoning"
+    },
+    "liu2024llava": {
+      "status": "selected",
+      "work_id": "liu2024llava",
+      "primary_topic": "reasoning-tool-augmented",
+      "reason": "Learn to select and use visual specialist tools"
+    },
+    "ma2025latte": {
+      "status": "selected",
+      "work_id": "ma2025latte",
+      "primary_topic": "reasoning-tool-augmented",
+      "reason": "Reason with vision specialists rather than a fixed image view"
+    },
+    "song2026adareasoner": {
+      "status": "selected",
+      "work_id": "song2026adareasoner",
+      "primary_topic": "reasoning-tool-augmented",
+      "reason": "Dynamically orchestrate tools for iterative visual reasoning"
+    },
+    "su2025openthinkimg": {
+      "status": "selected",
+      "work_id": "su2025openthinkimg",
+      "primary_topic": "reasoning-tool-augmented",
+      "reason": "Learn visual tool use through reinforcement learning"
+    },
+    "huang2025visualtoolagent": {
+      "status": "selected",
+      "work_id": "huang2025visualtoolagent",
+      "primary_topic": "reasoning-tool-augmented",
+      "reason": "Learn which visual inspection tool to select"
+    },
+    "zhao2025pyvision": {
+      "status": "selected",
+      "work_id": "zhao2025pyvision",
+      "primary_topic": "reasoning-programmatic",
+      "reason": "Create executable inspection tools for visual evidence on demand"
+    },
+    "wu2024vdebugger": {
+      "status": "selected",
+      "work_id": "wu2024vdebugger",
+      "primary_topic": "reasoning-programmatic",
+      "reason": "Debug visual programs using stepwise execution feedback"
+    },
+    "panagopoulou2025viunit": {
+      "status": "selected",
+      "work_id": "panagopoulou2025viunit",
+      "primary_topic": "reasoning-programmatic",
+      "reason": "Test visual programs with image-answer unit tests"
+    },
+    "va_c808_2026": {
+      "status": "selected",
+      "work_id": "va_c808_2026",
+      "primary_topic": "reasoning-programmatic",
+      "reason": "Evolve spatial reasoning tool libraries from experience"
+    },
+    "hu2024scenecraft": {
+      "status": "selected",
+      "work_id": "hu2024scenecraft",
+      "primary_topic": "reasoning-programmatic",
+      "reason": "Generate Blender scene code and inspect rendered 3D layouts"
+    },
+    "u_gca": {
+      "status": "selected",
+      "work_id": "u_gca",
+      "primary_topic": "reasoning-programmatic",
+      "reason": "Apply geometric constraints in agentic spatial reasoning"
+    },
+    "bruce2024genie": {
+      "status": "selected",
+      "work_id": "bruce2024genie",
+      "primary_topic": "simulation-video",
+      "reason": "Generate action-conditioned interactive visual environments"
+    },
+    "cen2025worldvla": {
+      "status": "selected",
+      "work_id": "cen2025worldvla",
+      "primary_topic": "simulation-video",
+      "reason": "Couple predicted visual states with autoregressive robot actions"
+    },
+    "guo2025ctrlworld": {
+      "status": "selected",
+      "work_id": "guo2025ctrlworld",
+      "primary_topic": "simulation-video",
+      "reason": "Control video world-model rollouts for manipulation"
+    },
+    "wd_dreamzero2026": {
+      "status": "selected",
+      "work_id": "wd_dreamzero2026",
+      "primary_topic": "simulation-video",
+      "reason": "Turn action-conditioned video prediction into robot policies"
+    },
+    "wd_cosmospolicy2026": {
+      "status": "selected",
+      "work_id": "wd_cosmospolicy2026",
+      "primary_topic": "simulation-video",
+      "reason": "Fine-tune video models for visuomotor control and planning"
+    },
+    "li2026lingbotva": {
+      "status": "selected",
+      "work_id": "li2026lingbotva",
+      "primary_topic": "simulation-video",
+      "reason": "Couple causal visual world modeling with robot control"
+    },
+    "guan2026cuwm": {
+      "status": "selected",
+      "work_id": "guan2026cuwm",
+      "primary_topic": "simulation-video",
+      "reason": "Predict post-action screen states for computer-use planning"
+    },
+    "guiagent073": {
+      "status": "selected",
+      "work_id": "guiagent073",
+      "primary_topic": "simulation-video",
+      "reason": "Model future visual GUI states for app interaction"
+    },
+    "zhou2026learning": {
+      "status": "selected",
+      "work_id": "zhou2026learning",
+      "primary_topic": "simulation-spatial",
+      "reason": "Maintain persistent 3D state for embodied world modeling"
+    },
+    "wd_persist2026": {
+      "status": "selected",
+      "work_id": "wd_persist2026",
+      "primary_topic": "simulation-spatial",
+      "reason": "Predict with persistent 3D state beyond pixel histories"
+    },
+    "wd_phystwin2025": {
+      "status": "selected",
+      "work_id": "wd_phystwin2025",
+      "primary_topic": "simulation-spatial",
+      "reason": "Reconstruct deformable objects and simulate their physical behavior"
+    },
+    "wd_contactgaussian2026": {
+      "status": "selected",
+      "work_id": "wd_contactgaussian2026",
+      "primary_topic": "simulation-spatial",
+      "reason": "Learn physics-grounded scene dynamics from video"
+    },
+    "wd_dome2024": {
+      "status": "selected",
+      "work_id": "wd_dome2024",
+      "primary_topic": "simulation-spatial",
+      "reason": "Predict controllable 3D occupancy for driving scenes"
+    },
+    "assran2025vjepa2": {
+      "status": "selected",
+      "work_id": "assran2025vjepa2",
+      "primary_topic": "simulation-latent",
+      "reason": "Predict in visual latent space for robot planning"
+    },
+    "wd_dinowm2024": {
+      "status": "selected",
+      "work_id": "wd_dinowm2024",
+      "primary_topic": "simulation-latent",
+      "reason": "Plan with world models over pretrained visual features"
+    },
+    "hafner2025dreamerv3": {
+      "status": "selected",
+      "work_id": "hafner2025dreamerv3",
+      "primary_topic": "simulation-latent",
+      "reason": "Learn pixel-based control through latent imagined rollouts"
+    },
+    "sun2026atomvla": {
+      "status": "selected",
+      "work_id": "sun2026atomvla",
+      "primary_topic": "simulation-latent",
+      "reason": "Post-train robot actions with predictive visual latent world models"
+    },
+    "jia2026driveworldvla": {
+      "status": "selected",
+      "work_id": "jia2026driveworldvla",
+      "primary_topic": "simulation-latent",
+      "reason": "Align visual latent dynamics with driving actions"
+    },
+    "cao2026mobiledreamer": {
+      "status": "selected",
+      "work_id": "cao2026mobiledreamer",
+      "primary_topic": "simulation-semantic",
+      "reason": "Forecast spatial GUI element sketches for lookahead actions"
+    },
+    "wd_mobileworld2025": {
+      "status": "selected",
+      "work_id": "wd_mobileworld2025",
+      "primary_topic": "simulation-semantic",
+      "reason": "Evaluate semantic state transitions for mobile GUI agents"
+    },
+    "chen2025planning": {
+      "status": "selected",
+      "work_id": "chen2025planning",
+      "primary_topic": "simulation-semantic",
+      "reason": "Plan with a vision-language model of environment dynamics"
+    },
+    "wang2026vagen": {
+      "status": "selected",
+      "work_id": "wang2026vagen",
+      "primary_topic": "simulation-semantic",
+      "reason": "Reinforce world-state reasoning in multi-turn visual interaction"
+    },
+    "zheng2026code2world": {
+      "status": "selected",
+      "work_id": "zheng2026code2world",
+      "primary_topic": "simulation-semantic",
+      "reason": "Predict GUI states through renderable code"
+    },
+    "va_c105_2025": {
+      "status": "selected",
+      "work_id": "va_c105_2025",
+      "primary_topic": "visual-evaluation-evidence",
+      "reason": "Critique perceptual errors and revisit supporting image evidence"
+    },
+    "chen2026reflectr1": {
+      "status": "selected",
+      "work_id": "chen2026reflectr1",
+      "primary_topic": "visual-evaluation-evidence",
+      "reason": "Reflect on localized evidence to correct long-video answers"
+    },
+    "min2026improving": {
+      "status": "selected",
+      "work_id": "min2026improving",
+      "primary_topic": "visual-evaluation-evidence",
+      "reason": "Detect perception errors with visual process reward models"
+    },
+    "wang2026forgeryvcr": {
+      "status": "selected",
+      "work_id": "wang2026forgeryvcr",
+      "primary_topic": "visual-evaluation-evidence",
+      "reason": "Inspect forensic image traces for grounded authenticity reasoning"
+    },
+    "duan2024aha": {
+      "status": "selected",
+      "work_id": "duan2024aha",
+      "primary_topic": "visual-evaluation-process",
+      "reason": "Detect and explain robot failures from visual observations"
+    },
+    "chen2026intentscore": {
+      "status": "selected",
+      "work_id": "chen2026intentscore",
+      "primary_topic": "visual-evaluation-process",
+      "reason": "Judge whether computer actions match the intended workflow"
+    },
+    "va_c1187_2026": {
+      "status": "selected",
+      "work_id": "va_c1187_2026",
+      "primary_topic": "visual-evaluation-process",
+      "reason": "Compare visual states to reward GUI action progress"
+    },
+    "guiagent089": {
+      "status": "selected",
+      "work_id": "guiagent089",
+      "primary_topic": "visual-evaluation-process",
+      "reason": "Learn reflection over multimodal GUI action trajectories"
+    },
+    "chen2025edival": {
+      "status": "selected",
+      "work_id": "chen2025edival",
+      "primary_topic": "visual-evaluation-outcome",
+      "reason": "Judge edit compliance, content preservation, and visual quality"
+    },
+    "chen2026perfguard": {
+      "status": "selected",
+      "work_id": "chen2026perfguard",
+      "primary_topic": "visual-evaluation-outcome",
+      "reason": "Evaluate visual generation against requested performance constraints"
+    },
+    "dai2026prore": {
+      "status": "selected",
+      "work_id": "dai2026prore",
+      "primary_topic": "visual-evaluation-outcome",
+      "reason": "Actively probe GUI states when completion evidence is insufficient"
+    },
+    "xiong2025llava": {
+      "status": "selected",
+      "work_id": "xiong2025llava",
+      "primary_topic": "visual-evaluation-outcome",
+      "reason": "Learn visual judgments for multimodal model outputs"
+    },
+    "zhang2026don": {
+      "status": "selected",
+      "work_id": "zhang2026don",
+      "primary_topic": "visual-evaluation-self-correction",
+      "reason": "Compare intended and observed GUI action effects before repair"
+    },
+    "ma2026cyclevla": {
+      "status": "selected",
+      "work_id": "ma2026cyclevla",
+      "primary_topic": "visual-evaluation-self-correction",
+      "reason": "Recover manipulation through visually grounded subtask backtracking"
+    },
+    "va_c120_2025": {
+      "status": "selected",
+      "work_id": "va_c120_2025",
+      "primary_topic": "visual-evaluation-self-correction",
+      "reason": "Reflect on motion to correct fine-grained robotic actions"
+    },
+    "cheng2025vision": {
+      "status": "selected",
+      "work_id": "cheng2025vision",
+      "primary_topic": "visual-evaluation-self-correction",
+      "reason": "Improve visual reasoning through reflection on image-grounded answers"
+    },
+    "shen2026imagagent": {
+      "status": "selected",
+      "work_id": "shen2026imagagent",
+      "primary_topic": "visual-evaluation-self-correction",
+      "reason": "Reflect on intermediate images to repair constrained edits"
+    },
+    "chen2026reflect": {
+      "status": "selected",
+      "work_id": "chen2026reflect",
+      "primary_topic": "evolving-diagnosis",
+      "reason": "Diagnose GUI skill failures and revise reusable procedures"
+    },
+    "emb_n_awarevln": {
+      "status": "selected",
+      "work_id": "emb_n_awarevln",
+      "primary_topic": "evolving-diagnosis",
+      "reason": "Diagnose navigation uncertainty through self-aware visual reasoning"
+    },
+    "emb_d_elfvla": {
+      "status": "selected",
+      "work_id": "emb_d_elfvla",
+      "primary_topic": "evolving-diagnosis",
+      "reason": "Learn driving improvements from observed action failures"
+    },
+    "ying2026robofailring": {
+      "status": "selected",
+      "work_id": "ying2026robofailring",
+      "primary_topic": "evolving-diagnosis",
+      "reason": "Retrieve visually grounded robot failure cases for diagnosis"
+    },
+    "guiagent097": {
+      "status": "selected",
+      "work_id": "guiagent097",
+      "primary_topic": "evolving-signals",
+      "reason": "Iteratively improve GUI agents with learned critic feedback"
+    },
+    "ye2025video2policy": {
+      "status": "selected",
+      "work_id": "ye2025video2policy",
+      "primary_topic": "evolving-signals",
+      "reason": "Use visual internet demonstrations to expand robot training tasks"
+    },
+    "chen2026genevolve": {
+      "status": "selected",
+      "work_id": "chen2026genevolve",
+      "primary_topic": "evolving-signals",
+      "reason": "Distill contrasted image-generation experience into improvement signals"
+    },
+    "guo2026vlaw": {
+      "status": "selected",
+      "work_id": "guo2026vlaw",
+      "primary_topic": "evolving-signals",
+      "reason": "Co-improve robot policies and visual world models"
+    },
+    "yan2026vgymenhancingagenticvisual": {
+      "status": "selected",
+      "work_id": "yan2026vgymenhancingagenticvisual",
+      "primary_topic": "evolving-signals",
+      "reason": "Co-evolve visual reasoning skills and training data"
+    },
+    "xiao2026self": {
+      "status": "selected",
+      "work_id": "xiao2026self",
+      "primary_topic": "evolving-optimization",
+      "reason": "Improve VLA manipulation using residual-RL-generated data"
+    },
+    "chai2026evolvenav": {
+      "status": "selected",
+      "work_id": "chai2026evolvenav",
+      "primary_topic": "evolving-optimization",
+      "reason": "Adapt object navigation with preflection and evolving visual memory"
+    },
+    "zhu2025wmpo": {
+      "status": "selected",
+      "work_id": "zhu2025wmpo",
+      "primary_topic": "evolving-optimization",
+      "reason": "Optimize VLA policies with visual world-model rollouts"
+    },
+    "guiagent062": {
+      "status": "selected",
+      "work_id": "guiagent062",
+      "primary_topic": "evolving-optimization",
+      "reason": "Online reinforcement learning for mobile visual GUI interaction"
+    },
+    "liu2026evovla": {
+      "status": "selected",
+      "work_id": "liu2026evovla",
+      "primary_topic": "evolving-optimization",
+      "reason": "Evolve robot vision-language-action policies"
+    },
+    "ye2026videoresearcher": {
+      "status": "selected",
+      "work_id": "ye2026videoresearcher",
+      "primary_topic": "evolving-infrastructure",
+      "reason": "Improve the tool design used to inspect long videos"
+    },
+    "xu2026videoharness": {
+      "status": "selected",
+      "work_id": "xu2026videoharness",
+      "primary_topic": "evolving-infrastructure",
+      "reason": "Evolve long-video harnesses with frozen vision-language models"
+    },
+    "li2026comfyclaw": {
+      "status": "selected",
+      "work_id": "li2026comfyclaw",
+      "primary_topic": "evolving-infrastructure",
+      "reason": "Evolve executable skills for image-generation workflows"
+    },
+    "wang2026harnesspai": {
+      "status": "selected",
+      "work_id": "wang2026harnesspai",
+      "primary_topic": "evolving-infrastructure",
+      "reason": "Evolve robot programs and collect improved visual rollout data"
+    },
+    "wang2026regenharness": {
+      "status": "selected",
+      "work_id": "wang2026regenharness",
+      "primary_topic": "evolving-infrastructure",
+      "reason": "Gate robot harness updates with execution evidence"
+    },
+    "shang2026rlharnesscoevolvingproceduralskills": {
+      "status": "selected",
+      "work_id": "shang2026rlharnesscoevolvingproceduralskills",
+      "primary_topic": "evolving-infrastructure",
+      "reason": "Co-evolve procedural scaffolds and multimodal reasoning policies"
+    },
+    "agashe2025agent": {
+      "status": "selected",
+      "work_id": "agashe2025agent",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Coordinate visual GUI specialists for computer-use workflows"
+    },
+    "qin2025ui": {
+      "status": "selected",
+      "work_id": "qin2025ui",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Ground multi-step native GUI interaction in screen observations"
+    },
+    "wang2025opencua": {
+      "status": "selected",
+      "work_id": "wang2025opencua",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Open visual computer-use models, trajectories, and training foundations"
+    },
+    "xu2025aguvis": {
+      "status": "selected",
+      "work_id": "xu2025aguvis",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Execute GUI workflows through pure visual observations"
+    },
+    "lu2026qwencua": {
+      "status": "selected",
+      "work_id": "lu2026qwencua",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Native visual computer use across task environments"
+    },
+    "chen2026showharness": {
+      "status": "selected",
+      "work_id": "chen2026showharness",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Coordinate robot policies with VLM observations and feedback"
+    },
+    "chen2026harnessvln": {
+      "status": "selected",
+      "work_id": "chen2026harnessvln",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Orchestrate training-free visual navigation through an agent harness"
+    },
+    "roboharnessk12026": {
+      "status": "selected",
+      "work_id": "roboharnessk12026",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Augment robot perception to support long-horizon task execution"
+    },
+    "li2026roboclaw": {
+      "status": "selected",
+      "work_id": "li2026roboclaw",
+      "primary_topic": "planning-task-workflow",
+      "reason": "Organize long-horizon robotic tasks with agentic execution"
+    },
+    "emb_m_pivot": {
+      "status": "selected",
+      "work_id": "emb_m_pivot",
+      "primary_topic": "planning-trajectory-search",
+      "reason": "Iteratively compare visually prompted robot action candidates"
+    },
+    "lin2025storm": {
+      "status": "selected",
+      "work_id": "lin2025storm",
+      "primary_topic": "planning-trajectory-search",
+      "reason": "Search predicted visual futures for robotic manipulation"
+    },
+    "emb_n_nwm": {
+      "status": "selected",
+      "work_id": "emb_n_nwm",
+      "primary_topic": "planning-trajectory-search",
+      "reason": "Imagine navigation observations to evaluate future routes"
+    },
+    "gu2026harnesswam": {
+      "status": "selected",
+      "work_id": "gu2026harnesswam",
+      "primary_topic": "planning-trajectory-search",
+      "reason": "Deliberate over world-action predictions before robot execution"
+    },
+    "yang2026gta1": {
+      "status": "selected",
+      "work_id": "yang2026gta1",
+      "primary_topic": "planning-trajectory-search",
+      "reason": "Scale GUI action selection through test-time search"
+    },
+    "tang2026agent": {
+      "status": "selected",
+      "work_id": "tang2026agent",
+      "primary_topic": "planning-trajectory-search",
+      "reason": "Search computer-use trajectories with generation and evaluation"
+    },
+    "ahn2024autort": {
+      "status": "selected",
+      "work_id": "ahn2024autort",
+      "primary_topic": "planning-multiagent-coordination",
+      "reason": "Orchestrate robotic agents using scene observations and constraints"
+    },
+    "shi2026navharnessgoals": {
+      "status": "selected",
+      "work_id": "shi2026navharnessgoals",
+      "primary_topic": "planning-multiagent-coordination",
+      "reason": "Coordinate goals, visual navigation, verification, and memory agents"
+    },
+    "liu2026longvideoagent": {
+      "status": "selected",
+      "work_id": "liu2026longvideoagent",
+      "primary_topic": "planning-multiagent-coordination",
+      "reason": "Coordinate agents to reason over long-video evidence"
+    },
+    "xu2026multi": {
+      "status": "selected",
+      "work_id": "xu2026multi",
+      "primary_topic": "planning-multiagent-coordination",
+      "reason": "Coordinate perception and action agents for video reasoning"
+    },
+    "mvagent2026": {
+      "status": "selected",
+      "work_id": "mvagent2026",
+      "primary_topic": "planning-multiagent-coordination",
+      "reason": "Coordinate shot conditions and policies for consistent video generation"
+    },
+    "va_c1168_2026": {
+      "status": "selected",
+      "work_id": "va_c1168_2026",
+      "primary_topic": "planning-multiagent-coordination",
+      "reason": "Coordinate verifiable image-derived scientific hypothesis testing"
+    },
+    "fan2024videoagent": {
+      "status": "selected",
+      "work_id": "fan2024videoagent",
+      "primary_topic": "vision-memory-text",
+      "reason": "Turn observed video content into searchable memory for reasoning"
+    },
+    "va_c178_2024": {
+      "status": "selected",
+      "work_id": "va_c178_2024",
+      "primary_topic": "vision-memory-text",
+      "reason": "Distill visual action experience into embodied programs of thought"
+    },
+    "yan2026admemo": {
+      "status": "selected",
+      "work_id": "yan2026admemo",
+      "primary_topic": "vision-memory-text",
+      "reason": "Use language-based memory inside visually grounded driving control"
+    },
+    "liu2026atmem": {
+      "status": "selected",
+      "work_id": "liu2026atmem",
+      "primary_topic": "vision-memory-text",
+      "reason": "Track the current workflow role and status of GUI-observed values"
+    },
+    "han2026vista": {
+      "status": "selected",
+      "work_id": "han2026vista",
+      "primary_topic": "vision-memory-evidence",
+      "reason": "Preserve original observations and actively retrieve visual details"
+    },
+    "fan2025embodied": {
+      "status": "selected",
+      "work_id": "fan2025embodied",
+      "primary_topic": "vision-memory-evidence",
+      "reason": "Store object-centered video, depth, and pose evidence persistently"
+    },
+    "zhao2026visage": {
+      "status": "selected",
+      "work_id": "zhao2026visage",
+      "primary_topic": "vision-memory-evidence",
+      "reason": "Construct and repair evidence-grounded long-video memories"
+    },
+    "choi2026merit": {
+      "status": "selected",
+      "work_id": "choi2026merit",
+      "primary_topic": "vision-memory-evidence",
+      "reason": "Retrieve multimodal episodic evidence for ultra-long video questions"
+    },
+    "yeo2026worldmm": {
+      "status": "selected",
+      "work_id": "yeo2026worldmm",
+      "primary_topic": "vision-memory-evidence",
+      "reason": "Retrieve dynamic multimodal memory for long-video reasoning"
+    },
+    "kang2026vmemmodalityroutedretrievallongterm": {
+      "status": "selected",
+      "work_id": "kang2026vmemmodalityroutedretrievallongterm",
+      "primary_topic": "vision-memory-evidence",
+      "reason": "Route memory retrieval across visual and other modalities"
+    },
+    "chen2025less": {
+      "status": "selected",
+      "work_id": "chen2025less",
+      "primary_topic": "vision-memory-compression",
+      "reason": "Prune screenshot elements and compress GUI interaction history"
+    },
+    "emb_n_streamvln": {
+      "status": "selected",
+      "work_id": "emb_n_streamvln",
+      "primary_topic": "vision-memory-compression",
+      "reason": "Reduce historical visual context during streaming navigation"
+    },
+    "nie2026light": {
+      "status": "selected",
+      "work_id": "nie2026light",
+      "primary_topic": "vision-memory-compression",
+      "reason": "Merge long-video multimodal context hierarchically"
+    },
+    "fan2026screenshots": {
+      "status": "selected",
+      "work_id": "fan2026screenshots",
+      "primary_topic": "vision-memory-compression",
+      "reason": "Manage screenshot context when mixing GUI and MCP tools"
+    },
+    "xu2026vla": {
+      "status": "selected",
+      "work_id": "xu2026vla",
+      "primary_topic": "vision-memory-compression",
+      "reason": "Reuse computation for visually unchanged VLA tokens"
+    },
+    "kagaya2025vireskill": {
+      "status": "selected",
+      "work_id": "kagaya2025vireskill",
+      "primary_topic": "vision-memory-experience",
+      "reason": "Reuse visually grounded plans and skills for robot replanning"
+    },
+    "xiao2026ui": {
+      "status": "selected",
+      "work_id": "xiao2026ui",
+      "primary_topic": "vision-memory-experience",
+      "reason": "Accumulate reusable GUI workflows and subtask experience"
+    },
+    "chen2026onevomemory": {
+      "status": "selected",
+      "work_id": "chen2026onevomemory",
+      "primary_topic": "vision-memory-experience",
+      "reason": "Learn memory retention from robot rollout outcomes"
+    },
+    "li2026roboharness": {
+      "status": "selected",
+      "work_id": "li2026roboharness",
+      "primary_topic": "vision-memory-experience",
+      "reason": "Adapt frozen VLA policies with retrieved success and failure experience"
+    },
+    "zhao2026navharnesslifelong": {
+      "status": "selected",
+      "work_id": "zhao2026navharnesslifelong",
+      "primary_topic": "vision-memory-experience",
+      "reason": "Consolidate maps and corrected visual search experience across tasks"
+    },
+    "zeng2026mementogui": {
+      "status": "selected",
+      "work_id": "zeng2026mementogui",
+      "primary_topic": "vision-memory-experience",
+      "reason": "Learn multimodal memory control for long-horizon GUI tasks"
+    },
+    "zhu2026hybrid": {
+      "status": "selected",
+      "work_id": "zhu2026hybrid",
+      "primary_topic": "vision-memory-experience",
+      "reason": "Update structured memory through visual GUI experience"
+    },
+    "wang2024mobile": {
+      "status": "selected",
+      "work_id": "wang2024mobile",
+      "primary_topic": "visual-tools-observation",
+      "reason": "Combine OCR and icon detection for screen-based mobile actions"
+    },
+    "gao2024clova": {
+      "status": "selected",
+      "work_id": "gao2024clova",
+      "primary_topic": "visual-tools-observation",
+      "reason": "Inspect images with tools and update the visual assistant"
+    },
+    "va_c201_2024": {
+      "status": "selected",
+      "work_id": "va_c201_2024",
+      "primary_topic": "visual-tools-observation",
+      "reason": "Diagnose image degradation and orchestrate restoration tools"
+    },
+    "va_c1814_2025": {
+      "status": "selected",
+      "work_id": "va_c1814_2025",
+      "primary_topic": "visual-tools-observation",
+      "reason": "Inspect high-resolution pathology regions through agentic visual analysis"
+    },
+    "va_c1705_2026": {
+      "status": "selected",
+      "work_id": "va_c1705_2026",
+      "primary_topic": "visual-tools-observation",
+      "reason": "Connect 3D medical perception tools with agentic understanding"
+    },
+    "wu2025mmsearch": {
+      "status": "selected",
+      "work_id": "wu2025mmsearch",
+      "primary_topic": "visual-tools-search",
+      "reason": "Learn when to acquire image and text search evidence"
+    },
+    "geng2026webwatcher": {
+      "status": "selected",
+      "work_id": "geng2026webwatcher",
+      "primary_topic": "visual-tools-search",
+      "reason": "Coordinate visual and textual search for multimodal research"
+    },
+    "pmlr-v306-huang26bx": {
+      "status": "selected",
+      "work_id": "pmlr-v306-huang26bx",
+      "primary_topic": "visual-tools-search",
+      "reason": "Train multimodal deep research with visual evidence acquisition"
+    },
+    "son2025world": {
+      "status": "selected",
+      "work_id": "son2025world",
+      "primary_topic": "visual-tools-search",
+      "reason": "Retrieve visual world knowledge to support image generation"
+    },
+    "li2025insight": {
+      "status": "selected",
+      "work_id": "li2025insight",
+      "primary_topic": "visual-tools-search",
+      "reason": "Generalize active visual search in multimodal reasoning"
+    },
+    "wang2024genartist": {
+      "status": "selected",
+      "work_id": "wang2024genartist",
+      "primary_topic": "visual-tools-generation",
+      "reason": "Inspect intermediate images while orchestrating generation and editing"
+    },
+    "huang2026vimax": {
+      "status": "selected",
+      "work_id": "huang2026vimax",
+      "primary_topic": "visual-tools-generation",
+      "reason": "Plan and generate multi-scene videos with agentic workflows"
+    },
+    "va_c1288_2026": {
+      "status": "selected",
+      "work_id": "va_c1288_2026",
+      "primary_topic": "visual-tools-generation",
+      "reason": "Generate simulation-ready indoor scenes through agentic authoring"
+    },
+    "va_c1860_2025": {
+      "status": "selected",
+      "work_id": "va_c1860_2025",
+      "primary_topic": "visual-tools-generation",
+      "reason": "Synthesize 3D scenes with an extensible, reflective agent"
+    },
+    "jiang2026genagent": {
+      "status": "selected",
+      "work_id": "jiang2026genagent",
+      "primary_topic": "visual-tools-generation",
+      "reason": "Use multimodal reasoning to coordinate text-to-image generation"
+    },
+    "xu2026omniharness": {
+      "status": "selected",
+      "work_id": "xu2026omniharness",
+      "primary_topic": "visual-tools-generation",
+      "reason": "Learn symbolic policies for visual generation workflows"
+    },
+    "shao2026livefigure": {
+      "status": "selected",
+      "work_id": "shao2026livefigure",
+      "primary_topic": "visual-tools-generation",
+      "reason": "Generate editable scientific illustrations with visual agents"
+    },
+    "ding2026arm": {
+      "status": "selected",
+      "work_id": "ding2026arm",
+      "primary_topic": "verification-evidence",
+      "reason": "Ground reward judgments with crops and document evidence"
+    },
+    "va_c738_2026": {
+      "status": "selected",
+      "work_id": "va_c738_2026",
+      "primary_topic": "verification-evidence",
+      "reason": "Link multimodal medical reasoning to accountable evidence checks"
+    },
+    "va_c843_2026": {
+      "status": "selected",
+      "work_id": "va_c843_2026",
+      "primary_topic": "verification-evidence",
+      "reason": "Ground cellular morphology reasoning in visual profiling evidence"
+    },
+    "wu2026oracle": {
+      "status": "selected",
+      "work_id": "wu2026oracle",
+      "primary_topic": "verification-process",
+      "reason": "Critique proposed GUI actions before execution"
+    },
+    "va_c106_2025": {
+      "status": "selected",
+      "work_id": "va_c106_2025",
+      "primary_topic": "verification-process",
+      "reason": "Monitor tracked geometry with executable visual constraint checks"
+    },
+    "pacaud2025guardian": {
+      "status": "selected",
+      "work_id": "pacaud2025guardian",
+      "primary_topic": "verification-process",
+      "reason": "Separate robot planning errors from visually observed execution errors"
+    },
+    "bench_osworldmcp": {
+      "status": "selected",
+      "work_id": "bench_osworldmcp",
+      "primary_topic": "verification-process",
+      "reason": "Evaluate tool invocation in visually grounded computer-use workflows"
+    },
+    "xie2024osworld": {
+      "status": "selected",
+      "work_id": "xie2024osworld",
+      "primary_topic": "verification-outcome",
+      "reason": "Verify real computer task completion with execution-based evaluators"
+    },
+    "bench_androidworld": {
+      "status": "selected",
+      "work_id": "bench_androidworld",
+      "primary_topic": "verification-outcome",
+      "reason": "Verify mobile task completion through device-state checks"
+    },
+    "koh2024visualwebarena": {
+      "status": "selected",
+      "work_id": "koh2024visualwebarena",
+      "primary_topic": "verification-outcome",
+      "reason": "Evaluate agents on tasks requiring visual web evidence"
+    },
+    "yang2025embodiedbench": {
+      "status": "selected",
+      "work_id": "yang2025embodiedbench",
+      "primary_topic": "verification-outcome",
+      "reason": "Evaluate vision-driven embodied agents across action environments"
+    },
+    "va_c109_2025": {
+      "status": "selected",
+      "work_id": "va_c109_2025",
+      "primary_topic": "verification-outcome",
+      "reason": "Evaluate executable ComfyUI workflows assembled by agents"
+    },
+    "va_c780_2026": {
+      "status": "selected",
+      "work_id": "va_c780_2026",
+      "primary_topic": "verification-outcome",
+      "reason": "Evaluate multimodal scientific workflow completion"
+    },
+    "emb_m_liberoplus26": {
+      "status": "selected",
+      "work_id": "emb_m_liberoplus26",
+      "primary_topic": "verification-outcome",
+      "reason": "Stress-test visual-language-action robustness under perturbations"
+    },
+    "va_c688_2026": {
+      "status": "selected",
+      "work_id": "va_c688_2026",
+      "primary_topic": "safety-visual-information",
+      "reason": "Test malicious instructions embedded in rendered GUI observations"
+    },
+    "yu2026minim": {
+      "status": "selected",
+      "work_id": "yu2026minim",
+      "primary_topic": "safety-visual-information",
+      "reason": "Sanitize sensitive screen content before remote agent inference"
+    },
+    "evtimov2026wasp": {
+      "status": "selected",
+      "work_id": "evtimov2026wasp",
+      "primary_topic": "safety-visual-information",
+      "reason": "Evaluate prompt injection through web-agent observations"
+    },
+    "zhang2026safevla": {
+      "status": "selected",
+      "work_id": "zhang2026safevla",
+      "primary_topic": "safety-constrained-execution",
+      "reason": "Align vision-language-action policies with execution constraints"
+    },
+    "ravichandran2026safety": {
+      "status": "selected",
+      "work_id": "ravichandran2026safety",
+      "primary_topic": "safety-constrained-execution",
+      "reason": "Enforce grounded robot plan constraints with safety guards"
+    },
+    "jeong2025robots": {
+      "status": "selected",
+      "work_id": "jeong2025robots",
+      "primary_topic": "safety-constrained-execution",
+      "reason": "Propose feasible robot alternatives when requested actions are unsafe"
+    },
+    "zhang2025robochemist": {
+      "status": "selected",
+      "work_id": "zhang2025robochemist",
+      "primary_topic": "safety-constrained-execution",
+      "reason": "Enforce experiment protocols during embodied chemical tasks"
+    },
+    "mozannar2025magentic": {
+      "status": "selected",
+      "work_id": "mozannar2025magentic",
+      "primary_topic": "safety-constrained-execution",
+      "reason": "Combine visual computer use with action guards and human control"
+    },
+    "agia2024unpacking": {
+      "status": "selected",
+      "work_id": "agia2024unpacking",
+      "primary_topic": "safety-runtime-oversight",
+      "reason": "Monitor action consistency and visually assessed robot progress"
+    },
+    "huq2025cowpilot": {
+      "status": "selected",
+      "work_id": "huq2025cowpilot",
+      "primary_topic": "safety-runtime-oversight",
+      "reason": "Pause and override agent actions during visual web navigation"
+    },
+    "xu2025can": {
+      "status": "selected",
+      "work_id": "xu2025can",
+      "primary_topic": "safety-runtime-oversight",
+      "reason": "Calibrate runtime failure signals from robot execution data"
+    },
+    "va_c517_2026": {
+      "status": "selected",
+      "work_id": "va_c517_2026",
+      "primary_topic": "safety-runtime-oversight",
+      "reason": "Evaluate embodied-agent behavior under hazardous instructions"
+    },
+    "agashe2025agent_s": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Agent S: An open agentic framework that uses computers like a human",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "b43_gqa": {
+      "status": "bibliography_only",
+      "year": 2019,
+      "title": "GQA: A New Dataset for Real-World Visual Reasoning and Compositional Question Answering",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "b43_nextqa": {
+      "status": "bibliography_only",
+      "year": 2021,
+      "title": "NExT-QA: Next Phase of Question-Answering to Explaining Temporal Actions",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "b43_videomme": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "bai2025qwen3": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Qwen3-VL technical report",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "bench_omniact": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "OmniACT: A Dataset and Benchmark for Enabling Multimodal Generalist Autonomous Agents for Desktop and Web",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "berg2025semantic": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Semantic World Models",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "black2024pi_0": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "π_0: A Vision-Language-Action Flow Model for General Robot Control",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "bo2025agentic": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Agentic learner with grow-and-refine multimodal semantic memory",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "brohan2023rt": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "caesar2020nuscenes": {
+      "status": "bibliography_only",
+      "year": 2020,
+      "title": "nuScenes: A Multimodal Dataset for Autonomous Driving",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "cheang2024gr2": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge for Robot Manipulation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "cvbg_mmreact": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "MM-REACT: Prompting ChatGPT for Multimodal Reasoning and Action",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "dauner2024navsim": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "NAVSIM: Data-Driven Non-Reactive Autonomous Vehicle Simulation and Benchmarking",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "dong2026visual": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Visual reasoning through tool-supervised reinforcement learning",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "ds_3dfront": {
+      "status": "bibliography_only",
+      "year": 2021,
+      "title": "3D-FRONT: 3D Furnished Rooms With layOuts and semaNTics",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1606_05433": {
+      "status": "bibliography_only",
+      "year": 2016,
+      "title": "FVQA: Fact-based Visual Question Answering",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1608_00272": {
+      "status": "bibliography_only",
+      "year": 2016,
+      "title": "Modeling Context in Referring Expressions",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1709_06158": {
+      "status": "bibliography_only",
+      "year": 2017,
+      "title": "Matterport3D: Learning from RGB-D Data in Indoor Environments",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1711_03938": {
+      "status": "bibliography_only",
+      "year": 2017,
+      "title": "CARLA: An Open Urban Driving Simulator",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1711_07280": {
+      "status": "bibliography_only",
+      "year": 2017,
+      "title": "Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1802_08802": {
+      "status": "bibliography_only",
+      "year": 2018,
+      "title": "Reinforcement Learning on Web Interfaces Using Workflow-Guided Exploration",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1810_12440": {
+      "status": "bibliography_only",
+      "year": 2018,
+      "title": "TallyQA: Answering Complex Counting Questions",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1904_00523": {
+      "status": "bibliography_only",
+      "year": 2019,
+      "title": "Toward Real-World Single Image Super-Resolution: A New Benchmark and A New Model",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1908_03195": {
+      "status": "bibliography_only",
+      "year": 2019,
+      "title": "LVIS: A Dataset for Large Vocabulary Instance Segmentation",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_1909_12271": {
+      "status": "bibliography_only",
+      "year": 2019,
+      "title": "RLBench: The Robot Learning Benchmark & Learning Environment",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2003_08515": {
+      "status": "bibliography_only",
+      "year": 2020,
+      "title": "SAPIEN: A SimulAted Part-based Interactive ENvironment",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2004_02857": {
+      "status": "bibliography_only",
+      "year": 2020,
+      "title": "Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2009_13081": {
+      "status": "bibliography_only",
+      "year": 2020,
+      "title": "What Disease does this Patient Have? A Large-scale Open Domain Question Answering Dataset from Medical Exams",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2010_07954": {
+      "status": "bibliography_only",
+      "year": 2020,
+      "title": "Room-Across-Room: Multilingual Vision-and-Language Navigation with Dense Spatiotemporal Grounding",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2010_14406": {
+      "status": "bibliography_only",
+      "year": 2020,
+      "title": "Transporter Networks: Rearranging the Visual World for Robotic Manipulation",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2104_05859": {
+      "status": "bibliography_only",
+      "year": 2021,
+      "title": "Rapid Exploration for Open-World Navigation with Latent Goal Models",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2109_08238": {
+      "status": "bibliography_only",
+      "year": 2021,
+      "title": "Habitat-Matterport 3D Dataset (HM3D): 1000 Large-scale 3D Environments for Embodied AI",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2110_07058": {
+      "status": "bibliography_only",
+      "year": 2021,
+      "title": "Ego4D: Around the World in 3,000 Hours of Egocentric Video",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2203_15041": {
+      "status": "bibliography_only",
+      "year": 2022,
+      "title": "Socially Compliant Navigation Dataset (SCAND): A Large-Scale Dataset of Demonstrations for Social Navigation",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2207_01206": {
+      "status": "bibliography_only",
+      "year": 2022,
+      "title": "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2207_14096": {
+      "status": "bibliography_only",
+      "year": 2022,
+      "title": "Towards Large-Scale Small Object Detection: Survey and Benchmarks",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2302_11713": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Can Pre-trained Vision and Language Models Answer Visual Information-Seeking Questions?",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2304_13705": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2305_13655": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "LLM-grounded Diffusion: Enhancing Prompt Understanding of Text-to-Image Diffusion Models with Large Language Models",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2306_06070": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Mind2Web: Towards a Generalist Agent for the Web",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2307_10088": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Android in the Wild: A Large-Scale Dataset for Android Device Control",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2308_09126": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2308_12952": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "BridgeData V2: A Dataset for Robot Learning at Scale",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2310_02255": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "MathVista: Evaluating Mathematical Reasoning of Foundation Models in Visual Contexts",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2311_17005": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "MVBench: A Comprehensive Multi-modal Video Understanding Benchmark",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_arxiv_2402_08191": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "THE COLOSSEUM: A Benchmark for Evaluating Generalization for Robotic Manipulation",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2404_12390": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "BLINK: Multimodal Large Language Models Can See but Not Perceive",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2405_05941": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Evaluating Real-World Robot Manipulation Policies in Simulation",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2406_03679": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "On the Effects of Data Scale on UI Control Agents",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2406_04264": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "MLVU: Benchmarking Multi-task Long Video Understanding",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2406_08035": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "LVBench: An Extreme Long Video Understanding Benchmark",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2406_19392": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "ReXTime: A Benchmark Suite for Reasoning-Across-Time in Videos",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2407_04172": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "ChartGemma: Visual Instruction-tuning for Chart Reasoning in the Wild",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2409_08264": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2410_13720": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Movie Gen: A Cast of Media Foundation Models",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2410_24024": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "AndroidLab: Training and Systematic Benchmarking of Android Autonomous Agents",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2412_12075": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "CG-Bench: Clue-grounded Question Answering Benchmark for Long Video Understanding",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2503_03803": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "EgoLife: Towards Egocentric Life Assistant",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2504_10739": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "HippoMM: Hippocampal-inspired Multimodal Memory for Long Audiovisual Event Understanding",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_arxiv_2506_04218": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Pseudo-Simulation for Autonomous Driving",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_hrbench": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Divide, Conquer and Combine: A Training-Free Framework for High-Resolution Image Perception in Multimodal Large Language Models",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "ds_intentqa": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "IntentQA: Context-aware Video Intent Reasoning",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_miniwob": {
+      "status": "bibliography_only",
+      "year": 2017,
+      "title": "World of Bits: An Open-Domain Platform for Web-Based Agents",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_nlvr2": {
+      "status": "bibliography_only",
+      "year": 2019,
+      "title": "A Corpus for Reasoning about Natural Language Grounded in Photographs",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_okvqa": {
+      "status": "bibliography_only",
+      "year": 2019,
+      "title": "OK-VQA: A Visual Question Answering Benchmark Requiring External Knowledge",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ds_sintel": {
+      "status": "bibliography_only",
+      "year": 2012,
+      "title": "A Naturalistic Open Source Movie for Optical Flow Evaluation",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "emb_d_autovla": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "AutoVLA: A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "emb_d_bench2drive": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Bench2Drive: Towards Multi-Ability Benchmarking of Closed-Loop End-To-End Autonomous Driving",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "emb_d_drivemoe": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "emb_d_lmdrive": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "LMDrive: Closed-Loop End-to-End Driving with Large Language Models",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "emb_d_uniad": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Planning-Oriented Autonomous Driving",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "emb_d_vad": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "VAD: Vectorized Scene Representation for Efficient Autonomous Driving",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "emb_m_oft": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "emb_n_etpnav": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "ETPNav: Evolving Topological Planning for Vision-Language Navigation in Continuous Environments",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "emb_n_navgpt2": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "NavGPT-2: Unleashing Navigational Reasoning Capability for Large Vision-Language Models",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "emb_n_navila": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "feng2023layoutgpt": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "LayoutGPT: Compositional visual planning and generation with large language models",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "gonzalez2025scaling": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Scaling Agents for Computer Use",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "gu2025webdreamer": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Is Your LLM Secretly a World Model of the Internet? Model-Based Planning for Web Agents",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "guiagent009": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "CarePilot: A Multi-Agent Framework for Long-Horizon Computer Task Automation in Healthcare",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "guiagent080": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "From Pixels to UI Actions: Learning to Follow Instructions via Graphical User Interfaces",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "gupta2023visual": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Visual programming: Compositional visual reasoning without training",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "hafner2019planet": {
+      "status": "bibliography_only",
+      "year": 2019,
+      "title": "Learning Latent Dynamics for Planning from Pixels",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "hahn2024proactive": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Proactive Agents for Multi-Turn Text-to-Image Generation Under Uncertainty",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "he2024webvoyager": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "WebVoyager: Building an end-to-end web agent with large multimodal models",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "hu2023tifa": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "TIFA: Accurate and interpretable text-to-image faithfulness evaluation with question answering",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "hu2024ella": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "ELLA: Equip diffusion models with LLM for enhanced semantic alignment",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "huang2023t2i": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "T2I-CompBench: A comprehensive benchmark for open-world compositional text-to-image generation",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "huang2023voxposer": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "VoxPoser: Composable 3D value maps for robotic manipulation with language models",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "huang2024vbench": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "VBench: Comprehensive benchmark suite for video generative models",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "huang2025t2i": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "T2I-CompBench++: An enhanced and comprehensive benchmark for compositional text-to-image generation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "huang2026roboharness": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "RoboHarness: Memory-Driven Orchestration of Heterogeneous Robot Policies for Long-Horizon Planning",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "jiang2026imagine": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Imagine before you predict: Interleaved latent visual reasoning for video event prediction",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "jiang2026octot2i": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "OctoT2I: A Self-Evolving Agentic Text-to-Image Router",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "jiang2026sea": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "SEA-Eval: A Benchmark for Evaluating Self-Evolving Agents Beyond Episodic Assessment",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "kim2024openvla": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "OpenVLA: An open-source vision-language-action model",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "kim2026recursive": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Recursive Harness Distillation across Agents for Robot Manipulation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "kuntz2026harm": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "OS-Harm: A Benchmark for Measuring Safety of Computer Use Agents",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "lee2026rda": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "RDA: Reward Design Agent for Reinforcement Learning",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "li2025hamster": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "HAMSTER: Hierarchical action models for open-world robot manipulation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "li2026agent": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Agent harness engineering: A survey",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "li2026latent": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Latent visual reasoning",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "li2026spatialevo": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "SpatialEvo: Self-Evolving Spatial Intelligence via Deterministic Geometric Environments",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "li2026themis": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "OS-Themis: A scalable critic framework for generalist GUI rewards",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "li2026wam4d": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "WAM4D: Fast 4D World Action Model via Spatial Register Tokens",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "liu2023libero": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "liu2023reflect": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "REFLECT: Summarizing robot experiences for failure explanation and correction",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "liu2023visual": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Visual instruction tuning",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "long2026seeing": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Seeing, listening, remembering, and reasoning: A multimodal agent with long-term memory",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "lu2025octotools": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "OctoTools: An agentic framework with extensible tools for complex reasoning",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "lu2026webgen": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "WebGen-Agent: Enhancing interactive website generation with multi-level feedback and step-level reinforcement learning",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "luo2025visual": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Visual test-time scaling for GUI agent grounding",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "mao2026kestrel": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Kestrel: Grounding Self-Refinement for LVLM Hallucination Mitigation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "mei2026r": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "R-WoM: Retrieval-augmented world model for computer-use agents",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "micheli2023iris": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Transformers are Sample-Efficient World Models",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "oshima2026autoref": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "AutoRef: Harness Optimization for Agentic Multi-Reference Image Generation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "ren2023robots": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Robots that ask for help: Uncertainty alignment for large language model planners",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "ren2026scope": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "SCOPE: Structured Decomposition and Conditional Skill Orchestration for Complex Image Generation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "sec6_longvideobench": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "LongVideoBench: A Benchmark for Long-context Interleaved Video-Language Understanding",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "sec6_mmmu": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "MMMU: A Massive Multi-discipline Multimodal Understanding and Reasoning Benchmark for Expert AGI",
+      "reason": "supporting_dataset_model_or_benchmark_not_selected_for_visual_agent_focus"
+    },
+    "song2026coact": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "CoAct-1: Computer-using multi-agent system with coding actions",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "suris2023vipergpt": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "ViperGPT: Visual Inference via Python Execution for Reasoning",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "tan2024cradle": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Cradle: Empowering foundation agents towards general computer control",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "u_avis": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "AVIS: Autonomous Visual Information Seeking with Large Language Model Agent",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "u_memento": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Memento: Toward an All-Day Proactive Assistant for Ultra-Long Streaming Video",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c097_2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "SegAgent: Exploring Pixel Understanding Capabilities in MLLMs by Imitating Human Annotator Trajectories",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1150_2026": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "EventMemAgent: Hierarchical Event-Centric Memory for Online Video Understanding with Adaptive Tool Use",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1180_2026": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "NeuroRefiner: Morphology-Aware Multi-Agent Refinement for 3D Fluorescence Microscopy Neuron Segmentation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c121_2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "SILMM: Self-Improving Large Multimodal Models for Compositional Text-to-Image Generation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c124_2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "V-Stylist: Video Stylization via Collaboration and Reflection of MLLM Agents",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1418_2026": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "AutoMat: Physics-Guided Agentic Reasoning for Solving Ill-Posed Inverse Microscopy Problems",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1596_2026": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "PSBench: Editing Image via GUI Agents in Photoshop",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1797_2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "SketchMind: A Multi-Agent Cognitive Framework for Assessing Student-Drawn Scientific Sketches",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1880_2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "4KAgent: Agentic Any Image to 4K Super-Resolution",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1903_2024": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "DiscoveryWorld: A Virtual Environment for Developing and Evaluating Automated Scientific Discovery Agents",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1910_2024": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "GTA: A Benchmark for General Tool Agents",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1916_2024": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Spider2-V: How Far Are Multimodal Agents From Automating Data Science and Engineering Workflows?",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c1926_2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "LabUtopia: High-Fidelity Simulation and Hierarchical Benchmark for Scientific Embodied Agents",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c487_2026": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "GeoMMBench and GeoMMAgent: Toward Expert-Level Multimodal Intelligence in Geoscience and Remote Sensing",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c547_2026": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "SciEducator: Scientific Video Understanding and Educating via Deming-Cycle Multi-Agent System",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_c549_2026": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "VISTA: A Test-Time Self-Improving Video Generation Agent",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "va_ms001_2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Paper2Poster: Towards Multimodal Poster Automation from Scientific Papers",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "venkatesh2026crea": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "CREA: A Collaborative Multi-Agent Framework for Creative Image Editing and Generation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wang2024lave": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "LAVE: Llm-powered agent assistance and language augmentation for video editing",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wang2025mobile": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Mobile-Agent-E: Self-evolving mobile assistant for complex tasks",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wang2025videotree": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "VideoTree: Adaptive tree-based video representation for LLM reasoning on long videos",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wang2026gaia": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "GAIA: A Data Flywheel System for Training GUI Test-Time Scaling Critic Models",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wang2026physcensis": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "PhyScensis: Physics-Augmented LLM Agents for Complex Physical Scene Arrangement",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wd_flowdreamer2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "FlowDreamer: A RGB-D World Model with Flow-based Motion Representations for Robot Manipulation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wd_raw2drive2025": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Raw2Drive: Reinforcement Learning with Aligned World Models for End-to-End Autonomous Driving (in CARLA v2)",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wu2024gr1": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wu2024self": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Self-correcting llm-controlled diffusion models",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wu2025atlas": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "OS-ATLAS: Foundation action model for generalist GUI agents",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wu2026retouchiq": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "RetouchIQ: MLLM Agents for Instruction-Based Image Retouching with Generalist Reward",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "xiong2026rubrics": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Rubrics as visual-repair context for self-evolving ui-to-code generation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "xu2026mobileworldmodel": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "How Mobile World Model Guides GUI Agents?",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "yang2025magma": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Magma: A foundation model for multimodal AI agents",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "yao2022react": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "yao2025survey": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "A survey on agentic multimodal large language models",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "ye2023ip": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "IP-Adapter: Text compatible image prompt adapter for text-to-image diffusion models",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "yin2026videoarm": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "VideoARM: Agentic reasoning over hierarchical memory for long-form video understanding",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "yu2025rlaif": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "RLAIF-V: Open-source AI feedback leads to super GPT-4V trustworthiness",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "yuan2026fastwam": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Fast-WAM: Do World Action Models Need Test-time Future Imagination?",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "zhang2023adding": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "Adding conditional control to text-to-image diffusion models",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "zhang2023magicbrush": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "MagicBrush: A manually annotated dataset for instruction-guided image editing",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "zhang2025appagent": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "AppAgent: Multimodal agents as smartphone users",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "zhang2025thyme": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Thyme: Think Beyond Images",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "zhang2026hyperagents": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Hyperagents",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "zheng2024gpt": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "GPT-4V(ision) is a Generalist Web Agent, if Grounded",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "zhi2025videoagent2": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "VideoAgent2: Enhancing the llm-based agent system for long-form video understanding by uncertainty-aware CoT",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "sec6_alfred": {
+      "status": "bibliography_only",
+      "year": 2020,
+      "title": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "sec6_calvin": {
+      "status": "bibliography_only",
+      "year": 2022,
+      "title": "CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon Robot Manipulation Tasks",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "sec6_teach": {
+      "status": "bibliography_only",
+      "year": 2022,
+      "title": "TEACh: Task-Driven Embodied Agents That Chat",
+      "reason": "historical_reference_outside_recent_reading_list"
+    },
+    "yu2026openforgerl": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "OpenForgeRL: Train Harness-native Agents in Any Environment",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "zhou2024webarena": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "mao2024agentdriver": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "A Language Agent for Autonomous Driving",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "zhao2026vladriverrag": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "VLADriver-RAG: Retrieval-Augmented Vision-Language-Action Models for Autonomous Driving",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "fu2025orion": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "ORION: A Holistic End-to-End Autonomous Driving Framework by Vision-Language Instructed Action Generation",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "shrivastava2026echo": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "ECHO: Terminal Agents Learn World Models for Free",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "lu2026paw": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Policy and World Modeling Co-Training for Language Agents",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "zuo2026qwenagentworld": {
+      "status": "bibliography_only",
+      "year": 2026,
+      "title": "Qwen-AgentWorld: Language World Models for General Agents",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "chae2025wma": {
+      "status": "bibliography_only",
+      "year": 2025,
+      "title": "Web Agents with World Models: Learning and Leveraging Environment Dynamics in Web Navigation",
+      "reason": "general_or_text_agent_background_without_a_selected_visual_mechanism"
+    },
+    "yang2024unisim": {
+      "status": "bibliography_only",
+      "year": 2024,
+      "title": "Learning Interactive Real-World Simulators",
+      "reason": "not_selected_in_this_editorial_reading_list"
+    },
+    "wu2023daydreamer": {
+      "status": "bibliography_only",
+      "year": 2023,
+      "title": "DayDreamer: World Models for Physical Robot Learning",
+      "reason": "historical_reference_outside_recent_reading_list"
+    }
+  }
+}

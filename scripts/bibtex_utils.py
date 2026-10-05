@@ -70,8 +70,11 @@ def tex_text(value):
 
 def entry_venue(entry):
     fields = entry['fields']
-    venue = tex_text(fields.get('booktitle', fields.get('journal', '')))
+    venue = tex_text(fields.get('booktitle', fields.get('journal', fields.get('xxxjournal', ''))))
     low = venue.lower()
+    abbreviation = re.search(r'\((CVPR|ICCV|ECCV|ICLR|ICML|NeurIPS|ACL|EMNLP|NAACL|COLM|CoRL|RSS|ICRA|IROS|CHI|AAAI|ACM MM)\)', venue, re.I)
+    if abbreviation:
+        return {'neurips': 'NeurIPS', 'corl': 'CoRL'}.get(abbreviation[1].lower(), abbreviation[1].upper())
     if 'workshop' in low:
         if 'cvpr' in low: return 'CVPR Workshops'
         if 'corl' in low: return 'CoRL Workshops'
@@ -126,3 +129,19 @@ def entry_venue(entry):
         if entry['type'] == 'misc': return 'Official Release'
         return 'Venue Unspecified'
     return venue
+
+
+def arxiv_id(entry):
+    fields = entry['fields']
+    value = tex_text(fields.get('eprint', ''))
+    match = re.search(r'\b(\d{4}\.\d{4,5})\b', value)
+    if not match:
+        value = ' '.join(tex_text(fields.get(field, '')) for field in
+                         ('journal', 'xxxjournal', 'url', 'xxxurl', 'doi'))
+        match = re.search(r'(?:arxiv(?:\.org/(?:abs|pdf)/|[\s:]+)|10\.48550/arxiv[.:])(\d{4}\.\d{4,5})', value, re.I)
+    return match[1] if match else None
+
+
+def venue(entry):
+    result = entry_venue(entry)
+    return 'arXiv' if result == 'Official Release' and arxiv_id(entry) else result

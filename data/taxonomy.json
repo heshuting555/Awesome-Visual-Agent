@@ -1,31 +1,13 @@
 {
   "schema_version": 1,
-  "source": "live Figure 1",
+  "source": "survey framework hierarchy; independently curated reading-list selections",
   "classification": "framework; year and venue are paper metadata only",
   "validation": {
     "branches": 2,
     "categories": 10,
     "topics": 35,
-    "representative_work_counts": {
-      "8": 4,
-      "12": 31
-    },
-    "paper_placements": 404,
-    "unique_papers": 261,
-    "missing_bibliography_keys": [],
     "planning_branch": "external",
-    "reasoning_topics": [
-      "Interleaved Multimodal Reasoning",
-      "Visually Grounded Reasoning",
-      "Tool-Augmented Visual Reasoning",
-      "Programmatic Visual Reasoning"
-    ],
-    "source_figure": "Figures/figure1_intro.tex",
-    "source_figure_sha256": "390d32d767f5b9a925743bddec7e727c3f6061feb735abb26309911e2c117edf",
-    "source_bibliography": "all_references.bib",
-    "source_bibliography_sha256": "5bba9c7a124db3ab89fa31c1e6e3cad31ff31e8cbbab7f87b7ae74bb7b0ecb4d",
-    "catalogue_bibliography_sha256": "e95c9150e83cd29c846bd4dda735a4d98fef043c4be6db3f6dbbf1f52ea51367",
-    "bibliography_copy_normalization": "Trailing whitespace removed; bibliography fields unchanged."
+    "catalogue_bibliography_sha256": "4caa9f9582bf872af4dc6ebcadff6cce885d387a2419ce51f1390d7563d13ae7"
   },
   "branches": [
     {
@@ -46,82 +28,20 @@
               "name": "Grounded Perception",
               "name_tex": "Grounded Perception",
               "section_label": "sec:vision-perception-grounded",
-              "works": [
-                {
-                  "citation_key": "hong2024cogagent",
-                  "display_name": "CogAgent",
-                  "display_name_tex": "CogAgent",
-                  "order": 1
-                },
-                {
-                  "citation_key": "cheng2024seeclick",
-                  "display_name": "SeeClick",
-                  "display_name_tex": "SeeClick",
-                  "order": 2
-                },
-                {
-                  "citation_key": "gou2025navigating",
-                  "display_name": "UGround",
-                  "display_name_tex": "UGround",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wu2025atlas",
-                  "display_name": "OS-ATLAS",
-                  "display_name_tex": "OS-ATLAS",
-                  "order": 4
-                },
-                {
-                  "citation_key": "lin2025showui",
-                  "display_name": "ShowUI",
-                  "display_name_tex": "ShowUI",
-                  "order": 5
-                },
-                {
-                  "citation_key": "qin2025ui",
-                  "display_name": "UI-TARS",
-                  "display_name_tex": "UI-TARS",
-                  "order": 6
-                },
-                {
-                  "citation_key": "yang2025magma",
-                  "display_name": "Magma",
-                  "display_name_tex": "Magma",
-                  "order": 7
-                },
-                {
-                  "citation_key": "bai2025qwen25vltechnicalreport",
-                  "display_name": "Qwen2.5-VL",
-                  "display_name_tex": "Qwen2.5-VL",
-                  "order": 8
-                },
-                {
-                  "citation_key": "wu2026gui",
-                  "display_name": "GUI-Actor",
-                  "display_name_tex": "GUI-Actor",
-                  "order": 9
-                },
-                {
-                  "citation_key": "zhou2026gui",
-                  "display_name": "GUI-G1",
-                  "display_name_tex": "GUI-G1",
-                  "order": 10
-                },
-                {
-                  "citation_key": "chen2026ui",
-                  "display_name": "UI-Ins",
-                  "display_name_tex": "UI-Ins",
-                  "order": 11
-                },
-                {
-                  "citation_key": "he2025rsagent",
-                  "display_name": "RSAgent",
-                  "display_name_tex": "RSAgent",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "perception"
+              "category_id": "perception",
+              "selected_citation_keys": [
+                "hong2024cogagent",
+                "cheng2024seeclick",
+                "gou2025navigating",
+                "lin2025showui",
+                "wu2026gui",
+                "chen2026ui",
+                "he2025rsagent",
+                "li2025screenspot",
+                "u_vstar",
+                "zhu2025active"
+              ]
             },
             {
               "id": "vision-perception-temporal",
@@ -129,82 +49,17 @@
               "name": "Temporal Perception",
               "name_tex": "Temporal Perception",
               "section_label": "sec:vision-perception-temporal",
-              "works": [
-                {
-                  "citation_key": "fan2024videoagent",
-                  "display_name": "VideoAgent (Fan)",
-                  "display_name_tex": "VideoAgent (Fan)",
-                  "order": 1
-                },
-                {
-                  "citation_key": "wang2024videoagent",
-                  "display_name": "VideoAgent (Wang)",
-                  "display_name_tex": "VideoAgent (Wang)",
-                  "order": 2
-                },
-                {
-                  "citation_key": "wang2025videotree",
-                  "display_name": "VideoTree",
-                  "display_name_tex": "VideoTree",
-                  "order": 3
-                },
-                {
-                  "citation_key": "liu2026videomind",
-                  "display_name": "VideoMind",
-                  "display_name_tex": "VideoMind",
-                  "order": 4
-                },
-                {
-                  "citation_key": "zhi2025videoagent2",
-                  "display_name": "VideoAgent2",
-                  "display_name_tex": "VideoAgent2",
-                  "order": 5
-                },
-                {
-                  "citation_key": "yuan2025videoexplorer",
-                  "display_name": "VideoExplorer",
-                  "display_name_tex": "VideoExplorer",
-                  "order": 6
-                },
-                {
-                  "citation_key": "long2026seeing",
-                  "display_name": "M3-Agent",
-                  "display_name_tex": "M3-Agent",
-                  "order": 7
-                },
-                {
-                  "citation_key": "yeo2026worldmm",
-                  "display_name": "WorldMM",
-                  "display_name_tex": "WorldMM",
-                  "order": 8
-                },
-                {
-                  "citation_key": "fan2025embodied",
-                  "display_name": "Embodied VideoAgent",
-                  "display_name_tex": "Embodied VideoAgent",
-                  "order": 9
-                },
-                {
-                  "citation_key": "emb_n_streamvln",
-                  "display_name": "StreamVLN",
-                  "display_name_tex": "StreamVLN",
-                  "order": 10
-                },
-                {
-                  "citation_key": "yan2026videochat",
-                  "display_name": "VideoChat-R1.5",
-                  "display_name_tex": "VideoChat-R1.5",
-                  "order": 11
-                },
-                {
-                  "citation_key": "u_lenswalk",
-                  "display_name": "LensWalk",
-                  "display_name_tex": "LensWalk",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "perception"
+              "category_id": "perception",
+              "selected_citation_keys": [
+                "wang2024videoagent",
+                "fan2025agentic",
+                "liu2026videomind",
+                "ding2026videozoomer",
+                "yuan2025videoexplorer",
+                "u_lenswalk",
+                "emb_n_navid"
+              ]
             },
             {
               "id": "vision-perception-spatial",
@@ -212,82 +67,16 @@
               "name": "Spatial Perception",
               "name_tex": "Spatial Perception",
               "section_label": "sec:vision-perception-spatial",
-              "works": [
-                {
-                  "citation_key": "b43_scanrefer",
-                  "display_name": "ScanRefer",
-                  "display_name_tex": "ScanRefer",
-                  "order": 1
-                },
-                {
-                  "citation_key": "b43_referit3d",
-                  "display_name": "ReferIt3D",
-                  "display_name_tex": "ReferIt3D",
-                  "order": 2
-                },
-                {
-                  "citation_key": "qu2025spatialvla",
-                  "display_name": "SpatialVLA",
-                  "display_name_tex": "SpatialVLA",
-                  "order": 3
-                },
-                {
-                  "citation_key": "yuan2024robopoint",
-                  "display_name": "RoboPoint",
-                  "display_name_tex": "RoboPoint",
-                  "order": 4
-                },
-                {
-                  "citation_key": "emb_n_sgnav",
-                  "display_name": "SG-Nav",
-                  "display_name_tex": "SG-Nav",
-                  "order": 5
-                },
-                {
-                  "citation_key": "u_realm",
-                  "display_name": "REALM",
-                  "display_name_tex": "REALM",
-                  "order": 6
-                },
-                {
-                  "citation_key": "fan2025embodied",
-                  "display_name": "Embodied VideoAgent",
-                  "display_name_tex": "Embodied VideoAgent",
-                  "order": 7
-                },
-                {
-                  "citation_key": "emb_m_activevla26",
-                  "display_name": "ActiveVLA",
-                  "display_name_tex": "ActiveVLA",
-                  "order": 8
-                },
-                {
-                  "citation_key": "shah2025bumble",
-                  "display_name": "BUMBLE",
-                  "display_name_tex": "BUMBLE",
-                  "order": 9
-                },
-                {
-                  "citation_key": "huang2023voxposer",
-                  "display_name": "VoxPoser",
-                  "display_name_tex": "VoxPoser",
-                  "order": 10
-                },
-                {
-                  "citation_key": "liu2024moka",
-                  "display_name": "MOKA",
-                  "display_name_tex": "MOKA",
-                  "order": 11
-                },
-                {
-                  "citation_key": "wang2026agentic",
-                  "display_name": "Agentic 3D Cognition",
-                  "display_name_tex": "Agentic 3D Cognition",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "perception"
+              "category_id": "perception",
+              "selected_citation_keys": [
+                "emb_m_activevla26",
+                "qu2025spatialvla",
+                "yuan2024robopoint",
+                "emb_n_sgnav",
+                "u_realm",
+                "yang2025look"
+              ]
             }
           ]
         },
@@ -303,82 +92,17 @@
               "name": "Interleaved Multimodal Reasoning",
               "name_tex": "Interleaved Multimodal\\\\Reasoning",
               "section_label": "sec:reasoning-interleaved",
-              "works": [
-                {
-                  "citation_key": "ma2025latte",
-                  "display_name": "LATTE",
-                  "display_name_tex": "LATTE",
-                  "order": 1
-                },
-                {
-                  "citation_key": "su2025openthinkimg",
-                  "display_name": "OpenThinkIMG",
-                  "display_name_tex": "OpenThinkIMG",
-                  "order": 2
-                },
-                {
-                  "citation_key": "zheng2026deepeyes",
-                  "display_name": "DeepEyes",
-                  "display_name_tex": "DeepEyes",
-                  "order": 3
-                },
-                {
-                  "citation_key": "su2026pixel",
-                  "display_name": "Pixel Reasoner",
-                  "display_name_tex": "Pixel Reasoner",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wu2026vtool",
-                  "display_name": "VTool-R1",
-                  "display_name_tex": "VTool-R1",
-                  "order": 5
-                },
-                {
-                  "citation_key": "zhao2025pyvision",
-                  "display_name": "PyVision",
-                  "display_name_tex": "PyVision",
-                  "order": 6
-                },
-                {
-                  "citation_key": "zhang2025thyme",
-                  "display_name": "Thyme",
-                  "display_name_tex": "Thyme",
-                  "order": 7
-                },
-                {
-                  "citation_key": "hong2026deepeyesv2",
-                  "display_name": "DeepEyesV2",
-                  "display_name_tex": "DeepEyesV2",
-                  "order": 8
-                },
-                {
-                  "citation_key": "hou2026codev",
-                  "display_name": "CodeV",
-                  "display_name_tex": "CodeV",
-                  "order": 9
-                },
-                {
-                  "citation_key": "hu2024visual",
-                  "display_name": "Visual Sketchpad",
-                  "display_name_tex": "Visual Sketchpad",
-                  "order": 10
-                },
-                {
-                  "citation_key": "li2025insight",
-                  "display_name": "InSight-o3",
-                  "display_name_tex": "InSight-o3",
-                  "order": 11
-                },
-                {
-                  "citation_key": "liu2026videomind",
-                  "display_name": "VideoMind",
-                  "display_name_tex": "VideoMind",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "reasoning"
+              "category_id": "reasoning",
+              "selected_citation_keys": [
+                "hu2024visual",
+                "su2026pixel",
+                "zheng2026deepeyes",
+                "hong2026deepeyesv2",
+                "hou2026codev",
+                "yan2026videochat",
+                "va_c1167_2026"
+              ]
             },
             {
               "id": "reasoning-grounded",
@@ -386,82 +110,17 @@
               "name": "Visually Grounded Reasoning",
               "name_tex": "Visually Grounded\\\\Reasoning",
               "section_label": "sec:reasoning-grounded",
-              "works": [
-                {
-                  "citation_key": "u_gca",
-                  "display_name": "GCA",
-                  "display_name_tex": "GCA",
-                  "order": 1
-                },
-                {
-                  "citation_key": "huang2024rekep",
-                  "display_name": "ReKep",
-                  "display_name_tex": "ReKep",
-                  "order": 2
-                },
-                {
-                  "citation_key": "huang2023voxposer",
-                  "display_name": "VoxPoser",
-                  "display_name_tex": "VoxPoser",
-                  "order": 3
-                },
-                {
-                  "citation_key": "liu2024moka",
-                  "display_name": "MOKA",
-                  "display_name_tex": "MOKA",
-                  "order": 4
-                },
-                {
-                  "citation_key": "emb_n_sgnav",
-                  "display_name": "SG-Nav",
-                  "display_name_tex": "SG-Nav",
-                  "order": 5
-                },
-                {
-                  "citation_key": "shah2025bumble",
-                  "display_name": "BUMBLE",
-                  "display_name_tex": "BUMBLE",
-                  "order": 6
-                },
-                {
-                  "citation_key": "li2025insight",
-                  "display_name": "InSight-o3",
-                  "display_name_tex": "InSight-o3",
-                  "order": 7
-                },
-                {
-                  "citation_key": "u_realm",
-                  "display_name": "REALM",
-                  "display_name_tex": "REALM",
-                  "order": 8
-                },
-                {
-                  "citation_key": "he2025rsagent",
-                  "display_name": "RSAgent",
-                  "display_name_tex": "RSAgent",
-                  "order": 9
-                },
-                {
-                  "citation_key": "hu2024visual",
-                  "display_name": "Visual Sketchpad",
-                  "display_name_tex": "Visual Sketchpad",
-                  "order": 10
-                },
-                {
-                  "citation_key": "chen2026ui",
-                  "display_name": "UI-Ins",
-                  "display_name_tex": "UI-Ins",
-                  "order": 11
-                },
-                {
-                  "citation_key": "luo2025visual",
-                  "display_name": "RegionFocus",
-                  "display_name_tex": "RegionFocus",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "reasoning"
+              "category_id": "reasoning",
+              "selected_citation_keys": [
+                "huang2024rekep",
+                "liu2024moka",
+                "shah2025bumble",
+                "groundingvln2026",
+                "zheng2026driveagentr1",
+                "emb_d_simlingo",
+                "emb_m_pi05"
+              ]
             },
             {
               "id": "reasoning-tool-augmented",
@@ -469,82 +128,16 @@
               "name": "Tool-Augmented Visual Reasoning",
               "name_tex": "Tool-Augmented\\\\Visual Reasoning",
               "section_label": "sec:reasoning-tool-augmented",
-              "works": [
-                {
-                  "citation_key": "cvbg_mmreact",
-                  "display_name": "MM-REACT",
-                  "display_name_tex": "MM-REACT",
-                  "order": 1
-                },
-                {
-                  "citation_key": "liu2024llava",
-                  "display_name": "LLaVA-Plus",
-                  "display_name_tex": "LLaVA-Plus",
-                  "order": 2
-                },
-                {
-                  "citation_key": "gao2024clova",
-                  "display_name": "CLOVA",
-                  "display_name_tex": "CLOVA",
-                  "order": 3
-                },
-                {
-                  "citation_key": "u_avis",
-                  "display_name": "AVIS",
-                  "display_name_tex": "AVIS",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wu2024dettoolchain",
-                  "display_name": "DetToolChain",
-                  "display_name_tex": "DetToolChain",
-                  "order": 5
-                },
-                {
-                  "citation_key": "fallahpour2025medrax",
-                  "display_name": "MedRAX",
-                  "display_name_tex": "MedRAX",
-                  "order": 6
-                },
-                {
-                  "citation_key": "huang2025visualtoolagent",
-                  "display_name": "VisTA",
-                  "display_name_tex": "VisTA",
-                  "order": 7
-                },
-                {
-                  "citation_key": "wu2025mmsearch",
-                  "display_name": "MMSearch-R1",
-                  "display_name_tex": "MMSearch-R1",
-                  "order": 8
-                },
-                {
-                  "citation_key": "hong2026deepeyesv2",
-                  "display_name": "DeepEyesV2",
-                  "display_name_tex": "DeepEyesV2",
-                  "order": 9
-                },
-                {
-                  "citation_key": "ding2026videozoomer",
-                  "display_name": "VideoZoomer",
-                  "display_name_tex": "VideoZoomer",
-                  "order": 10
-                },
-                {
-                  "citation_key": "va_c097_2025",
-                  "display_name": "SegAgent",
-                  "display_name_tex": "SegAgent",
-                  "order": 11
-                },
-                {
-                  "citation_key": "he2025rsagent",
-                  "display_name": "RSAgent",
-                  "display_name_tex": "RSAgent",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "reasoning"
+              "category_id": "reasoning",
+              "selected_citation_keys": [
+                "fallahpour2025medrax",
+                "liu2024llava",
+                "ma2025latte",
+                "song2026adareasoner",
+                "su2025openthinkimg",
+                "huang2025visualtoolagent"
+              ]
             },
             {
               "id": "reasoning-programmatic",
@@ -552,82 +145,16 @@
               "name": "Programmatic Visual Reasoning",
               "name_tex": "Programmatic Visual\\\\Reasoning",
               "section_label": "sec:reasoning-programmatic",
-              "works": [
-                {
-                  "citation_key": "gupta2023visual",
-                  "display_name": "VISPROG",
-                  "display_name_tex": "VISPROG",
-                  "order": 1
-                },
-                {
-                  "citation_key": "suris2023vipergpt",
-                  "display_name": "ViperGPT",
-                  "display_name_tex": "ViperGPT",
-                  "order": 2
-                },
-                {
-                  "citation_key": "zhao2025pyvision",
-                  "display_name": "PyVision",
-                  "display_name_tex": "PyVision",
-                  "order": 3
-                },
-                {
-                  "citation_key": "zhang2025thyme",
-                  "display_name": "Thyme",
-                  "display_name_tex": "Thyme",
-                  "order": 4
-                },
-                {
-                  "citation_key": "hou2026codev",
-                  "display_name": "CodeV",
-                  "display_name_tex": "CodeV",
-                  "order": 5
-                },
-                {
-                  "citation_key": "wu2026vtool",
-                  "display_name": "VTool-R1",
-                  "display_name_tex": "VTool-R1",
-                  "order": 6
-                },
-                {
-                  "citation_key": "hu2024visual",
-                  "display_name": "Visual Sketchpad",
-                  "display_name_tex": "Visual Sketchpad",
-                  "order": 7
-                },
-                {
-                  "citation_key": "u_gca",
-                  "display_name": "GCA",
-                  "display_name_tex": "GCA",
-                  "order": 8
-                },
-                {
-                  "citation_key": "huang2024rekep",
-                  "display_name": "ReKep",
-                  "display_name_tex": "ReKep",
-                  "order": 9
-                },
-                {
-                  "citation_key": "wu2024vdebugger",
-                  "display_name": "VDebugger",
-                  "display_name_tex": "VDebugger",
-                  "order": 10
-                },
-                {
-                  "citation_key": "panagopoulou2025viunit",
-                  "display_name": "ViUniT",
-                  "display_name_tex": "ViUniT",
-                  "order": 11
-                },
-                {
-                  "citation_key": "va_c808_2026",
-                  "display_name": "TVP",
-                  "display_name_tex": "TVP",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "reasoning"
+              "category_id": "reasoning",
+              "selected_citation_keys": [
+                "zhao2025pyvision",
+                "wu2024vdebugger",
+                "panagopoulou2025viunit",
+                "va_c808_2026",
+                "hu2024scenecraft",
+                "u_gca"
+              ]
             }
           ]
         },
@@ -643,82 +170,18 @@
               "name": "Video Simulation",
               "name_tex": "Video Simulation",
               "section_label": "sec:simulation-video",
-              "works": [
-                {
-                  "citation_key": "bruce2024genie",
-                  "display_name": "Genie",
-                  "display_name_tex": "Genie",
-                  "order": 1
-                },
-                {
-                  "citation_key": "wd_cosmos2025",
-                  "display_name": "Cosmos",
-                  "display_name_tex": "Cosmos",
-                  "order": 2
-                },
-                {
-                  "citation_key": "emb_n_nwm",
-                  "display_name": "NWM",
-                  "display_name_tex": "NWM",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wd_gem2024",
-                  "display_name": "GEM",
-                  "display_name_tex": "GEM",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wd_adaworld2025",
-                  "display_name": "AdaWorld",
-                  "display_name_tex": "AdaWorld",
-                  "order": 5
-                },
-                {
-                  "citation_key": "wd_mineworld2025",
-                  "display_name": "MineWorld",
-                  "display_name_tex": "MineWorld",
-                  "order": 6
-                },
-                {
-                  "citation_key": "guiagent073",
-                  "display_name": "ViMo",
-                  "display_name_tex": "ViMo",
-                  "order": 7
-                },
-                {
-                  "citation_key": "guo2025ctrlworld",
-                  "display_name": "Ctrl-World",
-                  "display_name_tex": "Ctrl-World",
-                  "order": 8
-                },
-                {
-                  "citation_key": "wd_cosmospolicy2026",
-                  "display_name": "Cosmos Policy",
-                  "display_name_tex": "Cosmos Policy",
-                  "order": 9
-                },
-                {
-                  "citation_key": "wd_dreamer2025",
-                  "display_name": "Dreamer 4",
-                  "display_name_tex": "Dreamer 4",
-                  "order": 10
-                },
-                {
-                  "citation_key": "wd_uwm2025",
-                  "display_name": "UWM",
-                  "display_name_tex": "UWM",
-                  "order": 11
-                },
-                {
-                  "citation_key": "wd_dreamzero2026",
-                  "display_name": "DreamZero",
-                  "display_name_tex": "DreamZero",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "world"
+              "category_id": "world",
+              "selected_citation_keys": [
+                "bruce2024genie",
+                "cen2025worldvla",
+                "guo2025ctrlworld",
+                "wd_dreamzero2026",
+                "wd_cosmospolicy2026",
+                "li2026lingbotva",
+                "guan2026cuwm",
+                "guiagent073"
+              ]
             },
             {
               "id": "simulation-spatial",
@@ -726,58 +189,15 @@
               "name": "Spatial Simulation",
               "name_tex": "Spatial Simulation",
               "section_label": "sec:simulation-spatial",
-              "works": [
-                {
-                  "citation_key": "wd_dome2024",
-                  "display_name": "DOME",
-                  "display_name_tex": "DOME",
-                  "order": 1
-                },
-                {
-                  "citation_key": "wd_flowdreamer2025",
-                  "display_name": "FlowDreamer",
-                  "display_name_tex": "FlowDreamer",
-                  "order": 2
-                },
-                {
-                  "citation_key": "zhou2026learning",
-                  "display_name": "3D Persistent WM",
-                  "display_name_tex": "3D Persistent WM",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wd_persist2026",
-                  "display_name": "PERSIST",
-                  "display_name_tex": "PERSIST",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wd_phystwin2025",
-                  "display_name": "PhysTwin",
-                  "display_name_tex": "PhysTwin",
-                  "order": 5
-                },
-                {
-                  "citation_key": "wd_physworld2025",
-                  "display_name": "PhysWorld",
-                  "display_name_tex": "PhysWorld",
-                  "order": 6
-                },
-                {
-                  "citation_key": "wd_ngff2026",
-                  "display_name": "NGFF",
-                  "display_name_tex": "NGFF",
-                  "order": 7
-                },
-                {
-                  "citation_key": "wd_contactgaussian2026",
-                  "display_name": "ContactGaussian-WM",
-                  "display_name_tex": "ContactGaussian-WM",
-                  "order": 8
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "world"
+              "category_id": "world",
+              "selected_citation_keys": [
+                "zhou2026learning",
+                "wd_persist2026",
+                "wd_phystwin2025",
+                "wd_contactgaussian2026",
+                "wd_dome2024"
+              ]
             },
             {
               "id": "simulation-latent",
@@ -785,82 +205,15 @@
               "name": "Latent Simulation",
               "name_tex": "Latent Simulation",
               "section_label": "sec:simulation-latent",
-              "works": [
-                {
-                  "citation_key": "ha2018worldmodels",
-                  "display_name": "World Models",
-                  "display_name_tex": "World Models",
-                  "order": 1
-                },
-                {
-                  "citation_key": "hafner2019planet",
-                  "display_name": "PlaNet",
-                  "display_name_tex": "PlaNet",
-                  "order": 2
-                },
-                {
-                  "citation_key": "hafner2025dreamerv3",
-                  "display_name": "DreamerV3",
-                  "display_name_tex": "DreamerV3",
-                  "order": 3
-                },
-                {
-                  "citation_key": "micheli2023iris",
-                  "display_name": "IRIS",
-                  "display_name_tex": "IRIS",
-                  "order": 4
-                },
-                {
-                  "citation_key": "emb_d_think2drive",
-                  "display_name": "Think2Drive",
-                  "display_name_tex": "Think2Drive",
-                  "order": 5
-                },
-                {
-                  "citation_key": "wd_dinowm2024",
-                  "display_name": "DINO-WM",
-                  "display_name_tex": "DINO-WM",
-                  "order": 6
-                },
-                {
-                  "citation_key": "assran2025vjepa2",
-                  "display_name": "V-JEPA 2",
-                  "display_name_tex": "V-JEPA 2",
-                  "order": 7
-                },
-                {
-                  "citation_key": "wd_lewm2026",
-                  "display_name": "LeWM",
-                  "display_name_tex": "LeWM",
-                  "order": 8
-                },
-                {
-                  "citation_key": "wd_raw2drive2025",
-                  "display_name": "Raw2Drive",
-                  "display_name_tex": "Raw2Drive",
-                  "order": 9
-                },
-                {
-                  "citation_key": "sun2026atomvla",
-                  "display_name": "AtomVLA",
-                  "display_name_tex": "AtomVLA",
-                  "order": 10
-                },
-                {
-                  "citation_key": "jia2026driveworldvla",
-                  "display_name": "DriveWorld-VLA",
-                  "display_name_tex": "DriveWorld-VLA",
-                  "order": 11
-                },
-                {
-                  "citation_key": "jiang2026imagine",
-                  "display_name": "Future-L1",
-                  "display_name_tex": "Future-L1",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "world"
+              "category_id": "world",
+              "selected_citation_keys": [
+                "assran2025vjepa2",
+                "wd_dinowm2024",
+                "hafner2025dreamerv3",
+                "sun2026atomvla",
+                "jia2026driveworldvla"
+              ]
             },
             {
               "id": "simulation-semantic",
@@ -868,58 +221,15 @@
               "name": "Semantic Simulation",
               "name_tex": "Semantic Simulation",
               "section_label": "sec:simulation-semantic",
-              "works": [
-                {
-                  "citation_key": "chen2025planning",
-                  "display_name": "VLWM",
-                  "display_name_tex": "VLWM",
-                  "order": 1
-                },
-                {
-                  "citation_key": "berg2025semantic",
-                  "display_name": "SWM",
-                  "display_name_tex": "SWM",
-                  "order": 2
-                },
-                {
-                  "citation_key": "mei2026r",
-                  "display_name": "R-WoM",
-                  "display_name_tex": "R-WoM",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wang2026vagen",
-                  "display_name": "VAGEN",
-                  "display_name_tex": "VAGEN",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wd_mobileworld2025",
-                  "display_name": "MobileWorldBench",
-                  "display_name_tex": "MobileWorldBench",
-                  "order": 5
-                },
-                {
-                  "citation_key": "gu2025webdreamer",
-                  "display_name": "WebDreamer",
-                  "display_name_tex": "WebDreamer",
-                  "order": 6
-                },
-                {
-                  "citation_key": "zheng2026code2world",
-                  "display_name": "Code2World",
-                  "display_name_tex": "Code2World",
-                  "order": 7
-                },
-                {
-                  "citation_key": "xu2026mobileworldmodel",
-                  "display_name": "MWM",
-                  "display_name_tex": "MWM",
-                  "order": 8
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "world"
+              "category_id": "world",
+              "selected_citation_keys": [
+                "cao2026mobiledreamer",
+                "wd_mobileworld2025",
+                "chen2025planning",
+                "wang2026vagen",
+                "zheng2026code2world"
+              ]
             }
           ]
         },
@@ -935,82 +245,14 @@
               "name": "Visual Evidence Evaluation",
               "name_tex": "Visual Evidence\\\\Evaluation",
               "section_label": "sec:visual-evaluation-evidence",
-              "works": [
-                {
-                  "citation_key": "va_c105_2025",
-                  "display_name": "LookBack",
-                  "display_name_tex": "LookBack",
-                  "order": 1
-                },
-                {
-                  "citation_key": "min2026improving",
-                  "display_name": "Perceval",
-                  "display_name_tex": "Perceval",
-                  "order": 2
-                },
-                {
-                  "citation_key": "mao2026kestrel",
-                  "display_name": "Kestrel",
-                  "display_name_tex": "Kestrel",
-                  "order": 3
-                },
-                {
-                  "citation_key": "yu2025rlaif",
-                  "display_name": "RLAIF-V",
-                  "display_name_tex": "RLAIF-V",
-                  "order": 4
-                },
-                {
-                  "citation_key": "liu2026videomind",
-                  "display_name": "VideoMind",
-                  "display_name_tex": "VideoMind",
-                  "order": 5
-                },
-                {
-                  "citation_key": "chen2026reflectr1",
-                  "display_name": "Reflect-R1",
-                  "display_name_tex": "Reflect-R1",
-                  "order": 6
-                },
-                {
-                  "citation_key": "zhao2026visage",
-                  "display_name": "ViSAGE",
-                  "display_name_tex": "ViSAGE",
-                  "order": 7
-                },
-                {
-                  "citation_key": "va_c738_2026",
-                  "display_name": "CARE",
-                  "display_name_tex": "CARE",
-                  "order": 8
-                },
-                {
-                  "citation_key": "zhang2025gamagent",
-                  "display_name": "GAM-Agent",
-                  "display_name_tex": "GAM-Agent",
-                  "order": 9
-                },
-                {
-                  "citation_key": "panagopoulou2025viunit",
-                  "display_name": "ViUniT",
-                  "display_name_tex": "ViUniT",
-                  "order": 10
-                },
-                {
-                  "citation_key": "hou2026codev",
-                  "display_name": "CodeV",
-                  "display_name_tex": "CodeV",
-                  "order": 11
-                },
-                {
-                  "citation_key": "va_c1168_2026",
-                  "display_name": "VERITAS",
-                  "display_name_tex": "VERITAS",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "evaluation"
+              "category_id": "evaluation",
+              "selected_citation_keys": [
+                "va_c105_2025",
+                "chen2026reflectr1",
+                "min2026improving",
+                "wang2026forgeryvcr"
+              ]
             },
             {
               "id": "visual-evaluation-process",
@@ -1018,82 +260,14 @@
               "name": "Visually Grounded Process Evaluation",
               "name_tex": "Visually Grounded\\\\Process Evaluation",
               "section_label": "sec:visual-evaluation-process",
-              "works": [
-                {
-                  "citation_key": "va_c1187_2026",
-                  "display_name": "VisCritic",
-                  "display_name_tex": "VisCritic",
-                  "order": 1
-                },
-                {
-                  "citation_key": "va_c106_2025",
-                  "display_name": "Code-as-Monitor",
-                  "display_name_tex": "Code-as-Monitor",
-                  "order": 2
-                },
-                {
-                  "citation_key": "ye2025robofac",
-                  "display_name": "RoboFAC",
-                  "display_name_tex": "RoboFAC",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wu2026oracle",
-                  "display_name": "OS-Oracle",
-                  "display_name_tex": "OS-Oracle",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wang2026gaia",
-                  "display_name": "GAIA",
-                  "display_name_tex": "GAIA",
-                  "order": 5
-                },
-                {
-                  "citation_key": "guiagent097",
-                  "display_name": "UI-Genie",
-                  "display_name_tex": "UI-Genie",
-                  "order": 6
-                },
-                {
-                  "citation_key": "agia2024unpacking",
-                  "display_name": "Sentinel",
-                  "display_name_tex": "Sentinel",
-                  "order": 7
-                },
-                {
-                  "citation_key": "duan2024aha",
-                  "display_name": "AHA",
-                  "display_name_tex": "AHA",
-                  "order": 8
-                },
-                {
-                  "citation_key": "liu2023reflect",
-                  "display_name": "REFLECT",
-                  "display_name_tex": "REFLECT",
-                  "order": 9
-                },
-                {
-                  "citation_key": "wu2024vdebugger",
-                  "display_name": "VDebugger",
-                  "display_name_tex": "VDebugger",
-                  "order": 10
-                },
-                {
-                  "citation_key": "chen2026intentscore",
-                  "display_name": "IntentScore",
-                  "display_name_tex": "IntentScore",
-                  "order": 11
-                },
-                {
-                  "citation_key": "guiagent089",
-                  "display_name": "GUI-Reflection",
-                  "display_name_tex": "GUI-Reflection",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "evaluation"
+              "category_id": "evaluation",
+              "selected_citation_keys": [
+                "duan2024aha",
+                "chen2026intentscore",
+                "va_c1187_2026",
+                "guiagent089"
+              ]
             },
             {
               "id": "visual-evaluation-outcome",
@@ -1101,82 +275,14 @@
               "name": "Visual Outcome Evaluation",
               "name_tex": "Visual Outcome\\\\Evaluation",
               "section_label": "sec:visual-evaluation-outcome",
-              "works": [
-                {
-                  "citation_key": "xiong2025llava",
-                  "display_name": "LLaVA-Critic",
-                  "display_name_tex": "LLaVA-Critic",
-                  "order": 1
-                },
-                {
-                  "citation_key": "chen2025edival",
-                  "display_name": "EdiVal-Agent",
-                  "display_name_tex": "EdiVal-Agent",
-                  "order": 2
-                },
-                {
-                  "citation_key": "dai2026prore",
-                  "display_name": "ProRe",
-                  "display_name_tex": "ProRe",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wu2026retouchiq",
-                  "display_name": "RetouchIQ",
-                  "display_name_tex": "RetouchIQ",
-                  "order": 4
-                },
-                {
-                  "citation_key": "hu2023tifa",
-                  "display_name": "TIFA",
-                  "display_name_tex": "TIFA",
-                  "order": 5
-                },
-                {
-                  "citation_key": "va_c121_2025",
-                  "display_name": "SILMM",
-                  "display_name_tex": "SILMM",
-                  "order": 6
-                },
-                {
-                  "citation_key": "sun2025marmot",
-                  "display_name": "MARMOT",
-                  "display_name_tex": "MARMOT",
-                  "order": 7
-                },
-                {
-                  "citation_key": "va_c549_2026",
-                  "display_name": "VISTA",
-                  "display_name_tex": "VISTA",
-                  "order": 8
-                },
-                {
-                  "citation_key": "li2026themis",
-                  "display_name": "OS-Themis",
-                  "display_name_tex": "OS-Themis",
-                  "order": 9
-                },
-                {
-                  "citation_key": "shen2026imagagent",
-                  "display_name": "IMAGAgent",
-                  "display_name_tex": "IMAGAgent",
-                  "order": 10
-                },
-                {
-                  "citation_key": "lu2026webgen",
-                  "display_name": "WebGen-Agent",
-                  "display_name_tex": "WebGen-Agent",
-                  "order": 11
-                },
-                {
-                  "citation_key": "xiong2026rubrics",
-                  "display_name": "RubSE",
-                  "display_name_tex": "RubSE",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "evaluation"
+              "category_id": "evaluation",
+              "selected_citation_keys": [
+                "chen2025edival",
+                "chen2026perfguard",
+                "dai2026prore",
+                "xiong2025llava"
+              ]
             },
             {
               "id": "visual-evaluation-self-correction",
@@ -1184,82 +290,15 @@
               "name": "Visual-Based Self-Correction",
               "name_tex": "Visual-Based\\\\Self-Correction",
               "section_label": "sec:visual-evaluation-self-correction",
-              "works": [
-                {
-                  "citation_key": "va_c105_2025",
-                  "display_name": "LookBack",
-                  "display_name_tex": "LookBack",
-                  "order": 1
-                },
-                {
-                  "citation_key": "mao2026kestrel",
-                  "display_name": "Kestrel",
-                  "display_name_tex": "Kestrel",
-                  "order": 2
-                },
-                {
-                  "citation_key": "chen2026reflectr1",
-                  "display_name": "Reflect-R1",
-                  "display_name_tex": "Reflect-R1",
-                  "order": 3
-                },
-                {
-                  "citation_key": "tang2026visuallygroundedselfreflectionvisionlanguage",
-                  "display_name": "VRRL",
-                  "display_name_tex": "VRRL",
-                  "order": 4
-                },
-                {
-                  "citation_key": "guiagent089",
-                  "display_name": "GUI-Reflection",
-                  "display_name_tex": "GUI-Reflection",
-                  "order": 5
-                },
-                {
-                  "citation_key": "zhang2026don",
-                  "display_name": "Don’t Act Blindly",
-                  "display_name_tex": "Don’t Act Blindly",
-                  "order": 6
-                },
-                {
-                  "citation_key": "wu2024vdebugger",
-                  "display_name": "VDebugger",
-                  "display_name_tex": "VDebugger",
-                  "order": 7
-                },
-                {
-                  "citation_key": "ma2026cyclevla",
-                  "display_name": "CycleVLA",
-                  "display_name_tex": "CycleVLA",
-                  "order": 8
-                },
-                {
-                  "citation_key": "va_c120_2025",
-                  "display_name": "Phoenix",
-                  "display_name_tex": "Phoenix",
-                  "order": 9
-                },
-                {
-                  "citation_key": "zeng2026diagnose",
-                  "display_name": "ViFailback",
-                  "display_name_tex": "ViFailback",
-                  "order": 10
-                },
-                {
-                  "citation_key": "sun2025marmot",
-                  "display_name": "MARMOT",
-                  "display_name_tex": "MARMOT",
-                  "order": 11
-                },
-                {
-                  "citation_key": "shen2026imagagent",
-                  "display_name": "IMAGAgent",
-                  "display_name_tex": "IMAGAgent",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "evaluation"
+              "category_id": "evaluation",
+              "selected_citation_keys": [
+                "zhang2026don",
+                "ma2026cyclevla",
+                "va_c120_2025",
+                "cheng2025vision",
+                "shen2026imagagent"
+              ]
             }
           ]
         },
@@ -1275,58 +314,14 @@
               "name": "Visual Capability Gap Diagnosis",
               "name_tex": "Visual Capability\\\\Gap Diagnosis",
               "section_label": "sec:evolving-diagnosis",
-              "works": [
-                {
-                  "citation_key": "bo2025agentic",
-                  "display_name": "ViLoMem",
-                  "display_name_tex": "ViLoMem",
-                  "order": 1
-                },
-                {
-                  "citation_key": "li2026roboharness",
-                  "display_name": "RoboHarness (Li)",
-                  "display_name_tex": "RoboHarness (Li)",
-                  "order": 2
-                },
-                {
-                  "citation_key": "yan2026dataevolver",
-                  "display_name": "DataEvolver",
-                  "display_name_tex": "DataEvolver",
-                  "order": 3
-                },
-                {
-                  "citation_key": "yan2026vgymenhancingagenticvisual",
-                  "display_name": "V-Gym",
-                  "display_name_tex": "V-Gym",
-                  "order": 4
-                },
-                {
-                  "citation_key": "li2026spatialevo",
-                  "display_name": "SpatialEvo",
-                  "display_name_tex": "SpatialEvo",
-                  "order": 5
-                },
-                {
-                  "citation_key": "chen2026reflect",
-                  "display_name": "EvoSkill-GUI",
-                  "display_name_tex": "EvoSkill-GUI",
-                  "order": 6
-                },
-                {
-                  "citation_key": "ye2026videoresearcher",
-                  "display_name": "VideoResearcher",
-                  "display_name_tex": "VideoResearcher",
-                  "order": 7
-                },
-                {
-                  "citation_key": "cui2026metavideoagent",
-                  "display_name": "MetaVideoAgent",
-                  "display_name_tex": "MetaVideoAgent",
-                  "order": 8
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "evolving"
+              "category_id": "evolving",
+              "selected_citation_keys": [
+                "chen2026reflect",
+                "emb_n_awarevln",
+                "emb_d_elfvla",
+                "ying2026robofailring"
+              ]
             },
             {
               "id": "evolving-signals",
@@ -1334,82 +329,15 @@
               "name": "Visual Improvement Signal Generation",
               "name_tex": "Visual Improvement\\\\Signal Generation",
               "section_label": "sec:evolving-signals",
-              "works": [
-                {
-                  "citation_key": "liu2025agent0",
-                  "display_name": "Agent0-VL",
-                  "display_name_tex": "Agent0-VL",
-                  "order": 1
-                },
-                {
-                  "citation_key": "yu2025rlaif",
-                  "display_name": "RLAIF-V",
-                  "display_name_tex": "RLAIF-V",
-                  "order": 2
-                },
-                {
-                  "citation_key": "va_c121_2025",
-                  "display_name": "SILMM",
-                  "display_name_tex": "SILMM",
-                  "order": 3
-                },
-                {
-                  "citation_key": "guiagent097",
-                  "display_name": "UI-Genie",
-                  "display_name_tex": "UI-Genie",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wang2026gaia",
-                  "display_name": "GAIA",
-                  "display_name_tex": "GAIA",
-                  "order": 5
-                },
-                {
-                  "citation_key": "guo2026vlaw",
-                  "display_name": "VLAW",
-                  "display_name_tex": "VLAW",
-                  "order": 6
-                },
-                {
-                  "citation_key": "tai2026seed2scale",
-                  "display_name": "Seed2Scale",
-                  "display_name_tex": "Seed2Scale",
-                  "order": 7
-                },
-                {
-                  "citation_key": "ye2025video2policy",
-                  "display_name": "Video2Policy",
-                  "display_name_tex": "Video2Policy",
-                  "order": 8
-                },
-                {
-                  "citation_key": "lee2026rda",
-                  "display_name": "RDA",
-                  "display_name_tex": "RDA",
-                  "order": 9
-                },
-                {
-                  "citation_key": "chen2026genevolve",
-                  "display_name": "GenEvolve",
-                  "display_name_tex": "GenEvolve",
-                  "order": 10
-                },
-                {
-                  "citation_key": "yan2026vgymenhancingagenticvisual",
-                  "display_name": "V-Gym",
-                  "display_name_tex": "V-Gym",
-                  "order": 11
-                },
-                {
-                  "citation_key": "li2026spatialevo",
-                  "display_name": "SpatialEvo",
-                  "display_name_tex": "SpatialEvo",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "evolving"
+              "category_id": "evolving",
+              "selected_citation_keys": [
+                "guiagent097",
+                "ye2025video2policy",
+                "chen2026genevolve",
+                "guo2026vlaw",
+                "yan2026vgymenhancingagenticvisual"
+              ]
             },
             {
               "id": "evolving-optimization",
@@ -1417,82 +345,15 @@
               "name": "Vision-Guided Optimization Adaptation",
               "name_tex": "Vision-Guided\\\\Optimization Adaptation",
               "section_label": "sec:evolving-optimization",
-              "works": [
-                {
-                  "citation_key": "liu2026evovla",
-                  "display_name": "EvoVLA",
-                  "display_name_tex": "EvoVLA",
-                  "order": 1
-                },
-                {
-                  "citation_key": "xiao2026ui",
-                  "display_name": "UI-Mem",
-                  "display_name_tex": "UI-Mem",
-                  "order": 2
-                },
-                {
-                  "citation_key": "sun2025seagent",
-                  "display_name": "SEAgent",
-                  "display_name_tex": "SEAgent",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wang2025mobile",
-                  "display_name": "Mobile-Agent-E",
-                  "display_name_tex": "Mobile-Agent-E",
-                  "order": 4
-                },
-                {
-                  "citation_key": "liu2025webcoach",
-                  "display_name": "WebCoach",
-                  "display_name_tex": "WebCoach",
-                  "order": 5
-                },
-                {
-                  "citation_key": "chai2026evolvenav",
-                  "display_name": "EvolveNav",
-                  "display_name_tex": "EvolveNav",
-                  "order": 6
-                },
-                {
-                  "citation_key": "yan2026vgymenhancingagenticvisual",
-                  "display_name": "V-Gym",
-                  "display_name_tex": "V-Gym",
-                  "order": 7
-                },
-                {
-                  "citation_key": "li2026spatialevo",
-                  "display_name": "SpatialEvo",
-                  "display_name_tex": "SpatialEvo",
-                  "order": 8
-                },
-                {
-                  "citation_key": "guo2026vlaw",
-                  "display_name": "VLAW",
-                  "display_name_tex": "VLAW",
-                  "order": 9
-                },
-                {
-                  "citation_key": "yang2026rise",
-                  "display_name": "RISE",
-                  "display_name_tex": "RISE",
-                  "order": 10
-                },
-                {
-                  "citation_key": "xiao2026self",
-                  "display_name": "PLD",
-                  "display_name_tex": "PLD",
-                  "order": 11
-                },
-                {
-                  "citation_key": "chen2026genevolve",
-                  "display_name": "GenEvolve",
-                  "display_name_tex": "GenEvolve",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "evolving"
+              "category_id": "evolving",
+              "selected_citation_keys": [
+                "xiao2026self",
+                "chai2026evolvenav",
+                "zhu2025wmpo",
+                "guiagent062",
+                "liu2026evovla"
+              ]
             },
             {
               "id": "evolving-infrastructure",
@@ -1500,82 +361,16 @@
               "name": "Self-Modification of Visual Interaction Infrastructure",
               "name_tex": "Self-Modification of Visual\\\\Interaction Infrastructure",
               "section_label": "sec:evolving-infrastructure",
-              "works": [
-                {
-                  "citation_key": "ye2026videoresearcher",
-                  "display_name": "VideoResearcher",
-                  "display_name_tex": "VideoResearcher",
-                  "order": 1
-                },
-                {
-                  "citation_key": "huang2026meta",
-                  "display_name": "META",
-                  "display_name_tex": "META",
-                  "order": 2
-                },
-                {
-                  "citation_key": "chen2026reflect",
-                  "display_name": "EvoSkill-GUI",
-                  "display_name_tex": "EvoSkill-GUI",
-                  "order": 3
-                },
-                {
-                  "citation_key": "xu2026videoharness",
-                  "display_name": "VideoHarness-RSI",
-                  "display_name_tex": "VideoHarness-RSI",
-                  "order": 4
-                },
-                {
-                  "citation_key": "cui2026metavideoagent",
-                  "display_name": "MetaVideoAgent",
-                  "display_name_tex": "MetaVideoAgent",
-                  "order": 5
-                },
-                {
-                  "citation_key": "xu2026omniharness",
-                  "display_name": "OmniHarness",
-                  "display_name_tex": "OmniHarness",
-                  "order": 6
-                },
-                {
-                  "citation_key": "li2026comfyclaw",
-                  "display_name": "COMFYCLAW",
-                  "display_name_tex": "COMFYCLAW",
-                  "order": 7
-                },
-                {
-                  "citation_key": "oshima2026autoref",
-                  "display_name": "AutoRef",
-                  "display_name_tex": "AutoRef",
-                  "order": 8
-                },
-                {
-                  "citation_key": "wang2026regenharness",
-                  "display_name": "RegenHarness",
-                  "display_name_tex": "RegenHarness",
-                  "order": 9
-                },
-                {
-                  "citation_key": "kim2026recursive",
-                  "display_name": "Harness Distillation",
-                  "display_name_tex": "Harness Distillation",
-                  "order": 10
-                },
-                {
-                  "citation_key": "va_c808_2026",
-                  "display_name": "TVP",
-                  "display_name_tex": "TVP",
-                  "order": 11
-                },
-                {
-                  "citation_key": "shang2026rlharnesscoevolvingproceduralskills",
-                  "display_name": "RLHarness",
-                  "display_name_tex": "RLHarness",
-                  "order": 12
-                }
-              ],
               "branch_id": "internal",
-              "category_id": "evolving"
+              "category_id": "evolving",
+              "selected_citation_keys": [
+                "ye2026videoresearcher",
+                "xu2026videoharness",
+                "li2026comfyclaw",
+                "wang2026harnesspai",
+                "wang2026regenharness",
+                "shang2026rlharnesscoevolvingproceduralskills"
+              ]
             }
           ]
         }
@@ -1599,82 +394,19 @@
               "name": "Task and Workflow Planning",
               "name_tex": "Task and Workflow\\\\Planning",
               "section_label": "sec:planning-task-workflow",
-              "works": [
-                {
-                  "citation_key": "agashe2025agent_s",
-                  "display_name": "Agent S",
-                  "display_name_tex": "Agent S",
-                  "order": 1
-                },
-                {
-                  "citation_key": "agashe2025agent",
-                  "display_name": "Agent S2",
-                  "display_name_tex": "Agent S2",
-                  "order": 2
-                },
-                {
-                  "citation_key": "lu2025octotools",
-                  "display_name": "OctoTools",
-                  "display_name_tex": "OctoTools",
-                  "order": 3
-                },
-                {
-                  "citation_key": "tan2024cradle",
-                  "display_name": "Cradle",
-                  "display_name_tex": "Cradle",
-                  "order": 4
-                },
-                {
-                  "citation_key": "shah2025bumble",
-                  "display_name": "BUMBLE",
-                  "display_name_tex": "BUMBLE",
-                  "order": 5
-                },
-                {
-                  "citation_key": "zhang2025robochemist",
-                  "display_name": "RoboChemist",
-                  "display_name_tex": "RoboChemist",
-                  "order": 6
-                },
-                {
-                  "citation_key": "ren2026scope",
-                  "display_name": "SCOPE",
-                  "display_name_tex": "SCOPE",
-                  "order": 7
-                },
-                {
-                  "citation_key": "xu2026reaction",
-                  "display_name": "AgentChord",
-                  "display_name_tex": "AgentChord",
-                  "order": 8
-                },
-                {
-                  "citation_key": "kagaya2025vireskill",
-                  "display_name": "ViReSkill",
-                  "display_name_tex": "ViReSkill",
-                  "order": 9
-                },
-                {
-                  "citation_key": "huang2026roboharness",
-                  "display_name": "RoboHarness (Huang)",
-                  "display_name_tex": "RoboHarness (Huang)",
-                  "order": 10
-                },
-                {
-                  "citation_key": "gu2026harnesswam",
-                  "display_name": "HarnessWAM",
-                  "display_name_tex": "HarnessWAM",
-                  "order": 11
-                },
-                {
-                  "citation_key": "wang2026harnesspai",
-                  "display_name": "HarnessPAI",
-                  "display_name_tex": "HarnessPAI",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "planning"
+              "category_id": "planning",
+              "selected_citation_keys": [
+                "agashe2025agent",
+                "qin2025ui",
+                "wang2025opencua",
+                "xu2025aguvis",
+                "lu2026qwencua",
+                "chen2026showharness",
+                "chen2026harnessvln",
+                "roboharnessk12026",
+                "li2026roboclaw"
+              ]
             },
             {
               "id": "planning-trajectory-search",
@@ -1682,82 +414,16 @@
               "name": "Trajectory Search and Deliberation",
               "name_tex": "Trajectory Search and\\\\Deliberation",
               "section_label": "sec:planning-trajectory-search",
-              "works": [
-                {
-                  "citation_key": "emb_n_nwm",
-                  "display_name": "NWM",
-                  "display_name_tex": "NWM",
-                  "order": 1
-                },
-                {
-                  "citation_key": "gu2025webdreamer",
-                  "display_name": "WebDreamer",
-                  "display_name_tex": "WebDreamer",
-                  "order": 2
-                },
-                {
-                  "citation_key": "lin2025storm",
-                  "display_name": "STORM",
-                  "display_name_tex": "STORM",
-                  "order": 3
-                },
-                {
-                  "citation_key": "chen2025planning",
-                  "display_name": "VLWM",
-                  "display_name_tex": "VLWM",
-                  "order": 4
-                },
-                {
-                  "citation_key": "mei2026r",
-                  "display_name": "R-WoM",
-                  "display_name_tex": "R-WoM",
-                  "order": 5
-                },
-                {
-                  "citation_key": "tang2026agent",
-                  "display_name": "Agent Alpha",
-                  "display_name_tex": "Agent Alpha",
-                  "order": 6
-                },
-                {
-                  "citation_key": "gonzalez2025scaling",
-                  "display_name": "Scaling Agents",
-                  "display_name_tex": "Scaling Agents",
-                  "order": 7
-                },
-                {
-                  "citation_key": "yang2026gta1",
-                  "display_name": "GTA1",
-                  "display_name_tex": "GTA1",
-                  "order": 8
-                },
-                {
-                  "citation_key": "kwok2025robomonkey",
-                  "display_name": "RoboMonkey",
-                  "display_name_tex": "RoboMonkey",
-                  "order": 9
-                },
-                {
-                  "citation_key": "emb_m_pivot",
-                  "display_name": "PIVOT",
-                  "display_name_tex": "PIVOT",
-                  "order": 10
-                },
-                {
-                  "citation_key": "huang2024rekep",
-                  "display_name": "ReKep",
-                  "display_name_tex": "ReKep",
-                  "order": 11
-                },
-                {
-                  "citation_key": "gu2026harnesswam",
-                  "display_name": "HarnessWAM",
-                  "display_name_tex": "HarnessWAM",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "planning"
+              "category_id": "planning",
+              "selected_citation_keys": [
+                "emb_m_pivot",
+                "lin2025storm",
+                "emb_n_nwm",
+                "gu2026harnesswam",
+                "yang2026gta1",
+                "tang2026agent"
+              ]
             },
             {
               "id": "planning-multiagent-coordination",
@@ -1765,82 +431,16 @@
               "name": "Multi-Agent Planning and Coordination",
               "name_tex": "Multi-Agent Planning\\\\and Coordination",
               "section_label": "sec:planning-multiagent-coordination",
-              "works": [
-                {
-                  "citation_key": "wang2025mobile",
-                  "display_name": "Mobile-Agent-E",
-                  "display_name_tex": "Mobile-Agent-E",
-                  "order": 1
-                },
-                {
-                  "citation_key": "song2026coact",
-                  "display_name": "CoAct-1",
-                  "display_name_tex": "CoAct-1",
-                  "order": 2
-                },
-                {
-                  "citation_key": "ahn2024autort",
-                  "display_name": "AutoRT",
-                  "display_name_tex": "AutoRT",
-                  "order": 3
-                },
-                {
-                  "citation_key": "xu2026multi",
-                  "display_name": "A4VL",
-                  "display_name_tex": "A4VL",
-                  "order": 4
-                },
-                {
-                  "citation_key": "liu2026longvideoagent",
-                  "display_name": "LongVideoAgent",
-                  "display_name_tex": "LongVideoAgent",
-                  "order": 5
-                },
-                {
-                  "citation_key": "ye2025genpilot",
-                  "display_name": "GenPilot",
-                  "display_name_tex": "GenPilot",
-                  "order": 6
-                },
-                {
-                  "citation_key": "sun2025marmot",
-                  "display_name": "MARMOT",
-                  "display_name_tex": "MARMOT",
-                  "order": 7
-                },
-                {
-                  "citation_key": "shen2026imagagent",
-                  "display_name": "IMAGAgent",
-                  "display_name_tex": "IMAGAgent",
-                  "order": 8
-                },
-                {
-                  "citation_key": "va_c1880_2025",
-                  "display_name": "4KAgent",
-                  "display_name_tex": "4KAgent",
-                  "order": 9
-                },
-                {
-                  "citation_key": "va_ms001_2025",
-                  "display_name": "PosterAgent",
-                  "display_name_tex": "PosterAgent",
-                  "order": 10
-                },
-                {
-                  "citation_key": "venkatesh2026crea",
-                  "display_name": "CREA",
-                  "display_name_tex": "CREA",
-                  "order": 11
-                },
-                {
-                  "citation_key": "wang2026agentic",
-                  "display_name": "Agentic 3D Cognition",
-                  "display_name_tex": "Agentic 3D Cognition",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "planning"
+              "category_id": "planning",
+              "selected_citation_keys": [
+                "ahn2024autort",
+                "shi2026navharnessgoals",
+                "liu2026longvideoagent",
+                "xu2026multi",
+                "mvagent2026",
+                "va_c1168_2026"
+              ]
             }
           ]
         },
@@ -1856,82 +456,14 @@
               "name": "Visual-to-Text",
               "name_tex": "Visual-to-Text",
               "section_label": "sec:vision-memory-text",
-              "works": [
-                {
-                  "citation_key": "fan2024videoagent",
-                  "display_name": "VideoAgent (Fan)",
-                  "display_name_tex": "VideoAgent (Fan)",
-                  "order": 1
-                },
-                {
-                  "citation_key": "wang2025videotree",
-                  "display_name": "VideoTree",
-                  "display_name_tex": "VideoTree",
-                  "order": 2
-                },
-                {
-                  "citation_key": "va_c1150_2026",
-                  "display_name": "EventMemAgent",
-                  "display_name_tex": "EventMemAgent",
-                  "order": 3
-                },
-                {
-                  "citation_key": "yeo2026worldmm",
-                  "display_name": "WorldMM",
-                  "display_name_tex": "WorldMM",
-                  "order": 4
-                },
-                {
-                  "citation_key": "long2026seeing",
-                  "display_name": "M3-Agent",
-                  "display_name_tex": "M3-Agent",
-                  "order": 5
-                },
-                {
-                  "citation_key": "liu2026gui",
-                  "display_name": "GUI-Rise",
-                  "display_name_tex": "GUI-Rise",
-                  "order": 6
-                },
-                {
-                  "citation_key": "wang2026active",
-                  "display_name": "AVP",
-                  "display_name_tex": "AVP",
-                  "order": 7
-                },
-                {
-                  "citation_key": "liu2023reflect",
-                  "display_name": "REFLECT",
-                  "display_name_tex": "REFLECT",
-                  "order": 8
-                },
-                {
-                  "citation_key": "li2026visual",
-                  "display_name": "VAM",
-                  "display_name_tex": "VAM",
-                  "order": 9
-                },
-                {
-                  "citation_key": "nie2026light",
-                  "display_name": "Light-Omni",
-                  "display_name_tex": "Light-Omni",
-                  "order": 10
-                },
-                {
-                  "citation_key": "cvbg_mmreact",
-                  "display_name": "MM-REACT",
-                  "display_name_tex": "MM-REACT",
-                  "order": 11
-                },
-                {
-                  "citation_key": "li2026bridging",
-                  "display_name": "MAGIC-Video",
-                  "display_name_tex": "MAGIC-Video",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "memory"
+              "category_id": "memory",
+              "selected_citation_keys": [
+                "fan2024videoagent",
+                "va_c178_2024",
+                "yan2026admemo",
+                "liu2026atmem"
+              ]
             },
             {
               "id": "vision-memory-evidence",
@@ -1939,82 +471,16 @@
               "name": "Visual Evidence Store",
               "name_tex": "Visual Evidence Store",
               "section_label": "sec:vision-memory-evidence",
-              "works": [
-                {
-                  "citation_key": "u_vstar",
-                  "display_name": "V*",
-                  "display_name_tex": "V$^{*}$",
-                  "order": 1
-                },
-                {
-                  "citation_key": "gupta2023visual",
-                  "display_name": "VISPROG",
-                  "display_name_tex": "VISPROG",
-                  "order": 2
-                },
-                {
-                  "citation_key": "li2026visual",
-                  "display_name": "VAM",
-                  "display_name_tex": "VAM",
-                  "order": 3
-                },
-                {
-                  "citation_key": "fan2024videoagent",
-                  "display_name": "VideoAgent (Fan)",
-                  "display_name_tex": "VideoAgent (Fan)",
-                  "order": 4
-                },
-                {
-                  "citation_key": "fan2025embodied",
-                  "display_name": "Embodied VideoAgent",
-                  "display_name_tex": "Embodied VideoAgent",
-                  "order": 5
-                },
-                {
-                  "citation_key": "yeo2026worldmm",
-                  "display_name": "WorldMM",
-                  "display_name_tex": "WorldMM",
-                  "order": 6
-                },
-                {
-                  "citation_key": "long2026seeing",
-                  "display_name": "M3-Agent",
-                  "display_name_tex": "M3-Agent",
-                  "order": 7
-                },
-                {
-                  "citation_key": "zhao2026visage",
-                  "display_name": "ViSAGE",
-                  "display_name_tex": "ViSAGE",
-                  "order": 8
-                },
-                {
-                  "citation_key": "kang2026vmemmodalityroutedretrievallongterm",
-                  "display_name": "V-Mem",
-                  "display_name_tex": "V-Mem",
-                  "order": 9
-                },
-                {
-                  "citation_key": "choi2026merit",
-                  "display_name": "MERIT",
-                  "display_name_tex": "MERIT",
-                  "order": 10
-                },
-                {
-                  "citation_key": "yuan2025videoexplorer",
-                  "display_name": "VideoExplorer",
-                  "display_name_tex": "VideoExplorer",
-                  "order": 11
-                },
-                {
-                  "citation_key": "chen2026reflectr1",
-                  "display_name": "Reflect-R1",
-                  "display_name_tex": "Reflect-R1",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "memory"
+              "category_id": "memory",
+              "selected_citation_keys": [
+                "han2026vista",
+                "fan2025embodied",
+                "zhao2026visage",
+                "choi2026merit",
+                "yeo2026worldmm",
+                "kang2026vmemmodalityroutedretrievallongterm"
+              ]
             },
             {
               "id": "vision-memory-compression",
@@ -2022,82 +488,15 @@
               "name": "Visual Compression Layer",
               "name_tex": "Visual Compression Layer",
               "section_label": "sec:vision-memory-compression",
-              "works": [
-                {
-                  "citation_key": "alayrac2022flamingo",
-                  "display_name": "Flamingo",
-                  "display_name_tex": "Flamingo",
-                  "order": 1
-                },
-                {
-                  "citation_key": "u_memento",
-                  "display_name": "Memento",
-                  "display_name_tex": "Memento",
-                  "order": 2
-                },
-                {
-                  "citation_key": "emb_n_streamvln",
-                  "display_name": "StreamVLN",
-                  "display_name_tex": "StreamVLN",
-                  "order": 3
-                },
-                {
-                  "citation_key": "xu2026vla",
-                  "display_name": "VLA-Cache",
-                  "display_name_tex": "VLA-Cache",
-                  "order": 4
-                },
-                {
-                  "citation_key": "yang2026efficientvla",
-                  "display_name": "EfficientVLA",
-                  "display_name_tex": "EfficientVLA",
-                  "order": 5
-                },
-                {
-                  "citation_key": "chen2025less",
-                  "display_name": "SimpAgent",
-                  "display_name_tex": "SimpAgent",
-                  "order": 6
-                },
-                {
-                  "citation_key": "wang2025videotree",
-                  "display_name": "VideoTree",
-                  "display_name_tex": "VideoTree",
-                  "order": 7
-                },
-                {
-                  "citation_key": "va_c1150_2026",
-                  "display_name": "EventMemAgent",
-                  "display_name_tex": "EventMemAgent",
-                  "order": 8
-                },
-                {
-                  "citation_key": "ds_arxiv_2504_10739",
-                  "display_name": "HippoMM",
-                  "display_name_tex": "HippoMM",
-                  "order": 9
-                },
-                {
-                  "citation_key": "nie2026light",
-                  "display_name": "Light-Omni",
-                  "display_name_tex": "Light-Omni",
-                  "order": 10
-                },
-                {
-                  "citation_key": "zhu2026hybrid",
-                  "display_name": "HyMEM",
-                  "display_name_tex": "HyMEM",
-                  "order": 11
-                },
-                {
-                  "citation_key": "li2026visual",
-                  "display_name": "VAM",
-                  "display_name_tex": "VAM",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "memory"
+              "category_id": "memory",
+              "selected_citation_keys": [
+                "chen2025less",
+                "emb_n_streamvln",
+                "nie2026light",
+                "fan2026screenshots",
+                "xu2026vla"
+              ]
             },
             {
               "id": "vision-memory-experience",
@@ -2105,82 +504,17 @@
               "name": "Visual Experience Repository",
               "name_tex": "Visual Experience\\\\Repository",
               "section_label": "sec:vision-memory-experience",
-              "works": [
-                {
-                  "citation_key": "va_c178_2024",
-                  "display_name": "ICAL",
-                  "display_name_tex": "ICAL",
-                  "order": 1
-                },
-                {
-                  "citation_key": "kagaya2025vireskill",
-                  "display_name": "ViReSkill",
-                  "display_name_tex": "ViReSkill",
-                  "order": 2
-                },
-                {
-                  "citation_key": "zhu2026hybrid",
-                  "display_name": "HyMEM",
-                  "display_name_tex": "HyMEM",
-                  "order": 3
-                },
-                {
-                  "citation_key": "xiao2026ui",
-                  "display_name": "UI-Mem",
-                  "display_name_tex": "UI-Mem",
-                  "order": 4
-                },
-                {
-                  "citation_key": "li2026echotrail",
-                  "display_name": "EchoTrail-GUI",
-                  "display_name_tex": "EchoTrail-GUI",
-                  "order": 5
-                },
-                {
-                  "citation_key": "mi2026darwinian",
-                  "display_name": "Darwinian Memory",
-                  "display_name_tex": "Darwinian Memory",
-                  "order": 6
-                },
-                {
-                  "citation_key": "li2026roboharness",
-                  "display_name": "RoboHarness (Li)",
-                  "display_name_tex": "RoboHarness (Li)",
-                  "order": 7
-                },
-                {
-                  "citation_key": "li2026knowact",
-                  "display_name": "KnowAct-GUIClaw",
-                  "display_name_tex": "KnowAct-GUIClaw",
-                  "order": 8
-                },
-                {
-                  "citation_key": "chen2026onevomemory",
-                  "display_name": "OnEvoMemory",
-                  "display_name_tex": "OnEvoMemory",
-                  "order": 9
-                },
-                {
-                  "citation_key": "chen2026genevolve",
-                  "display_name": "GenEvolve",
-                  "display_name_tex": "GenEvolve",
-                  "order": 10
-                },
-                {
-                  "citation_key": "bo2025agentic",
-                  "display_name": "ViLoMem",
-                  "display_name_tex": "ViLoMem",
-                  "order": 11
-                },
-                {
-                  "citation_key": "zhang2026evolving",
-                  "display_name": "CA3Mem",
-                  "display_name_tex": "CA3Mem",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "memory"
+              "category_id": "memory",
+              "selected_citation_keys": [
+                "kagaya2025vireskill",
+                "xiao2026ui",
+                "chen2026onevomemory",
+                "li2026roboharness",
+                "zhao2026navharnesslifelong",
+                "zeng2026mementogui",
+                "zhu2026hybrid"
+              ]
             }
           ]
         },
@@ -2196,82 +530,15 @@
               "name": "Observation Tools",
               "name_tex": "Observation Tools",
               "section_label": "sec:visual-tools-observation",
-              "works": [
-                {
-                  "citation_key": "gupta2023visual",
-                  "display_name": "VISPROG",
-                  "display_name_tex": "VISPROG",
-                  "order": 1
-                },
-                {
-                  "citation_key": "suris2023vipergpt",
-                  "display_name": "ViperGPT",
-                  "display_name_tex": "ViperGPT",
-                  "order": 2
-                },
-                {
-                  "citation_key": "gao2024clova",
-                  "display_name": "CLOVA",
-                  "display_name_tex": "CLOVA",
-                  "order": 3
-                },
-                {
-                  "citation_key": "lu2025octotools",
-                  "display_name": "OctoTools",
-                  "display_name_tex": "OctoTools",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wu2024dettoolchain",
-                  "display_name": "DetToolChain",
-                  "display_name_tex": "DetToolChain",
-                  "order": 5
-                },
-                {
-                  "citation_key": "he2025rsagent",
-                  "display_name": "RSAgent",
-                  "display_name_tex": "RSAgent",
-                  "order": 6
-                },
-                {
-                  "citation_key": "fallahpour2025medrax",
-                  "display_name": "MedRAX",
-                  "display_name_tex": "MedRAX",
-                  "order": 7
-                },
-                {
-                  "citation_key": "zhao2025pyvision",
-                  "display_name": "PyVision",
-                  "display_name_tex": "PyVision",
-                  "order": 8
-                },
-                {
-                  "citation_key": "zheng2026deepeyes",
-                  "display_name": "DeepEyes",
-                  "display_name_tex": "DeepEyes",
-                  "order": 9
-                },
-                {
-                  "citation_key": "ding2026videozoomer",
-                  "display_name": "VideoZoomer",
-                  "display_name_tex": "VideoZoomer",
-                  "order": 10
-                },
-                {
-                  "citation_key": "va_c097_2025",
-                  "display_name": "SegAgent",
-                  "display_name_tex": "SegAgent",
-                  "order": 11
-                },
-                {
-                  "citation_key": "u_gca",
-                  "display_name": "GCA",
-                  "display_name_tex": "GCA",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "tools"
+              "category_id": "tools",
+              "selected_citation_keys": [
+                "wang2024mobile",
+                "gao2024clova",
+                "va_c201_2024",
+                "va_c1814_2025",
+                "va_c1705_2026"
+              ]
             },
             {
               "id": "visual-tools-search",
@@ -2279,82 +546,15 @@
               "name": "Search Tools",
               "name_tex": "Search Tools",
               "section_label": "sec:visual-tools-search",
-              "works": [
-                {
-                  "citation_key": "u_avis",
-                  "display_name": "AVIS",
-                  "display_name_tex": "AVIS",
-                  "order": 1
-                },
-                {
-                  "citation_key": "wu2025mmsearch",
-                  "display_name": "MMSearch-R1",
-                  "display_name_tex": "MMSearch-R1",
-                  "order": 2
-                },
-                {
-                  "citation_key": "geng2026webwatcher",
-                  "display_name": "WebWatcher",
-                  "display_name_tex": "WebWatcher",
-                  "order": 3
-                },
-                {
-                  "citation_key": "pmlr-v306-huang26bx",
-                  "display_name": "Vision-DeepResearch",
-                  "display_name_tex": "Vision-DeepResearch",
-                  "order": 4
-                },
-                {
-                  "citation_key": "yan2026prommsearchagentgeneralizablemultimodalsearch",
-                  "display_name": "ProMMSearchAgent",
-                  "display_name_tex": "ProMMSearchAgent",
-                  "order": 5
-                },
-                {
-                  "citation_key": "wu2024avatar",
-                  "display_name": "AvaTaR",
-                  "display_name_tex": "AvaTaR",
-                  "order": 6
-                },
-                {
-                  "citation_key": "son2025world",
-                  "display_name": "World-To-Image",
-                  "display_name_tex": "World-To-Image",
-                  "order": 7
-                },
-                {
-                  "citation_key": "lin2026evograph",
-                  "display_name": "EvoGraph-R1",
-                  "display_name_tex": "EvoGraph-R1",
-                  "order": 8
-                },
-                {
-                  "citation_key": "fan2024videoagent",
-                  "display_name": "VideoAgent (Fan)",
-                  "display_name_tex": "VideoAgent (Fan)",
-                  "order": 9
-                },
-                {
-                  "citation_key": "fan2025embodied",
-                  "display_name": "Embodied VideoAgent",
-                  "display_name_tex": "Embodied VideoAgent",
-                  "order": 10
-                },
-                {
-                  "citation_key": "long2026seeing",
-                  "display_name": "M3-Agent",
-                  "display_name_tex": "M3-Agent",
-                  "order": 11
-                },
-                {
-                  "citation_key": "kang2026vmemmodalityroutedretrievallongterm",
-                  "display_name": "V-Mem",
-                  "display_name_tex": "V-Mem",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "tools"
+              "category_id": "tools",
+              "selected_citation_keys": [
+                "wu2025mmsearch",
+                "geng2026webwatcher",
+                "pmlr-v306-huang26bx",
+                "son2025world",
+                "li2025insight"
+              ]
             },
             {
               "id": "visual-tools-generation",
@@ -2362,82 +562,17 @@
               "name": "Generation Tools",
               "name_tex": "Generation Tools",
               "section_label": "sec:visual-tools-generation",
-              "works": [
-                {
-                  "citation_key": "rombach2022high",
-                  "display_name": "Latent Diffusion",
-                  "display_name_tex": "Latent Diffusion",
-                  "order": 1
-                },
-                {
-                  "citation_key": "zhang2023adding",
-                  "display_name": "ControlNet",
-                  "display_name_tex": "ControlNet",
-                  "order": 2
-                },
-                {
-                  "citation_key": "ye2023ip",
-                  "display_name": "IP-Adapter",
-                  "display_name_tex": "IP-Adapter",
-                  "order": 3
-                },
-                {
-                  "citation_key": "brooks2023instructpix2pix",
-                  "display_name": "InstructPix2Pix",
-                  "display_name_tex": "InstructPix2Pix",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wu2023visual",
-                  "display_name": "Visual ChatGPT",
-                  "display_name_tex": "Visual ChatGPT",
-                  "order": 5
-                },
-                {
-                  "citation_key": "wang2024genartist",
-                  "display_name": "GenArtist",
-                  "display_name_tex": "GenArtist",
-                  "order": 6
-                },
-                {
-                  "citation_key": "shen2026imagagent",
-                  "display_name": "IMAGAgent",
-                  "display_name_tex": "IMAGAgent",
-                  "order": 7
-                },
-                {
-                  "citation_key": "huang2026vimax",
-                  "display_name": "ViMax",
-                  "display_name_tex": "ViMax",
-                  "order": 8
-                },
-                {
-                  "citation_key": "hu2024scenecraft",
-                  "display_name": "SceneCraft",
-                  "display_name_tex": "SceneCraft",
-                  "order": 9
-                },
-                {
-                  "citation_key": "va_c1288_2026",
-                  "display_name": "SceneSmith",
-                  "display_name_tex": "SceneSmith",
-                  "order": 10
-                },
-                {
-                  "citation_key": "feng2023layoutgpt",
-                  "display_name": "LayoutGPT",
-                  "display_name_tex": "LayoutGPT",
-                  "order": 11
-                },
-                {
-                  "citation_key": "wang2024lave",
-                  "display_name": "LAVE",
-                  "display_name_tex": "LAVE",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "tools"
+              "category_id": "tools",
+              "selected_citation_keys": [
+                "wang2024genartist",
+                "huang2026vimax",
+                "va_c1288_2026",
+                "va_c1860_2025",
+                "jiang2026genagent",
+                "xu2026omniharness",
+                "shao2026livefigure"
+              ]
             }
           ]
         },
@@ -2453,82 +588,13 @@
               "name": "Evidence Verification",
               "name_tex": "Evidence Verification",
               "section_label": "sec:verification-evidence",
-              "works": [
-                {
-                  "citation_key": "va_c105_2025",
-                  "display_name": "LookBack",
-                  "display_name_tex": "LookBack",
-                  "order": 1
-                },
-                {
-                  "citation_key": "min2026improving",
-                  "display_name": "Perceval",
-                  "display_name_tex": "Perceval",
-                  "order": 2
-                },
-                {
-                  "citation_key": "ding2026arm",
-                  "display_name": "ARM-Thinker",
-                  "display_name_tex": "ARM-Thinker",
-                  "order": 3
-                },
-                {
-                  "citation_key": "liu2026videomind",
-                  "display_name": "VideoMind",
-                  "display_name_tex": "VideoMind",
-                  "order": 4
-                },
-                {
-                  "citation_key": "mao2026kestrel",
-                  "display_name": "Kestrel",
-                  "display_name_tex": "Kestrel",
-                  "order": 5
-                },
-                {
-                  "citation_key": "chen2026reflectr1",
-                  "display_name": "Reflect-R1",
-                  "display_name_tex": "Reflect-R1",
-                  "order": 6
-                },
-                {
-                  "citation_key": "va_c738_2026",
-                  "display_name": "CARE",
-                  "display_name_tex": "CARE",
-                  "order": 7
-                },
-                {
-                  "citation_key": "zhao2026visage",
-                  "display_name": "ViSAGE",
-                  "display_name_tex": "ViSAGE",
-                  "order": 8
-                },
-                {
-                  "citation_key": "va_c1168_2026",
-                  "display_name": "VERITAS",
-                  "display_name_tex": "VERITAS",
-                  "order": 9
-                },
-                {
-                  "citation_key": "wang2026forgeryvcr",
-                  "display_name": "ForgeryVCR",
-                  "display_name_tex": "ForgeryVCR",
-                  "order": 10
-                },
-                {
-                  "citation_key": "u_gca",
-                  "display_name": "GCA",
-                  "display_name_tex": "GCA",
-                  "order": 11
-                },
-                {
-                  "citation_key": "panagopoulou2025viunit",
-                  "display_name": "ViUniT",
-                  "display_name_tex": "ViUniT",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "verification"
+              "category_id": "verification",
+              "selected_citation_keys": [
+                "ding2026arm",
+                "va_c738_2026",
+                "va_c843_2026"
+              ]
             },
             {
               "id": "verification-process",
@@ -2536,82 +602,14 @@
               "name": "Process Verification",
               "name_tex": "Process Verification",
               "section_label": "sec:verification-process",
-              "works": [
-                {
-                  "citation_key": "va_c106_2025",
-                  "display_name": "Code-as-Monitor",
-                  "display_name_tex": "Code-as-Monitor",
-                  "order": 1
-                },
-                {
-                  "citation_key": "agia2024unpacking",
-                  "display_name": "Sentinel",
-                  "display_name_tex": "Sentinel",
-                  "order": 2
-                },
-                {
-                  "citation_key": "panagopoulou2025viunit",
-                  "display_name": "ViUniT",
-                  "display_name_tex": "ViUniT",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wu2024vdebugger",
-                  "display_name": "VDebugger",
-                  "display_name_tex": "VDebugger",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wu2026oracle",
-                  "display_name": "OS-Oracle",
-                  "display_name_tex": "OS-Oracle",
-                  "order": 5
-                },
-                {
-                  "citation_key": "zhang2026don",
-                  "display_name": "VeriGUI",
-                  "display_name_tex": "VeriGUI",
-                  "order": 6
-                },
-                {
-                  "citation_key": "va_c1187_2026",
-                  "display_name": "VisCritic",
-                  "display_name_tex": "VisCritic",
-                  "order": 7
-                },
-                {
-                  "citation_key": "chen2026intentscore",
-                  "display_name": "IntentScore",
-                  "display_name_tex": "IntentScore",
-                  "order": 8
-                },
-                {
-                  "citation_key": "pacaud2025guardian",
-                  "display_name": "Guardian",
-                  "display_name_tex": "Guardian",
-                  "order": 9
-                },
-                {
-                  "citation_key": "grislain2025failsense",
-                  "display_name": "I-FailSense",
-                  "display_name_tex": "I-FailSense",
-                  "order": 10
-                },
-                {
-                  "citation_key": "wang2026gaia",
-                  "display_name": "GAIA",
-                  "display_name_tex": "GAIA",
-                  "order": 11
-                },
-                {
-                  "citation_key": "liu2023reflect",
-                  "display_name": "REFLECT",
-                  "display_name_tex": "REFLECT",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "verification"
+              "category_id": "verification",
+              "selected_citation_keys": [
+                "wu2026oracle",
+                "va_c106_2025",
+                "pacaud2025guardian",
+                "bench_osworldmcp"
+              ]
             },
             {
               "id": "verification-outcome",
@@ -2619,82 +617,17 @@
               "name": "Outcome Verification",
               "name_tex": "Outcome Verification",
               "section_label": "sec:verification-outcome",
-              "works": [
-                {
-                  "citation_key": "hu2023tifa",
-                  "display_name": "TIFA",
-                  "display_name_tex": "TIFA",
-                  "order": 1
-                },
-                {
-                  "citation_key": "ghosh2023geneval",
-                  "display_name": "GenEval",
-                  "display_name_tex": "GenEval",
-                  "order": 2
-                },
-                {
-                  "citation_key": "huang2024vbench",
-                  "display_name": "VBench",
-                  "display_name_tex": "VBench",
-                  "order": 3
-                },
-                {
-                  "citation_key": "xiong2025llava",
-                  "display_name": "LLaVA-Critic",
-                  "display_name_tex": "LLaVA-Critic",
-                  "order": 4
-                },
-                {
-                  "citation_key": "chen2025edival",
-                  "display_name": "EdiVal-Agent",
-                  "display_name_tex": "EdiVal-Agent",
-                  "order": 5
-                },
-                {
-                  "citation_key": "niu2025wise",
-                  "display_name": "WISE",
-                  "display_name_tex": "WISE",
-                  "order": 6
-                },
-                {
-                  "citation_key": "wu2026retouchiq",
-                  "display_name": "RetouchIQ",
-                  "display_name_tex": "RetouchIQ",
-                  "order": 7
-                },
-                {
-                  "citation_key": "dai2026prore",
-                  "display_name": "ProRe",
-                  "display_name_tex": "ProRe",
-                  "order": 8
-                },
-                {
-                  "citation_key": "li2026themis",
-                  "display_name": "OS-Themis",
-                  "display_name_tex": "OS-Themis",
-                  "order": 9
-                },
-                {
-                  "citation_key": "rosset2026art",
-                  "display_name": "Universal Verifier",
-                  "display_name_tex": "Universal Verifier",
-                  "order": 10
-                },
-                {
-                  "citation_key": "xie2024osworld",
-                  "display_name": "OSWorld",
-                  "display_name_tex": "OSWorld",
-                  "order": 11
-                },
-                {
-                  "citation_key": "bench_androidworld",
-                  "display_name": "AndroidWorld",
-                  "display_name_tex": "AndroidWorld",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "verification"
+              "category_id": "verification",
+              "selected_citation_keys": [
+                "xie2024osworld",
+                "bench_androidworld",
+                "koh2024visualwebarena",
+                "yang2025embodiedbench",
+                "va_c109_2025",
+                "va_c780_2026",
+                "emb_m_liberoplus26"
+              ]
             }
           ]
         },
@@ -2710,58 +643,13 @@
               "name": "Visual Information Safeguard",
               "name_tex": "Visual Information\\\\Safeguard",
               "section_label": "sec:safety-visual-information",
-              "works": [
-                {
-                  "citation_key": "yu2026minim",
-                  "display_name": "MINIM",
-                  "display_name_tex": "MINIM",
-                  "order": 1
-                },
-                {
-                  "citation_key": "va_c688_2026",
-                  "display_name": "VPI-Bench",
-                  "display_name_tex": "VPI-Bench",
-                  "order": 2
-                },
-                {
-                  "citation_key": "evtimov2026wasp",
-                  "display_name": "WASP",
-                  "display_name_tex": "WASP",
-                  "order": 3
-                },
-                {
-                  "citation_key": "debenedetti2024agentdojo",
-                  "display_name": "AgentDojo",
-                  "display_name_tex": "AgentDojo",
-                  "order": 4
-                },
-                {
-                  "citation_key": "wang2026forgeryvcr",
-                  "display_name": "ForgeryVCR",
-                  "display_name_tex": "ForgeryVCR",
-                  "order": 5
-                },
-                {
-                  "citation_key": "mao2026kestrel",
-                  "display_name": "Kestrel",
-                  "display_name_tex": "Kestrel",
-                  "order": 6
-                },
-                {
-                  "citation_key": "va_c105_2025",
-                  "display_name": "LookBack",
-                  "display_name_tex": "LookBack",
-                  "order": 7
-                },
-                {
-                  "citation_key": "min2026improving",
-                  "display_name": "Perceval",
-                  "display_name_tex": "Perceval",
-                  "order": 8
-                }
-              ],
               "branch_id": "external",
-              "category_id": "safety"
+              "category_id": "safety",
+              "selected_citation_keys": [
+                "va_c688_2026",
+                "yu2026minim",
+                "evtimov2026wasp"
+              ]
             },
             {
               "id": "safety-constrained-execution",
@@ -2769,82 +657,15 @@
               "name": "Safety-Constrained Execution",
               "name_tex": "Safety-Constrained\\\\Execution",
               "section_label": "sec:safety-constrained-execution",
-              "works": [
-                {
-                  "citation_key": "ravichandran2026safety",
-                  "display_name": "RoboGuard",
-                  "display_name_tex": "RoboGuard",
-                  "order": 1
-                },
-                {
-                  "citation_key": "zhang2026safevla",
-                  "display_name": "SafeVLA",
-                  "display_name_tex": "SafeVLA",
-                  "order": 2
-                },
-                {
-                  "citation_key": "jeong2025robots",
-                  "display_name": "SALT",
-                  "display_name_tex": "SALT",
-                  "order": 3
-                },
-                {
-                  "citation_key": "ren2023robots",
-                  "display_name": "KnowNo",
-                  "display_name_tex": "KnowNo",
-                  "order": 4
-                },
-                {
-                  "citation_key": "va_c1387_2026",
-                  "display_name": "PACT",
-                  "display_name_tex": "PACT",
-                  "order": 5
-                },
-                {
-                  "citation_key": "zhang2025robochemist",
-                  "display_name": "RoboChemist",
-                  "display_name_tex": "RoboChemist",
-                  "order": 6
-                },
-                {
-                  "citation_key": "huang2024rekep",
-                  "display_name": "ReKep",
-                  "display_name_tex": "ReKep",
-                  "order": 7
-                },
-                {
-                  "citation_key": "zhao2025conformalized",
-                  "display_name": "ConformalDAgger",
-                  "display_name_tex": "ConformalDAgger",
-                  "order": 8
-                },
-                {
-                  "citation_key": "mozannar2025magentic",
-                  "display_name": "Magentic-UI",
-                  "display_name_tex": "Magentic-UI",
-                  "order": 9
-                },
-                {
-                  "citation_key": "huq2025cowpilot",
-                  "display_name": "CowPilot",
-                  "display_name_tex": "CowPilot",
-                  "order": 10
-                },
-                {
-                  "citation_key": "liang2024introspective",
-                  "display_name": "IntroPlan",
-                  "display_name_tex": "IntroPlan",
-                  "order": 11
-                },
-                {
-                  "citation_key": "yuan2026act",
-                  "display_name": "UPS",
-                  "display_name_tex": "UPS",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "safety"
+              "category_id": "safety",
+              "selected_citation_keys": [
+                "zhang2026safevla",
+                "ravichandran2026safety",
+                "jeong2025robots",
+                "zhang2025robochemist",
+                "mozannar2025magentic"
+              ]
             },
             {
               "id": "safety-runtime-oversight",
@@ -2852,86 +673,19 @@
               "name": "Runtime Oversight and Traceability",
               "name_tex": "Runtime Oversight\\\\and Traceability",
               "section_label": "sec:safety-runtime-oversight",
-              "works": [
-                {
-                  "citation_key": "agia2024unpacking",
-                  "display_name": "Sentinel",
-                  "display_name_tex": "Sentinel",
-                  "order": 1
-                },
-                {
-                  "citation_key": "va_c106_2025",
-                  "display_name": "Code-as-Monitor",
-                  "display_name_tex": "Code-as-Monitor",
-                  "order": 2
-                },
-                {
-                  "citation_key": "liu2023reflect",
-                  "display_name": "REFLECT",
-                  "display_name_tex": "REFLECT",
-                  "order": 3
-                },
-                {
-                  "citation_key": "wu2024vdebugger",
-                  "display_name": "VDebugger",
-                  "display_name_tex": "VDebugger",
-                  "order": 4
-                },
-                {
-                  "citation_key": "rosset2026art",
-                  "display_name": "Universal Verifier",
-                  "display_name_tex": "Universal Verifier",
-                  "order": 5
-                },
-                {
-                  "citation_key": "xu2025can",
-                  "display_name": "FAIL-Detect",
-                  "display_name_tex": "FAIL-Detect",
-                  "order": 6
-                },
-                {
-                  "citation_key": "duan2024aha",
-                  "display_name": "AHA",
-                  "display_name_tex": "AHA",
-                  "order": 7
-                },
-                {
-                  "citation_key": "grislain2025failsense",
-                  "display_name": "I-FailSense",
-                  "display_name_tex": "I-FailSense",
-                  "order": 8
-                },
-                {
-                  "citation_key": "ye2025robofac",
-                  "display_name": "RoboFAC",
-                  "display_name_tex": "RoboFAC",
-                  "order": 9
-                },
-                {
-                  "citation_key": "zhang2026don",
-                  "display_name": "VeriGUI",
-                  "display_name_tex": "VeriGUI",
-                  "order": 10
-                },
-                {
-                  "citation_key": "pacaud2025guardian",
-                  "display_name": "Guardian",
-                  "display_name_tex": "Guardian",
-                  "order": 11
-                },
-                {
-                  "citation_key": "ying2026robofailring",
-                  "display_name": "RoboFailRing",
-                  "display_name_tex": "RoboFailRing",
-                  "order": 12
-                }
-              ],
               "branch_id": "external",
-              "category_id": "safety"
+              "category_id": "safety",
+              "selected_citation_keys": [
+                "agia2024unpacking",
+                "huq2025cowpilot",
+                "xu2025can",
+                "va_c517_2026"
+              ]
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "snapshot_date": "2026-10-05"
 }
