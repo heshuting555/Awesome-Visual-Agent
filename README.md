@@ -6,8 +6,8 @@
   <a href="#taxonomy">🗺️ Taxonomy</a> &nbsp;·&nbsp;
   <a href="#benchmarks-and-datasets">📊 Benchmarks</a> &nbsp;·&nbsp;
   <a href="#l1-within-task-adaptation">🛠️ Methods</a> &nbsp;·&nbsp;
-  <a href="docs/READING_LIST.md">📖 Reading List</a> &nbsp;·&nbsp;
-  <a href="#citation">📌 Citation</a>
+  <a href="#table-of-contents">📚 Contents</a> &nbsp;·&nbsp;
+  <a href="#citation">📌 Cite This Repository</a>
 </p>
 
 <p align="center">
@@ -480,7 +480,7 @@ These works examine how agents revise the mechanisms that generate experience, u
 
 </details>
 
-The [companion reading list](docs/READING_LIST.md) covers additional work on visual capabilities and harness infrastructure.
+For additional work on visual capabilities and harness infrastructure, see the [supplementary reading list](docs/READING_LIST.md) from the October 2026 bibliography snapshot.
 
 <a name="contributing"></a>
 
@@ -490,14 +490,15 @@ Suggest additions or corrections through [issues](https://github.com/heshuting55
 
 <a name="citation"></a>
 
-## 📌 Citation
+## 📌 Cite This Repository
 
-Use this BibTeX entry to cite the survey repository.
+Use this BibTeX entry to cite the Awesome-Visual-Agent repository. BibTeX for works in the supplementary reading list is available in [references.bib](references.bib).
 
 ```bibtex
 @misc{chenVisualAgentSurvey,
-  title        = {Seeing the Harness and Self-Evolution of Visual Agents: Toward Recursive Self-Improvement},
+  title        = {{Awesome-Visual-Agent}},
   author       = {Chen, Dong and Ge, Shuai and Fu, Yu and Ren, Xiangyu and Zhang, Zhihao and Wang, Hao and Wang, Changshuo and Ji, Jiayi and Ding, Henghui and He, Shuting},
+  year         = {2026},
   howpublished = {GitHub repository},
   url          = {https://github.com/heshuting555/Awesome-Visual-Agent}
 }
