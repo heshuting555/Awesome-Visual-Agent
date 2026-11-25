@@ -1,4 +1,5 @@
 """Small brace-aware BibTeX reader and display/venue helpers (standard library)."""
+import hashlib
 import re
 import unicodedata
 
@@ -18,7 +19,7 @@ def split_top(s, sep=','):
  out.append(s[start:]); return out
 
 def parse(path, recover=False):
- raw=path.read_text(); recovered=[]
+ raw=path.read_text(encoding='utf-8'); recovered=[]
  if recover:
   recovered=re.findall(r'(?m)^%\s*(@\w+\s*[({]\s*[^,]+,)',raw)
   raw=re.sub(r'(?m)^%\s*(@\w+\s*[({])',r'\1',raw)
@@ -49,6 +50,10 @@ def parse(path, recover=False):
    fields[name]=val
   out.append(dict(type=typ,key=key,fields=fields,source=path.name,line=s.count('\n',0,start)+1))
  return out,strings,errors,recovered
+
+def bibliography_digest(path):
+    """Hash the bibliography consistently across Git checkout line endings."""
+    return hashlib.sha256(path.read_bytes().replace(b'\r\n', b'\n')).hexdigest()
 
 def norm(s):
  s=unicodedata.normalize('NFKD',s).lower()

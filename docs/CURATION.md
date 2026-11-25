@@ -1,8 +1,8 @@
 # Reading-list selection
 
-[← Selected catalogue](../README.md)
+[← Selected catalogue](READING_LIST.md)
 
-The GitHub reading list highlights recent vision-centric agent research. The manuscript bibliography also includes background and supporting references; a citation in the paper does not automatically qualify a work for this list.
+The companion reading list highlights vision-centric agent research. Its bibliography also includes background and supporting references.
 
 ## Inclusion criteria
 

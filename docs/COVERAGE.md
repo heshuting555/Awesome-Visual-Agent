@@ -13,11 +13,11 @@ Bibliography snapshot: **2026-10-05**.
 
 ## Sources
 
-- [references.bib](../references.bib) is an exact copy of the current manuscript’s `all_references.bib`.
+- [references.bib](../references.bib) contains the bibliography for this reading-list snapshot.
 - [selection.json](../data/selection.json) records explicit inclusion, primary topics, and visual contributions.
 - [curation.json](../data/curation.json) accounts for every current bibliography key as selected or bibliography-only.
 - [papers.json](../data/papers.json) preserves primary links and their dated verification evidence.
-- [source-map.json](../data/source-map.json) records current manuscript citation locations and selection evidence.
+- [source-map.json](../data/source-map.json) records citation locations and selection evidence for this snapshot.
 - [metadata.json](../data/metadata.json) records counts and the bibliography SHA-256.
 
 ## Verification scope
@@ -37,6 +37,6 @@ The validator checks bibliography identities, explicit inclusion, date bounds, c
 
 ## Manuscript citation gaps
 
-The current source scan found **17 citation keys** absent from the supplied bibliography. They remain recorded in [source-map.json](../data/source-map.json) and are not silently imported into the reading list.
+The source scan for this snapshot found **17 citation keys** absent from the supplied bibliography. They remain recorded in [source-map.json](../data/source-map.json) and are not silently imported into the reading list.
 
 `alonso2024diamond`, `b43_referit3d`, `b43_scanrefer`, `bansal2026videophy`, `feng2026newton`, `ghosh2023geneval`, `jain2026weaver`, `kamath2025geneval`, `li2025drivevlaw0`, `meng2024towards`, `niu2025wise`, `wang2026vlaworld`, `wu2026uioceanus`, `xiao2025worldenv`, `xu2026muse`, `zhu2025astra`, `zhu2026clarify`

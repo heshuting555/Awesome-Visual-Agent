@@ -1,56 +1,56 @@
 # Vision-agent topic navigation
 
-[← Selected catalogue](../README.md)
+[← Selected catalogue](READING_LIST.md)
 
-The hierarchy follows the survey framework. Reading-list selections are maintained independently from manuscript examples; each selected work has one primary topic.
+Each work in the companion reading list has one primary topic.
 
-- [Internal Capabilities of Vision-Centric Agents](../README.md#branch-internal)
-  - [Vision Perception Capability](../README.md#category-perception)
-    - [Grounded Perception](../README.md#topic-vision-perception-grounded) — 10 papers
-    - [Temporal Perception](../README.md#topic-vision-perception-temporal) — 7 papers
-    - [Spatial Perception](../README.md#topic-vision-perception-spatial) — 6 papers
-  - [Vision Reasoning Capability](../README.md#category-reasoning)
-    - [Interleaved Multimodal Reasoning](../README.md#topic-reasoning-interleaved) — 7 papers
-    - [Visually Grounded Reasoning](../README.md#topic-reasoning-grounded) — 7 papers
-    - [Tool-Augmented Visual Reasoning](../README.md#topic-reasoning-tool-augmented) — 6 papers
-    - [Programmatic Visual Reasoning](../README.md#topic-reasoning-programmatic) — 6 papers
-  - [Simulation of World Dynamics](../README.md#category-world)
-    - [Video Simulation](../README.md#topic-simulation-video) — 8 papers
-    - [Spatial Simulation](../README.md#topic-simulation-spatial) — 5 papers
-    - [Latent Simulation](../README.md#topic-simulation-latent) — 5 papers
-    - [Semantic Simulation](../README.md#topic-simulation-semantic) — 5 papers
-  - [Visual Evaluation and Correction Abilities](../README.md#category-evaluation)
-    - [Visual Evidence Evaluation](../README.md#topic-visual-evaluation-evidence) — 4 papers
-    - [Visually Grounded Process Evaluation](../README.md#topic-visual-evaluation-process) — 4 papers
-    - [Visual Outcome Evaluation](../README.md#topic-visual-evaluation-outcome) — 4 papers
-    - [Visual-Based Self-Correction](../README.md#topic-visual-evaluation-self-correction) — 5 papers
-  - [Evolving Abilities](../README.md#category-evolving)
-    - [Visual Capability Gap Diagnosis](../README.md#topic-evolving-diagnosis) — 4 papers
-    - [Visual Improvement Signal Generation](../README.md#topic-evolving-signals) — 5 papers
-    - [Vision-Guided Optimization Adaptation](../README.md#topic-evolving-optimization) — 5 papers
-    - [Self-Modification of Visual Interaction Infrastructure](../README.md#topic-evolving-infrastructure) — 6 papers
-- [Harness Infrastructure for Vision-Centric Agents](../README.md#branch-external)
-  - [Vision Planning and Orchestration Infrastructure](../README.md#category-planning)
-    - [Task and Workflow Planning](../README.md#topic-planning-task-workflow) — 9 papers
-    - [Trajectory Search and Deliberation](../README.md#topic-planning-trajectory-search) — 6 papers
-    - [Multi-Agent Planning and Coordination](../README.md#topic-planning-multiagent-coordination) — 6 papers
-  - [Vision Memory Infrastructure](../README.md#category-memory)
-    - [Visual-to-Text](../README.md#topic-vision-memory-text) — 4 papers
-    - [Visual Evidence Store](../README.md#topic-vision-memory-evidence) — 6 papers
-    - [Visual Compression Layer](../README.md#topic-vision-memory-compression) — 5 papers
-    - [Visual Experience Repository](../README.md#topic-vision-memory-experience) — 7 papers
-  - [Visual Tools](../README.md#category-tools)
-    - [Observation Tools](../README.md#topic-visual-tools-observation) — 5 papers
-    - [Search Tools](../README.md#topic-visual-tools-search) — 5 papers
-    - [Generation Tools](../README.md#topic-visual-tools-generation) — 7 papers
-  - [Vision Verification Infrastructure](../README.md#category-verification)
-    - [Evidence Verification](../README.md#topic-verification-evidence) — 3 papers
-    - [Process Verification](../README.md#topic-verification-process) — 4 papers
-    - [Outcome Verification](../README.md#topic-verification-outcome) — 7 papers
-  - [Safety Infrastructure](../README.md#category-safety)
-    - [Visual Information Safeguard](../README.md#topic-safety-visual-information) — 3 papers
-    - [Safety-Constrained Execution](../README.md#topic-safety-constrained-execution) — 5 papers
-    - [Runtime Oversight and Traceability](../README.md#topic-safety-runtime-oversight) — 4 papers
+- [Internal Capabilities of Vision-Centric Agents](READING_LIST.md#branch-internal)
+  - [Vision Perception Capability](READING_LIST.md#category-perception)
+    - [Grounded Perception](READING_LIST.md#topic-vision-perception-grounded) — 10 papers
+    - [Temporal Perception](READING_LIST.md#topic-vision-perception-temporal) — 7 papers
+    - [Spatial Perception](READING_LIST.md#topic-vision-perception-spatial) — 6 papers
+  - [Vision Reasoning Capability](READING_LIST.md#category-reasoning)
+    - [Interleaved Multimodal Reasoning](READING_LIST.md#topic-reasoning-interleaved) — 7 papers
+    - [Visually Grounded Reasoning](READING_LIST.md#topic-reasoning-grounded) — 7 papers
+    - [Tool-Augmented Visual Reasoning](READING_LIST.md#topic-reasoning-tool-augmented) — 6 papers
+    - [Programmatic Visual Reasoning](READING_LIST.md#topic-reasoning-programmatic) — 6 papers
+  - [Simulation of World Dynamics](READING_LIST.md#category-world)
+    - [Video Simulation](READING_LIST.md#topic-simulation-video) — 8 papers
+    - [Spatial Simulation](READING_LIST.md#topic-simulation-spatial) — 5 papers
+    - [Latent Simulation](READING_LIST.md#topic-simulation-latent) — 5 papers
+    - [Semantic Simulation](READING_LIST.md#topic-simulation-semantic) — 5 papers
+  - [Visual Evaluation and Correction Abilities](READING_LIST.md#category-evaluation)
+    - [Visual Evidence Evaluation](READING_LIST.md#topic-visual-evaluation-evidence) — 4 papers
+    - [Visually Grounded Process Evaluation](READING_LIST.md#topic-visual-evaluation-process) — 4 papers
+    - [Visual Outcome Evaluation](READING_LIST.md#topic-visual-evaluation-outcome) — 4 papers
+    - [Visual-Based Self-Correction](READING_LIST.md#topic-visual-evaluation-self-correction) — 5 papers
+  - [Evolving Abilities](READING_LIST.md#category-evolving)
+    - [Visual Capability Gap Diagnosis](READING_LIST.md#topic-evolving-diagnosis) — 4 papers
+    - [Visual Improvement Signal Generation](READING_LIST.md#topic-evolving-signals) — 5 papers
+    - [Vision-Guided Optimization Adaptation](READING_LIST.md#topic-evolving-optimization) — 5 papers
+    - [Self-Modification of Visual Interaction Infrastructure](READING_LIST.md#topic-evolving-infrastructure) — 6 papers
+- [Harness Infrastructure for Vision-Centric Agents](READING_LIST.md#branch-external)
+  - [Vision Planning and Orchestration Infrastructure](READING_LIST.md#category-planning)
+    - [Task and Workflow Planning](READING_LIST.md#topic-planning-task-workflow) — 9 papers
+    - [Trajectory Search and Deliberation](READING_LIST.md#topic-planning-trajectory-search) — 6 papers
+    - [Multi-Agent Planning and Coordination](READING_LIST.md#topic-planning-multiagent-coordination) — 6 papers
+  - [Vision Memory Infrastructure](READING_LIST.md#category-memory)
+    - [Visual-to-Text](READING_LIST.md#topic-vision-memory-text) — 4 papers
+    - [Visual Evidence Store](READING_LIST.md#topic-vision-memory-evidence) — 6 papers
+    - [Visual Compression Layer](READING_LIST.md#topic-vision-memory-compression) — 5 papers
+    - [Visual Experience Repository](READING_LIST.md#topic-vision-memory-experience) — 7 papers
+  - [Visual Tools](READING_LIST.md#category-tools)
+    - [Observation Tools](READING_LIST.md#topic-visual-tools-observation) — 5 papers
+    - [Search Tools](READING_LIST.md#topic-visual-tools-search) — 5 papers
+    - [Generation Tools](READING_LIST.md#topic-visual-tools-generation) — 7 papers
+  - [Vision Verification Infrastructure](READING_LIST.md#category-verification)
+    - [Evidence Verification](READING_LIST.md#topic-verification-evidence) — 3 papers
+    - [Process Verification](READING_LIST.md#topic-verification-process) — 4 papers
+    - [Outcome Verification](READING_LIST.md#topic-verification-outcome) — 7 papers
+  - [Safety Infrastructure](READING_LIST.md#category-safety)
+    - [Visual Information Safeguard](READING_LIST.md#topic-safety-visual-information) — 3 papers
+    - [Safety-Constrained Execution](READING_LIST.md#topic-safety-constrained-execution) — 5 papers
+    - [Runtime Oversight and Traceability](READING_LIST.md#topic-safety-runtime-oversight) — 4 papers
 
 ## Topic IDs
 

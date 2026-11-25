@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
 """Validate explicit curation, bibliography identities, provenance, and rendering."""
-import hashlib
 import json
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
-from bibtex_utils import arxiv_id, norm, parse, tex_text, venue
-from build_readme import ROOT, anchor, framework_catalogue, read, rows
+from bibtex_utils import arxiv_id, bibliography_digest, norm, parse, tex_text, venue
+from build_readme import READING_LIST, ROOT, anchor, framework_catalogue, read, rows
 
 
 def markdown_anchors(content):
-    explicit = re.findall(r'<a id="([^"]+)"', content)
+    explicit = re.findall(r'<a (?:id|name)="([^"]+)"', content)
     assert len(explicit) == len(set(explicit)), 'Duplicate explicit Markdown anchor'
     result, occurrences = set(explicit), Counter()
     for heading in re.findall(r'^#+\s+(.+)$', content, re.M):
@@ -24,9 +23,10 @@ def markdown_anchors(content):
 
 def validate_markdown():
     files = [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md'] + sorted((ROOT / 'docs').rglob('*.md'))
-    anchors = {path: markdown_anchors(path.read_text()) for path in files}
-    for path in files:
-        for target in re.findall(r'\]\(([^)]+)\)', path.read_text()):
+    contents = {path: path.read_text(encoding='utf-8') for path in files}
+    anchors = {path: markdown_anchors(content) for path, content in contents.items()}
+    for path, content in contents.items():
+        for target in re.findall(r'\]\(([^)]+)\)', content):
             parsed = urlsplit(target)
             if parsed.scheme:
                 continue
@@ -53,7 +53,7 @@ def validate():
     selected_decisions = {k for k, d in curation['decisions'].items() if d['status'] == 'selected'}
     assert selected_decisions == set(keys)
     assert all(d.get('reason') and d['status'] in {'selected', 'bibliography_only'} for d in curation['decisions'].values())
-    digest = hashlib.sha256((ROOT / 'references.bib').read_bytes()).hexdigest()
+    digest = bibliography_digest(ROOT / 'references.bib')
     assert meta['bibliography_sha256'] == taxonomy['validation']['catalogue_bibliography_sha256'] == digest
     assert meta['snapshot_date'] == curation['snapshot_date'] == sources['source_snapshot']
     branches, categories, topics, by_topic = framework_catalogue(papers, taxonomy)
@@ -102,7 +102,7 @@ def validate():
         if p.get('code_url'):
             assert p.get('link_evidence') and p.get('code_status'), key
     assert len(arxiv_urls) == len(set(arxiv_urls)), 'Duplicate arXiv works'
-    markdown = (ROOT / 'README.md').read_text()
+    markdown = READING_LIST.read_text(encoding='utf-8')
     actual = defaultdict(list)
     current = None
     for line in markdown.splitlines():

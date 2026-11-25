@@ -1,585 +1,452 @@
-# 🔍 Seeing the Horizon of Vision Agent: A Survey
+<h1 align="center">👁️ Seeing the Harness and Self-Evolution of Visual Agents:<br>Toward Recursive Self-Improvement</h1>
 
-**Awesome Vision Agents** — a curated reading list of recent vision-centric agents, benchmarks, and code.
+<p align="center">Dong Chen &middot; Shuai Ge &middot; Yu Fu &middot; Xiangyu Ren &middot; Zhihao Zhang &middot; Hao Wang &middot; Changshuo Wang &middot; Jiayi Ji &middot; Henghui Ding &middot; Shuting He</p>
 
-**195 selected papers** · **2024–2026** · **10 categories / 35 topics** · **110 papers with code**
+<a name="introduction"></a>
 
-An agent becomes vision-centric when visual observations shape what it inspects, reasons about, remembers, predicts, verifies, or does next. This collection emphasizes active image and video inspection, grounded GUI and robot actions, 3D reasoning, visual world models, and feedback from observed results.
+## ✨ Introduction
 
-**Selection policy.** We select recent works from the survey bibliography for a concrete visual mechanism or a benchmark that directly tests visual agents. Recent publication alone is insufficient. General text-agent frameworks, historical foundations, standalone model primitives, and broad datasets do not automatically enter the reading list. [Selection criteria and decisions](docs/CURATION.md).
+This repository accompanies a survey of visual agents that use images, video, and interactive feedback to guide their decisions. The survey covers visual understanding, image and video generation and editing, computer use, and embodied interaction.
 
-**Reading the tables.** The **Vision contribution** column explains why each paper belongs here. Papers appear once under their main contribution and are ordered by year, newest first, then title. There are no star or importance rankings. Years and venues follow the bibliography, so a 2024 conference paper may have an earlier preprint. A dash means no project/code link is recorded.
+We view a visual agent as one or more models operating within a harness that coordinates tools, memory, and execution. The survey follows three levels of experience-driven change, from adapting within a task to retaining updates across tasks and revising how future updates are produced.
 
-[📖 Survey bibliography](references.bib) · [📦 Selected catalogue](data/papers.json) · [🧭 Topic navigation](docs/TOPICS.md) · [🔎 Sources and verification](docs/COVERAGE.md)
+![Visual-agent framework showing model capabilities, the agent harness, and levels L0 to L3](figures/visual-agent-framework.png)
 
-Updated: **2026-10-05**. The survey bibliography contains **380 citation keys**; it also retains background references needed by the manuscript.
-
-## Suggested starting points
-
-These entry points illustrate different visual mechanisms; they are editorial reading suggestions.
-
-| Visual mechanism | Start here |
-| --- | --- |
-| Active visual search | [V*](https://doi.org/10.1109/cvpr52733.2024.01243) |
-| Visual GUI grounding | [GUI-Actor](https://proceedings.neurips.cc/paper_files/paper/2025/hash/16130af940e9dabb43c726119bd3b42e-Abstract-Conference.html) |
-| Thinking with images | [DeepEyes](https://arxiv.org/abs/2505.14362) |
-| Executable visual reasoning | [PyVision](https://arxiv.org/abs/2507.07998) |
-| Visual world models for control | [DreamZero](https://arxiv.org/abs/2602.15922) |
-| Original visual evidence as memory | [VISTA (visual harness)](https://arxiv.org/abs/2610.02200) |
-| Visual navigation with verified goals | [NavHarness (adaptive goals)](https://arxiv.org/abs/2609.39915) |
-| Checking observed action effects | [VeriGUI](https://aclanthology.org/2026.acl-long.1335/) |
-| Visual-agent evaluation | [VisualWebArena](https://arxiv.org/abs/2401.13649) |
+<a name="table-of-contents"></a>
 
 ## 📚 Table of Contents
 
-- [Internal Capabilities of Vision-Centric Agents](#branch-internal)
-  - [Vision Perception Capability](#category-perception)
-    - [Grounded Perception](#topic-vision-perception-grounded) — 10 papers
-    - [Temporal Perception](#topic-vision-perception-temporal) — 7 papers
-    - [Spatial Perception](#topic-vision-perception-spatial) — 6 papers
-  - [Vision Reasoning Capability](#category-reasoning)
-    - [Interleaved Multimodal Reasoning](#topic-reasoning-interleaved) — 7 papers
-    - [Visually Grounded Reasoning](#topic-reasoning-grounded) — 7 papers
-    - [Tool-Augmented Visual Reasoning](#topic-reasoning-tool-augmented) — 6 papers
-    - [Programmatic Visual Reasoning](#topic-reasoning-programmatic) — 6 papers
-  - [Simulation of World Dynamics](#category-world)
-    - [Video Simulation](#topic-simulation-video) — 8 papers
-    - [Spatial Simulation](#topic-simulation-spatial) — 5 papers
-    - [Latent Simulation](#topic-simulation-latent) — 5 papers
-    - [Semantic Simulation](#topic-simulation-semantic) — 5 papers
-  - [Visual Evaluation and Correction Abilities](#category-evaluation)
-    - [Visual Evidence Evaluation](#topic-visual-evaluation-evidence) — 4 papers
-    - [Visually Grounded Process Evaluation](#topic-visual-evaluation-process) — 4 papers
-    - [Visual Outcome Evaluation](#topic-visual-evaluation-outcome) — 4 papers
-    - [Visual-Based Self-Correction](#topic-visual-evaluation-self-correction) — 5 papers
-  - [Evolving Abilities](#category-evolving)
-    - [Visual Capability Gap Diagnosis](#topic-evolving-diagnosis) — 4 papers
-    - [Visual Improvement Signal Generation](#topic-evolving-signals) — 5 papers
-    - [Vision-Guided Optimization Adaptation](#topic-evolving-optimization) — 5 papers
-    - [Self-Modification of Visual Interaction Infrastructure](#topic-evolving-infrastructure) — 6 papers
-- [Harness Infrastructure for Vision-Centric Agents](#branch-external)
-  - [Vision Planning and Orchestration Infrastructure](#category-planning)
-    - [Task and Workflow Planning](#topic-planning-task-workflow) — 9 papers
-    - [Trajectory Search and Deliberation](#topic-planning-trajectory-search) — 6 papers
-    - [Multi-Agent Planning and Coordination](#topic-planning-multiagent-coordination) — 6 papers
-  - [Vision Memory Infrastructure](#category-memory)
-    - [Visual-to-Text](#topic-vision-memory-text) — 4 papers
-    - [Visual Evidence Store](#topic-vision-memory-evidence) — 6 papers
-    - [Visual Compression Layer](#topic-vision-memory-compression) — 5 papers
-    - [Visual Experience Repository](#topic-vision-memory-experience) — 7 papers
-  - [Visual Tools](#category-tools)
-    - [Observation Tools](#topic-visual-tools-observation) — 5 papers
-    - [Search Tools](#topic-visual-tools-search) — 5 papers
-    - [Generation Tools](#topic-visual-tools-generation) — 7 papers
-  - [Vision Verification Infrastructure](#category-verification)
-    - [Evidence Verification](#topic-verification-evidence) — 3 papers
-    - [Process Verification](#topic-verification-process) — 4 papers
-    - [Outcome Verification](#topic-verification-outcome) — 7 papers
-  - [Safety Infrastructure](#category-safety)
-    - [Visual Information Safeguard](#topic-safety-visual-information) — 3 papers
-    - [Safety-Constrained Execution](#topic-safety-constrained-execution) — 5 papers
-    - [Runtime Oversight and Traceability](#topic-safety-runtime-oversight) — 4 papers
-
-## 📑 Selected Papers
-
-The organization follows the survey’s two branches: internal visual capabilities and harness infrastructure. Planning and orchestration belong to the harness branch.
-
-<a id="branch-internal"></a>
-
-## Internal Capabilities of Vision-Centric Agents
-
-<a id="category-perception"></a>
-
-### Vision Perception Capability
-
-<a id="topic-vision-perception-grounded"></a>
-
-#### Grounded Perception
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | ICML | [ACTIVE-o3: Empowering MLLMs with active perception via pure reinforcement learning](https://proceedings.mlr.press/v306/zhu26bi.html) | Learn active perception through visual inspection actions | — |
-| 2026 | ICLR | [UI-Ins: Enhancing GUI grounding with multi-perspective instruction as reasoning](https://arxiv.org/abs/2510.20286) | Multi-perspective visual reasoning for instruction grounding | [Code](https://github.com/alibaba/UI-Ins) |
-| 2025 | NeurIPS | [GUI-Actor: Coordinate-free visual grounding for GUI agents](https://proceedings.neurips.cc/paper_files/paper/2025/hash/16130af940e9dabb43c726119bd3b42e-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2506.03143) | Coordinate-free attention-based GUI grounding | [Code](https://github.com/microsoft/GUI-Actor) |
-| 2025 | ICLR | [Navigating the digital world as humans do: Universal visual grounding for GUI agents](https://doi.org/10.48550/arxiv.2410.05243) · [arXiv](https://arxiv.org/abs/2410.05243) | Universal visual grounding across desktop and mobile interfaces | [Project](https://osu-nlp-group.github.io/UGround/) · [Code](https://github.com/OSU-NLP-Group/UGround) |
-| 2025 | arXiv | [RSAgent: Learning to reason and act for text-guided segmentation via multi-turn tool invocations](https://arxiv.org/abs/2512.24023) | Iterative segmentation through visual tool calls | — |
-| 2025 | Proc. ACM Int. Conf. Multimedia (MM) | [ScreenSpot-Pro: GUI grounding for professional high-resolution computer use](https://arxiv.org/abs/2504.07981) | Evaluate grounding on professional high-resolution screens | [Project](https://gui-agent.github.io/grounding-leaderboard) · [Code](https://github.com/likaixin2000/ScreenSpot-Pro-GUI-Grounding) |
-| 2025 | CVPR | [ShowUI: One vision-language-action model for GUI visual agent](https://arxiv.org/abs/2411.17465) | Visual token selection and vision-language-action GUI control | [Code](https://github.com/showlab/ShowUI) |
-| 2024 | CVPR | [CogAgent: A visual language model for GUI agents](https://arxiv.org/abs/2312.08914) | Screenshot understanding and visual GUI action grounding | [Code 1](https://github.com/zai-org/CogVLM) · [Code 2](https://github.com/zai-org/CogAgent) |
-| 2024 | ACL | [SeeClick: Harnessing GUI grounding for advanced visual GUI agents](https://arxiv.org/abs/2401.10935) | Ground instructions to clickable screen coordinates | [Code](https://github.com/njucckevin/SeeClick) |
-| 2024 | CVPR | [V*: Guided Visual Search as a Core Mechanism in Multimodal LLMs](https://doi.org/10.1109/cvpr52733.2024.01243) · [arXiv](https://arxiv.org/abs/2312.14135) | Search image regions for fine-grained visual evidence | [Code](https://github.com/penghao-wu/vstar) |
-
-<a id="topic-vision-perception-temporal"></a>
-
-#### Temporal Perception
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [LensWalk: Agentic Video Understanding by Planning How You See in Videos](https://arxiv.org/abs/2603.24558) | Plan how to inspect video before answering | — |
-| 2026 | ICLR | [VideoMind: A Chain-of-LoRA Agent for Temporal-Grounded Video Reasoning](https://arxiv.org/abs/2503.13444) | Localize and verify temporal evidence with a video agent | [Project](https://videomind.github.io/) · [Code](https://github.com/yeliudev/VideoMind) |
-| 2026 | ICLR | [VideoZoomer: Reinforcement-learned temporal focusing for long video reasoning](https://arxiv.org/abs/2512.22315) | Learn where to resample dense clips for temporal detail | [Code](https://github.com/zsgvivo/VideoZoomer) |
-| 2025 | arXiv | [Agentic keyframe search for video question answering](https://arxiv.org/abs/2503.16032) | Agent-controlled keyframe search for video questions | [Code](https://github.com/fansunqi/AKeyS) |
-| 2025 | arXiv | [VideoExplorer: Think with videos for agentic long-video understanding](https://arxiv.org/abs/2506.10821) | Explore video evidence through iterative tool use | [Code](https://github.com/RUC-NLPIR/VideoDeepResearch) |
-| 2024 | arXiv | [NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation](https://arxiv.org/abs/2402.15852) | Use video observations to choose navigation actions | — |
-| 2024 | ECCV | [VideoAgent: Long-Form Video Understanding with Large Language Model as Agent](https://arxiv.org/abs/2403.10517) | Iteratively retrieve video evidence for long-form understanding | — |
-
-<a id="topic-vision-perception-spatial"></a>
-
-#### Spatial Perception
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [ActiveVLA: Injecting Active Perception into Vision-Language-Action Models for Precise 3D Robotic Manipulation](https://openaccess.thecvf.com/content/CVPR2026/html/Liu_ActiveVLA_Injecting_Active_Perception_into_Vision-Language-Action_Models_for_Precise_3D_CVPR_2026_paper.html) · [arXiv](https://arxiv.org/abs/2601.08325) | Active viewpoint selection for precise 3D manipulation | — |
-| 2026 | CVPR | [REALM: An MLLM-Agent Framework for Open World 3D Reasoning Segmentation and Editing on Gaussian Splatting](https://arxiv.org/abs/2510.16410) | Agentic reasoning, segmentation, and editing in Gaussian-splat scenes | [Project](https://ChangyueShi.github.io/REALM) · [Code](https://github.com/ChangyueShi/REALM-Code) |
-| 2025 | arXiv | [Look, Zoom, Understand: The Robotic Eyeball for Embodied Perception](https://arxiv.org/abs/2511.15279) | Control visual zoom and viewpoint for embodied perception | — |
-| 2025 | arXiv | [SpatialVLA: Exploring spatial representations for visual-language-action model](https://arxiv.org/abs/2501.15830) | Encode spatial representations for visual robot actions | — |
-| 2024 | arXiv | [RoboPoint: A vision-language model for spatial affordance prediction for robotics](https://arxiv.org/abs/2406.10721) | Predict spatial affordances from visual observations | — |
-| 2024 | NeurIPS | [SG-Nav: Online 3D Scene Graph Prompting for LLM-based Zero-shot Object Navigation](https://arxiv.org/abs/2410.08189) | Build online 3D scene graphs for object navigation | [Project](https://bagh2178.github.io/SG-Nav/) · [Code](https://github.com/bagh2178/SG-Nav) |
-
-<a id="category-reasoning"></a>
-
-### Vision Reasoning Capability
-
-<a id="topic-reasoning-interleaved"></a>
-
-#### Interleaved Multimodal Reasoning
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [CodeV: Code with images for faithful visual reasoning via tool-aware policy optimization](https://arxiv.org/abs/2511.19661) | Interleave images and executable code for visual reasoning | [Code](https://github.com/RenlyH/CodeV) |
-| 2026 | ICLR | [DeepEyes: Incentivizing"thinking with images" via reinforcement learning](https://arxiv.org/abs/2505.14362) | Interleave text reasoning with image crops and magnification | [Code](https://github.com/Visual-Agent/DeepEyes) |
-| 2026 | ICLR | [DeepEyesV2: Toward Agentic Multimodal Model](https://arxiv.org/abs/2511.05271) | Combine multimodal reasoning with agentic tool interaction | [Project](https://visual-agent.github.io/) · [Code](https://github.com/Visual-Agent/DeepEyesV2) |
-| 2026 | ECCV | [TIR-Bench: A Comprehensive Benchmark for Agentic Thinking-with-Images Reasoning](https://arxiv.org/abs/2511.01833) | Evaluate agentic thinking with images and visual tools | [Code](https://github.com/agents-x-project/TIR-Bench) |
-| 2025 | NeurIPS | [Pixel Reasoner: Incentivizing pixel space reasoning via curiosity-driven reinforcement learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/0c38f54740062529aa4117a04b583f3c-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2505.15966) | Choose pixel-space inspection actions while reasoning | [Project 1](https://tiger-ai-lab.github.io/Pixel-Reasoner/) · [Project 2](https://huggingface.co/spaces/TIGER-Lab/Pixel-Reasoner) · [Code](https://github.com/TIGER-AI-Lab/Pixel-Reasoner) |
-| 2025 | NeurIPS | [VideoChat-R1.5: Visual test-time scaling to reinforce multimodal reasoning by iterative perception](https://proceedings.neurips.cc/paper_files/paper/2025/hash/acb94e709f02895fd98b5867f0b184f3-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2509.21100) | Iterative perception for video reasoning at test time | — |
-| 2024 | NeurIPS | [Visual Sketchpad: Sketching as a Visual Chain of Thought for Multimodal Language Models](https://doi.org/10.52202/079017-4423) · [arXiv](https://arxiv.org/abs/2406.09403) | Interleave reasoning with generated visual sketches | [Project](https://visualsketchpad.github.io/) · [Code](https://github.com/Yushi-Hu/VisualSketchpad) |
-
-<a id="topic-reasoning-grounded"></a>
-
-#### Visually Grounded Reasoning
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | ICLR | [DriveAgent-R1: Advancing VLM-based Autonomous Driving with Active Perception and Hybrid Thinking](https://arxiv.org/abs/2507.20879) | Active visual perception and hybrid reasoning for driving | [Code](https://github.com/wczheng/DriveAgent-R1) |
-| 2026 | arXiv | [GroundingVLN: Reasoning and Acting with Grounding for Vision-Language Navigation](https://arxiv.org/abs/2609.18581) | Ground navigation reasoning and actions in observed scenes | — |
-| 2025 | ICRA | [BUMBLE: Unifying reasoning and acting with vision-language models for building-wide mobile manipulation](https://arxiv.org/abs/2410.06237) | Ground reasoning and actions in building-wide visual observations | [Project](https://robin-lab.cs.utexas.edu/BUMBLE/) · [Code](https://github.com/UT-Austin-RobIn/BUMBLE) |
-| 2025 | CVPR | [SimLingo: Vision-Only Closed-Loop Autonomous Driving with Language-Action Alignment](https://openaccess.thecvf.com/content/CVPR2025/html/Renz_SimLingo_Vision-Only_Closed-Loop_Autonomous_Driving_with_Language-Action_Alignment_CVPR_2025_paper.html) · [arXiv](https://arxiv.org/abs/2503.09594) | Align visual driving observations with language and actions | — |
-| 2025 | arXiv | [π_0.5: a Vision-Language-Action Model with Open-World Generalization](https://arxiv.org/abs/2504.16054) | Generalize vision-language-action control to open-world tasks | — |
-| 2024 | arXiv | [MOKA: Open-world robotic manipulation through mark-based visual prompting](https://arxiv.org/abs/2403.03174) | Convert mark-based visual prompts into robot actions | — |
-| 2024 | arXiv | [ReKep: Spatio-temporal reasoning of relational keypoint constraints for robotic manipulation](https://arxiv.org/abs/2409.01652) | Plan manipulation using visual relational keypoint constraints | [Project](https://rekep-robot.github.io/) · [Code](https://github.com/huangwl18/ReKep) |
-
-<a id="topic-reasoning-tool-augmented"></a>
-
-#### Tool-Augmented Visual Reasoning
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | ICLR | [AdaReasoner: Dynamic tool orchestration for iterative visual reasoning](https://arxiv.org/abs/2601.18631) | Dynamically orchestrate tools for iterative visual reasoning | [Code](https://github.com/ssmisya/AdaReasoner) |
-| 2025 | EMNLP | [LATTE: Learning to think with vision specialists](https://arxiv.org/abs/2412.05479) | Reason with vision specialists rather than a fixed image view | — |
-| 2025 | ICML | [MedRAX: Medical Reasoning Agent for Chest X-ray](https://arxiv.org/abs/2502.02673) | Invoke chest X-ray specialists for image-grounded reasoning | [Code](https://github.com/bowang-lab/MedRAX) |
-| 2025 | arXiv | [OpenThinkIMG: Learning to think with images via visual tool reinforcement learning](https://arxiv.org/abs/2505.08617) | Learn visual tool use through reinforcement learning | [Code](https://github.com/zhaochen0110/OpenThinkIMG) |
-| 2025 | arXiv | [VisualToolAgent (VisTA): A reinforcement learning framework for visual tool selection](https://arxiv.org/abs/2505.20289) | Learn which visual inspection tool to select | — |
-| 2024 | ECCV | [LLaVA-Plus: Learning to use tools for creating multimodal agents](https://arxiv.org/abs/2311.05437) | Learn to select and use visual specialist tools | — |
-
-<a id="topic-reasoning-programmatic"></a>
-
-#### Programmatic Visual Reasoning
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [Geometrically-Constrained Agent for Spatial Reasoning](https://arxiv.org/abs/2511.22659) | Apply geometric constraints in agentic spatial reasoning | [Project](https://gca-spatial-reasoning.github.io) · [Code](https://github.com/gca-spatial-reasoning/gca) |
-| 2026 | ICLR | [Transductive Visual Programming: Evolving Tool Libraries from Experience for Spatial Reasoning](https://arxiv.org/abs/2512.20934) | Evolve spatial reasoning tool libraries from experience | [Project](https://transductive-visualprogram.github.io/) · [Code](https://github.com/transductive-visualprogram/tvp) |
-| 2025 | arXiv | [PyVision: Agentic vision with dynamic tooling](https://arxiv.org/abs/2507.07998) | Create executable inspection tools for visual evidence on demand | [Code](https://github.com/agents-x-project/PyVision) |
-| 2025 | CVPR | [ViUniT: Visual unit tests for more robust visual programming](https://arxiv.org/abs/2412.08859) | Test visual programs with image-answer unit tests | [Code](https://github.com/SalesforceAIResearch/visual-unit-testing) |
-| 2024 | ICML | [SceneCraft: An LLM Agent for Synthesizing 3D Scenes as Blender Code](https://arxiv.org/abs/2403.01248) | Generate Blender scene code and inspect rendered 3D layouts | — |
-| 2024 | EMNLP Findings | [VDebugger: Harnessing execution feedback for debugging visual programs](https://arxiv.org/abs/2406.13444) | Debug visual programs using stepwise execution feedback | [Code](https://github.com/shirley-wu/vdebugger/) |
-
-<a id="category-world"></a>
-
-### Simulation of World Dynamics
-
-<a id="topic-simulation-video"></a>
-
-#### Video Simulation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [Causal World Modeling for Robot Control](https://arxiv.org/abs/2601.21998) | Couple causal visual world modeling with robot control | [Code](https://github.com/robbyant/lingbot-va) |
-| 2026 | arXiv | [Computer-Using World Model](https://arxiv.org/abs/2602.17365) | Predict post-action screen states for computer-use planning | — |
-| 2026 | arXiv | [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](https://arxiv.org/abs/2601.16163) | Fine-tune video models for visuomotor control and planning | — |
-| 2026 | ICLR | [ViMo: A Generative Visual GUI World Model for App Agents](https://proceedings.iclr.cc/paper_files/paper/2026/hash/beb0f70e479c495f1903ffdea40adef6-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2504.13936) | Model future visual GUI states for app interaction | [Project](https://ai-agents-2030.github.io/ViMo/) · [Code](https://github.com/ai-agents-2030/ViMo) |
-| 2026 | arXiv | [World Action Models are Zero-shot Policies](https://arxiv.org/abs/2602.15922) | Turn action-conditioned video prediction into robot policies | — |
-| 2025 | arXiv | [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](https://arxiv.org/abs/2510.10125) | Control video world-model rollouts for manipulation | — |
-| 2025 | arXiv | [WorldVLA: Towards Autoregressive Action World Model](https://arxiv.org/abs/2506.21539) | Couple predicted visual states with autoregressive robot actions | — |
-| 2024 | ICML | [Genie: Generative Interactive Environments](https://arxiv.org/abs/2402.15391) | Generate action-conditioned interactive visual environments | [Project](https://sites.google.com/corp/view/genie-2024/) |
-
-<a id="topic-simulation-spatial"></a>
-
-#### Spatial Simulation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [Beyond Pixel Histories: World Models with Persistent 3D State](https://arxiv.org/abs/2603.03482) | Predict with persistent 3D state beyond pixel histories | — |
-| 2026 | arXiv | [ContactGaussian-WM: Learning Physics-Grounded World Model from Videos](https://arxiv.org/abs/2602.11021) | Learn physics-grounded scene dynamics from video | — |
-| 2025 | NeurIPS | [Learning 3D persistent embodied world models](https://proceedings.neurips.cc/paper_files/paper/2025/hash/970f59b22f4c72aec75174aae63c7459-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2505.05495) | Maintain persistent 3D state for embodied world modeling | — |
-| 2025 | arXiv | [PhysTwin: Physics-Informed Reconstruction and Simulation of Deformable Objects from Videos](https://arxiv.org/abs/2503.17973) | Reconstruct deformable objects and simulate their physical behavior | — |
-| 2024 | arXiv | [DOME: Taming Diffusion Model into High-Fidelity Controllable Occupancy World Model](https://arxiv.org/abs/2410.10429) | Predict controllable 3D occupancy for driving scenes | — |
-
-<a id="topic-simulation-latent"></a>
-
-#### Latent Simulation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [AtomVLA: Scalable Post-Training for Robotic Manipulation via Predictive Latent World Models](https://arxiv.org/abs/2603.08519) | Post-train robot actions with predictive visual latent world models | — |
-| 2026 | arXiv | [DriveWorld-VLA: Unified Latent-Space World Modeling with Vision-Language-Action for Autonomous Driving](https://arxiv.org/abs/2602.06521) | Align visual latent dynamics with driving actions | [Code](https://github.com/liulin815/DriveWorld-VLA) |
-| 2025 | Nature | [Mastering Diverse Control Tasks through World Models](https://www.nature.com/articles/s41586-025-08744-2) · [arXiv](https://arxiv.org/abs/2301.04104) | Learn pixel-based control through latent imagined rollouts | [Code](https://github.com/danijar/dreamerv3) |
-| 2025 | arXiv | [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](https://arxiv.org/abs/2506.09985) | Predict in visual latent space for robot planning | [Code](https://github.com/facebookresearch/vjepa2) |
-| 2024 | arXiv | [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](https://arxiv.org/abs/2411.04983) | Plan with world models over pretrained visual features | — |
-
-<a id="topic-simulation-semantic"></a>
-
-#### Semantic Simulation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [Code2World: A GUI World Model via Renderable Code Generation](https://arxiv.org/abs/2602.09856) | Predict GUI states through renderable code | — |
-| 2026 | arXiv | [MobileDreamer: Generative Sketch World Model for GUI Agent](https://arxiv.org/abs/2601.04035) | Forecast spatial GUI element sketches for lookahead actions | — |
-| 2025 | arXiv | [MobileWorldBench: Towards Semantic World Modeling For Mobile Agents](https://arxiv.org/abs/2512.14014) | Evaluate semantic state transitions for mobile GUI agents | — |
-| 2025 | arXiv | [Planning with reasoning using vision language world model](https://arxiv.org/abs/2509.02722) | Plan with a vision-language model of environment dynamics | — |
-| 2025 | NeurIPS | [VAGEN: Reinforcing world model reasoning for multi-turn VLM agents](https://proceedings.neurips.cc/paper_files/paper/2025/hash/fc6688d75adde86b9df910769c1d02e3-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2510.16907) | Reinforce world-state reasoning in multi-turn visual interaction | [Project](https://vagen-ai.github.io) · [Code](https://github.com/mll-lab-nu/VAGEN) |
-
-<a id="category-evaluation"></a>
-
-### Visual Evaluation and Correction Abilities
-
-<a id="topic-visual-evaluation-evidence"></a>
-
-#### Visual Evidence Evaluation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [ForgeryVCR: Visual-Centric Reasoning via Efficient Forensic Tools in MLLMs for Image Forgery Detection and Localization](https://arxiv.org/abs/2602.14098) | Inspect forensic image traces for grounded authenticity reasoning | [Code](https://github.com/youqiwong/ForgeryVCR) |
-| 2026 | arXiv | [Improving Vision-language Models with Perception-centric Process Reward Models](https://arxiv.org/abs/2604.24583) | Detect perception errors with visual process reward models | [Code](https://github.com/RUCAIBox/Perceval) |
-| 2026 | ECCV | [Reflect-R1: Evidence-driven reflection for self-correction in long video understanding](https://arxiv.org/abs/2606.27922) | Reflect on localized evidence to correct long-video answers | [Code](https://github.com/ShuimuChen-hyq/Reflect-R1) |
-| 2025 | CVPR | [VISCO: Benchmarking Fine-Grained Critique and Correction Towards Self-Improvement in Visual Reasoning](https://arxiv.org/abs/2412.02172) | Critique perceptual errors and revisit supporting image evidence | [Project](https://visco-benchmark.github.io/) · [Code](https://github.com/PlusLabNLP/VISCO) |
-
-<a id="topic-visual-evaluation-process"></a>
-
-#### Visually Grounded Process Evaluation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [IntentScore: Intent-Conditioned Action Evaluation for Computer-Use Agents](https://arxiv.org/abs/2604.05157) | Judge whether computer actions match the intended workflow | — |
-| 2026 | ECCV | [VisCritic: Visual State Comparison as Process Reward for GUI Agents](https://arxiv.org/abs/2606.24525) | Compare visual states to reward GUI action progress | — |
-| 2025 | NeurIPS | [GUI-Reflection: Empowering Multimodal GUI Models with Self-Reflection Behavior](https://proceedings.neurips.cc/paper_files/paper/2025/hash/937ae0e83eb08d2cb8627fe1def8c751-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2506.08012) | Learn reflection over multimodal GUI action trajectories | [Project](https://penghao-wu.github.io/GUI_Reflection/) · [Code](https://github.com/penghao-wu/GUI_Reflection) |
-| 2024 | arXiv | [AHA: A vision-language-model for detecting and reasoning over failures in robotic manipulation](https://arxiv.org/abs/2410.00371) | Detect and explain robot failures from visual observations | [Project](https://aha-vlm.github.io/) · [Code](https://github.com/NVlabs/AHA/tree/main) |
-
-<a id="topic-visual-evaluation-outcome"></a>
-
-#### Visual Outcome Evaluation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | ICLR | [PerfGuard: A Performance-Aware Agent for Visual Content Generation](https://openreview.net/forum?id=tdN42GTv4S) · [arXiv](https://arxiv.org/abs/2601.22571) | Evaluate visual generation against requested performance constraints | [Project](https://openreview.net/forum?id=tdN42GTv4S) · [Code](https://github.com/FelixChan9527/PerfGuard) |
-| 2026 | ICLR | [ProRe: A Proactive Reward System for GUI Agents via Reasoner--Actor Collaboration](https://arxiv.org/abs/2509.21823) | Actively probe GUI states when completion evidence is insufficient | [Code](https://github.com/V-Droid-Agent/ProRe) |
-| 2025 | arXiv | [EdiVal-Agent: An Object-Centric Framework for Automated, Scalable, Fine-Grained Evaluation of Multi-Turn Editing](https://arxiv.org/abs/2509.13399) | Judge edit compliance, content preservation, and visual quality | [Code](https://github.com/TianyuCodings/EdiVal) |
-| 2025 | CVPR | [LLaVA-Critic: Learning to Evaluate Multimodal Models](https://arxiv.org/abs/2410.02712) | Learn visual judgments for multimodal model outputs | [Project](https://llava-vl.github.io/blog/2024-10-03-llava-critic) · [Code](https://github.com/LLaVA-VL/LLaVA-NeXT) |
-
-<a id="topic-visual-evaluation-self-correction"></a>
-
-#### Visual-Based Self-Correction
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [CycleVLA: Proactive self-correcting vision-language-action models via subtask backtracking and minimum Bayes risk decoding](https://arxiv.org/abs/2601.02295) | Recover manipulation through visually grounded subtask backtracking | [Project](https://dannymcy.github.io/cyclevla/) · [Code](https://github.com/dannymcy/cyclevla_code) |
-| 2026 | ACL | [Don’t act blindly: Robust GUI automation via action-effect verification and self-correction](https://aclanthology.org/2026.acl-long.1335/) | Compare intended and observed GUI action effects before repair | — |
-| 2026 | arXiv | [IMAGAgent: Orchestrating Multi-Turn Image Editing via Constraint-Aware Planning and Reflection](https://arxiv.org/abs/2603.29602) | Reflect on intermediate images to repair constrained edits | [Code](https://github.com/hackermmzz/IMAGAgent) |
-| 2025 | CVPR | [Phoenix: A Motion-based Self-Reflection Framework for Fine-grained Robotic Action Correction](https://arxiv.org/abs/2504.14588) | Reflect on motion to correct fine-grained robotic actions | [Code](https://github.com/GeWu-Lab/Motion-based-Self-Reflection-Framework) |
-| 2025 | Proc. Conf. Nations Americas Chapter Assoc. Comput. Linguistics: Hum. Lang. Technol. (NAACL-HLT), vol. 1, Long Papers | [Vision-language models can self-improve reasoning via reflection](https://arxiv.org/abs/2411.00855) | Improve visual reasoning through reflection on image-grounded answers | [Code](https://github.com/njucckevin/MM-Self-Improve) |
-
-<a id="category-evolving"></a>
-
-### Evolving Abilities
-
-<a id="topic-evolving-diagnosis"></a>
-
-#### Visual Capability Gap Diagnosis
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [AwareVLN: Reasoning with Self-awareness for Vision-Language Navigation](https://arxiv.org/abs/2605.22816) | Diagnose navigation uncertainty through self-aware visual reasoning | [Project](https://gwxuan.github.io/AwareVLN/) · [Code](https://github.com/GWxuan/AwareVLN) |
-| 2026 | arXiv | [Reflect, Revise, Reuse: Training-Free Skill Evolution for GUI Agents](https://arxiv.org/abs/2609.17653) | Diagnose GUI skill failures and revise reusable procedures | [Code](https://github.com/ZJU-REAL/EvoSkill-GUI) |
-| 2026 | ACL | [RoboFailRing: Retrieval-Augmented and Language Grounding Failure Detection for VLM-enabled Robotic Manipulation](https://aclanthology.org/2026.acl-long.602/) | Retrieve visually grounded robot failure cases for diagnosis | [Code](https://github.com/DynamicPoet/RoboFailRing) |
-| 2026 | CVPR | [Unleashing VLA Potentials in Autonomous Driving via Explicit Learning from Failures](https://arxiv.org/abs/2603.01063) | Learn driving improvements from observed action failures | — |
-
-<a id="topic-evolving-signals"></a>
-
-#### Visual Improvement Signal Generation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [GenEvolve: Self-Evolving Image Generation Agents via Tool-Orchestrated Visual Experience Distillation](https://arxiv.org/abs/2605.21605) | Distill contrasted image-generation experience into improvement signals | [Project](https://ephemeral182.github.io/GenEvolve/) · [Code](https://github.com/MeiGen-AI/GenEvolve) |
-| 2026 | arXiv | [V-Gym: Enhancing Agentic Visual Reasoning via Skill-Data Co-Evolution](https://arxiv.org/abs/2609.34682) | Co-evolve visual reasoning skills and training data | — |
-| 2026 | arXiv | [VLAW: Iterative co-improvement of vision-language-action policy and world model](https://arxiv.org/abs/2602.12063) | Co-improve robot policies and visual world models | [Project 1](https://sites.google.com/view/vla-w) · [Project 2](https://sites.google.com/view/vlaw-arxiv) |
-| 2025 | NeurIPS | [UI-Genie: A Self-Improving Approach for Iteratively Boosting MLLM-based Mobile GUI Agents](https://proceedings.neurips.cc/paper_files/paper/2025/hash/dd1577afd396928ed64216f3f1fd5556-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2505.21496) | Iteratively improve GUI agents with learned critic feedback | [Code](https://github.com/Euphoria16/UI-Genie) |
-| 2025 | arXiv | [Video2policy: Scaling up manipulation tasks in simulation through Internet videos](https://arxiv.org/abs/2502.09886) | Use visual internet demonstrations to expand robot training tasks | — |
-
-<a id="topic-evolving-optimization"></a>
-
-#### Vision-Guided Optimization Adaptation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [EvolveNav: Proactive Preflection and Self-Evolving Memory for Zero-Shot Object Goal Navigation](https://arxiv.org/abs/2606.18235) | Adapt object navigation with preflection and evolving visual memory | — |
-| 2026 | ECCV | [EvoVLA: Self-evolving vision-language-action model](https://arxiv.org/abs/2511.16166) | Evolve robot vision-language-action policies | [Project](https://aigeeksgroup.github.io/EvoVLA) · [Code](https://github.com/AIGeeksGroup/EvoVLA) |
-| 2026 | ICLR | [MobileRL: Online Agentic Reinforcement Learning for Mobile GUI Agents](https://proceedings.iclr.cc/paper_files/paper/2026/hash/3b6aaffec941f98930753fa6d6de7263-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2509.18119) | Online reinforcement learning for mobile visual GUI interaction | [Code](https://github.com/THUDM/MobileRL) |
-| 2026 | ICLR | [Self-improving vision-language-action models with data generation via residual RL](https://arxiv.org/abs/2511.00091) | Improve VLA manipulation using residual-RL-generated data | — |
-| 2026 | ICLR | [WMPO: World Model-based Policy Optimization for Vision-Language-Action Models](https://proceedings.iclr.cc/paper_files/paper/2026/hash/6605c7d1c1ae1521b328d036df5be1ae-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2511.09515) | Optimize VLA policies with visual world-model rollouts | [Project](https://wm-po.github.io) · [Code](https://github.com/WM-PO/WMPO) |
-
-<a id="topic-evolving-infrastructure"></a>
-
-#### Self-Modification of Visual Interaction Infrastructure
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [COMFYCLAW: Self-evolving skill harnesses for image generation workflows](https://arxiv.org/abs/2607.01709) | Evolve executable skills for image-generation workflows | [Code](https://github.com/Moms-Organic-Agent-Lab/comfyclaw) |
-| 2026 | arXiv | [HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166) | Evolve robot programs and collect improved visual rollout data | — |
-| 2026 | arXiv | [RegenHarness: A Robot Agent Harness with Evidence-Gated Recursive Self-Improvement](https://arxiv.org/abs/2609.27612) | Gate robot harness updates with execution evidence | — |
-| 2026 | arXiv | [RLHarness: Co-evolving Procedural Skills with Reinforcement Learning for Long-horizon Multimodal Reasoning](https://arxiv.org/abs/2609.32326) | Co-evolve procedural scaffolds and multimodal reasoning policies | — |
-| 2026 | arXiv | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](https://arxiv.org/abs/2608.24302) | Evolve long-video harnesses with frozen vision-language models | [Code](https://github.com/Tencent/VideoHarness-RSI) |
-| 2026 | arXiv | [VideoResearcher: Self-Improving Tool Design for Long-Video Understanding](https://arxiv.org/abs/2609.19664) | Improve the tool design used to inspect long videos | — |
-
-<a id="branch-external"></a>
-
-## Harness Infrastructure for Vision-Centric Agents
-
-<a id="category-planning"></a>
-
-### Vision Planning and Orchestration Infrastructure
-
-<a id="topic-planning-task-workflow"></a>
-
-#### Task and Workflow Planning
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [HarnessVLN: Unifying Training-Free Embodied Navigation through an Agent Harness](https://arxiv.org/abs/2609.15195) | Orchestrate training-free visual navigation through an agent harness | — |
-| 2026 | arXiv | [Qwen-CUA: Native Computer Use for (almost) Everything](https://arxiv.org/abs/2608.02352) | Native visual computer use across task environments | — |
-| 2026 | arXiv | [Robo-Harness K1: Harnessing Robot-Use Agents via Perception Augmentation](https://arxiv.org/abs/2609.29389) | Augment robot perception to support long-horizon task execution | — |
-| 2026 | arXiv | [RoboClaw: An Agentic Framework for Scalable Long-Horizon Robotic Tasks](https://arxiv.org/abs/2603.11558) | Organize long-horizon robotic tasks with agentic execution | [Code](https://github.com/RoboClaw-Robotics/RoboClaw) |
-| 2026 | arXiv | [Show-Harness: Just a VLM Agent Can Play Robots](https://arxiv.org/abs/2609.10522) | Coordinate robot policies with VLM observations and feedback | [Project](https://showlab.github.io/Show-Harness) · [Code](https://github.com/showlab/Show-Harness) |
-| 2025 | arXiv | [Agent S2: A compositional generalist-specialist framework for computer use agents](https://arxiv.org/abs/2504.00906) | Coordinate visual GUI specialists for computer-use workflows | [Code](https://github.com/simular-ai/Agent-S) |
-| 2025 | ICML | [Aguvis: Unified Pure Vision Agents for Autonomous GUI Interaction](https://proceedings.mlr.press/v267/xu25ae.html) · [arXiv](https://arxiv.org/abs/2412.04454) | Execute GUI workflows through pure visual observations | [Project](https://aguvis-project.github.io/) · [Code](https://github.com/xlang-ai/aguvis) |
-| 2025 | NeurIPS | [OpenCUA: Open Foundations for Computer-Use Agents](https://proceedings.neurips.cc/paper_files/paper/2025/file/cc7ae529e945226b0d52ea4ac478c4f3-Paper-Conference.pdf) · [arXiv](https://arxiv.org/abs/2508.09123) | Open visual computer-use models, trajectories, and training foundations | [Project](https://opencua.xlang.ai/) · [Code](https://github.com/xlang-ai/OpenCUA) |
-| 2025 | arXiv | [UI-TARS: Pioneering automated GUI interaction with native agents](https://arxiv.org/abs/2501.12326) | Ground multi-step native GUI interaction in screen observations | — |
-
-<a id="topic-planning-trajectory-search"></a>
-
-#### Trajectory Search and Deliberation
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [Agent alpha: Tree search unifying generation, exploration and evaluation for computer-use agents](https://arxiv.org/abs/2602.02995) | Search computer-use trajectories with generation and evaluation | — |
-| 2026 | ICLR | [GTA1: GUI test-time scaling agent](https://arxiv.org/abs/2507.05791) | Scale GUI action selection through test-time search | [Code](https://github.com/Yan98/GTA1) |
-| 2026 | arXiv | [HarnessWAM: Bridging Prediction and Deliberation in World Action Models](https://arxiv.org/abs/2608.09516) | Deliberate over world-action predictions before robot execution | — |
-| 2025 | CVPR | [Navigation World Models](https://arxiv.org/abs/2412.03572) | Imagine navigation observations to evaluate future routes | [Project](https://www.amirbar.net/nwm/) · [Code](https://github.com/facebookresearch/nwm/) |
-| 2025 | arXiv | [STORM: Search-Guided Generative World Models for Robotic Manipulation](https://arxiv.org/abs/2512.18477) | Search predicted visual futures for robotic manipulation | — |
-| 2024 | ICML | [PIVOT: Iterative Visual Prompting Elicits Actionable Knowledge for VLMs](https://proceedings.mlr.press/v235/nasiriany24a.html) · [arXiv](https://arxiv.org/abs/2402.07872) | Iteratively compare visually prompted robot action candidates | [Project 1](http://pivot-prompt.github.io) · [Project 2](https://huggingface.co/spaces/pivot-prompt/pivot-prompt-demo) |
-
-<a id="topic-planning-multiagent-coordination"></a>
-
-#### Multi-Agent Planning and Coordination
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning](https://arxiv.org/abs/2603.14052) | Coordinate perception and action agents for video reasoning | [Code](https://github.com/git-disl/A4VL) |
-| 2026 | ACL | [LongVideoAgent: Multi-agent reasoning with long videos](https://arxiv.org/abs/2512.20618) | Coordinate agents to reason over long-video evidence | [Project](https://longvideoagent.github.io/) · [Code](https://github.com/longvideoagent/LongVideoAgent) |
-| 2026 | arXiv | [MVAgent: Multi-Agent Video Generation via Consistent Condition Construction and Shot-Level Policy Optimization](https://arxiv.org/abs/2609.30609) | Coordinate shot conditions and policies for consistent video generation | — |
-| 2026 | arXiv | [NavHarness: Adaptive Goals for Agentic Vision-Language Navigation](https://arxiv.org/abs/2609.39915) | Coordinate goals, visual navigation, verification, and memory agents | — |
-| 2026 | ECCV | [VERITAS: A Multi-agent Co-scientist for Verifiable Image-Derived Hypothesis Testing](https://arxiv.org/abs/2604.12144) | Coordinate verifiable image-derived scientific hypothesis testing | [Code](https://github.com/LucZot/veritas) |
-| 2024 | arXiv | [AutoRT: Embodied foundation models for large scale orchestration of robotic agents](https://arxiv.org/abs/2401.12963) | Orchestrate robotic agents using scene observations and constraints | — |
-
-<a id="category-memory"></a>
-
-### Vision Memory Infrastructure
-
-<a id="topic-vision-memory-text"></a>
-
-#### Visual-to-Text
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [Vision-Language-Action Autonomous Driving Agent with Language-based Memory](https://arxiv.org/abs/2609.38641) | Use language-based memory inside visually grounded driving control | — |
-| 2026 | arXiv | [What Memory Do GUI Agents Really Need? From Passive Records to Active Task-Driving States](https://arxiv.org/abs/2606.31612) | Track the current workflow role and status of GUI-observed values | — |
-| 2024 | ECCV | [VideoAgent: A memory-augmented multimodal agent for video understanding](https://arxiv.org/abs/2403.11481) | Turn observed video content into searchable memory for reasoning | [Project](http://videoagent.github.io) · [Code](https://github.com/YueFan1014/VideoAgent) |
-| 2024 | NeurIPS | [VLM Agents Generate Their Own Memories: Distilling Experience into Embodied Programs of Thought](https://doi.org/10.52202/079017-2418) · [arXiv](https://arxiv.org/abs/2406.14596) | Distill visual action experience into embodied programs of thought | [Project](https://ical-learning.github.io/) · [Code](https://github.com/Gabesarch/ICAL) |
-
-<a id="topic-vision-memory-evidence"></a>
-
-#### Visual Evidence Store
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | ECCV | [Keep It Simple: Multi-Key Episodic Memory Retrieval for Ultra-Long Video Understanding](https://arxiv.org/abs/2608.07663) | Retrieve multimodal episodic evidence for ultra-long video questions | [Project](https://choi-yeeun.github.io/MERIT/) · [Code](https://github.com/choi-yeeun/MERIT) |
-| 2026 | arXiv | [V-Mem: Modality-Routed Retrieval for Long-Term Multimodal Agentic Memory](https://arxiv.org/abs/2608.01543) | Route memory retrieval across visual and other modalities | — |
-| 2026 | arXiv | [ViSAGE: Constructing Self-Correcting Memories for Long-Form Video Understanding](https://arxiv.org/abs/2607.28678) | Construct and repair evidence-grounded long-video memories | — |
-| 2026 | arXiv | [VISTA: A Visual Harness for Reasoning in an Interactive World](https://arxiv.org/abs/2610.02200) | Preserve original observations and actively retrieve visual details | [Project](https://vista-research.github.io/) · [Code](https://github.com/joshhhhhan/VISTA) |
-| 2026 | CVPR | [WorldMM: Dynamic Multimodal Memory Agent for Long Video Reasoning](https://arxiv.org/abs/2512.02425) | Retrieve dynamic multimodal memory for long-video reasoning | [Project](https://worldmm.github.io) · [Code](https://github.com/wgcyeo/WorldMM) |
-| 2025 | ICCV | [Embodied VideoAgent: Persistent memory from egocentric videos and embodied sensors enables dynamic scene understanding](https://arxiv.org/abs/2501.00358) | Store object-centered video, depth, and pose evidence persistently | [Project](https://embodied-videoagent.github.io/) · [Code](https://github.com/Embodied-VideoAgent/embodied-videoagent) |
-
-<a id="topic-vision-memory-compression"></a>
-
-#### Visual Compression Layer
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [Light-Omni: Reflex over Reasoning in Agentic Video Understanding with Long-Term Memory](https://arxiv.org/abs/2607.05511) | Merge long-video multimodal context hierarchically | [Project](https://clare-nie.github.io/Light-Omni) · [Code](https://github.com/Clare-Nie/Light-Omni) |
-| 2026 | arXiv | [Screenshots or Tools? Eliciting Tool Use and Managing Multimodal Context in Hybrid GUI-MCP Computer-Use Agents](https://arxiv.org/abs/2608.03327) | Manage screenshot context when mixing GUI and MCP tools | — |
-| 2025 | ICCV | [Less is more: Empowering GUI agent with context-aware simplification](https://arxiv.org/abs/2507.03730) | Prune screenshot elements and compress GUI interaction history | — |
-| 2025 | arXiv | [StreamVLN: Streaming Vision-and-Language Navigation via SlowFast Context Modeling](https://arxiv.org/abs/2507.05240) | Reduce historical visual context during streaming navigation | — |
-| 2025 | NeurIPS | [VLA-Cache: Efficient vision-language-action manipulation via adaptive token caching](https://proceedings.neurips.cc/paper_files/paper/2025/hash/f062da1973ac9ac61fc6d44dd7fa309f-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2502.02175) | Reuse computation for visually unchanged VLA tokens | — |
-
-<a id="topic-vision-memory-experience"></a>
-
-#### Visual Experience Repository
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [Hybrid self-evolving structured memory for GUI agents](https://arxiv.org/abs/2603.10291) | Update structured memory through visual GUI experience | [Code](https://github.com/NickSiboZhu/HyMEM-GUI-Agent) |
-| 2026 | arXiv | [MementoGUI: Learning Agentic Multimodal Memory Control for Long-Horizon GUI Agents](https://arxiv.org/abs/2605.18652) | Learn multimodal memory control for long-horizon GUI tasks | — |
-| 2026 | arXiv | [NavHarness: Towards Lifelong Embodied Navigation](https://arxiv.org/abs/2609.34276) | Consolidate maps and corrected visual search experience across tasks | — |
-| 2026 | arXiv | [OnEvoMemory: Evolving Memory through Online Robot Rollouts for Pretrained Robot Policies](https://arxiv.org/abs/2608.08749) | Learn memory retention from robot rollout outcomes | — |
-| 2026 | arXiv | [RoboHarness: A Memory-Augmented Policy Harness for Vision-Language-Action Model Robustness via In-Context Adaptation](https://arxiv.org/abs/2603.24060) | Adapt frozen VLA policies with retrieved success and failure experience | [Code](https://github.com/LZY-1021/RoboHarness) |
-| 2026 | arXiv | [UI-Mem: Self-evolving experience memory for online reinforcement learning in mobile GUI agents](https://arxiv.org/abs/2602.05832) | Accumulate reusable GUI workflows and subtask experience | [Project](https://ui-mem.github.io) |
-| 2025 | arXiv | [ViReSkill: Vision-grounded replanning with skill memory for llm-based planning in lifelong robot learning](https://arxiv.org/abs/2509.24219) | Reuse visually grounded plans and skills for robot replanning | — |
-
-<a id="category-tools"></a>
-
-### Visual Tools
-
-<a id="topic-visual-tools-observation"></a>
-
-#### Observation Tools
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | ICML | [3DMedAgent: Unified Perception-to-Understanding for 3D Medical Analysis](https://proceedings.mlr.press/v306/wang26o.html) · [arXiv](https://arxiv.org/abs/2602.18064) | Connect 3D medical perception tools with agentic understanding | [Project](http://assistants.Code) · [Code](https://github.com/jinlab-imvr/3DMedAgent) |
-| 2025 | NeurIPS | [CPathAgent: An Agent-based Foundation Model for Interpretable High-Resolution Pathology Image Analysis Mimicking Pathologists' Diagnostic Logic](https://doi.org/10.52202/085713-3404) · [arXiv](https://arxiv.org/abs/2505.20510) | Inspect high-resolution pathology regions through agentic visual analysis | — |
-| 2024 | CVPR | [CLOVA: A Closed-LOop Visual Assistant with Tool Usage and Update](https://arxiv.org/abs/2312.10908) | Inspect images with tools and update the visual assistant | [Code](https://github.com/clova-tool/CLOVA-tool) |
-| 2024 | arXiv | [Mobile-Agent: Autonomous multi-modal mobile device agent with visual perception](https://arxiv.org/abs/2401.16158) | Combine OCR and icon detection for screen-based mobile actions | [Code](https://github.com/X-PLUG/MobileAgent) |
-| 2024 | NeurIPS | [RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models](https://doi.org/10.52202/079017-3512) · [arXiv](https://arxiv.org/abs/2407.18035) | Diagnose image degradation and orchestrate restoration tools | — |
-
-<a id="topic-visual-tools-search"></a>
-
-#### Search Tools
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | ICLR | [InSight-o3: Empowering Multimodal Foundation Models with Generalized Visual Search](https://arxiv.org/abs/2512.18745) | Generalize active visual search in multimodal reasoning | [Code](https://github.com/m-Just/InSight-o3) |
-| 2026 | ICML | [Vision-DeepResearch: Incentivizing DeepResearch Capability in Multimodal Large Language Models](https://proceedings.mlr.press/v306/huang26bx.html) | Train multimodal deep research with visual evidence acquisition | — |
-| 2026 | ICLR | [Webwatcher: Breaking new frontiers of vision-language deep research agent](https://arxiv.org/abs/2508.05748) | Coordinate visual and textual search for multimodal research | — |
-| 2025 | arXiv | [MMSearch-R1: Incentivizing LMMs to search](https://arxiv.org/abs/2506.20670) | Learn when to acquire image and text search evidence | [Code](https://github.com/EvolvingLMMs-Lab/multimodal-search-r1) |
-| 2025 | arXiv | [World-To-Image: Grounding Text-to-Image Generation with Agent-Driven World Knowledge](https://arxiv.org/abs/2510.04201) | Retrieve visual world knowledge to support image generation | [Code](https://github.com/mhson-kyle/World-To-Image) |
-
-<a id="topic-visual-tools-generation"></a>
-
-#### Generation Tools
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | ECCV | [GenAgent: Scaling Text-to-Image Generation via Agentic Multimodal Reasoning](https://arxiv.org/abs/2601.18543) | Use multimodal reasoning to coordinate text-to-image generation | [Code](https://github.com/deep-kaixun/GenAgent) |
-| 2026 | ICML | [LiveFigure: Generating Editable Scientific Illustration with VLM Agents](https://proceedings.mlr.press/v306/shao26f.html) · [arXiv](https://arxiv.org/abs/2605.23527) | Generate editable scientific illustrations with visual agents | [Code](https://github.com/tsinghua-fib-lab/LiveFigure) |
-| 2026 | arXiv | [OmniHarness: Harnessing Generalizable Visual Generation via Symbolic Policy Learning](https://arxiv.org/abs/2609.16057) | Learn symbolic policies for visual generation workflows | — |
-| 2026 | ICML | [SceneSmith: Agentic Generation of Simulation-Ready Indoor Scenes](https://proceedings.mlr.press/v306/pfaff26a.html) · [arXiv](https://arxiv.org/abs/2602.09153) | Generate simulation-ready indoor scenes through agentic authoring | [Project](https://scenesmith.github.io/) · [Code](https://github.com/nepfaff/scenesmith) |
-| 2026 | arXiv | [ViMax: Agentic Video Generation](https://arxiv.org/abs/2606.07649) | Plan and generate multi-scene videos with agentic workflows | [Code](https://github.com/HKUDS/ViMax) |
-| 2025 | NeurIPS | [SceneWeaver: All-in-One 3D Scene Synthesis with an Extensible and Self-Reflective Agent](https://doi.org/10.52202/085713-4689) · [arXiv](https://arxiv.org/abs/2509.20414) | Synthesize 3D scenes with an extensible, reflective agent | [Project](https://scene-weaver.github.io/) · [Code](https://github.com/Scene-Weaver/SceneWeaver) |
-| 2024 | NeurIPS | [GenArtist: Multimodal LLM as an agent for unified image generation and editing](https://arxiv.org/abs/2407.05600) | Inspect intermediate images while orchestrating generation and editing | [Project](https://zhenyuw16.github.io/GenArtist_page) · [Code](https://github.com/zhenyuw16/GenArtist) |
-
-<a id="category-verification"></a>
-
-### Vision Verification Infrastructure
-
-<a id="topic-verification-evidence"></a>
-
-#### Evidence Verification
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [ARM-Thinker: Reinforcing multimodal generative reward models with agentic tool use and visual reasoning](https://arxiv.org/abs/2512.05111) | Ground reward judgments with crops and document evidence | — |
-| 2026 | ICLR | [CARE: Towards Clinical Accountability in Multi-Modal Medical Reasoning with an Evidence-Grounded Agentic Framework](https://arxiv.org/abs/2603.01607) | Link multimodal medical reasoning to accountable evidence checks | [Project](https://xypb.github.io/CARE-Project-Page/) · [Code](https://github.com/XYPB/CARE) |
-| 2026 | ICLR | [CP-Agent: Context-Aware Multimodal Reasoning for Cellular Morphological Profiling under Chemical Perturbations](https://arxiv.org/abs/2606.03435) | Ground cellular morphology reasoning in visual profiling evidence | — |
-
-<a id="topic-verification-process"></a>
-
-#### Process Verification
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [OS-Oracle: A comprehensive framework for cross-platform GUI critic models](https://arxiv.org/abs/2512.16295) | Critique proposed GUI actions before execution | [Code](https://github.com/numbmelon/OS-Oracle) |
-| 2026 | ICLR | [OSWorld-MCP: Benchmarking MCP Tool Invocation in Computer-Use Agents](https://proceedings.iclr.cc/paper_files/paper/2026/hash/67d57c32e20fd0a7a302cb81d36e40d5-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2510.24563) | Evaluate tool invocation in visually grounded computer-use workflows | [Project](https://osworld-mcp.github.io) · [Code](https://github.com/X-PLUG/OSWorld-MCP) |
-| 2025 | CVPR | [Code-as-Monitor: Constraint-aware Visual Programming for Reactive and Proactive Robotic Failure Detection](https://arxiv.org/abs/2412.04455) | Monitor tracked geometry with executable visual constraint checks | [Project](https://zhoues.github.io/Code-as-Monitor/) |
-| 2025 | CoRL Workshops | [Guardian: Detecting robotic planning and execution errors with vision-language models](https://openreview.net/forum?id=wps46mtC9B) · [arXiv](https://arxiv.org/abs/2512.01946) | Separate robot planning errors from visually observed execution errors | [Project](https://openreview.net/forum?id=wps46mtC9B) · [Code](https://github.com/paulpacaud/Guardian-FailCot) |
-
-<a id="topic-verification-outcome"></a>
-
-#### Outcome Verification
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [LIBERO-Plus: A Progressive Robustness Benchmark for Visual-Language-Action Models](https://openaccess.thecvf.com/content/CVPR2026/papers/Fei_LIBERO-Plus_A_Progressive_Robustness_Benchmark_for_Visual-Language-Action_Models_CVPR_2026_paper.pdf) · [arXiv](https://arxiv.org/abs/2510.13626) | Stress-test visual-language-action robustness under perturbations | [Code](https://github.com/sylvestf/LIBERO-plus) |
-| 2026 | ICLR | [ScienceBoard: Evaluating Multimodal Autonomous Agents in Realistic Scientific Workflows](https://arxiv.org/abs/2505.19897) | Evaluate multimodal scientific workflow completion | [Project](https://qiushisun.github.io/ScienceBoard-Home/) · [Code](https://github.com/OS-Copilot/ScienceBoard) |
-| 2025 | ICLR | [AndroidWorld: A Dynamic Benchmarking Environment for Autonomous Agents](https://proceedings.iclr.cc/paper_files/paper/2025/hash/01a83bc2f2732a58e6aa731e659e7101-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2405.14573) | Verify mobile task completion through device-state checks | [Code](https://github.com/google-research/android_world) |
-| 2025 | CVPR | [ComfyBench: Benchmarking LLM-based Agents in ComfyUI for Autonomously Designing Collaborative AI Systems](https://arxiv.org/abs/2409.01392) | Evaluate executable ComfyUI workflows assembled by agents | [Code](https://github.com/xxyQwQ/ComfyBench) |
-| 2025 | ICML | [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](https://arxiv.org/abs/2502.09560) | Evaluate vision-driven embodied agents across action environments | [Project](https://embodiedbench.github.io) · [Code](https://github.com/EmbodiedBench/EmbodiedBench) |
-| 2024 | NeurIPS | [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) | Verify real computer task completion with execution-based evaluators | [Project](https://os-world.github.io) · [Code](https://github.com/xlang-ai/OSWorld) |
-| 2024 | ACL | [VisualWebArena: Evaluating multimodal agents on realistic visual web tasks](https://arxiv.org/abs/2401.13649) | Evaluate agents on tasks requiring visual web evidence | — |
-
-<a id="category-safety"></a>
-
-### Safety Infrastructure
-
-<a id="topic-safety-visual-information"></a>
-
-#### Visual Information Safeguard
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | arXiv | [MINIM: Privacy-Aware Minimal View for Agents via Trusted Local Sanitization](https://arxiv.org/abs/2606.13949) | Sanitize sensitive screen content before remote agent inference | [Code](https://github.com/yyyyhx/MINIM) |
-| 2026 | ICLR | [VPI-Bench: Visual Prompt Injection Attacks for Computer-Use Agents](https://arxiv.org/abs/2506.02456) | Test malicious instructions embedded in rendered GUI observations | [Code](https://github.com/cua-framework/agents) |
-| 2025 | NeurIPS | [WASP: Benchmarking web agent security against prompt injection attacks](https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c9818387f5dd0a0bc151214660f059d-Abstract-Datasets_and_Benchmarks_Track.html) · [arXiv](https://arxiv.org/abs/2504.18575) | Evaluate prompt injection through web-agent observations | [Code](https://github.com/facebookresearch/wasp) |
-
-<a id="topic-safety-constrained-execution"></a>
-
-#### Safety-Constrained Execution
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | IEEE Robot. Autom. Lett. | [Safety guardrails for LLM-enabled robots](https://arxiv.org/abs/2503.07885) | Enforce grounded robot plan constraints with safety guards | [Project](https://robo-guard.github.io/) · [Code](https://github.com/KumarRobotics/RoboGuard) |
-| 2025 | arXiv | [Magentic-UI: Towards human-in-the-loop agentic systems](https://arxiv.org/abs/2507.22358) | Combine visual computer use with action guards and human control | [Code](https://github.com/microsoft/magentic-ui/tree/magentic-ui-0.1) |
-| 2025 | arXiv | [RoboChemist: Long-horizon and safety-compliant robotic chemical experimentation](https://arxiv.org/abs/2509.08820) | Enforce experiment protocols during embodied chemical tasks | [Project](https://zzongzheng0918.github.io/RoboChemist.github.io/) |
-| 2025 | IROS | [Robots that suggest safe alternatives](https://arxiv.org/abs/2409.09883) | Propose feasible robot alternatives when requested actions are unsafe | — |
-| 2025 | NeurIPS | [SafeVLA: Towards safety alignment of vision-language-action model via constrained learning](https://proceedings.neurips.cc/paper_files/paper/2025/hash/e185c7be603426028c32ae1003a59d78-Abstract-Conference.html) · [arXiv](https://arxiv.org/abs/2503.03480) | Align vision-language-action policies with execution constraints | [Project](https://pku-safevla.github.io) · [Code](https://github.com/PKU-Alignment/SafeVLA) |
-
-<a id="topic-safety-runtime-oversight"></a>
-
-#### Runtime Oversight and Traceability
-
-| Year | Venue | Paper | Vision contribution | Project / Code |
-| :---: | :---: | --- | --- | :---: |
-| 2026 | CVPR | [AGENTSAFE: Benchmarking the Safety of Embodied Agents on Hazardous Instructions](https://arxiv.org/abs/2506.14697) | Evaluate embodied-agent behavior under hazardous instructions | — |
-| 2025 | arXiv | [Can we detect failures without failure data? uncertainty-aware runtime failure detection for imitation learning policies](https://arxiv.org/abs/2503.08558) | Calibrate runtime failure signals from robot execution data | — |
-| 2025 | Proc. Conf. Nations Americas Chapter Assoc. Comput. Linguistics: Hum. Lang. Technol. (NAACL-HLT), Syst. Demonstrations | [CowPilot: A framework for autonomous and human-agent collaborative web navigation](https://arxiv.org/abs/2501.16609) | Pause and override agent actions during visual web navigation | [Project](https://oaishi.github.io/cowpilot.html) · [Code](https://github.com/oaishi/CowPilot) |
-| 2024 | arXiv | [Unpacking failure modes of generative policies: Runtime monitoring of consistency and progress](https://arxiv.org/abs/2410.04640) | Monitor action consistency and visually assessed robot progress | [Project](https://sites.google.com/stanford.edu/sentinel) · [Code](https://github.com/agiachris/sentinel) |
-
-## Contributing
-
-Suggest papers or corrections through [issues](https://github.com/heshuting555/Awesome-Vision-Agent/issues) or pull requests. Include the specific visual contribution and a primary source. See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Acknowledgements
-
-Table presentation draws on [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications); the original collection also drew on [Awesome-Agentic-MLLMs](https://github.com/HJYao00/Awesome-Agentic-MLLMs). Linked papers and software retain their respective authorship and licenses.
-
-## Citation
-
-Use [references.bib](references.bib) to cite individual works. The survey citation will be added when its public bibliographic record is available.
+- [🗺️ Taxonomy](#taxonomy)
+- [📊 Benchmarks and Datasets](#benchmarks-and-datasets)
+  - [🎯 Task-Level Evaluation](#task-level-evaluation)
+  - [📈 Self-Evolution Evaluation](#self-evolution-evaluation)
+  - [🔁 Recursive Self-Improvement Evaluation](#recursive-self-improvement-evaluation)
+- [🟡 L1 Within-Task Adaptation](#l1-within-task-adaptation)
+  - [🔍 Adaptive Perception](#adaptive-perception)
+  - [🧭 Feedback-Driven Planning](#feedback-driven-planning)
+  - [🎛️ Dynamic Harness Orchestration](#dynamic-harness-orchestration)
+  - [🎨 Output and Action Refinement](#output-and-action-refinement)
+  - [🛡️ Execution Monitoring and Control](#execution-monitoring-and-control)
+- [🔴 L2 Self-Evolving Visual Agents](#l2-self-evolving-visual-agents)
+  - [🧠 Model-Level Evolution](#model-level-evolution)
+  - [🗃️ Memory-Driven Capability Evolution](#memory-driven-capability-evolution)
+  - [🧰 Skill and Tool-Level Evolution](#skill-and-tool-level-evolution)
+  - [⚙️ Orchestration-Level Evolution](#orchestration-level-evolution)
+  - [🧪 Dynamic Data and Task Evolution](#dynamic-data-and-task-evolution)
+- [🔵 L3 Toward Recursive Self-Improvement](#l3-toward-recursive-self-improvement)
+  - [🌱 Evolving Learning Signals and Experience](#evolving-learning-signals-and-experience)
+  - [🗂️ Evolving Memory and Context Management](#evolving-memory-and-context-management)
+  - [🔧 Evolving Update Mechanisms](#evolving-update-mechanisms)
+  - [✅ Evolving Evaluation and Validation](#evolving-evaluation-and-validation)
+- [📖 Related Surveys](#related-surveys)
+- [🤝 Contributing](#contributing)
+- [📌 Citation](#citation)
+
+<a name="taxonomy"></a>
+
+## 🗺️ Taxonomy
+
+[![Taxonomy of visual agent adaptation and evolution, showing three levels, 14 categories, and representative methods](figures/visual-agent-taxonomy.png)](figures/visual-agent-taxonomy.png)
+
+<a name="benchmarks-and-datasets"></a>
+
+## 📊 Benchmarks and Datasets
+
+Each benchmark name links to its paper or documentation. Scale refers to the version or subset covered in the survey. An asterisk marks a partial code or data release.
+
+<a name="task-level-evaluation"></a>
+
+### 🎯 Task-Level Evaluation
+
+These benchmarks test active perception, planning and tool use, output revision, and monitoring during a task.
+
+| 📋 Benchmark | Venue / Year | Setting | Evaluation focus | Scale | 🔗 Code / Data |
+| --- | --- | --- | --- | --- | --- |
+| [ActiView](https://aclanthology.org/2025.acl-long.376/) | ACL 2025 | Image Interaction | Shifting / Zooming | 325 Distinct Questions | [💻 Code](https://github.com/THUNLP-MT/ActiView) · [📦 Data](https://huggingface.co/datasets/wangphoebe/ActiView) |
+| [AgentVQA](https://arxiv.org/abs/2610.31494) | arXiv 2026 | Offline | Agent-State Understanding | 1,000 Examples | [💻 Code](https://github.com/zlab-princeton/AgentVQA) · [📦 Data](https://huggingface.co/datasets/AgentVQA/AgentVQA) |
+| [Video-MME-v2](https://arxiv.org/abs/2604.05015) | arXiv 2026 | Offline | Temporal Consistency | 3,200 QA Pairs | [💻 Code](https://github.com/MME-Benchmarks/Video-MME-v2) · [📦 Data](https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2) |
+| [ENACT](https://arxiv.org/abs/2511.20937) | ICLR 2026 | Offline | State–Action Reasoning | 8,972 QA Pairs | [💻 Code](https://github.com/mll-lab-nu/ENACT) · [📦 Data](https://huggingface.co/datasets/MLL-Lab/ENACT) |
+| [MPR-GUI-Bench](https://arxiv.org/abs/2512.00756) | ACL 2026 | Offline | Multilingual GUI Reasoning | 12,936 Samples | [📦 Data](https://huggingface.co/datasets/chenruihan/MPR-GUI-Bench) |
+| [ActiveArena-Bench](https://arxiv.org/abs/2609.24124v2) | arXiv 2026 | Simulation | Active Visual Evidence | 35 Tasks | [💻 Code](https://github.com/leeibo/ActiveArena) · [📦 Data&#42;](https://github.com/leeibo/ActiveArena/blob/main/task_config/eval_seed_task_whitelist.yml) |
+| [OpenEQA (Active)](https://openaccess.thecvf.com/content/CVPR2024/papers/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.pdf) | CVPR 2024 | Simulation | Exploration for Visual QA | 557 HM3D Questions | [💻 Code&#42;](https://github.com/facebookresearch/open-eqa) · [📦 Data](https://github.com/facebookresearch/open-eqa/blob/main/data/README.md) |
+| [OSWorld 2.0](https://arxiv.org/abs/2606.29537) | arXiv 2026 | Interactive GUI | Long-Horizon Execution | 108 Workflows | [💻 Code](https://github.com/xlang-ai/OSWorld-V2/tree/v2026.06.24) · [📦 Data](https://huggingface.co/datasets/xlangai/osworld_v2_tasks) |
+| [WebArena-Pro](https://arxiv.org/abs/2611.17955) | NeurIPS 2026 | Interactive GUI | Multimodal Web Tasks | 300 Test Tasks | [💻 Code](https://github.com/McGill-NLP/webarena-pro) · [📦 Data](https://huggingface.co/datasets/WebArena-Pro/WebArena-Pro) |
+| [Ego2Web](https://arxiv.org/abs/2603.22529) | CVPR 2026 | Interactive GUI | Egocentric Web Tasks | 500 Video-Task Pairs | [💻 Code](https://github.com/Yui010206/Ego2Web) · [📦 Data](https://huggingface.co/datasets/Shoubin/Ego2Web) |
+| [NaturalGAIA](https://aclanthology.org/2026.acl-long.2207/) | ACL 2026 | Interactive GUI | User-Intent Satisfaction | 276 Tasks | [💻 Code](https://github.com/KeLes-Coding/LightManus_Jarvis) · [📦 Data&#42;](https://github.com/KeLes-Coding/LightManus_Jarvis/tree/main/task) |
+| [ProSoftArena](https://arxiv.org/abs/2601.02399) | CVPR 2026 | Interactive GUI | Professional Software | 436 Tasks | — |
+| [SuperAPP Benchmark](https://aclanthology.org/2026.acl-long.2052/) | ACL 2026 | Interactive GUI | Super-App Task Execution | 230 Tasks | — |
+| [VisualWebArena](https://aclanthology.org/2024.acl-long.50/) | ACL 2024 | Interactive GUI | Visually Grounded Web Tasks | 910 Tasks | [💻 Code](https://github.com/web-arena-x/visualwebarena) · [📦 Data](https://github.com/web-arena-x/visualwebarena/tree/main/config_files) |
+| [MemU-Bench](https://arxiv.org/abs/2611.00191) | arXiv 2026 | Mobile GUI | Execution from User History | 118 GUI Tasks | [💻 Code](https://github.com/ZJU-REAL/MemU-Bench) · [📦 Data](https://huggingface.co/datasets/vagrt/MemU-Bench-data) |
+| [AsgardBench](https://arxiv.org/abs/2603.15888v2) | arXiv 2026 | Simulation | Visual Plan Adaptation | 108 Task Instances | [💻 Code](https://github.com/microsoft/AsgardBench) · [📦 Data](https://github.com/microsoft/AsgardBench/tree/main/Generated) |
+| [DeepPHY](https://arxiv.org/abs/2508.05405) | AAAI 2026 | Simulation | Physical Planning / Action | 6 Envs. | [💻 Code](https://github.com/XinrunXu/DeepPHY) · [📦 Data&#42;](https://github.com/XinrunXu/DeepPHY/tree/main/res) |
+| [EmbodiedWorldBench](https://arxiv.org/abs/2607.10350v3) | arXiv 2026 | Simulation | Dynamic Embodied Planning | &gt;200 Tasks | — |
+| [PokeAgent (Speedrunning)](https://arxiv.org/abs/2603.15563v2) | arXiv 2026 | Simulation | Long-Horizon RPG Planning | 15 Milestones | [💻 Code](https://github.com/sethkarten/continual-harness) |
+| [ALFRED](https://arxiv.org/abs/1912.01734) | CVPR 2020 | Simulation | Household Goal Completion | 8,055 Expert Demos | [💻 Code](https://github.com/askforalfred/alfred) · [📦 Data](https://github.com/askforalfred/alfred/blob/master/data/README.md) |
+| [OSWorld-MCP](https://arxiv.org/abs/2510.24563) | ICLR 2026 | Interactive GUI | Tool Invocation / Outcomes | 361 Evaluated Tasks | [💻 Code](https://github.com/X-PLUG/OSWorld-MCP) · [📦 Data](https://github.com/X-PLUG/OSWorld-MCP/tree/main/evaluation_examples) |
+| [AgentVista](https://arxiv.org/abs/2602.23166) | NeurIPS 2026 | Tool Environment | Long Tool Workflows | 209 Tasks | [💻 Code](https://github.com/hkust-nlp/AgentVista) · [📦 Data](https://huggingface.co/datasets/Warrieryes/AgentVista) |
+| [EgoBench](https://arxiv.org/abs/2605.27820v2) | arXiv 2026 | Tool Environment | Video / Tool / User Goals | 1,590 Tasks | [💻 Code](https://github.com/Wind-Flipped/EgoBench) · [📦 Data](https://huggingface.co/datasets/emodiary/EgoBench) |
+| [3DCodeBench](https://arxiv.org/abs/2606.01057) | NeurIPS 2026 | 3D Modeling | 3D Code Refinement | 212 Object Categories | [💻 Code](https://github.com/gaoypeng/3dcodebench) · [📦 Data](https://huggingface.co/datasets/YipengGao/3DCodeBench) |
+| [3DHarnessBench](https://arxiv.org/abs/2609.06535) | arXiv 2026 | 3D Modeling | View / Geometry Access | 100 Objects | [💻 Code](https://github.com/llada60/3DHarnessBench) · [📦 Data](https://huggingface.co/datasets/lingada/3DHarnessBench) |
+| [PPT-Eval](https://arxiv.org/abs/2606.31154) | ICML 2026 | Interactive GUI | Slide Creation / Editing | 120 Tasks | [💻 Code](https://github.com/microsoft/ppteval) · [📦 Data](https://github.com/microsoft/ppteval/tree/main/task_registry) |
+| [WeGenEditBench](https://arxiv.org/abs/2610.41210) | arXiv 2026 | Offline | Editing Constraint Checks | 2,740 Eval. Instances | — |
+| [RefCraft](https://arxiv.org/abs/2610.26826v2) | arXiv 2026 | Tool Environment | Reference-Guided Webpages | 300 Tasks | [💻 Code](https://github.com/wangyuchi369/RefCraft) · [📦 Data](https://huggingface.co/datasets/YuchiWang/RefCraft) |
+| [GenEvolve-Bench](https://arxiv.org/abs/2605.21605) | NeurIPS 2026 | Tool Environment | Tool-Assisted Generation | 594 Held-Out Prompts | [💻 Code](https://github.com/MeiGen-AI/GenEvolve) · [📦 Data](https://huggingface.co/datasets/MeiGen-AI/GenEvolve-Data-Bench) |
+| [ComfyBench](https://arxiv.org/abs/2409.01392) | CVPR 2025 | Tool Environment | Visual Workflow Outputs | 200 Tasks | [💻 Code](https://github.com/xxyQwQ/ComfyBench) · [📦 Data](https://github.com/xxyQwQ/ComfyBench/tree/main/dataset/benchmark) |
+| [VAB-CSS](https://proceedings.iclr.cc/paper_files/paper/2025/hash/eea71dc576381b88f2a0ca4dedc2140d-Abstract-Conference.html) | ICLR 2025 | Tool Environment | Target Screenshot Match | 165 Test Cases | [💻 Code](https://github.com/THUDM/VisualAgentBench) |
+| [VPI-Bench](https://arxiv.org/abs/2506.02456) | ICLR 2026 | Interactive GUI | Visual Prompt Injection | 306 Test Cases | [💻 Code](https://github.com/cua-framework/agents) · [📦 Data](https://huggingface.co/datasets/VPI-Bench/vpi-bench) |
+| [CUA-Recovery](https://arxiv.org/abs/2610.27645) | arXiv 2026 | Interactive GUI | Inherited-Error Recovery | 2,250 Error States | [💻 Code](https://github.com/xu-hu-2002/CUA-Recovery) |
+| [ProBench](https://arxiv.org/abs/2511.09157) | AAAI 2026 | Mobile GUI | Process-Sensitive Outcomes | &gt;200 Tasks | — |
+| [FailBench](https://arxiv.org/abs/2609.03611) | arXiv 2026 | Offline | Robot Task-Success Judging | 2,197 Attempts | — |
+| [SAFE-VERSE](https://arxiv.org/abs/2506.14697) | CVPR 2026 | Simulation | Safe Execution | 1,350 Hazardous Tasks | — |
+| [IS-Bench](https://arxiv.org/abs/2506.16402) | AAAI 2026 | Simulation | Safe Action Ordering | 161 Eval. Scenarios | [💻 Code](https://github.com/AI45Lab/IS-Bench) · [📦 Data](https://huggingface.co/datasets/Ursulalala/IS_Bench_dataset) |
+| [RecoverBench](https://github.com/ErrorRecoveryBenchmark/ErrorRecoveryBenchmark/blob/main/EVALUATION.md) | NeurIPS 2026 | Simulation | Manipulation Recovery | 1,360 Error Scenes | [💻 Code](https://github.com/ErrorRecoveryBenchmark/ErrorRecoveryBenchmark) · [📦 Data](https://huggingface.co/datasets/ErrorRecovery/ErrorRecoveryBenchmark) |
+| [FRBench-Sim](https://arxiv.org/abs/2605.09410) | NeurIPS 2026 | Simulation | Post-Failure Recovery | 10 Evaluated Tasks | [💻 Code](https://github.com/1018weijia/FR_Bench) |
+| [Safety-CHORES](https://proceedings.neurips.cc/paper_files/paper/2025/hash/e185c7be603426028c32ae1003a59d78-Abstract-Conference.html) | NeurIPS 2025 | Simulation | Cumulative Safety Cost | 3 Task Families | [💻 Code](https://github.com/PKU-Alignment/SafeVLA) · [📦 Data](https://github.com/PKU-Alignment/SafeVLA#21-downloading-assets-annotations-and-houses) |
+
+<a name="self-evolution-evaluation"></a>
+
+### 📈 Self-Evolution Evaluation
+
+These protocols track what agents learn, retain, and transfer across tasks or sessions.
+
+| 📋 Benchmark | Venue / Year | Setting | Evaluation focus | Scale | 🔗 Code / Data |
+| --- | --- | --- | --- | --- | --- |
+| [Continual Manipulation](https://arxiv.org/abs/2605.26820v3) | arXiv 2026 | Physical Robot | Acquisition / Retention | 10 Robot Tasks | [💻 Code](https://github.com/Agentic-Intelligence-Lab/ContinualVLA) · [📦 Data&#42;](https://github.com/Agentic-Intelligence-Lab/ContinualVLA#dataset) |
+| [World-Model CL Benchmark](https://arxiv.org/abs/2609.22055) | arXiv 2026 | Simulation | Visual Dynamics / Forgetting | 6 Task Suites | — |
+| [LIBERO](https://arxiv.org/abs/2306.03310) | NeurIPS 2023 | Simulation | Manipulation / Forgetting | 130 Tasks in 4 Suites | [💻 Code](https://github.com/Lifelong-Robot-Learning/LIBERO) · [📦 Data](https://huggingface.co/datasets/yifengzhu-hf/LIBERO-datasets) |
+| [CHORES (CORA)](https://proceedings.mlr.press/v199/powers22b.html) | CoLLAs 2022 | Simulation | Isolated Forgetting | 4 Task Sequences | [💻 Code](https://github.com/AGI-Labs/continual_rl) · [📦 Data](https://github.com/AGI-Labs/continual_rl/blob/develop/docs/BENCHMARK_INSTALL.md#chores) |
+| [MemGUI-Bench](https://arxiv.org/abs/2602.06075) | arXiv 2026 | Mobile GUI | Cross-Session Memory | 128 GUI Tasks | [💻 Code](https://github.com/lgy0404/MemGUI-Bench) · [📦 Data](https://huggingface.co/datasets/lgy0404/MemGUI-Bench) |
+| [M3-Bench](https://arxiv.org/abs/2508.09736) | ICLR 2026 | Offline | Audiovisual Recall | 1,020 Videos | [💻 Code](https://github.com/ByteDance-Seed/m3-agent) · [📦 Data](https://huggingface.co/datasets/ByteDance-Seed/M3-Bench) |
+| [SLVMBench](https://arxiv.org/abs/2607.11312) | NeurIPS 2026 | Offline | Tutorial Learning / Recall | 2,261 QA Pairs | [💻 Code&#42;](https://huggingface.co/datasets/tsinghua-ee/SLVMBench/blob/main/concat_video.py) · [📦 Data](https://huggingface.co/datasets/tsinghua-ee/SLVMBench) |
+| [EgoStream](https://arxiv.org/abs/2605.31557) | NeurIPS 2026 | Offline | Answer Obsolescence | 2,250 Base Questions | [💻 Code](https://github.com/coai-iplab/EgoStream) |
+| [WorldMemArena](https://arxiv.org/abs/2605.29341) | NeurIPS 2026 | Offline | Memory Maintenance / Use | 461 Multi-Session Tasks | [💻 Code](https://github.com/UCSB-AI/WorldMemArena) · [📦 Data](https://huggingface.co/datasets/LCZZZZ/WorldMemArena) |
+| [Mem-Gallery](https://aclanthology.org/2026.acl-long.1892/) | ACL 2026 | Offline | Multimodal Memory Updates | 1,711 QA Pairs | [💻 Code](https://github.com/YuanchenBei/Mem-Gallery) · [📦 Data](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery) |
+| [MemLeak](https://arxiv.org/abs/2606.29788) | NeurIPS 2026 | Offline | Deletion Residuals | 300 Probes / Mode | [💻 Code](https://github.com/kuan-wang/memleak-bench) · [📦 Data](https://huggingface.co/datasets/memleak-bench/memleak-benchmark) |
+| [LMEE-Bench](https://arxiv.org/abs/2601.10744) | CVPR 2026 | Simulation | Exploration / Recall | 166 Test Tasks | [💻 Code](https://github.com/wangsen99/LMEE) · [📦 Data](https://huggingface.co/datasets/wangsen99/LMEE-Bench) |
+| [EvoNav-Bench](https://arxiv.org/abs/2609.08292v2) | arXiv 2026 | Simulation | Reuse / Outdated Scenes | 776 Test Tasks | — |
+| [IR2R-CE](https://arxiv.org/abs/2210.03087) | CVPR 2023 | Simulation | Cross-Episode Map Reuse | 414 Navigation Tours | [💻 Code](https://github.com/jacobkrantz/IVLN-CE) · [📦 Data](https://github.com/jacobkrantz/IVLN-CE#setup) |
+| [EmbodiedCLBench](https://arxiv.org/html/2610.13021) | arXiv 2026 | Offline Visual Graph | Visual Skill Composition | 268 Task Graphs | [💻 Code](https://github.com/PKU-VaLuE-Lab/EmbodiedCLBench) · [📦 Data](https://huggingface.co/datasets/PKU-VaLuE-Lab/EmbodiedCLBench) |
+| [SEAR](https://arxiv.org/abs/2610.18792) | arXiv 2026 | Sim. / Physical | Skill Reuse / Transfer | 335 Robot Tasks | — |
+| [PhysRSI-eval](https://arxiv.org/abs/2610.26848v1) | arXiv 2026 | Simulation | Robot Revision / Transfer | 18 Robot Tasks | — |
+| [OpenRSI Index](https://index.openrsi.foundation/) | Project release 2026 | General RSI Suite | Web / Video Context | 2 Named Visual Tasks | [💻 Code](https://github.com/OpenRSI-Foundation/OpenRSI-Index) · [📦 Data&#42;](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs) |
+| [SelfImprove-Bench](https://arxiv.org/abs/2611.02797) | arXiv 2026 | Visual Games | Cross-Game Transfer | 10 Test Tasks | [💻 Code](https://github.com/theseus-labs-rsi/SelfImprove-Bench) · [📦 Data&#42;](https://github.com/theseus-labs-rsi/SelfImprove-Bench/tree/main/configs/main) |
+| [Procgen Curriculum Suite](https://openreview.net/forum?id=DlnvWfoIgv) | Project release 2026 | Visual Games | Adaptive Task Sampling | 16 Games | [💻 Code](https://github.com/montrealrobotics/curate-code) · [📦 Data](https://github.com/montrealrobotics/procgen-curriculum) |
+
+<a name="recursive-self-improvement-evaluation"></a>
+
+### 🔁 Recursive Self-Improvement Evaluation
+
+Flex-RSI evaluates repeated harness updates on vision and robotics tasks. The other suites include selected visual tasks for testing update methods, procedures, or evaluators.
+
+| 📋 Benchmark | Venue / Year | Setting | Evaluation focus | Scale | 🔗 Code / Data |
+| --- | --- | --- | --- | --- | --- |
+| [Flex-RSI](https://arxiv.org/abs/2611.08946v1) | arXiv 2026 | Vision / Robotics | Recursive Harness Updates | — | [💻 Code&#42;](https://github.com/flex-rsi/rsi-bench) · [📦 Data&#42;](https://huggingface.co/datasets/Flex-RSI/RSI-Dataset) |
+| [AI4AI-Bench](https://arxiv.org/abs/2608.20318v1) | arXiv 2026 | General RSI Suite | Diffusion RL / CLIP Merge | 2 Visual Families | [💻 Code](https://github.com/Einsia/AI4AI-Bench) · [📦 Data&#42;](https://github.com/Einsia/AI4AI-Bench/blob/main/tools/docs/assets.md) |
+| [RSI-Exam](https://rsi-exam.ai/tasks/clevr_cogent_grpo_qwen2vl.html) | Project release 2026 | General RSI Suite | VLM Reward / Training | 1 Counting Task | [💻 Code&#42;](https://github.com/aiming-lab/RSI-Exam) · [📦 Data&#42;](https://huggingface.co/datasets/RSI-Exam/RSI-Exam) |
+| [AutoResearchExam](https://benchmarks.bespokelabs.ai/autoresearchexam/) | Project release 2026 | Research Suite | CLIP Merge / Video Caching | 2 Named Visual Tasks | [💻 Code](https://github.com/bespokelabsai/AutoResearchExam) · [📦 Data&#42;](https://github.com/bespokelabsai/AutoResearchExam) |
+| [Vals RSI Index](https://vals-ai.com/benchmarks/rsi_index) | Project release 2026 | General RSI Suite | Visual Web-App Judge | 24 Held-Out Apps | — |
+
+<a name="l1-within-task-adaptation"></a>
+
+## 🟡 L1 Within-Task Adaptation
+
+Agents use new observations and execution feedback to adjust perception, planning, or actions during a task.
+
+<a name="adaptive-perception"></a>
+
+### 🔍 Adaptive Perception
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | CVPR | ActiveVLA | [ActiveVLA: Injecting Active Perception into Vision-Language-Action Models for Precise 3D Robotic Manipulation](https://arxiv.org/abs/2601.08325) | — |
+| 2026 | CVPR | DeepScan | [DeepScan: A Training-Free Framework for Visually Grounded Reasoning in Large Vision-Language Models](https://arxiv.org/abs/2603.03857) | — |
+| 2026 | ACL | Doc-V&#42; | [Doc-V&#42;: Coarse-to-Fine Interactive Visual Reasoning for Multi-Page Document VQA](https://aclanthology.org/2026.acl-long.2129/) | — |
+| 2026 | CVPR | DRS-GUI | [DRS-GUI: Dynamic Region Search for Training-Free GUI Grounding](https://arxiv.org/abs/2605.15542) | — |
+| 2026 | arXiv | ForkCast | [ForkCast: Predictive Recovery for Vision-Language-Action Policies via Counterfactual Futures](https://arxiv.org/abs/2610.18650) | — |
+| 2026 | AAAI | GUI-Eyes | [Gui-eyes: Tool-augmented perception for visual grounding in gui agents](https://ojs.aaai.org/index.php/AAAI/article/view/40175) | — |
+| 2026 | CVPR | LensWalk | [LensWalk: Agentic Video Understanding by Planning How You See in Videos](https://arxiv.org/abs/2603.24558) | — |
+| 2026 | arXiv | RAVEN | [RAVEN: Long-Horizon Reasoning &amp; Navigation with a Visuo-Spatio-Temporal Memory](https://arxiv.org/abs/2606.25206) | [💻 Code](https://github.com/princeton-prism/RAVEN) · [📦 Data](https://huggingface.co/datasets/zzcnewly/RAVEN_QA) |
+| 2026 | CVPR | SaPaVe | [SaPaVe: Towards Active Perception and Manipulation in Vision-Language Action Models for Robotics](https://arxiv.org/abs/2603.12193) | — |
+| 2026 | NeurIPS | VideoTreeSearch | [Searching Videos as Trees: Self-Correcting Agents for Grounded Long Video QA](https://arxiv.org/abs/2607.16189) | — |
+| 2026 | ICLR | VideoZoomer | [Videozoomer: Reinforcement-learned temporal focusing for long video reasoning](https://arxiv.org/abs/2512.22315) | [💻 Code](https://github.com/zsgvivo/VideoZoomer) |
+| 2026 | ICLR | Visual Self-Refine | [Visual Self-Refine: A Pixel-Guided Paradigm for Accurate Chart Parsing](https://arxiv.org/abs/2602.16455) | [💻 Code](https://github.com/InternLM/VSR) |
+
+<a name="feedback-driven-planning"></a>
+
+### 🧭 Feedback-Driven Planning
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | ACL | IMPLEMENT | [Model-Based Imaginative Planning for Embodied Agents](https://aclanthology.org/2026.acl-long.827.pdf) | — |
+| 2026 | arXiv | PILOT | [PILOT: Guiding Long-Horizon World-Model Planning for Robot Manipulation with Visual Subgoals and Policy Priors](https://arxiv.org/abs/2610.14335) | — |
+| 2026 | arXiv | PreAct-Nav | [PreAct-Nav: Agentic Reasoning Before Action for Urban Navigation](https://arxiv.org/abs/2610.04916) | — |
+| 2026 | AAAI | SeqWalker | [Seqwalker: Sequential-horizon vision-and-language navigation with hierarchical planning](https://arxiv.org/html/2601.04699) | — |
+| 2026 | ICLR | Sparse Imagination | [Sparse imagination for efficient visual world model planning](https://arxiv.org/abs/2506.01392) | — |
+| 2026 | AAAI | Talk2Image | [Talk2Image: A multi-agent system for multi-turn image generation and editing](https://ojs.aaai.org/index.php/AAAI/article/view/40519) | — |
+| 2026 | arXiv | TAMPAgent | [TAMPAgent: Agentic Belief-Space Planning for Mobile Manipulation](https://arxiv.org/abs/2611.03584) | — |
+| 2026 | NeurIPS | VLA-Corrector | [VLA-Corrector: Lightweight Detect-and-Correct Inference for Adaptive Action Horizon](https://arxiv.org/abs/2607.01804) | [💻 Code](https://github.com/ZJU-OmniAI/vla-corrector) |
+| 2026 | ICLR | VLMFP | [Simulation to rules: A dual-vlm framework for formal visual planning](https://proceedings.iclr.cc/paper_files/paper/2026/hash/53b43ba4d5e12174a34ab94f9485df76-Abstract-Conference.html) | — |
+| 2024 | NeurIPS | GenArtist | [GenArtist: Multimodal LLM as an agent for unified image generation and editing](https://proceedings.nips.cc/paper_files/paper/2024/hash/e7c786024ca718f2487712bfe9f51030-Abstract-Conference.html) | [🌐 Project](https://zhenyuw16.github.io/GenArtist_page/) · [💻 Code](https://github.com/zhenyuw16/GenArtist) |
+| 2022 | CoRL | Inner Monologue | [Inner Monologue: Embodied Reasoning through Planning with Language Models](https://proceedings.mlr.press/v205/huang23c.html) | [🌐 Project](https://innermonologue.github.io/) |
+
+<a name="dynamic-harness-orchestration"></a>
+
+### 🎛️ Dynamic Harness Orchestration
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | CVPR | A4VL | [A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning](https://arxiv.org/abs/2603.14052) | [💻 Code](https://github.com/git-disl/A4VL) |
+| 2026 | ICLR | AdaReasoner | [Adareasoner: Dynamic tool orchestration for iterative visual reasoning](https://proceedings.iclr.cc/paper_files/paper/2026/hash/e6f8759254d86ea9c197d30b92b313ca-Abstract-Conference.html) | [💻 Code](https://github.com/ssmisya/AdaReasoner) |
+| 2026 | ECCV | AgentVLN | [Agentvln: Towards agentic vision-and-language navigation](https://arxiv.org/abs/2603.17670) | — |
+| 2026 | ICLR | Earth-Agent | [Earth-agent: Unlocking the full landscape of earth observation with agents](https://arxiv.org/abs/2509.23141) | — |
+| 2026 | AAAI | GenMAC | [Genmac: compositional text-to-video generation with multi-agent collaboration](https://arxiv.org/abs/2412.04440) | [💻 Code](https://github.com/Karine-Huang/GenMAC) |
+| 2026 | arXiv | KnowAct-GUIClaw | [KnowAct-GUIClaw: Know Deeply, Act Perfectly, Personal GUI Assistant with Self-Evolving Memory and Skill](https://arxiv.org/abs/2607.12625) | — |
+| 2026 | CVPR | MACT | [Visual Document Understanding and Reasoning: A Multi-Agent Collaboration Framework with Agent-Wise Adaptive Test-Time Scaling](https://openaccess.thecvf.com/content/CVPR2026/html/Yu_Visual_Document_Understanding_and_Reasoning_A_Multi-Agent_Collaboration_Framework_with_CVPR_2026_paper.html) | — |
+| 2026 | ICLR | MATA | [MATA: A Trainable Hierarchical Automaton System for Multi-Agent Visual Reasoning](https://arxiv.org/abs/2601.19204) | — |
+| 2026 | NeurIPS | MMSkills | [MMSkills: Towards Multimodal Skills for General Visual Agents](https://arxiv.org/abs/2605.13527) | — |
+| 2026 | arXiv | ORCA | [ORCA: Orchestrated Reasoning with Collaborative Agents for Document Visual Question Answering](https://arxiv.org/abs/2603.02438) | — |
+| 2026 | ACL | SkillNav | [Breaking down and building up: Mixture of skill-based vision-and-language navigation agents](https://arxiv.org/html/2508.07642v4) | — |
+| 2026 | NeurIPS | VLA-Pro | [VLA-Pro: Cross-Task Procedural Memory Transfer for Vision-Language-Action Models](https://arxiv.org/abs/2605.29562) | — |
+
+<a name="output-and-action-refinement"></a>
+
+### 🎨 Output and Action Refinement
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | CVPR | AgentDet | [AgentDet: A Shared-Blackboard Multi-Agent Framework for Zero-/Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2026/html/Li_AgentDet_A_Shared-Blackboard_Multi-Agent_Framework_for_Zero-Few-Shot_Object_Detection_CVPR_2026_paper.html) | — |
+| 2026 | CVPR | Agentic Retoucher | [Agentic Retoucher for Text-To-Image Generation](https://arxiv.org/abs/2601.02046) | [💻 Code](https://github.com/MediaX-SJTU/Agentic-Retoucher) |
+| 2026 | CVPR | Draft and Refine | [Draft and Refine with Visual Experts](https://arxiv.org/abs/2511.11005) | [💻 Code](https://github.com/EavnJeong/Draft-and-Refine-with-Visual-Experts) |
+| 2026 | arXiv | Dual-Agent | [When Trackers Fail: VLM-Guided Verification and Recovery for Robust Video Object Segmentation](https://arxiv.org/abs/2610.15929) | — |
+| 2026 | ICLR | FilMaster | [FilMaster: Bridging Cinematic Principles and Generative AI for Automated Film Generation](https://arxiv.org/abs/2506.18899) | — |
+| 2026 | CVPR | MM-ReCoder | [MM-ReCoder: Advancing Chart-to-Code Generation with Reinforcement Learning and Self-Correction](https://arxiv.org/abs/2604.01600) | [💻 Code](https://github.com/ZitianTang/MMReCoder) |
+| 2026 | ICLR | PixelCraft | [Pixelcraft: A multi-agent system for high-fidelity visual reasoning on structured images](https://arxiv.org/abs/2509.25185) | — |
+| 2026 | ICLR | RACE | [Time Optimal Execution of Action Chunk Policies Beyond Demonstration Speed](https://proceedings.iclr.cc/paper_files/paper/2026/hash/fab80bb9d97e9b9ff5c19f91f72838c6-Abstract-Conference.html) | — |
+| 2026 | ICLR | Scenethesis | [Scenethesis: A language and vision agentic framework for 3d scene generation](https://arxiv.org/abs/2505.02836) | — |
+| 2026 | CVPR | ViFailback | [Diagnose, Correct, and Learn from Manipulation Failures via Visual Symbols](https://openaccess.thecvf.com/content/CVPR2026/html/Zeng_Diagnose_Correct_and_Learn_from_Manipulation_Failures_via_Visual_Symbols_CVPR_2026_paper.html) | — |
+| 2026 | CVPR | VISTA | [VISTA: A Test-Time Self-Improving Video Generation Agent](https://arxiv.org/abs/2510.15831) | — |
+| 2026 | ICLR | VisualPrompter | [Visualprompter: Semantic-aware prompt optimization with visual feedback for text-to-image synthesis](https://arxiv.org/abs/2506.23138) | [💻 Code](https://github.com/teheperinko541/VisualPrompter) |
+
+<a name="execution-monitoring-and-control"></a>
+
+### 🛡️ Execution Monitoring and Control
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | arXiv | ATMem | [What Memory Do GUI Agents Really Need? From Passive Records to Active Task-Driving States](https://arxiv.org/abs/2606.31612) | — |
+| 2026 | ICLR | Embodied Perception Memory | [Planning with an Embodied Learnable Memory](https://openreview.net/pdf/6082975fa8793aee0005fc28ab58c5ebfcd2eb8c.pdf) | — |
+| 2026 | CVPR | FLARE | [FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation](https://arxiv.org/abs/2608.26645) | — |
+| 2026 | ICLR | LongHorizonUI | [LongHorizonUI: A Unified Framework for Robust long-horizon Task Automation of GUI Agent](https://openreview.net/pdf?id=BK7Mk5d4WE) | [💻 Code](https://github.com/kane2kang/LongHorizonUI) |
+| 2026 | CVPR | OctMem-Agent | [Memory-Augmented Scene Understanding and Exploration for Open-World Aerial Object-Goal Navigation](https://openaccess.thecvf.com/content/CVPR2026/html/Zhou_Memory-Augmented_Scene_Understanding_and_Exploration_for_Open-World_Aerial_Object-Goal_Navigation_CVPR_2026_paper.html) | — |
+| 2026 | CVPR | OS-Oracle | [OS-Oracle: A Comprehensive Framework for Cross-Platform GUI Critic Models](https://arxiv.org/abs/2512.16295) | [💻 Code](https://github.com/numbmelon/OS-Oracle) · [📦 Data](https://huggingface.co/datasets/OS-Copilot/OS-Critic-Bench) |
+| 2026 | CVPR | Proof-of-Perception | [Proof-of-Perception: Certified Tool-Using Multimodal Reasoning with Compositional Conformal Guarantees](https://arxiv.org/abs/2603.00324) | [💻 Code](https://github.com/AryaFayyazi/PoP) |
+| 2026 | arXiv | Q-Reflector | [Q-Reflector: Learning GUI Action Reflection with Generated Conditions](https://arxiv.org/abs/2608.05587) | — |
+| 2026 | arXiv | TaskVM | [Task-State Governance: A Virtual Machine for Verifiable and Recoverable GUI Agent Execution](https://arxiv.org/abs/2610.20100) | — |
+| 2026 | ACL | VeriGUI | [Don’t Act Blindly: Robust GUI Automation via Action-Effect Verification and Self-Correction](https://aclanthology.org/2026.acl-long.1335/) | — |
+
+<a name="l2-self-evolving-visual-agents"></a>
+
+## 🔴 L2 Self-Evolving Visual Agents
+
+Agents retain changes to models, memory, skills, workflows, or training resources and use them on later tasks.
+
+<a name="model-level-evolution"></a>
+
+### 🧠 Model-Level Evolution
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | CVPR | CGL | [CGL: Advancing Continual GUI Learning via Reinforcement Fine-Tuning](https://arxiv.org/abs/2603.02951) | — |
+| 2026 | ICLR | ComputerRL | [ComputerRL: Scaling End-to-End Online Reinforcement Learning for Computer Use Agents](https://arxiv.org/abs/2508.14040) | [💻 Code](https://github.com/THUDM/ComputerRL) |
+| 2026 | ICLR | DeepEyes | [DeepEyes: Incentivizing ``Thinking with Images'' via Reinforcement Learning](https://arxiv.org/abs/2505.14362v3) | [💻 Code](https://github.com/Visual-Agent/DeepEyes) |
+| 2026 | arXiv | Dream to Remember | [Dream to Remember: Continual Steering of Generalist Robot Policies with World Models](https://arxiv.org/abs/2610.13816) | — |
+| 2026 | CVPR | GUI-SAGE | [GUI-SAGE: Enhancing GUI Automation with Self-Explanatory Learning](https://openaccess.thecvf.com/content/CVPR2026/papers/Tang_GUI-SAGE_Enhancing_GUI_Automation_with_Self-Explanatory_Learning_CVPR_2026_paper.pdf) | — |
+| 2026 | AAAI | History-Aware Reasoning | [History-Aware Reasoning for GUI Agents](https://ojs.aaai.org/index.php/AAAI/article/view/40966) | — |
+| 2026 | ACL | ReLook | [ReLook: Vision-Grounded RL with a Multimodal LLM Critic for Agentic Web Coding](https://aclanthology.org/2026.acl-long.1167/) | — |
+| 2026 | NeurIPS | RePO-VLA | [RePO-VLA: Recovery-Driven Policy Optimization for Vision-Language-Action Models](https://arxiv.org/abs/2605.09410) | — |
+| 2026 | arXiv | SpatialCritic | [Getting Space Right: Agentic Rewards for Image Generation](https://arxiv.org/abs/2610.14852) | — |
+| 2026 | NeurIPS | ToolCUA | [ToolCUA: Towards Optimal GUI-Tool Path Orchestration for Computer Use Agents](https://arxiv.org/abs/2605.12481) | — |
+| 2026 | AAAI | WorldAgen | [Worldagen: Unified state-action prediction with test-time world model training](https://ojs.aaai.org/index.php/AAAI/article/download/38925/42887) | — |
+
+<a name="memory-driven-capability-evolution"></a>
+
+### 🗃️ Memory-Driven Capability Evolution
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | arXiv | ABot-AgentOS | [ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory](https://arxiv.org/abs/2607.10350v3) | — |
+| 2026 | arXiv | AtlasVA | [AtlasVA: Self-Evolving Visual Skill Memory for Teacher-Free VLM Agents](https://arxiv.org/abs/2605.17933) | — |
+| 2026 | ACL | Conflict-Aware Memory | [Conflict-Aware Memory for Embodied Agents: Enhancing Vector Data Quality via Detection Rules](https://aclanthology.org/2026.acl-long.1306/) | [💻 Code](https://github.com/makexine/CDRs) |
+| 2026 | CVPR | Dejavu | [Dejavu: Towards Experience Feedback Learning for Embodied Intelligence](https://arxiv.org/abs/2510.10181) | — |
+| 2026 | AAAI | DigimonGPT | [DigimonGPT: An Evolvable Agent with Hierarchical Human-like Memory for Video Question Answering](https://ojs.aaai.org/index.php/AAAI/article/view/37523) | — |
+| 2026 | NeurIPS | ECHO | [ECHO: Continuous Hierarchical Memory for Vision-Language-Action Models](https://arxiv.org/html/2605.10993) | — |
+| 2026 | arXiv | HyMEM | [Hybrid self-evolving structured memory for gui agents](https://arxiv.org/abs/2603.10291) | [💻 Code](https://github.com/NickSiboZhu/HyMEM-GUI-Agent) |
+| 2026 | CVPR | OctoT2I | [OctoT2I: A Self-Evolving Agentic Text-to-Image Router](https://arxiv.org/abs/2606.01803) | — |
+| 2026 | AAAI | PerTouch | [PerTouch: VLM-Driven Agent for Personalized and Semantic Image Retouching](https://arxiv.org/abs/2511.12998) | [💻 Code](https://github.com/Auroral703/PerTouch) |
+| 2026 | ACL | RSMeM | [RSMeM: Knowledge-Enhanced Memory Evolution for Remote Sensing Agents with Systematic Evaluation](https://arxiv.org/html/2607.24772) | — |
+| 2026 | CVPR | ViLoMem | [ViLoMem: Agentic Learner with Grow-and-Refine Multimodal Semantic Memory](https://arxiv.org/abs/2511.21678) | [💻 Code](https://github.com/weihao-bo/ViLoMem) |
+
+<a name="skill-and-tool-level-evolution"></a>
+
+### 🧰 Skill and Tool-Level Evolution
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | arXiv | Agent S4 | [Evolving Agent Interfaces](https://arxiv.org/abs/2610.28601) | — |
+| 2026 | arXiv | ArtisanCAD | [ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation](https://arxiv.org/abs/2607.05750) | — |
+| 2026 | arXiv | ComfyClaw | [Comfyclaw: Self-evolving skill harnesses for image generation workflows](https://arxiv.org/abs/2607.01709) | [💻 Code](https://github.com/Moms-Organic-Agent-Lab/comfyclaw) |
+| 2026 | arXiv | EchoPath | [EchoPath: Execution-Level Replayable Memory for GUI Agents](https://arxiv.org/abs/2609.16635) | — |
+| 2026 | arXiv | EmbodiSkill | [EmbodiSkill: Skill-Aware Reflection for Self-Evolving Embodied Agents](https://arxiv.org/abs/2605.10332) | [💻 Code](https://github.com/air-embodied-brain/EmbodiSkill) · [📦 Data](https://github.com/air-embodied-brain/EmbodiSkill/tree/main/data/alfworld) |
+| 2026 | arXiv | MACRO | [Evolving medical imaging agents via experience-driven self-skill discovery](https://arxiv.org/abs/2603.05860) | — |
+| 2026 | CVPR | META | [META: Meta Evolution of Tool Trajectory Adaptation for Long-Video Understanding](https://openaccess.thecvf.com/content/CVPR2026/html/Huang_META_Meta_Evolution_of_Tool_Trajectory_Adaptation_for_Long-Video_Understanding_CVPR_2026_paper.html) | — |
+| 2026 | arXiv | MineEvolve | [MineEvolve: Self-Evolution with Accumulated Knowledge for Long-Horizon Embodied Minecraft Agents](https://arxiv.org/abs/2603.13131) | [💻 Code](https://github.com/xzw-ustc/MC-MineEvolve) |
+| 2026 | arXiv | ReSight | [ReSight: Task-Driven Self-Improving Memory for Embodied Agents](https://arxiv.org/abs/2610.33487) | — |
+| 2026 | ICLR | Transductive Visual Programming | [Transductive Visual Programming: Evolving Tool Libraries from Experience for Spatial Reasoning](https://transductive-visualprogram.github.io/) | [🌐 Project](https://transductive-visualprogram.github.io/) · [💻 Code](https://github.com/transductive-visualprogram/tvp) |
+| 2026 | arXiv | Work2Skill | [Work2Skill: Capturing Human GUI Experience for Reusable Agent Skill Induction](https://arxiv.org/abs/2610.12984) | — |
+
+<a name="orchestration-level-evolution"></a>
+
+### ⚙️ Orchestration-Level Evolution
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | arXiv | EnactOpt | [EnactOpt: Diagnosis-Guided Harness Evolution for Embodied Agents](https://arxiv.org/abs/2610.14977) | — |
+| 2026 | arXiv | EvoGen-Harness | [EvoGen-Harness: Learning Where and How to Evolve Image-Generation Harnesses](https://arxiv.org/abs/2610.00383) | [💻 Code](https://github.com/King-play/EvoGen-Harness) |
+| 2026 | arXiv | GUI-HARVEST | [GUI-HARVEST: Self-Improving GUI Agents through Evidence-Driven Harness Evolution](https://arxiv.org/abs/2610.00948) | — |
+| 2026 | arXiv | InstAgent | [InstAgent: A Recursively Self-Improving Agent Operating System for Heterogeneous Robot Collaboration](https://arxiv.org/abs/2610.23098) | — |
+| 2026 | arXiv | Scale and Selection | [Scale and Selection: What Makes Automatic Harness Evolution Work for Visual-Interface Robot Agents](https://arxiv.org/abs/2609.39304v4) | — |
+| 2026 | arXiv | SHAPER | [Self-evolving embodied agents via skill-harness evolution](https://arxiv.org/abs/2608.11350v2) | — |
+| 2026 | arXiv | VEvo-Harness | [VEvo-Harness: Causally-Guarded Self-Evolving Harness for Agentic Image Generation](https://arxiv.org/abs/2610.39158v1) | — |
+| 2026 | arXiv | Video-RSI | [Video-RSI: Recursive Self-Improvement of Video Understanding Agents via Harness Evolution](https://arxiv.org/abs/2609.37950v1) | — |
+| 2026 | arXiv | VideoHarness-RSI | [VideoHarness-RSI: Recursive Harness Self-Improvement for Long-Video Understanding with Frozen Vision-Language Models](https://arxiv.org/abs/2608.24302v2) | [💻 Code](https://github.com/Tencent/VideoHarness-RSI) |
+| 2026 | arXiv | Zetta | [Zetta ζ: An Efficient Closed-Loop Embodied Harness for Self-Evolving Physical Intelligence](https://arxiv.org/abs/2608.16590) | [💻 Code](https://github.com/air-embodied-brain/Zetta-Embodiment) |
+
+<a name="dynamic-data-and-task-evolution"></a>
+
+### 🧪 Dynamic Data and Task Evolution
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | NeurIPS | ACuRL | [Autonomous Continual Learning for Environment Adaptation of Computer-Use Agents](https://arxiv.org/abs/2602.10356) | — |
+| 2026 | AAAI | CorrectAD | [CorrectAD: A Self-Correcting Agentic System to Improve End-to-end Planning in Autonomous Driving](https://arxiv.org/html/2511.13297) | — |
+| 2026 | NeurIPS | EvoCUA | [EvoCUA: Evolving Computer Use Agents via Learning from Scalable Synthetic Experience](https://arxiv.org/abs/2601.15876) | [💻 Code](https://github.com/meituan/EvoCUA) |
+| 2026 | arXiv | FIND | [Find Something You Can't Do: Agentic Real-World Reinforcement Learning for Self-Improving VLA Models](https://arxiv.org/abs/2609.32069) | — |
+| 2026 | NeurIPS | GenEvolve | [GenEvolve: Self-Evolving Image Generation Agents via Tool-Orchestrated Visual Experience Distillation](https://arxiv.org/abs/2605.21605) | [🌐 Project](https://ephemeral182.github.io/GenEvolve/) · [💻 Code](https://github.com/MeiGen-AI/GenEvolve) |
+| 2026 | CVPR | HATS | [HATS: Hardness-Aware Trajectory Synthesis for GUI Agents](https://arxiv.org/abs/2603.12138) | — |
+| 2026 | ICLR | PLD | [Self-improving vision-language-action models with data generation via residual rl](https://arxiv.org/abs/2511.00091) | — |
+| 2026 | arXiv | RECALL | [RECALL: Recovery Experience Collection for Active Lifelong Learning in Vision-Language-Action Models](https://arxiv.org/abs/2606.23617) | — |
+| 2026 | CVPR Workshops | Scene2Demo | [Scene2Demo: Self-Evolving Embodied Data Generation via Object-Action Graph](https://arxiv.org/abs/2602.12065v3) | — |
+| 2026 | ICML | SEAgent | [SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience](https://proceedings.mlr.press/v306/sun26w.html) | — |
+| 2026 | arXiv | SEES | [SEES: A Self-Evolving Embodied System via Failure-Guided VLA Policy Adaptation](https://arxiv.org/abs/2609.32698) | — |
+| 2026 | ICLR | SILVR | [Self-improving loops for visual robotic planning](https://proceedings.iclr.cc/paper_files/paper/2026/hash/cde874a797a8300da693d5e412b7fdc0-Abstract-Conference.html) | — |
+| 2026 | arXiv | SimWorld Studio | [SimWorld Studio: Automatic Environment Generation with Evolving Coding Agent for Embodied Agent Learning](https://arxiv.org/abs/2605.09423v2) | — |
+
+<a name="l3-toward-recursive-self-improvement"></a>
+
+## 🔵 L3 Toward Recursive Self-Improvement
+
+These works examine how agents revise the mechanisms that generate experience, update capabilities, or evaluate changes, and reuse them in a later update.
+
+<a name="evolving-learning-signals-and-experience"></a>
+
+### 🌱 Evolving Learning Signals and Experience
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | arXiv | Grounded-Dreamer | [Grounded-Dreamer: Robot Learning from World Model Synthetic Data with Physical Grounding](https://arxiv.org/abs/2610.13164) | — |
+| 2026 | ACL | GUI0 | [GUI0: Self-Evolving Foundational GUI Agents in Super App Ecosystems](https://aclanthology.org/2026.acl-long.2052/) | — |
+| 2026 | arXiv | Marvo | [Self-Evolving Visual Agent via Margin Reward](https://arxiv.org/abs/2610.15084) | [💻 Code](https://github.com/YWenxi/marvo) |
+| 2026 | arXiv | PhysEvo | [PhysEvo: Astra Can Act, Let It](https://arxiv.org/abs/2610.08995) | — |
+| 2026 | arXiv | RIWANav | [RIWANav: Recursive World-Action Models with Self-Improvement for Urban Navigation](https://arxiv.org/abs/2610.08640) | — |
+| 2026 | CVPR | SCALE | [Learning to Adapt: Self-Improving Web Agent via Cognitive-Aware Exploration](https://arxiv.org/html/2605.31365) | — |
+| 2026 | ICML | VLAW | [VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World Model](https://arxiv.org/abs/2602.12063) | [🌐 Project](https://sites.google.com/view/vla-w) · [💻 Code](https://github.com/Robert-gyj/Ctrl-World) |
+| 2026 | ICLR | WMPO | [Wmpo: World model-based policy optimization for vision-language-action models](https://arxiv.org/abs/2511.09515) | [🌐 Project](https://wm-po.github.io) · [💻 Code](https://github.com/WM-PO/WMPO) |
+| 2026 | arXiv | WoVR | [Wovr: World models as reliable simulators for post-training vla policies with rl](https://arxiv.org/abs/2602.13977v3) | [💻 Code](https://github.com/RLinf/RLinf) |
+
+<a name="evolving-memory-and-context-management"></a>
+
+### 🗂️ Evolving Memory and Context Management
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | arXiv | AutoMMemo | [Learning to Learn from Multimodal Experience](https://arxiv.org/abs/2605.16857v2) | [💻 Code](https://github.com/XingYuSSS/AutoMMemo) |
+| 2026 | arXiv | EmbodiedRSI | [EmbodiedRSI: Active continual robot learning through hypothesis-guided co-evolution](https://arxiv.org/abs/2610.10498) | — |
+| 2026 | arXiv | PRACTICE | [Practice: From experience to expertise in self-evolving embodied agents](https://arxiv.org/abs/2608.30760) | — |
+
+<a name="evolving-update-mechanisms"></a>
+
+### 🔧 Evolving Update Mechanisms
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | arXiv | AdaRSI | [AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents](https://arxiv.org/abs/2610.20474) | — |
+| 2026 | arXiv | CoDA | [CoDA: Co-Evolution of Data Engines and Action Policies](https://arxiv.org/abs/2610.22362) | — |
+| 2026 | arXiv | HarnessPAI | [HarnessPAI: An Evolving Harness for Physical AI](https://arxiv.org/abs/2609.29166) | [💻 Code](https://github.com/Darwin-Agent/HarnessPAI) |
+| 2026 | arXiv | RecurIR | [RecurIR: Learning When and How to Revise Restoration Policies via Recursive Self-Improvement](https://arxiv.org/abs/2611.18006) | — |
+| 2026 | arXiv | RSIgen | [RSIgen: Reciprocal Self-Improvement for Agentic Visual Generation](https://arxiv.org/abs/2610.18688v2) | — |
+| 2026 | arXiv | The Trinity | [The Trinity: Capability-Driven Recursive Self-Improvement for Multimodal Agents](https://arxiv.org/abs/2610.36077v2) | [💻 Code](https://github.com/InfRec-Cardinal/The-Trinity) |
+| 2026 | arXiv | VideoEvoHarness | [VideoEvoHarness: Self Evolving Agent Harness from Unlabeled Videos for Video Understanding](https://arxiv.org/abs/2610.15389) | [💻 Code](https://github.com/Wei-Xin-Xu/VideoEvoHarness) |
+
+<a name="evolving-evaluation-and-validation"></a>
+
+### ✅ Evolving Evaluation and Validation
+
+| Year | Venue | Method | 📄 Paper Title | 🔗 Project / Code / Data |
+| ---: | --- | --- | --- | --- |
+| 2026 | ICML | Agent0-VL | [Agent0-VL: Exploring Self-Evolving Agent for Tool-Integrated Vision-Language Reasoning](https://arxiv.org/html/2511.19900) | [💻 Code](https://github.com/aiming-lab/Agent0/tree/main/Agent0-VL) |
+| 2026 | arXiv | CineEvolve | [CineEvolve: An Agentic Self-Evolution Framework for Cinematic Multi-Shot Video Generation](https://arxiv.org/abs/2610.29590) | — |
+| 2026 | AAAI | Co-EPG | [Co-EPG: A Framework for Co-Evolution of Planning and Grounding in Autonomous GUI Agents](https://arxiv.org/abs/2511.10705) | — |
+| 2026 | CVPR | JarvisEvo | [Jarvisevo: Towards a self-evolving photo editing agent with synergistic editor-evaluator optimization](https://arxiv.org/abs/2511.23002) | [💻 Code](https://github.com/LYL1015/JarvisEvo) · [📦 Data](https://huggingface.co/datasets/JarvisEvo/ArtEdit-Bench) |
+| 2026 | arXiv | LIT | [Learning to Interact and Direct: Co-Evolving Video Director Agents](https://arxiv.org/abs/2610.41865) | — |
+| 2026 | arXiv | MagicGUI-RMS | [MagicGUI-RMS: A Multi-Agent Reward Model System for Self-Evolving GUI Agents via Automated Feedback Reflux](https://arxiv.org/abs/2601.13060) | — |
+| 2026 | arXiv | RewardHarness | [RewardHarness: Self-Evolving Agentic Post-Training](https://arxiv.org/abs/2605.08703) | [💻 Code](https://github.com/TIGER-AI-Lab/RewardHarness) · [📦 Data](https://huggingface.co/datasets/AgPerry/EditReward-Data-100) |
+| 2026 | arXiv | SkillRubric | [SkillRubric: Co-Evolving Actor Guidance and Evaluator Rubrics for Multimodal Agents](https://arxiv.org/abs/2609.34557) | — |
+| 2026 | arXiv | VeriCUA | [VeriCUA: Learning Proactive Verification for Reliable GUI Agent Rewards](https://arxiv.org/abs/2610.26469) | [💻 Code](https://github.com/Jeffjeno/VeriCUA) |
+| 2026 | arXiv | VISA | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](https://arxiv.org/abs/2608.26013v2) | — |
+
+<a name="related-surveys"></a>
+
+## 📖 Related Surveys
+
+| Area | 📄 Survey |
+| --- | --- |
+| Multimodal agents | [Large multimodal agents: A survey](https://link.springer.com/article/10.1007/s44267-025-00093-y) |
+| Multimodal agents | [A survey on foundations and frontiers of multimodal agentic frameworks: Techniques and applications](https://arxiv.org/abs/2608.20379) |
+| Agent self-evolution and RSI | [Self-Improvements in Modern Agentic Systems: A Survey](https://arxiv.org/abs/2607.13104) |
+| Agent self-evolution and RSI | [Self-Evolving Agents as Dynamic Graph Transformation: A Survey and New Perspective](https://arxiv.org/abs/2608.18104) |
+| Agent self-evolution and RSI | [The path to recursive self-improving agents: Foundation, framework, and future directions](https://www.preprints.org/manuscript/202608.0051) |
+| Agent self-evolution and RSI | [From Harness Optimization to Recursive Self-Improvement: A Survey of Language Model Agents](https://www.preprints.org/manuscript/202610.2293/v1) |
+| Agent self-evolution and RSI | [A Cross-Scenario Survey and Analysis of Self-Evolving Multimodal Agents](https://arxiv.org/abs/2611.14256) |
+| Visual generation | [Agentic AIGC: A Survey of Visual Generation Agents](https://www.preprints.org/manuscript/202609.0173/v2) |
+| Visual generation | [Agentic Visual Generation: From Generative Models to Agentic Control](https://arxiv.org/abs/2609.06758) |
+| Video generation | [Video Generation Meets Agent Harness: Agentic Video Generation, Agentic World Modeling and Recursive Self-Improvement](https://arxiv.org/abs/2610.40191) |
+| Computer use | [A comprehensive survey of agents for computer use: Foundations, challenges, and future directions](https://jair.org/index.php/jair/article/view/19490) |
+| Vision-and-language navigation | [Vision-and-Language Navigation: A Survey of Tasks, Methods, and Future Directions](https://aclanthology.org/2022.acl-long.524/) |
+| Embodied agents | [Towards agentic robots: Model, data, environment, and harness](https://arxiv.org/abs/2610.20442) |
+| Physical AI | [Toward Recursive Self-Improvement in Physical AI](https://arxiv.org/abs/2610.29677) |
+| Physical AI | [Recursive Self-Improvement in Physical AI: Mechanisms, Evidence, and Evaluation](https://arxiv.org/abs/2610.38266) |
+
+The [companion reading list](docs/READING_LIST.md) covers additional work on visual capabilities and harness infrastructure.
+
+<a name="contributing"></a>
+
+## 🤝 Contributing
+
+Suggest additions or corrections through [issues](https://github.com/heshuting555/Awesome-Visual-Agent/issues) or [pull requests](https://github.com/heshuting555/Awesome-Visual-Agent/pulls). Include the relevant survey section, a primary source, and any public code or data links. See the [contribution guide](CONTRIBUTING.md).
+
+<a name="citation"></a>
+
+## 📌 Citation
+
+Use this BibTeX entry to cite the survey repository.
+
+```bibtex
+@misc{chenVisualAgentSurvey,
+  title        = {Seeing the Harness and Self-Evolution of Visual Agents: Toward Recursive Self-Improvement},
+  author       = {Chen, Dong and Ge, Shuai and Fu, Yu and Ren, Xiangyu and Zhang, Zhihao and Wang, Hao and Wang, Changshuo and Ji, Jiayi and Ding, Henghui and He, Shuting},
+  howpublished = {GitHub repository},
+  url          = {https://github.com/heshuting555/Awesome-Visual-Agent}
+}
+```
+
+The catalogue layout was inspired by [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications).

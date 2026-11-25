@@ -6,12 +6,11 @@ New bibliography entries remain bibliography-only until added to selection.json.
 """
 import argparse
 import copy
-import hashlib
 import json
 import re
 from collections import defaultdict
 from pathlib import Path
-from bibtex_utils import arxiv_id, norm, parse, tex_text, venue
+from bibtex_utils import arxiv_id, bibliography_digest, norm, parse, tex_text, venue
 from build_readme import ROOT, read, save
 
 
@@ -161,7 +160,7 @@ def sync(source, date, manuscript=None):
                 topic.pop('works', None)
                 topic['selected_citation_keys'] = [p['id'] for p in papers if p['primary_topic'] == topic['id']]
     taxonomy['validation'] = {'branches': 2, 'categories': 10, 'topics': 35, 'planning_branch': 'external',
-                              'catalogue_bibliography_sha256': hashlib.sha256(source.read_bytes()).hexdigest()}
+                              'catalogue_bibliography_sha256': bibliography_digest(source)}
     save('taxonomy.json', taxonomy)
     meta = read('metadata.json')
     meta = {k: v for k, v in meta.items() if k in {'assembled_at'}}
