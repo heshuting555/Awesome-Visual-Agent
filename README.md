@@ -7,7 +7,7 @@
   <a href="#benchmarks-and-datasets">📊 Benchmarks</a> &nbsp;·&nbsp;
   <a href="#l1-within-task-adaptation">🛠️ Methods</a> &nbsp;·&nbsp;
   <a href="#table-of-contents">📚 Contents</a> &nbsp;·&nbsp;
-  <a href="#citation">📌 Cite This Repository</a>
+  <a href="#citation">📢 Citation</a>
 </p>
 
 <p align="center">
@@ -486,20 +486,20 @@ These works examine how agents revise the mechanisms that generate experience, u
 
 Suggest additions or corrections through [issues](https://github.com/heshuting555/Awesome-Visual-Agent/issues) or [pull requests](https://github.com/heshuting555/Awesome-Visual-Agent/pulls). Include the relevant survey section, a primary source, and any public code or data links. See the [contribution guide](CONTRIBUTING.md).
 
+See [references.bib](references.bib) for the bibliography of individual works. The catalogue layout was inspired by [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications).
+
 <a name="citation"></a>
 
-## 📌 Cite This Repository
+## 📢 Citation
 
-Use this BibTeX entry to cite the Awesome-Visual-Agent repository. See [references.bib](references.bib) for bibliographic entries for individual works.
+If you find this survey helpful, please consider citing this repository in your work. Thank you for your support!
 
 ```bibtex
 @misc{chenVisualAgentSurvey,
-  title        = {{Awesome-Visual-Agent}},
-  author       = {Chen, Dong and Ge, Shuai and Fu, Yu and Ren, Xiangyu and Zhang, Zhihao and Wang, Hao and Wang, Changshuo and Ji, Jiayi and Ding, Henghui and He, Shuting},
-  year         = {2026},
-  howpublished = {GitHub repository},
-  url          = {https://github.com/heshuting555/Awesome-Visual-Agent}
+  title={{Awesome-Visual-Agent}},
+  author={Chen, Dong and Ge, Shuai and Fu, Yu and Ren, Xiangyu and Zhang, Zhihao and Wang, Hao and Wang, Changshuo and Ji, Jiayi and Ding, Henghui and He, Shuting},
+  year={2026},
+  howpublished={GitHub repository},
+  url={https://github.com/heshuting555/Awesome-Visual-Agent}
 }
 ```
-
-The catalogue layout was inspired by [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications).
