@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="figures/visual-agent-framework.png" width="880" alt="Visual-agent framework showing model capabilities, the agent harness, and levels L0 to L3">
+  <img src="figs/visual-agent-framework.png" width="880" alt="Visual-agent framework showing model capabilities, the agent harness, and levels L0 to L3">
 </p>
 
 <a name="introduction"></a>
@@ -43,7 +43,7 @@ We view a visual agent as one or more models operating within a harness that coo
 The taxonomy maps the L1–L3 mechanisms to representative papers. Select the figure to view it at full resolution.
 
 <p align="center">
-  <a href="figures/visual-agent-taxonomy.png"><img src="figures/visual-agent-taxonomy.png" width="760" alt="Taxonomy of visual agent adaptation and evolution, showing three levels, 14 categories, and representative methods"></a>
+  <a href="figs/visual-agent-taxonomy.png"><img src="figs/visual-agent-taxonomy.png" width="760" alt="Taxonomy of visual agent adaptation and evolution, showing three levels, 14 categories, and representative methods"></a>
 </p>
 
 <a name="benchmarks-and-datasets"></a>
@@ -484,9 +484,9 @@ These works examine how agents revise the mechanisms that generate experience, u
 
 ## 🤝 Contributing
 
-Suggest additions or corrections through [issues](https://github.com/heshuting555/Awesome-Visual-Agent/issues) or [pull requests](https://github.com/heshuting555/Awesome-Visual-Agent/pulls). Include the relevant survey section, a primary source, and any public code or data links. See the [contribution guide](CONTRIBUTING.md).
+Suggest additions or corrections through [issues](https://github.com/heshuting555/Awesome-Visual-Agent/issues) or [pull requests](https://github.com/heshuting555/Awesome-Visual-Agent/pulls). Include the relevant survey section, a primary source, and any public code or data links.
 
-See [references.bib](references.bib) for the bibliography of individual works. The catalogue layout was inspired by [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications).
+The catalogue layout was inspired by [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications).
 
 <a name="citation"></a>
 
