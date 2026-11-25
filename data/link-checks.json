@@ -64,10 +64,10 @@
     "checked_at": "2026-10-05"
   },
   "li2026roboclaw": {
-    "kind": "official_abstract_and_identity_check",
-    "source_url": "https://arxiv.org/abs/2603.11558",
+    "kind": "official_publication_metadata",
+    "source_url": "https://eccv.ecva.net/virtual/2026/poster/5252",
     "checked_title": "RoboClaw: An Agentic Framework for Scalable Long-Horizon Robotic Tasks",
-    "checked_at": "2026-10-05"
+    "checked_at": "2026-11-25"
   },
   "mvagent2026": {
     "kind": "official_abstract_and_identity_check",
@@ -124,5 +124,109 @@
     "code_url": "https://github.com/xlang-ai/OpenCUA",
     "code_identity_source": "https://opencua.xlang.ai/",
     "code_checked_at": "2026-10-05"
+  },
+  "chen2025edival": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/bb01ae312268181758299e4ca75837e5-Abstract-Conference.html",
+    "checked_title": "EdiVal-Agent: An Object-Centric Framework for Automated, Fine-Grained Evaluation of Multi-Turn Editing",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/bb01ae312268181758299e4ca75837e5-Abstract-Conference.html",
+    "project_url": "https://tianyucodings.github.io/EdiVAL-page/"
+  },
+  "chen2026genevolve": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://neurips.cc/virtual/2026/poster/155907",
+    "checked_title": "GenEvolve: Self-Evolving Image Generation Agents via Tool-Orchestrated Visual Experience Distillation",
+    "checked_at": "2026-11-25"
+  },
+  "chen2026perfguard": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/4e1acbce3bf13a555486c7b1c56cba5c-Abstract-Conference.html",
+    "checked_title": "PerfGuard: A Performance-Aware Agent for Visual Content Generation",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/4e1acbce3bf13a555486c7b1c56cba5c-Abstract-Conference.html",
+    "project_url": null
+  },
+  "geng2026webwatcher": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/63ca1cca58101545e937302be7050098-Abstract-Conference.html",
+    "checked_title": "WebWatcher: Breaking New Frontiers of Vision-Language Deep Research Agent",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/63ca1cca58101545e937302be7050098-Abstract-Conference.html"
+  },
+  "hu2024scenecraft": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://proceedings.mlr.press/v235/hu24g.html",
+    "checked_title": "SceneCraft: An LLM Agent for Synthesizing 3D Scenes as Blender Code",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://proceedings.mlr.press/v235/hu24g.html"
+  },
+  "jiang2026genagent": {
+    "kind": "resource_identity_check",
+    "source_url": "https://github.com/deep-kaixun/geagent",
+    "checked_title": "GenAgent: Scaling Text-to-Image Generation via Agentic Multimodal Reasoning",
+    "checked_at": "2026-11-25",
+    "project_url": "https://github.com/deep-kaixun/geagent",
+    "previous_url": "https://github.com/deep-kaixun/GenAgent",
+    "note": "The original code URL returns 404. The author repository identifies the paper and currently contains only a README."
+  },
+  "min2026improving": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Min_Improving_Vision-language_Models_with_Perception-centric_Process_Reward_Models_CVPR_2026_paper.html",
+    "checked_title": "Improving Vision-language Models with Perception-centric Process Reward Models",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Min_Improving_Vision-language_Models_with_Perception-centric_Process_Reward_Models_CVPR_2026_paper.html"
+  },
+  "pacaud2025guardian": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://openreview.net/attachment?id=wps46mtC9B&name=pdf",
+    "checked_title": "Guardian: Detecting Robotic Planning and Execution Errors with Vision-Language Models",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://openreview.net/attachment?id=wps46mtC9B&name=pdf",
+    "project_url": "https://www.di.ens.fr/willow/research/guardian/",
+    "note": "The linked CoRL workshop paper uses this title. The revised preprint and project use Detecting Robotic Manipulation Failures with Vision-Language Models."
+  },
+  "u_vstar": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Wu_V_Guided_Visual_Search_as_a_Core_Mechanism_in_Multimodal_CVPR_2024_paper.html",
+    "checked_title": "V*: Guided Visual Search as a Core Mechanism in Multimodal LLMs",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://openaccess.thecvf.com/content/CVPR2024/html/Wu_V_Guided_Visual_Search_as_a_Core_Mechanism_in_Multimodal_CVPR_2024_paper.html"
+  },
+  "va_c1705_2026": {
+    "kind": "resource_identity_check",
+    "source_url": "https://arxiv.org/abs/2602.18064",
+    "checked_title": "3DMedAgent: Unified Perception-to-Understanding for 3D Medical Analysis",
+    "checked_at": "2026-11-25",
+    "project_url": null,
+    "previous_url": "http://assistants.Code",
+    "note": "This string was parsed from adjacent sentences in the abstract. The official code is already listed."
+  },
+  "wd_cosmospolicy2026": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/748becc400a57c0e31cfe6a2e7951467-Abstract-Conference.html",
+    "checked_title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/748becc400a57c0e31cfe6a2e7951467-Abstract-Conference.html"
+  },
+  "xu2026multi": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_A_Multi-Agent_Perception-Action_Alliance_for_Efficient_Long_Video_Reasoning_CVPR_2026_paper.html",
+    "checked_title": "A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://openaccess.thecvf.com/content/CVPR2026/html/Xu_A_Multi-Agent_Perception-Action_Alliance_for_Efficient_Long_Video_Reasoning_CVPR_2026_paper.html"
+  },
+  "yang2026gta1": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/4fb7d5059cdbe2db2b62dcfe14caa658-Abstract-Conference.html",
+    "checked_title": "GTA1: GUI Test-time Scaling Agent",
+    "checked_at": "2026-11-25",
+    "paper_url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/4fb7d5059cdbe2db2b62dcfe14caa658-Abstract-Conference.html"
+  },
+  "zheng2026code2world": {
+    "kind": "official_publication_metadata",
+    "source_url": "https://neurips.cc/virtual/2026/poster/151489",
+    "checked_title": "Code2World: A GUI World Model via Renderable Code Generation",
+    "checked_at": "2026-11-25"
   }
 }

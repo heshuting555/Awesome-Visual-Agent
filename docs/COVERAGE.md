@@ -9,7 +9,7 @@ Bibliography snapshot: **2026-10-05**.
 | Selected citation keys | 195 |
 | Bibliography-only keys | 185 |
 | Papers with arXiv links | 191 |
-| Papers with code links | 110 |
+| Papers with code links | 109 |
 
 ## Sources
 
