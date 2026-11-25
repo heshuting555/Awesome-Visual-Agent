@@ -1,13 +1,13 @@
-<h1 align="center">Seeing the Harness and Self-Evolution of Visual Agents:<br>Toward Recursive Self-Improvement</h1>
+<h1 align="center">🔍 Seeing the Harness and Self-Evolution<br>of Visual Agents: Toward Recursive Self-Improvement</h1>
 
 <p align="center">Dong Chen &middot; Shuai Ge &middot; Yu Fu &middot; Xiangyu Ren &middot; Zhihao Zhang &middot; Hao Wang &middot; Changshuo Wang &middot; Jiayi Ji &middot; Henghui Ding &middot; Shuting He</p>
 
 <p align="center">
-  <a href="#taxonomy">Taxonomy</a> &nbsp;·&nbsp;
-  <a href="#benchmarks-and-datasets">Benchmarks</a> &nbsp;·&nbsp;
-  <a href="#l1-within-task-adaptation">Methods</a> &nbsp;·&nbsp;
-  <a href="docs/READING_LIST.md">Reading List</a> &nbsp;·&nbsp;
-  <a href="#citation">Citation</a>
+  <a href="#taxonomy">🗺️ Taxonomy</a> &nbsp;·&nbsp;
+  <a href="#benchmarks-and-datasets">📊 Benchmarks</a> &nbsp;·&nbsp;
+  <a href="#l1-within-task-adaptation">🛠️ Methods</a> &nbsp;·&nbsp;
+  <a href="docs/READING_LIST.md">📖 Reading List</a> &nbsp;·&nbsp;
+  <a href="#citation">📌 Citation</a>
 </p>
 
 <p align="center">
@@ -16,28 +16,29 @@
 
 <a name="introduction"></a>
 
-## Introduction
+## ✨ Introduction
 
-This repository accompanies a survey of visual agents that use images, video, and interactive feedback to guide their decisions. The survey covers visual understanding, image and video generation and editing, computer use, and embodied interaction.
+💡 This repository accompanies a survey of visual agents that use images, video, and interactive feedback to guide their decisions. The survey covers visual understanding, image and video generation and editing, computer use, and embodied interaction.
 
 We view a visual agent as one or more models operating within a harness that coordinates tools, memory, and execution. The survey follows three levels of experience-driven change, from adapting within a task to retaining updates across tasks and revising how future updates are produced.
 
 <a name="table-of-contents"></a>
+<a name="contents"></a>
 
-## Contents
+## 📚 Contents
 
 | Section | Topics |
 | --- | --- |
-| [**Taxonomy**](#taxonomy) | Visual map of L1–L3 and representative methods |
-| [**Benchmarks and Datasets**](#benchmarks-and-datasets) | [Task-level](#task-level-evaluation) · [Self-evolution](#self-evolution-evaluation) · [Recursive self-improvement](#recursive-self-improvement-evaluation) |
-| [**L1 · Within-Task Adaptation**](#l1-within-task-adaptation) | [Perception](#adaptive-perception) · [Planning](#feedback-driven-planning) · [Orchestration](#dynamic-harness-orchestration) · [Refinement](#output-and-action-refinement) · [Monitoring](#execution-monitoring-and-control) |
-| [**L2 · Self-Evolving Visual Agents**](#l2-self-evolving-visual-agents) | [Models](#model-level-evolution) · [Memory](#memory-driven-capability-evolution) · [Skills and tools](#skill-and-tool-level-evolution) · [Orchestration](#orchestration-level-evolution) · [Data and tasks](#dynamic-data-and-task-evolution) |
-| [**L3 · Toward Recursive Self-Improvement**](#l3-toward-recursive-self-improvement) | [Learning signals](#evolving-learning-signals-and-experience) · [Memory and context](#evolving-memory-and-context-management) · [Updates](#evolving-update-mechanisms) · [Evaluation](#evolving-evaluation-and-validation) |
-| [**Related Surveys**](#related-surveys) | Multimodal agents, visual generation, computer use, and physical AI |
+| [**🗺️ Taxonomy**](#taxonomy) | Visual map of L1–L3 and representative methods |
+| [**📊 Benchmarks and Datasets**](#benchmarks-and-datasets) | [Task-level](#task-level-evaluation) · [Self-evolution](#self-evolution-evaluation) · [Recursive self-improvement](#recursive-self-improvement-evaluation) |
+| [**🟡 L1 · Within-Task Adaptation**](#l1-within-task-adaptation) | [Perception](#adaptive-perception) · [Planning](#feedback-driven-planning) · [Orchestration](#dynamic-harness-orchestration) · [Refinement](#output-and-action-refinement) · [Monitoring](#execution-monitoring-and-control) |
+| [**🔴 L2 · Self-Evolving Visual Agents**](#l2-self-evolving-visual-agents) | [Models](#model-level-evolution) · [Memory](#memory-driven-capability-evolution) · [Skills and tools](#skill-and-tool-level-evolution) · [Orchestration](#orchestration-level-evolution) · [Data and tasks](#dynamic-data-and-task-evolution) |
+| [**🔵 L3 · Toward Recursive Self-Improvement**](#l3-toward-recursive-self-improvement) | [Learning signals](#evolving-learning-signals-and-experience) · [Memory and context](#evolving-memory-and-context-management) · [Updates](#evolving-update-mechanisms) · [Evaluation](#evolving-evaluation-and-validation) |
+| [**📖 Related Surveys**](#related-surveys) | Multimodal agents, visual generation, computer use, and physical AI |
 
 <a name="taxonomy"></a>
 
-## Taxonomy
+## 🗺️ Taxonomy
 
 The taxonomy maps the L1–L3 mechanisms to representative papers. Select the figure to view it at full resolution.
 
@@ -47,18 +48,18 @@ The taxonomy maps the L1–L3 mechanisms to representative papers. Select the fi
 
 <a name="benchmarks-and-datasets"></a>
 
-## Benchmarks and Datasets
+## 📊 Benchmarks and Datasets
 
 Expand a topic to browse its entries. Benchmark names link to the paper or official documentation. Scale refers to the version or subset covered in the survey, and an asterisk marks a partial code or data release.
 
 <a name="task-level-evaluation"></a>
 
 <details>
-<summary><strong>Task-Level Evaluation</strong> (40)</summary>
+<summary><strong>🎯 Task-Level Evaluation</strong> (40)</summary>
 
 These benchmarks test active perception, planning and tool use, output revision, and monitoring during a task.
 
-| Benchmark | Venue / Year | Setting | Evaluation focus | Scale | Code / Data |
+| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
 | --- | --- | --- | --- | --- | --- |
 | [ActiView](https://aclanthology.org/2025.acl-long.376/) | ACL 2025 | Image Interaction | Shifting / Zooming | 325 Distinct Questions | [Code](https://github.com/THUNLP-MT/ActiView) · [Data](https://huggingface.co/datasets/wangphoebe/ActiView) |
 | [AgentVQA](https://arxiv.org/abs/2610.31494) | arXiv 2026 | Offline | Agent-State Understanding | 1,000 Examples | [Code](https://github.com/zlab-princeton/AgentVQA) · [Data](https://huggingface.co/datasets/AgentVQA/AgentVQA) |
@@ -106,11 +107,11 @@ These benchmarks test active perception, planning and tool use, output revision,
 <a name="self-evolution-evaluation"></a>
 
 <details>
-<summary><strong>Self-Evolution Evaluation</strong> (20)</summary>
+<summary><strong>📈 Self-Evolution Evaluation</strong> (20)</summary>
 
 These protocols track what agents learn, retain, and transfer across tasks or sessions.
 
-| Benchmark | Venue / Year | Setting | Evaluation focus | Scale | Code / Data |
+| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
 | --- | --- | --- | --- | --- | --- |
 | [Continual Manipulation](https://arxiv.org/abs/2605.26820v3) | arXiv 2026 | Physical Robot | Acquisition / Retention | 10 Robot Tasks | [Code](https://github.com/Agentic-Intelligence-Lab/ContinualVLA) · [Data&#42;](https://github.com/Agentic-Intelligence-Lab/ContinualVLA#dataset) |
 | [World-Model CL Benchmark](https://arxiv.org/abs/2609.22055) | arXiv 2026 | Simulation | Visual Dynamics / Forgetting | 6 Task Suites | — |
@@ -138,11 +139,11 @@ These protocols track what agents learn, retain, and transfer across tasks or se
 <a name="recursive-self-improvement-evaluation"></a>
 
 <details>
-<summary><strong>Recursive Self-Improvement Evaluation</strong> (5)</summary>
+<summary><strong>🔁 Recursive Self-Improvement Evaluation</strong> (5)</summary>
 
 Flex-RSI evaluates repeated harness updates on vision and robotics tasks. The other suites include selected visual tasks for testing update methods, procedures, or evaluators.
 
-| Benchmark | Venue / Year | Setting | Evaluation focus | Scale | Code / Data |
+| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
 | --- | --- | --- | --- | --- | --- |
 | [Flex-RSI](https://arxiv.org/abs/2611.08946v1) | arXiv 2026 | Vision / Robotics | Recursive Harness Updates | — | [Code&#42;](https://github.com/flex-rsi/rsi-bench) · [Data&#42;](https://huggingface.co/datasets/Flex-RSI/RSI-Dataset) |
 | [AI4AI-Bench](https://arxiv.org/abs/2608.20318v1) | arXiv 2026 | General RSI Suite | Diffusion RL / CLIP Merge | 2 Visual Families | [Code](https://github.com/Einsia/AI4AI-Bench) · [Data&#42;](https://github.com/Einsia/AI4AI-Bench/blob/main/tools/docs/assets.md) |
@@ -154,16 +155,16 @@ Flex-RSI evaluates repeated harness updates on vision and robotics tasks. The ot
 
 <a name="l1-within-task-adaptation"></a>
 
-## L1 · Within-Task Adaptation
+## 🟡 L1 · Within-Task Adaptation
 
 Agents use new observations and execution feedback to adjust perception, planning, or actions during a task.
 
 <a name="adaptive-perception"></a>
 
 <details>
-<summary><strong>Adaptive Perception</strong> (12)</summary>
+<summary><strong>🔍 Adaptive Perception</strong> (12)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | CVPR | ActiveVLA | [ActiveVLA: Injecting Active Perception into Vision-Language-Action Models for Precise 3D Robotic Manipulation](https://arxiv.org/abs/2601.08325) | — |
 | 2026 | CVPR | DeepScan | [DeepScan: A Training-Free Framework for Visually Grounded Reasoning in Large Vision-Language Models](https://arxiv.org/abs/2603.03857) | — |
@@ -183,9 +184,9 @@ Agents use new observations and execution feedback to adjust perception, plannin
 <a name="feedback-driven-planning"></a>
 
 <details>
-<summary><strong>Feedback-Driven Planning</strong> (11)</summary>
+<summary><strong>🧭 Feedback-Driven Planning</strong> (11)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | ACL | IMPLEMENT | [Model-Based Imaginative Planning for Embodied Agents](https://aclanthology.org/2026.acl-long.827/) | — |
 | 2026 | arXiv | PILOT | [PILOT: Guiding Long-Horizon World-Model Planning for Robot Manipulation with Imagined Subgoals and Policy Priors](https://arxiv.org/abs/2610.14335) | — |
@@ -204,9 +205,9 @@ Agents use new observations and execution feedback to adjust perception, plannin
 <a name="dynamic-harness-orchestration"></a>
 
 <details>
-<summary><strong>Dynamic Harness Orchestration</strong> (12)</summary>
+<summary><strong>🎛️ Dynamic Harness Orchestration</strong> (12)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | CVPR | A4VL | [A Multi-Agent Perception-Action Alliance for Efficient Long Video Reasoning](https://arxiv.org/abs/2603.14052) | [Code](https://github.com/git-disl/A4VL) |
 | 2026 | ICLR | AdaReasoner | [AdaReasoner: Dynamic Tool Orchestration for Iterative Visual Reasoning](https://proceedings.iclr.cc/paper_files/paper/2026/hash/e6f8759254d86ea9c197d30b92b313ca-Abstract-Conference.html) | [Code](https://github.com/ssmisya/AdaReasoner) |
@@ -226,9 +227,9 @@ Agents use new observations and execution feedback to adjust perception, plannin
 <a name="output-and-action-refinement"></a>
 
 <details>
-<summary><strong>Output and Action Refinement</strong> (12)</summary>
+<summary><strong>🎨 Output and Action Refinement</strong> (12)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | CVPR | AgentDet | [AgentDet: A Shared-Blackboard Multi-Agent Framework for Zero-/Few-Shot Object Detection](https://openaccess.thecvf.com/content/CVPR2026/html/Li_AgentDet_A_Shared-Blackboard_Multi-Agent_Framework_for_Zero-Few-Shot_Object_Detection_CVPR_2026_paper.html) | — |
 | 2026 | CVPR | Agentic Retoucher | [Agentic Retoucher for Text-To-Image Generation](https://arxiv.org/abs/2601.02046) | [Code](https://github.com/MediaX-SJTU/Agentic-Retoucher) |
@@ -248,9 +249,9 @@ Agents use new observations and execution feedback to adjust perception, plannin
 <a name="execution-monitoring-and-control"></a>
 
 <details>
-<summary><strong>Execution Monitoring and Control</strong> (10)</summary>
+<summary><strong>🛡️ Execution Monitoring and Control</strong> (10)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | arXiv | ATMem | [What Memory Do GUI Agents Really Need? From Passive Records to Active Task-Driving States](https://arxiv.org/abs/2606.31612) | — |
 | 2026 | ICLR | Embodied Perception Memory | [Planning with an Embodied Learnable Memory](https://proceedings.iclr.cc/paper_files/paper/2026/hash/e64e016e7605d0c7484756f9814646c2-Abstract-Conference.html) | — |
@@ -267,16 +268,16 @@ Agents use new observations and execution feedback to adjust perception, plannin
 
 <a name="l2-self-evolving-visual-agents"></a>
 
-## L2 · Self-Evolving Visual Agents
+## 🔴 L2 · Self-Evolving Visual Agents
 
 Agents retain changes to models, memory, skills, workflows, or training resources and use them on later tasks.
 
 <a name="model-level-evolution"></a>
 
 <details>
-<summary><strong>Model-Level Evolution</strong> (11)</summary>
+<summary><strong>🧠 Model-Level Evolution</strong> (11)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | CVPR | CGL | [CGL: Advancing Continual GUI Learning via Reinforcement Fine-Tuning](https://arxiv.org/abs/2603.02951) | — |
 | 2026 | ICLR | ComputerRL | [ComputerRL: Scaling End-to-End Online Reinforcement Learning for Computer Use Agents](https://arxiv.org/abs/2508.14040) | [Code](https://github.com/THUDM/ComputerRL) |
@@ -295,9 +296,9 @@ Agents retain changes to models, memory, skills, workflows, or training resource
 <a name="memory-driven-capability-evolution"></a>
 
 <details>
-<summary><strong>Memory-Driven Capability Evolution</strong> (11)</summary>
+<summary><strong>🗃️ Memory-Driven Capability Evolution</strong> (11)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | arXiv | ABot-AgentOS | [ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory](https://arxiv.org/abs/2607.10350v3) | — |
 | 2026 | arXiv | AtlasVA | [AtlasVA: Self-Evolving Visual Skill Memory for Teacher-Free VLM Agents](https://arxiv.org/abs/2605.17933) | — |
@@ -316,9 +317,9 @@ Agents retain changes to models, memory, skills, workflows, or training resource
 <a name="skill-and-tool-level-evolution"></a>
 
 <details>
-<summary><strong>Skill and Tool-Level Evolution</strong> (11)</summary>
+<summary><strong>🧰 Skill and Tool-Level Evolution</strong> (11)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | arXiv | Agent S4 | [Evolving Agent Interfaces](https://arxiv.org/abs/2610.28601) | — |
 | 2026 | arXiv | ArtisanCAD | [ArtisanCAD: An Industrial-Level CAD Agent with Expert-Grounded Knowledge Distillation](https://arxiv.org/abs/2607.05750) | — |
@@ -337,9 +338,9 @@ Agents retain changes to models, memory, skills, workflows, or training resource
 <a name="orchestration-level-evolution"></a>
 
 <details>
-<summary><strong>Orchestration-Level Evolution</strong> (10)</summary>
+<summary><strong>⚙️ Orchestration-Level Evolution</strong> (10)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | arXiv | EnactOpt | [EnactOpt: Diagnosis-Guided Harness Evolution for Embodied Agents](https://arxiv.org/abs/2610.14977) | — |
 | 2026 | arXiv | EvoGen-Harness | [EvoGen-Harness: Learning Where and How to Evolve Image-Generation Harnesses](https://arxiv.org/abs/2610.00383) | [Code](https://github.com/King-play/EvoGen-Harness) |
@@ -357,9 +358,9 @@ Agents retain changes to models, memory, skills, workflows, or training resource
 <a name="dynamic-data-and-task-evolution"></a>
 
 <details>
-<summary><strong>Dynamic Data and Task Evolution</strong> (13)</summary>
+<summary><strong>🧪 Dynamic Data and Task Evolution</strong> (13)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | NeurIPS | ACuRL | [Autonomous Continual Learning for Environment Adaptation of Computer-Use Agents](https://arxiv.org/abs/2602.10356) | — |
 | 2026 | AAAI | CorrectAD | [CorrectAD: A Self-Correcting Agentic System to Improve End-to-end Planning in Autonomous Driving](https://arxiv.org/html/2511.13297) | — |
@@ -379,16 +380,16 @@ Agents retain changes to models, memory, skills, workflows, or training resource
 
 <a name="l3-toward-recursive-self-improvement"></a>
 
-## L3 · Toward Recursive Self-Improvement
+## 🔵 L3 · Toward Recursive Self-Improvement
 
 These works examine how agents revise the mechanisms that generate experience, update capabilities, or evaluate changes, and reuse them in a later update.
 
 <a name="evolving-learning-signals-and-experience"></a>
 
 <details>
-<summary><strong>Evolving Learning Signals and Experience</strong> (9)</summary>
+<summary><strong>🌱 Evolving Learning Signals and Experience</strong> (9)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | arXiv | Grounded-Dreamer | [Grounded-Dreamer: Robot Learning from World Model Synthetic Data with Physical Grounding](https://arxiv.org/abs/2610.13164) | — |
 | 2026 | ACL | GUI0 | [GUI0: Self-Evolving Foundational GUI Agents in Super App Ecosystems](https://aclanthology.org/2026.acl-long.2052/) | — |
@@ -405,9 +406,9 @@ These works examine how agents revise the mechanisms that generate experience, u
 <a name="evolving-memory-and-context-management"></a>
 
 <details>
-<summary><strong>Evolving Memory and Context Management</strong> (3)</summary>
+<summary><strong>🗂️ Evolving Memory and Context Management</strong> (3)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | NeurIPS | AutoMMemo | [Learning to Learn from Multimodal Experience](https://arxiv.org/abs/2605.16857v2) | [Code](https://github.com/XingYuSSS/AutoMMemo) |
 | 2026 | arXiv | EmbodiedRSI | [EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution](https://arxiv.org/abs/2610.10498) | — |
@@ -418,9 +419,9 @@ These works examine how agents revise the mechanisms that generate experience, u
 <a name="evolving-update-mechanisms"></a>
 
 <details>
-<summary><strong>Evolving Update Mechanisms</strong> (7)</summary>
+<summary><strong>🔧 Evolving Update Mechanisms</strong> (7)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | arXiv | AdaRSI | [AdaRSI: On-Demand Recursive Self-Improvement for Embodied Agents](https://arxiv.org/abs/2610.20474) | — |
 | 2026 | arXiv | CoDA | [CoDA: Co-Evolution of Data Engines and Action Policies](https://arxiv.org/abs/2610.22362) | — |
@@ -435,9 +436,9 @@ These works examine how agents revise the mechanisms that generate experience, u
 <a name="evolving-evaluation-and-validation"></a>
 
 <details>
-<summary><strong>Evolving Evaluation and Validation</strong> (10)</summary>
+<summary><strong>✅ Evolving Evaluation and Validation</strong> (10)</summary>
 
-| Year | Venue | Method | Paper | Project / Code / Data |
+| 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
 | 2026 | ICML | Agent0-VL | [Agent0-VL: Exploring Self-Evolving Agent for Tool-Integrated Vision-Language Reasoning](https://arxiv.org/html/2511.19900) | [Code](https://github.com/aiming-lab/Agent0/tree/main/Agent0-VL) |
 | 2026 | arXiv | CineEvolve | [CineEvolve: An Agentic Self-Evolution Framework for Cinematic Multi-Shot Video Generation](https://arxiv.org/abs/2610.29590) | — |
@@ -454,12 +455,12 @@ These works examine how agents revise the mechanisms that generate experience, u
 
 <a name="related-surveys"></a>
 
-## Related Surveys
+## 📖 Related Surveys
 
 <details>
-<summary><strong>Browse the surveys</strong> (15)</summary>
+<summary><strong>📖 Browse the surveys</strong> (15)</summary>
 
-| Area | Survey |
+| 🗂️ Area | 📝 Survey |
 | --- | --- |
 | Multimodal agents | [Large multimodal agents: a survey](https://link.springer.com/article/10.1007/s44267-025-00093-y) |
 | Multimodal agents | [A Survey on Foundations and Frontiers of Multimodal Agentic Frameworks: Techniques and Applications](https://arxiv.org/abs/2608.20379) |
@@ -483,13 +484,13 @@ The [companion reading list](docs/READING_LIST.md) covers additional work on vis
 
 <a name="contributing"></a>
 
-## Contributing
+## 🤝 Contributing
 
 Suggest additions or corrections through [issues](https://github.com/heshuting555/Awesome-Visual-Agent/issues) or [pull requests](https://github.com/heshuting555/Awesome-Visual-Agent/pulls). Include the relevant survey section, a primary source, and any public code or data links. See the [contribution guide](CONTRIBUTING.md).
 
 <a name="citation"></a>
 
-## Citation
+## 📌 Citation
 
 Use this BibTeX entry to cite the survey repository.
 
