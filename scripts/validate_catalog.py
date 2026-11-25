@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""Validate explicit curation, bibliography identities, provenance, and rendering."""
-import json
+"""Validate the bibliography, catalogue data, and survey homepage."""
 import re
-from collections import Counter, defaultdict
-from pathlib import Path
+from collections import Counter
 from urllib.parse import unquote, urlsplit
 from bibtex_utils import arxiv_id, bibliography_digest, norm, parse, tex_text, venue
-from build_readme import READING_LIST, ROOT, anchor, framework_catalogue, read, rows
+from build_readme import ROOT, framework_catalogue, read
 
 
 def markdown_anchors(content):
@@ -22,11 +20,13 @@ def markdown_anchors(content):
 
 
 def validate_markdown():
-    files = [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md'] + sorted((ROOT / 'docs').rglob('*.md'))
+    files = [ROOT / 'README.md', ROOT / 'CONTRIBUTING.md']
     contents = {path: path.read_text(encoding='utf-8') for path in files}
     anchors = {path: markdown_anchors(content) for path, content in contents.items()}
     for path, content in contents.items():
-        for target in re.findall(r'\]\(([^)]+)\)', content):
+        targets = re.findall(r'\]\(([^)]+)\)', content)
+        targets += re.findall(r'\b(?:href|src)="([^"]+)"', content)
+        for target in targets:
             parsed = urlsplit(target)
             if parsed.scheme:
                 continue
@@ -34,6 +34,17 @@ def validate_markdown():
             assert linked.exists(), (path.relative_to(ROOT), target, 'Missing local link target')
             if parsed.fragment and linked.suffix == '.md':
                 assert unquote(parsed.fragment) in anchors.get(linked, set()), (path.relative_to(ROOT), target, 'Missing anchor')
+
+
+def validate_homepage_tables():
+    content = (ROOT / 'README.md').read_text(encoding='utf-8')
+    sections = re.findall(r'^<details\b[^>]*>(.*?)^</details>', content, re.M | re.S)
+    assert 0 < len(sections) == len(re.findall(r'^<details\b', content, re.M)), 'Incomplete homepage groups'
+    for section in sections:
+        summary = re.search(r'^<summary>.+\((\d+)\)</summary>$', section, re.M)
+        assert summary, 'Missing entry count in homepage summary'
+        rows = re.findall(r'^\| .+ \|$', section, re.M)
+        assert len(rows) - 2 == int(summary[1]), ('Incorrect homepage entry count', summary[0])
 
 
 def validate():
@@ -102,26 +113,11 @@ def validate():
         if p.get('code_url'):
             assert p.get('link_evidence') and p.get('code_status'), key
     assert len(arxiv_urls) == len(set(arxiv_urls)), 'Duplicate arXiv works'
-    markdown = READING_LIST.read_text(encoding='utf-8')
-    actual = defaultdict(list)
-    current = None
-    for line in markdown.splitlines():
-        match = re.fullmatch(r'<a id="topic-([^"]+)"></a>', line)
-        if match:
-            current = match[1]
-        elif line.startswith('<a id=') or line.startswith('## '):
-            current = None
-        elif re.match(r'^\| \d{4} \|', line):
-            assert current, 'Paper row outside a topic'
-            actual[current].append(line)
-    assert set(actual) == {t['id'] for t in topics}
-    for t in topics:
-        assert actual[t['id']] == rows(by_topic[t['id']]).splitlines()[2:], (t['id'], 'Missing, duplicate, or misplaced row')
-        assert set(t['selected_citation_keys']) == {p['id'] for p in by_topic[t['id']]}
-    assert sum(len(v) for v in actual.values()) == len(papers)
-    assert '★' not in markdown and 'Vision contribution' in markdown
+    for topic in topics:
+        assert set(topic['selected_citation_keys']) == {p['id'] for p in by_topic[topic['id']]}
     validate_markdown()
-    print(f'PASS: {len(papers)} explicitly selected works; {len(bib)} bibliography keys; 2 branches / 10 categories / 35 topics. Identities, selections, dates, rows, links, anchors, and provenance are consistent.')
+    validate_homepage_tables()
+    print(f'PASS: {len(papers)} selected works and {len(bib)} bibliography keys. Catalogue data, homepage table counts, links, and anchors are consistent.')
 
 
 if __name__ == '__main__':

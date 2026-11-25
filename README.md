@@ -480,8 +480,6 @@ These works examine how agents revise the mechanisms that generate experience, u
 
 </details>
 
-For additional work on visual capabilities and harness infrastructure, see the [supplementary reading list](docs/READING_LIST.md) from the October 2026 bibliography snapshot.
-
 <a name="contributing"></a>
 
 ## 🤝 Contributing
@@ -492,7 +490,7 @@ Suggest additions or corrections through [issues](https://github.com/heshuting55
 
 ## 📌 Cite This Repository
 
-Use this BibTeX entry to cite the Awesome-Visual-Agent repository. BibTeX for works in the supplementary reading list is available in [references.bib](references.bib).
+Use this BibTeX entry to cite the Awesome-Visual-Agent repository. See [references.bib](references.bib) for bibliographic entries for individual works.
 
 ```bibtex
 @misc{chenVisualAgentSurvey,
