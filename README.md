@@ -495,11 +495,10 @@ See [references.bib](references.bib) for the bibliography of individual works. T
 If you find this survey helpful, please consider citing this repository in your work. Thank you for your support!
 
 ```bibtex
-@misc{chenVisualAgentSurvey,
+@misc{chen2026VisualAgentSurvey,
   title={{Awesome-Visual-Agent}},
   author={Chen, Dong and Ge, Shuai and Fu, Yu and Ren, Xiangyu and Zhang, Zhihao and Wang, Hao and Wang, Changshuo and Ji, Jiayi and Ding, Henghui and He, Shuting},
   year={2026},
-  howpublished={GitHub repository},
   url={https://github.com/heshuting555/Awesome-Visual-Agent}
 }
 ```
