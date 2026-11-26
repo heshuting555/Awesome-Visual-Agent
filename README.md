@@ -7,6 +7,7 @@
   <a href="#benchmarks-and-datasets">📊 Benchmarks</a> &nbsp;·&nbsp;
   <a href="#l1-within-task-adaptation">🛠️ Methods</a> &nbsp;·&nbsp;
   <a href="#table-of-contents">📚 Contents</a> &nbsp;·&nbsp;
+  <a href="#star-history">⭐ Star History</a> &nbsp;·&nbsp;
   <a href="#citation">📢 Citation</a>
 </p>
 
@@ -487,6 +488,17 @@ These works examine how agents revise the mechanisms that generate experience, u
 Suggest additions or corrections through [issues](https://github.com/heshuting555/Awesome-Visual-Agent/issues) or [pull requests](https://github.com/heshuting555/Awesome-Visual-Agent/pulls). Include the relevant survey section, a primary source, and any public code or data links.
 
 The catalogue layout was inspired by [Awesome-3DGS-Applications](https://github.com/heshuting555/Awesome-3DGS-Applications).
+
+<a name="star-history"></a>
+
+## ⭐ Star History
+
+<a href="https://www.star-history.com/?repos=heshuting555%2FAwesome-Visual-Agent&amp;type=date&amp;legend=bottom-right">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=heshuting555/Awesome-Visual-Agent&amp;type=date&amp;theme=dark&amp;legend=bottom-right">
+    <img alt="GitHub star history for Awesome-Visual-Agent" src="https://api.star-history.com/chart?repos=heshuting555/Awesome-Visual-Agent&amp;type=date&amp;legend=bottom-right">
+  </picture>
+</a>
 
 <a name="citation"></a>
 
