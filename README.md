@@ -1,4 +1,4 @@
-<h1 align="center">🔍 Seeing the Harness and Self-Evolution<br>of Visual Agents: Toward Recursive Self-Improvement</h1>
+<h1 align="center">🔍 Visual Agents in the Era of Self-Evolution:<br>Toward Recursive Self-Improvement</h1>
 
 <p align="center">
   <a href="https://github.com/CaDmium2003"><strong>Dong Chen</strong></a> &middot;
