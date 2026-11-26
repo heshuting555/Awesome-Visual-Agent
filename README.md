@@ -7,9 +7,9 @@
   <a href="https://github.com/A1ucardR"><strong>Xiangyu Ren</strong></a> &middot;
   <a href="https://github.com/imwoodz123"><strong>Zhihao Zhang</strong></a> &middot;
   <a href="https://haowangzju.github.io/"><strong>Hao Wang</strong></a> &middot;
-  <a href="https://github.com/changshuowang"><strong>Changshuo Wang</strong></a> &middot;
+  <a href="https://scholar.google.com/citations?user=dsV9sgwAAAAJ"><strong>Changshuo Wang</strong></a> &middot;
   <a href="https://scholar.google.com/citations?user=xp_rICcAAAAJ"><strong>Jiayi Ji</strong></a> &middot;
-  <a href="https://github.com/henghuiding"><strong>Henghui Ding</strong></a> &middot;
+  <a href="https://henghuiding.com/"><strong>Henghui Ding</strong></a> &middot;
   <a href="https://heshuting555.github.io/"><strong>Shuting He</strong></a>
 </p>
 
