@@ -14,6 +14,11 @@
 </p>
 
 <p align="center">
+  <a href="https://visual-agent-survey.github.io/"><img alt="Project Page" src="https://img.shields.io/badge/Project-Page-2563EB?logo=githubpages&amp;logoColor=white"></a>
+  <a href="#arxiv-paper"><img alt="arXiv (Coming Soon)" src="https://img.shields.io/badge/arXiv-Coming%20Soon-6B7280?logo=arxiv&amp;logoColor=white"></a>
+</p>
+
+<p align="center">
   <a href="#table-of-contents">📚 Contents</a> &nbsp;·&nbsp;
   <a href="#taxonomy">🗺️ Taxonomy</a> &nbsp;·&nbsp;
   <a href="#benchmarks-and-datasets">📊 Benchmarks</a> &nbsp;·&nbsp;
@@ -518,6 +523,10 @@ Cumulative stars added since November 20, 2026, using GitHub's daily counts (UTC
 ## 📢 Citation
 
 If you find this survey helpful, please consider citing this repository in your work. Thank you for your support!
+
+<a name="arxiv-paper"></a>
+
+The arXiv link will be added here when available.
 
 ```bibtex
 @misc{chen2026VisualAgentSurvey,
