@@ -16,7 +16,6 @@
 <p align="center">
   <a href="#arxiv-paper"><img alt="arXiv (Coming Soon)" src="https://img.shields.io/badge/arXiv-Coming%20Soon-B31B1B?logo=arxiv&amp;logoColor=white"></a>
   <a href="https://visual-agent-survey.github.io/"><img alt="Website — Awesome-Visual-Agent" src="https://img.shields.io/badge/Website-Awesome--Visual--Agent-007EC6"></a>
-  <a href="#table-of-contents"><img alt="Awesome resource list" src="https://awesome.re/badge.svg"></a>
 </p>
 
 <p align="center">
