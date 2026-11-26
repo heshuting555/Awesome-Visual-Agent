@@ -4,7 +4,8 @@ on:
   watch:
     types: [started]
   schedule:
-    - cron: '17 1 * * *'
+    - cron: '0 2 * * *'
+      timezone: Asia/Shanghai
   workflow_dispatch:
 
 permissions:
