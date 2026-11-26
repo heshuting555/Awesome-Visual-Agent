@@ -1,12 +1,23 @@
 <h1 align="center">🔍 Seeing the Harness and Self-Evolution<br>of Visual Agents: Toward Recursive Self-Improvement</h1>
 
-<p align="center">Dong Chen &middot; Shuai Ge &middot; Yu Fu &middot; Xiangyu Ren &middot; Zhihao Zhang &middot; Hao Wang &middot; Changshuo Wang &middot; Jiayi Ji &middot; Henghui Ding &middot; Shuting He</p>
+<p align="center">
+  <a href="https://heshuting555.github.io/group/#:~:text=Dong%20Chen"><strong>Dong Chen</strong></a> &middot;
+  <a href="https://github.com/sleepy-shawn"><strong>Shuai Ge</strong></a> &middot;
+  <a href="https://github.com/xiaoyu2029"><strong>Yu Fu</strong></a> &middot;
+  <a href="https://github.com/A1ucardR"><strong>Xiangyu Ren</strong></a> &middot;
+  <a href="https://heshuting555.github.io/group/#:~:text=Zhihao%20Zhang"><strong>Zhihao Zhang</strong></a> &middot;
+  <strong>Hao Wang</strong> &middot;
+  <a href="https://scholar.google.com/citations?user=dsV9sgwAAAAJ"><strong>Changshuo Wang</strong></a> &middot;
+  <a href="https://scholar.google.com/citations?user=xp_rICcAAAAJ"><strong>Jiayi Ji</strong></a> &middot;
+  <a href="https://henghuiding.com/"><strong>Henghui Ding</strong></a> &middot;
+  <a href="https://heshuting555.github.io/"><strong>Shuting He</strong></a>
+</p>
 
 <p align="center">
+  <a href="#table-of-contents">📚 Contents</a> &nbsp;·&nbsp;
   <a href="#taxonomy">🗺️ Taxonomy</a> &nbsp;·&nbsp;
   <a href="#benchmarks-and-datasets">📊 Benchmarks</a> &nbsp;·&nbsp;
-  <a href="#l1-within-task-adaptation">🛠️ Methods</a> &nbsp;·&nbsp;
-  <a href="#table-of-contents">📚 Contents</a> &nbsp;·&nbsp;
+  <a href="#l1-within-task-adaptation">🧭 Adaptation &amp; Evolution</a> &nbsp;·&nbsp;
   <a href="#star-history">⭐ Star History</a> &nbsp;·&nbsp;
   <a href="#citation">📢 Citation</a>
 </p>
