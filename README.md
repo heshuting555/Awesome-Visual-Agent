@@ -509,12 +509,12 @@ The catalogue layout was inspired by [Awesome-3DGS-Applications](https://github.
 
 ## ⭐ Star History
 
-Cumulative stars added since November 20, 2026, using GitHub's daily counts (UTC). Snapshot as of November 26, 2026. Click the chart to explore the full history on Star History.
+Cumulative stars added since November 20, 2026, using GitHub's daily counts. The chart refreshes automatically when the repository is starred and once a day. Click the chart to explore the full history on Star History.
 
 <a href="https://www.star-history.com/?repos=heshuting555%2FAwesome-Visual-Agent&amp;type=date&amp;legend=bottom-right">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="figs/star-history-since-2026-11-20-dark.png">
-    <img alt="Star History chart of cumulative GitHub stars added since November 20, 2026" src="figs/star-history-since-2026-11-20.png" width="800">
+    <source media="(prefers-color-scheme: dark)" srcset="figs/star-history-since-2026-11-20-dark.svg">
+    <img alt="Star History chart of cumulative GitHub stars added since November 20, 2026" src="figs/star-history-since-2026-11-20.svg" width="800">
   </picture>
 </a>
 
