@@ -1,12 +1,12 @@
 <h1 align="center">🔍 Seeing the Harness and Self-Evolution<br>of Visual Agents: Toward Recursive Self-Improvement</h1>
 
 <p align="center">
-  <a href="https://heshuting555.github.io/group/#:~:text=Dong%20Chen"><strong>Dong Chen</strong></a> &middot;
+  <a href="https://github.com/CaDmium2003"><strong>Dong Chen</strong></a> &middot;
   <a href="https://github.com/sleepy-shawn"><strong>Shuai Ge</strong></a> &middot;
   <a href="https://github.com/xiaoyu2029"><strong>Yu Fu</strong></a> &middot;
   <a href="https://github.com/A1ucardR"><strong>Xiangyu Ren</strong></a> &middot;
   <a href="https://heshuting555.github.io/group/#:~:text=Zhihao%20Zhang"><strong>Zhihao Zhang</strong></a> &middot;
-  <strong>Hao Wang</strong> &middot;
+  <a href="https://haowangzju.github.io/"><strong>Hao Wang</strong></a> &middot;
   <a href="https://scholar.google.com/citations?user=dsV9sgwAAAAJ"><strong>Changshuo Wang</strong></a> &middot;
   <a href="https://scholar.google.com/citations?user=xp_rICcAAAAJ"><strong>Jiayi Ji</strong></a> &middot;
   <a href="https://henghuiding.com/"><strong>Henghui Ding</strong></a> &middot;
