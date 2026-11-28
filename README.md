@@ -1,4 +1,4 @@
-<h1 align="center">🔍 Visual Agents in the Era of Self-Evolution:<br>Toward Recursive Self-Improvement</h1>
+<h1 align="center">🔍 Vision in the Era of Agents:<br>Toward Recursive Self-Improvement</h1>
 
 <p align="center">
   <a href="https://github.com/CaDmium2003"><strong>Dong Chen</strong></a> &middot;
@@ -21,8 +21,8 @@
 <p align="center">
   <a href="#table-of-contents">📚 Contents</a> &nbsp;·&nbsp;
   <a href="#taxonomy">🗺️ Taxonomy</a> &nbsp;·&nbsp;
-  <a href="#benchmarks-and-datasets">📊 Benchmarks</a> &nbsp;·&nbsp;
   <a href="#l1-within-task-adaptation">🧭 Adaptation &amp; Evolution</a> &nbsp;·&nbsp;
+  <a href="#benchmarks-and-datasets">📊 Benchmarks</a> &nbsp;·&nbsp;
   <a href="#star-history">⭐ Star History</a> &nbsp;·&nbsp;
   <a href="#citation">📢 Citation</a>
 </p>
@@ -35,9 +35,7 @@
 
 ## ✨ Introduction
 
-💡 This repository accompanies a survey of visual agents that use images, video, and interactive feedback to guide their decisions. The survey covers visual understanding, image and video generation and editing, computer use, and embodied interaction.
-
-We view a visual agent as one or more models operating within a harness that coordinates tools, memory, and execution. The survey follows three levels of experience-driven change, from adapting within a task to retaining updates across tasks and revising how future updates are produced.
+💡 This survey reviews visual agents for visual understanding, image and video generation and editing, computer use, and embodied interaction. It organizes the literature by three levels of experience-driven change and reviews how benchmarks assess progress at each level.
 
 <a name="table-of-contents"></a>
 <a name="contents"></a>
@@ -46,133 +44,45 @@ We view a visual agent as one or more models operating within a harness that coo
 
 | Section | Topics |
 | --- | --- |
-| [**🗺️ Taxonomy**](#taxonomy) | Visual map of L1–L3 and representative methods |
-| [**📊 Benchmarks and Datasets**](#benchmarks-and-datasets) | [Task-level](#task-level-evaluation) · [Self-evolution](#self-evolution-evaluation) · [Recursive self-improvement](#recursive-self-improvement-evaluation) |
-| [**🟡 L1 · Within-Task Adaptation**](#l1-within-task-adaptation) | [Perception](#adaptive-perception) · [Planning](#feedback-driven-planning) · [Orchestration](#dynamic-harness-orchestration) · [Refinement](#output-and-action-refinement) · [Monitoring](#execution-monitoring-and-control) |
-| [**🔴 L2 · Self-Evolving Visual Agents**](#l2-self-evolving-visual-agents) | [Models](#model-level-evolution) · [Memory](#memory-driven-capability-evolution) · [Skills and tools](#skill-and-tool-level-evolution) · [Orchestration](#orchestration-level-evolution) · [Data and tasks](#dynamic-data-and-task-evolution) |
-| [**🔵 L3 · Toward Recursive Self-Improvement**](#l3-toward-recursive-self-improvement) | [Learning signals](#evolving-learning-signals-and-experience) · [Memory and context](#evolving-memory-and-context-management) · [Updates](#evolving-update-mechanisms) · [Evaluation](#evolving-evaluation-and-validation) |
-| [**📖 Related Surveys**](#related-surveys) | Multimodal agents, visual generation, computer use, and physical AI |
+| [**✨ Introduction**](#introduction) | |
+| [**🧩 Background**](#background) | [Definition and Scope](#definition-and-scope) · [Foundations of Visual Agents](#foundations-of-visual-agents) · [Taxonomy](#taxonomy) |
+| [**🟡 L1 Within-Task Adaptation of Visual Agents**](#l1-within-task-adaptation) | [Adaptive Perception](#adaptive-perception) · [Feedback-Driven Planning](#feedback-driven-planning) · [Dynamic Harness Orchestration](#dynamic-harness-orchestration) · [Output and Action Refinement](#output-and-action-refinement) · [Execution Monitoring and Control](#execution-monitoring-and-control) |
+| [**🔴 L2 Self-Evolving Visual Agents**](#l2-self-evolving-visual-agents) | [Model-Level Evolution](#model-level-evolution) · [Memory-Driven Capability Evolution](#memory-driven-capability-evolution) · [Skill and Tool-Level Evolution](#skill-and-tool-level-evolution) · [Orchestration-Level Evolution](#orchestration-level-evolution) · [Dynamic Data and Task Evolution](#dynamic-data-and-task-evolution) |
+| [**🔵 L3 Toward Recursive Self-Improving Visual Agents**](#l3-toward-recursive-self-improvement) | [Evolving Learning Signals and Experience](#evolving-learning-signals-and-experience) · [Evolving Memory and Context Management](#evolving-memory-and-context-management) · [Evolving Update Mechanisms](#evolving-update-mechanisms) · [Evolving Evaluation and Validation](#evolving-evaluation-and-validation) |
+| [**📊 Benchmarks and Evaluation of Visual-Agent Evolution**](#benchmarks-and-datasets) | [Performance Evaluation at the Task-Level](#task-level-evaluation) · [Evaluation of Self-Evolution](#self-evolution-evaluation) · [Evaluation of Recursive Self-Improvement](#recursive-self-improvement-evaluation) |
+| [**🔭 Open Challenges and Future Directions**](#open-challenges-and-future-directions) | |
+| [**📝 Conclusion**](#conclusion) | |
+| [**📖 Related Surveys**](#related-surveys) | |
+
+<a name="background"></a>
+
+## 🧩 Background
+
+<a name="definition-and-scope"></a>
+
+### Definition and Scope
+
+A visual agent uses visual observations to select and execute operations in pursuit of a goal. Its outputs can be responses grounded in visual evidence, visual artifacts, or actions in a digital or physical environment.
+
+<a name="foundations-of-visual-agents"></a>
+
+### Foundations of Visual Agents
+
+One or more models provide visual perception, planning, and output capabilities. The agent harness coordinates execution through tools, memory, reusable skills, and mechanisms for monitoring and recovery.
 
 <a name="taxonomy"></a>
 
-## 🗺️ Taxonomy
+### 🗺️ Taxonomy
 
-The taxonomy maps the L1–L3 mechanisms to representative papers. Select the figure to view it at full resolution.
+A fixed workflow (L0) serves as the reference. At L1, an agent adapts during the current task. At L2, it retains updated model or harness resources for later use. At L3, it revises the mechanism that produces those updates and uses the revised mechanism in a later round. Select the figure to view the categories and representative works.
 
 <p align="center">
   <a href="figs/visual-agent-taxonomy.png"><img src="figs/visual-agent-taxonomy.png" width="760" alt="Taxonomy of visual agent adaptation and evolution, showing three levels, 14 categories, and representative methods"></a>
 </p>
 
-<a name="benchmarks-and-datasets"></a>
-
-## 📊 Benchmarks and Datasets
-
-Expand a topic to browse its entries. Benchmark names link to the paper or official documentation. Scale refers to the version or subset covered in the survey, and an asterisk marks a partial code or data release.
-
-<a name="task-level-evaluation"></a>
-
-<details>
-<summary><strong>🎯 Task-Level Evaluation</strong> (40)</summary>
-
-These benchmarks test active perception, planning and tool use, output revision, and monitoring during a task.
-
-| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
-| --- | --- | --- | --- | --- | --- |
-| [ActiView](https://aclanthology.org/2025.acl-long.376/) | ACL 2025 | Image Interaction | Shifting / Zooming | 325 Distinct Questions | [Code](https://github.com/THUNLP-MT/ActiView) · [Data](https://huggingface.co/datasets/wangphoebe/ActiView) |
-| [AgentVQA](https://arxiv.org/abs/2610.31494) | arXiv 2026 | Offline | Agent-State Understanding | 1,000 Examples | [Code](https://github.com/zlab-princeton/AgentVQA) · [Data](https://huggingface.co/datasets/AgentVQA/AgentVQA) |
-| [Video-MME-v2](https://arxiv.org/abs/2604.05015) | arXiv 2026 | Offline | Temporal Consistency | 3,200 QA Pairs | [Code](https://github.com/MME-Benchmarks/Video-MME-v2) · [Data](https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2) |
-| [ENACT](https://arxiv.org/abs/2511.20937) | ICLR 2026 | Offline | State–Action Reasoning | 8,972 QA Pairs | [Code](https://github.com/mll-lab-nu/ENACT) · [Data](https://huggingface.co/datasets/MLL-Lab/ENACT) |
-| [MPR-GUI-Bench](https://arxiv.org/abs/2512.00756) | ACL 2026 | Offline | Multilingual GUI Reasoning | 12,936 Samples | [Data](https://huggingface.co/datasets/chenruihan/MPR-GUI-Bench) |
-| [ActiveArena-Bench](https://arxiv.org/abs/2609.24124v2) | arXiv 2026 | Simulation | Active Visual Evidence | 35 Tasks | [Code](https://github.com/leeibo/ActiveArena) · [Data&#42;](https://huggingface.co/datasets/leeibo/ActiveArena-Data) |
-| [OpenEQA (Active)](https://openaccess.thecvf.com/content/CVPR2024/papers/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.pdf) | CVPR 2024 | Simulation | Exploration for Visual QA | 557 HM3D Questions | [Code&#42;](https://github.com/facebookresearch/open-eqa) · [Data](https://github.com/facebookresearch/open-eqa) |
-| [OSWorld 2.0](https://arxiv.org/abs/2606.29537) | arXiv 2026 | Interactive GUI | Long-Horizon Execution | 108 Workflows | [Code](https://github.com/xlang-ai/OSWorld-V2/tree/v2026.06.24) · [Data](https://huggingface.co/datasets/xlangai/osworld_v2_tasks) |
-| [WebArena-Pro](https://arxiv.org/abs/2611.17955) | NeurIPS 2026 | Interactive GUI | Multimodal Web Tasks | 300 Test Tasks | [Code](https://github.com/McGill-NLP/webarena-pro) · [Data](https://huggingface.co/WebArena-Pro) |
-| [Ego2Web](https://arxiv.org/abs/2603.22529) | CVPR 2026 | Interactive GUI | Egocentric Web Tasks | 500 Video-Task Pairs | [Code](https://github.com/Yui010206/Ego2Web) · [Data](https://huggingface.co/datasets/Shoubin/Ego2Web) |
-| [NaturalGAIA](https://aclanthology.org/2026.acl-long.2207/) | ACL 2026 | Interactive GUI | User-Intent Satisfaction | 276 Tasks | [Code](https://github.com/KeLes-Coding/NatureGAIA) |
-| [ProSoftArena](https://arxiv.org/abs/2601.02399) | CVPR 2026 | Interactive GUI | Professional Software | 436 Tasks | [Code](https://github.com/jiaxin-ai/ProSoftArena) · [Data](https://github.com/jiaxin-ai/ProSoftArena) |
-| [SuperAPP Benchmark](https://aclanthology.org/2026.acl-long.2052/) | ACL 2026 | Interactive GUI | Super-App Task Execution | 230 Tasks | — |
-| [VisualWebArena](https://aclanthology.org/2024.acl-long.50/) | ACL 2024 | Interactive GUI | Visually Grounded Web Tasks | 910 Tasks | [Code](https://github.com/web-arena-x/visualwebarena) · [Data](https://github.com/web-arena-x/visualwebarena/tree/main/config_files) |
-| [MemU-Bench](https://arxiv.org/abs/2611.00191) | arXiv 2026 | Mobile GUI | Execution from User History | 118 GUI Tasks | [Code](https://github.com/ZJU-REAL/MemU-Bench) · [Data](https://huggingface.co/datasets/vagrt/MemU-Bench-data) |
-| [AsgardBench](https://arxiv.org/abs/2603.15888v2) | arXiv 2026 | Simulation | Visual Plan Adaptation | 108 Task Instances | [Code](https://github.com/microsoft/AsgardBench) · [Data](https://github.com/microsoft/AsgardBench/tree/main/Generated) |
-| [DeepPHY](https://arxiv.org/abs/2508.05405) | AAAI 2026 | Simulation | Physical Planning / Action | 6 Envs. | [Code](https://github.com/XinrunXu/DeepPHY) |
-| [EmbodiedWorldBench](https://arxiv.org/abs/2607.10350v3) | arXiv 2026 | Simulation | Dynamic Embodied Planning | &gt;200 Tasks | — |
-| [PokéAgent (Speedrunning)](https://arxiv.org/abs/2603.15563v2) | NeurIPS 2026 | Simulation | Long-Horizon RPG Planning | 15 Milestones | [Code](https://github.com/sethkarten/continual-harness) |
-| [ALFRED](https://arxiv.org/abs/1912.01734) | CVPR 2020 | Simulation | Household Goal Completion | 8,055 Expert Demos | [Code](https://github.com/askforalfred/alfred) · [Data](https://github.com/askforalfred/alfred/tree/master/data) |
-| [OSWorld-MCP](https://arxiv.org/abs/2510.24563) | ICLR 2026 | Interactive GUI | Tool Invocation / Outcomes | 361 Evaluated Tasks | [Code](https://github.com/X-PLUG/OSWorld-MCP) · [Data](https://github.com/X-PLUG/OSWorld-MCP/tree/main/evaluation_examples) |
-| [AgentVista](https://arxiv.org/abs/2602.23166) | NeurIPS 2026 | Tool Environment | Long Tool Workflows | 209 Tasks | [Code](https://github.com/hkust-nlp/AgentVista) · [Data](https://huggingface.co/datasets/Warrieryes/AgentVista) |
-| [EgoBench](https://arxiv.org/abs/2605.27820v2) | NeurIPS 2026 | Tool Environment | Video / Tool / User Goals | 1,590 Tasks | [Code](https://github.com/Wind-Flipped/EgoBench) · [Data](https://huggingface.co/datasets/emodiary/EgoBench) |
-| [3DCodeBench](https://arxiv.org/abs/2606.01057) | NeurIPS 2026 | 3D Modeling | 3D Code Refinement | 212 Object Categories | [Code](https://github.com/gaoypeng/3dcodebench) · [Data](https://huggingface.co/datasets/YipengGao/3DCodeBench) |
-| [3DHarnessBench](https://arxiv.org/abs/2609.06535) | arXiv 2026 | 3D Modeling | View / Geometry Access | 100 Objects | [Code](https://github.com/llada60/3DHarnessBench) · [Data](https://huggingface.co/datasets/lingada/3DHarnessBench) |
-| [PPT-Eval](https://arxiv.org/abs/2606.31154) | ICML 2026 | Interactive GUI | Slide Creation / Editing | 120 Tasks | [Code](https://github.com/microsoft/ppteval) · [Data](https://github.com/microsoft/ppteval/tree/main/task_registry) |
-| [WeGenEditBench](https://arxiv.org/abs/2610.41210) | arXiv 2026 | Offline | Editing Constraint Checks | 2,740 Eval. Instances | — |
-| [RefCraft](https://arxiv.org/abs/2610.26826v2) | arXiv 2026 | Tool Environment | Reference-Guided Webpages | 300 Tasks | [Code](https://github.com/wangyuchi369/RefCraft) · [Data](https://huggingface.co/datasets/YuchiWang/RefCraft) |
-| [GenEvolve-Bench](https://arxiv.org/abs/2605.21605) | NeurIPS 2026 | Tool Environment | Tool-Assisted Generation | 594 Held-Out Prompts | [Code](https://github.com/MeiGen-AI/GenEvolve) · [Data](https://huggingface.co/datasets/MeiGen-AI/GenEvolve-Data-Bench) |
-| [ComfyBench](https://arxiv.org/abs/2409.01392) | CVPR 2025 | Tool Environment | Visual Workflow Outputs | 200 Tasks | [Code](https://github.com/xxyQwQ/ComfyBench) · [Data](https://github.com/xxyQwQ/ComfyBench/tree/main/dataset) |
-| [VAB-CSS](https://proceedings.iclr.cc/paper_files/paper/2025/hash/eea71dc576381b88f2a0ca4dedc2140d-Abstract-Conference.html) | ICLR 2025 | Tool Environment | Target Screenshot Match | 165 Test Cases | [Code](https://github.com/THUDM/VisualAgentBench) |
-| [VPI-Bench](https://arxiv.org/abs/2506.02456) | ICLR 2026 | Interactive GUI | Visual Prompt Injection | 306 Test Cases | [Code](https://github.com/cua-framework/agents) · [Data](https://huggingface.co/datasets/VPI-Bench/vpi-bench) |
-| [CUA-Recovery](https://arxiv.org/abs/2610.27645) | arXiv 2026 | Interactive GUI | Inherited-Error Recovery | 2,250 Error States | [Code](https://github.com/xu-hu-2002/CUA-Recovery) |
-| [ProBench](https://arxiv.org/abs/2511.09157) | AAAI 2026 | Mobile GUI | Process-Sensitive Outcomes | &gt;200 Tasks | — |
-| [FailBench](https://arxiv.org/abs/2609.03611) | arXiv 2026 | Offline | Robot Task-Success Judging | 2,197 Attempts | — |
-| [SAFE-VERSE](https://arxiv.org/abs/2506.14697) | CVPR 2026 | Simulation | Safe Execution | 1,350 Hazardous Tasks | — |
-| [IS-Bench](https://arxiv.org/abs/2506.16402) | AAAI 2026 | Simulation | Safe Action Ordering | 161 Eval. Scenarios | [Code](https://github.com/AI45Lab/IS-Bench) · [Data](https://huggingface.co/datasets/Ursulalala/IS_Bench_dataset) |
-| RecoverBench | NeurIPS 2026 | Simulation | Manipulation Recovery | 1,360 Error Scenes | [Code](https://github.com/ErrorRecoveryBenchmark/ErrorRecoveryBenchmark) · [Data](https://huggingface.co/datasets/ErrorRecovery/ErrorRecoveryBenchmark) |
-| [FRBench-Sim](https://arxiv.org/abs/2605.09410) | NeurIPS 2026 | Simulation | Post-Failure Recovery | 10 Evaluated Tasks | [Code](https://github.com/1018weijia/FR_Bench) |
-| [Safety-CHORES](https://proceedings.neurips.cc/paper_files/paper/2025/hash/e185c7be603426028c32ae1003a59d78-Abstract-Conference.html) | NeurIPS 2025 | Simulation | Cumulative Safety Cost | 3 Task Families | [Code](https://github.com/PKU-Alignment/SafeVLA) · [Data](https://huggingface.co/SafetyEmbodiedAI) |
-
-</details>
-
-<a name="self-evolution-evaluation"></a>
-
-<details>
-<summary><strong>📈 Self-Evolution Evaluation</strong> (20)</summary>
-
-These protocols track what agents learn, retain, and transfer across tasks or sessions.
-
-| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
-| --- | --- | --- | --- | --- | --- |
-| [Continual Manipulation](https://arxiv.org/abs/2605.26820v3) | arXiv 2026 | Physical Robot | Acquisition / Retention | 10 Robot Tasks | [Code](https://github.com/Agentic-Intelligence-Lab/ContinualVLA) · [Data&#42;](https://github.com/Agentic-Intelligence-Lab/RoboNever) |
-| [World-Model CL Benchmark](https://arxiv.org/abs/2609.22055) | arXiv 2026 | Simulation | Visual Dynamics / Forgetting | 6 Task Suites | [Code](https://github.com/object814/Compositional-Continual-Learning-Benchmark) |
-| [LIBERO](https://arxiv.org/abs/2306.03310) | NeurIPS 2023 | Simulation | Manipulation / Forgetting | 130 Tasks in 4 Suites | [Code](https://github.com/Lifelong-Robot-Learning/LIBERO) · [Data](https://libero-project.github.io/datasets) |
-| [CHORES (CORA)](https://proceedings.mlr.press/v199/powers22b.html) | CoLLAs 2022 | Simulation | Isolated Forgetting | 4 Task Sequences | [Code](https://github.com/AGI-Labs/continual_rl) |
-| [MemGUI-Bench](https://arxiv.org/abs/2602.06075) | ACM MM 2026 | Mobile GUI | Cross-Session Memory | 128 GUI Tasks | [Code](https://github.com/lgy0404/MemGUI-Bench) · [Data](https://huggingface.co/datasets/lgy0404/MemGUI-Bench) |
-| [M3-Bench](https://arxiv.org/abs/2508.09736) | ICLR 2026 | Offline | Audiovisual Recall | 1,020 Videos | [Code](https://github.com/ByteDance-Seed/m3-agent) · [Data](https://huggingface.co/datasets/ByteDance-Seed/M3-Bench) |
-| [SLVMBench](https://arxiv.org/abs/2607.11312) | NeurIPS 2026 | Offline | Tutorial Learning / Recall | 2,261 QA Pairs | [Data](https://huggingface.co/datasets/tsinghua-ee/SLVMBench) |
-| [EgoStream](https://arxiv.org/abs/2605.31557) | NeurIPS 2026 | Offline | Answer Obsolescence | 2,250 Base Questions | [Code](https://github.com/coai-iplab/EgoStream) |
-| [WorldMemArena](https://arxiv.org/abs/2605.29341) | NeurIPS 2026 | Offline | Memory Maintenance / Use | 461 Multi-Session Tasks | [Code](https://github.com/UCSB-AI/WorldMemArena) · [Data](https://huggingface.co/datasets/LCZZZZ/WorldMemArena) |
-| [Mem-Gallery](https://aclanthology.org/2026.acl-long.1892/) | ACL 2026 | Offline | Multimodal Memory Updates | 1,711 QA Pairs | [Code](https://github.com/YuanchenBei/Mem-Gallery) · [Data](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery) |
-| [MemLeak](https://arxiv.org/abs/2606.29788) | NeurIPS 2026 | Offline | Deletion Residuals | 300 Probes / Mode | [Code](https://github.com/kuan-wang/memleak-bench) · [Data](https://huggingface.co/datasets/memleak-bench/memleak-benchmark) |
-| [LMEE-Bench](https://arxiv.org/abs/2601.10744) | CVPR 2026 | Simulation | Exploration / Recall | 166 Test Tasks | [Code](https://github.com/wangsen99/LMEE) · [Data](https://huggingface.co/datasets/wangsen99/LMEE-Bench) |
-| [EvoNav-Bench](https://arxiv.org/abs/2609.08292v2) | arXiv 2026 | Simulation | Reuse / Outdated Scenes | 776 Test Tasks | — |
-| [IR2R-CE](https://arxiv.org/abs/2210.03087) | CVPR 2023 | Simulation | Cross-Episode Map Reuse | 414 Navigation Tours | [Code](https://github.com/jacobkrantz/IVLN-CE) |
-| [EmbodiedCLBench](https://arxiv.org/abs/2610.13021) | arXiv 2026 | Offline Visual Graph | Visual Skill Composition | 268 Task Graphs | [Code](https://github.com/PKU-VaLuE-Lab/EmbodiedCLBench) · [Data](https://huggingface.co/datasets/PKU-VaLuE-Lab/EmbodiedCLBench) |
-| [SEAR](https://arxiv.org/abs/2610.18792) | arXiv 2026 | Sim. / Physical | Skill Reuse / Transfer | 335 Robot Tasks | [Code&#42;](https://github.com/Self-Evolving-Agentic-Robotics/SEAR) |
-| [PhysRSI-eval](https://arxiv.org/abs/2610.26848v1) | arXiv 2026 | Simulation | Robot Revision / Transfer | 18 Robot Tasks | [Code&#42;](https://github.com/PhysRSI-Eval/PhysRSI-Eval-code) |
-| [OpenRSI Index](https://index.openrsi.foundation/) | Project release 2026 | General RSI Suite | Web / Video Context | 2 Named Visual Tasks | [Code](https://github.com/OpenRSI-Foundation/OpenRSI-Index) · [Data&#42;](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs) |
-| [SelfImprove-Bench](https://arxiv.org/abs/2611.02797) | arXiv 2026 | Visual Games | Cross-Game Transfer | 10 Test Tasks | [Code](https://github.com/theseus-labs-rsi/SelfImprove-Bench) |
-| [Procgen Curriculum Suite](https://openreview.net/forum?id=DlnvWfoIgv) | TMLR 2026 | Visual Games | Adaptive Task Sampling | 16 Games | [Code](https://github.com/montrealrobotics/curate-code) |
-
-</details>
-
-<a name="recursive-self-improvement-evaluation"></a>
-
-<details>
-<summary><strong>🔁 Recursive Self-Improvement Evaluation</strong> (5)</summary>
-
-Flex-RSI evaluates repeated harness updates on vision and robotics tasks. The other suites include selected visual tasks for testing update methods, procedures, or evaluators.
-
-| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
-| --- | --- | --- | --- | --- | --- |
-| [Flex-RSI](https://arxiv.org/abs/2611.08946v1) | arXiv 2026 | Vision / Robotics | Recursive Harness Updates | — | [Code&#42;](https://github.com/flex-rsi/rsi-bench) · [Data&#42;](https://huggingface.co/datasets/Flex-RSI/RSI-Dataset) |
-| [AI4AI-Bench](https://arxiv.org/abs/2608.20318v1) | arXiv 2026 | General RSI Suite | Diffusion RL / CLIP Merge | 2 Visual Families | [Code](https://github.com/Einsia/AI4AI-Bench) |
-| [RSI-Exam](https://rsi-exam.ai/) | Project release 2026 | General RSI Suite | VLM Reward / Training | 1 Counting Task | [Code&#42;](https://github.com/aiming-lab/RSI-Exam) · [Data&#42;](https://huggingface.co/datasets/RSI-Exam/RSI-Exam) |
-| [AutoResearchExam](https://benchmarks.bespokelabs.ai/autoresearchexam/) | Project release 2026 | Research Suite | CLIP Merge / Video Caching | 2 Named Visual Tasks | [Code](https://github.com/bespokelabsai/AutoResearchExam) |
-| [Vals RSI Index](https://vals-ai.com/benchmarks/rsi_index) | Project release 2026 | General RSI Suite | Visual Web-App Judge | 24 Held-Out Apps | — |
-
-</details>
-
 <a name="l1-within-task-adaptation"></a>
 
-## 🟡 L1 · Within-Task Adaptation
+## 🟡 L1 Within-Task Adaptation of Visual Agents
 
 Agents use new observations and execution feedback to adjust perception, planning, or actions during a task.
 
@@ -285,7 +195,7 @@ Agents use new observations and execution feedback to adjust perception, plannin
 
 <a name="l2-self-evolving-visual-agents"></a>
 
-## 🔴 L2 · Self-Evolving Visual Agents
+## 🔴 L2 Self-Evolving Visual Agents
 
 Agents retain changes to models, memory, skills, workflows, or training resources and use them on later tasks.
 
@@ -397,7 +307,7 @@ Agents retain changes to models, memory, skills, workflows, or training resource
 
 <a name="l3-toward-recursive-self-improvement"></a>
 
-## 🔵 L3 · Toward Recursive Self-Improvement
+## 🔵 L3 Toward Recursive Self-Improving Visual Agents
 
 These works examine how agents revise the mechanisms that generate experience, update capabilities, or evaluate changes, and reuse them in a later update.
 
@@ -429,7 +339,7 @@ These works examine how agents revise the mechanisms that generate experience, u
 | ---: | --- | --- | --- | --- |
 | 2026 | NeurIPS | AutoMMemo | [Learning to Learn from Multimodal Experience](https://arxiv.org/abs/2605.16857v2) | [Code](https://github.com/XingYuSSS/AutoMMemo) |
 | 2026 | arXiv | EmbodiedRSI | [EmbodiedRSI: Active Continual Robot Learning Through Hypothesis-Guided Co-Evolution](https://arxiv.org/abs/2610.10498) | — |
-| 2026 | arXiv | PRACTICE | [PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents](https://arxiv.org/abs/2608.30760) | — |
+| 2026 | arXiv | PRACTICE | [PRACTICE: From Experience to Expertise in Self-Evolving Embodied Agents](https://arxiv.org/abs/2608.30760) | [Code](https://github.com/BAAI-Agents/PRACTICE) |
 
 </details>
 
@@ -457,7 +367,7 @@ These works examine how agents revise the mechanisms that generate experience, u
 
 | 📅 Year | 🏛️ Venue | 🛠️ Method | 📝 Paper Title | 🔗 Project / Code / Data |
 | ---: | --- | --- | --- | --- |
-| 2026 | ICML | Agent0-VL | [Agent0-VL: Exploring Self-Evolving Agent for Tool-Integrated Vision-Language Reasoning](https://arxiv.org/html/2511.19900) | [Code](https://github.com/aiming-lab/Agent0/tree/main/Agent0-VL) |
+| 2026 | ICML | Agent0-VL | [Agent0-VL: Exploring Self-Evolving Agent for Tool-Integrated Vision-Language Reasoning](https://arxiv.org/abs/2511.19900) | [Code](https://github.com/aiming-lab/Agent0) |
 | 2026 | arXiv | CineEvolve | [CineEvolve: An Agentic Self-Evolution Framework for Cinematic Multi-Shot Video Generation](https://arxiv.org/abs/2610.29590) | — |
 | 2026 | AAAI | Co-EPG | [Co-EPG: A Framework for Co-Evolution of Planning and Grounding in Autonomous GUI Agents](https://arxiv.org/abs/2511.10705) | — |
 | 2026 | CVPR | JarvisEvo | [JarvisEvo: Towards a Self-Evolving Photo Editing Agent with Synergistic Editor-Evaluator Optimization](https://arxiv.org/abs/2511.23002) | [Code](https://github.com/LYL1015/JarvisEvo) · [Data](https://huggingface.co/datasets/JarvisEvo/ArtEdit-Bench) |
@@ -469,6 +379,129 @@ These works examine how agents revise the mechanisms that generate experience, u
 | 2026 | arXiv | VISA | [VISA: Agentic Self-Evolving Data Synthesis for Multimodal Instruction Following](https://arxiv.org/abs/2608.26013v2) | — |
 
 </details>
+
+<a name="benchmarks-and-datasets"></a>
+
+## 📊 Benchmarks and Evaluation of Visual-Agent Evolution
+
+Expand a topic to browse its entries. Benchmark names link to the paper or official documentation. Scale refers to the version or subset covered in the survey, and an asterisk marks a partial code or data release.
+
+<a name="task-level-evaluation"></a>
+
+<details>
+<summary><strong>🎯 Performance Evaluation at the Task-Level</strong> (40)</summary>
+
+These benchmarks test active perception, planning and tool use, output revision, and monitoring during a task.
+
+| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
+| --- | --- | --- | --- | --- | --- |
+| [ActiView](https://aclanthology.org/2025.acl-long.376/) | ACL 2025 | Image Interaction | Shifting / Zooming | 325 Distinct Questions | [Code](https://github.com/THUNLP-MT/ActiView) · [Data](https://huggingface.co/datasets/wangphoebe/ActiView) |
+| [AgentVQA](https://arxiv.org/abs/2610.31494) | arXiv 2026 | Offline | Agent-State Understanding | 1,000 Examples | [Code](https://github.com/zlab-princeton/AgentVQA) · [Data](https://huggingface.co/datasets/AgentVQA/AgentVQA) |
+| [Video-MME-v2](https://arxiv.org/abs/2604.05015) | arXiv 2026 | Offline | Temporal Consistency | 3,200 QA Pairs | [Code](https://github.com/MME-Benchmarks/Video-MME-v2) · [Data](https://huggingface.co/datasets/MME-Benchmarks/Video-MME-v2) |
+| [ENACT](https://arxiv.org/abs/2511.20937) | ICLR 2026 | Offline | State–Action Reasoning | 8,972 QA Pairs | [Code](https://github.com/mll-lab-nu/ENACT) · [Data](https://huggingface.co/datasets/MLL-Lab/ENACT) |
+| [MPR-GUI-Bench](https://arxiv.org/abs/2512.00756) | ACL 2026 | Offline | Multilingual GUI Reasoning | 12,936 Samples | [Data](https://huggingface.co/datasets/chenruihan/MPR-GUI-Bench) |
+| [ActiveArena-Bench](https://arxiv.org/abs/2609.24124v2) | arXiv 2026 | Simulation | Active Visual Evidence | 35 Tasks | [Code](https://github.com/leeibo/ActiveArena) · [Data&#42;](https://huggingface.co/datasets/leeibo/ActiveArena-Data) |
+| [OpenEQA (Active)](https://openaccess.thecvf.com/content/CVPR2024/papers/Majumdar_OpenEQA_Embodied_Question_Answering_in_the_Era_of_Foundation_Models_CVPR_2024_paper.pdf) | CVPR 2024 | Simulation | Exploration for Visual QA | 557 HM3D Questions | [Code&#42;](https://github.com/facebookresearch/open-eqa) · [Data](https://github.com/facebookresearch/open-eqa) |
+| [OSWorld 2.0](https://arxiv.org/abs/2606.29537) | arXiv 2026 | Interactive GUI | Long-Horizon Execution | 108 Workflows | [Code](https://github.com/xlang-ai/OSWorld-V2/tree/v2026.06.24) · [Data](https://huggingface.co/datasets/xlangai/osworld_v2_tasks) |
+| [WebArena-Pro](https://arxiv.org/abs/2611.17955) | NeurIPS 2026 | Interactive GUI | Multimodal Web Tasks | 300 Test Tasks | [Code](https://github.com/McGill-NLP/webarena-pro) · [Data](https://huggingface.co/WebArena-Pro) |
+| [Ego2Web](https://arxiv.org/abs/2603.22529) | CVPR 2026 | Interactive GUI | Egocentric Web Tasks | 500 Video-Task Pairs | [Code](https://github.com/Yui010206/Ego2Web) · [Data](https://huggingface.co/datasets/Shoubin/Ego2Web) |
+| [NaturalGAIA](https://aclanthology.org/2026.acl-long.2207/) | ACL 2026 | Interactive GUI | User-Intent Satisfaction | 276 Tasks | [Code](https://github.com/KeLes-Coding/NatureGAIA) |
+| [ProSoftArena](https://arxiv.org/abs/2601.02399) | CVPR 2026 | Interactive GUI | Professional Software | 436 Tasks | [Code](https://github.com/jiaxin-ai/ProSoftArena) · [Data](https://github.com/jiaxin-ai/ProSoftArena) |
+| [SuperAPP Benchmark](https://aclanthology.org/2026.acl-long.2052/) | ACL 2026 | Interactive GUI | Super-App Task Execution | 230 Tasks | — |
+| [VisualWebArena](https://aclanthology.org/2024.acl-long.50/) | ACL 2024 | Interactive GUI | Visually Grounded Web Tasks | 910 Tasks | [Code](https://github.com/web-arena-x/visualwebarena) · [Data](https://github.com/web-arena-x/visualwebarena/tree/main/config_files) |
+| [MemU-Bench](https://arxiv.org/abs/2611.00191) | arXiv 2026 | Mobile GUI | Execution from User History | 118 GUI Tasks | [Code](https://github.com/ZJU-REAL/MemU-Bench) · [Data](https://huggingface.co/datasets/vagrt/MemU-Bench-data) |
+| [AsgardBench](https://arxiv.org/abs/2603.15888v2) | arXiv 2026 | Simulation | Visual Plan Adaptation | 108 Task Instances | [Code](https://github.com/microsoft/AsgardBench) · [Data](https://github.com/microsoft/AsgardBench/tree/main/Generated) |
+| [DeepPHY](https://arxiv.org/abs/2508.05405) | AAAI 2026 | Simulation | Physical Planning / Action | 6 Envs. | [Code](https://github.com/XinrunXu/DeepPHY) |
+| [EmbodiedWorldBench](https://arxiv.org/abs/2607.10350v3) | arXiv 2026 | Simulation | Dynamic Embodied Planning | &gt;200 Tasks | — |
+| [PokéAgent (Speedrunning)](https://arxiv.org/abs/2603.15563v2) | NeurIPS 2026 | Simulation | Long-Horizon RPG Planning | 15 Milestones | [Code](https://github.com/sethkarten/continual-harness) |
+| [ALFRED](https://arxiv.org/abs/1912.01734) | CVPR 2020 | Simulation | Household Goal Completion | 8,055 Expert Demos | [Code](https://github.com/askforalfred/alfred) · [Data](https://github.com/askforalfred/alfred/tree/master/data) |
+| [OSWorld-MCP](https://arxiv.org/abs/2510.24563) | ICLR 2026 | Interactive GUI | Tool Invocation / Outcomes | 361 Evaluated Tasks | [Code](https://github.com/X-PLUG/OSWorld-MCP) · [Data](https://github.com/X-PLUG/OSWorld-MCP/tree/main/evaluation_examples) |
+| [AgentVista](https://arxiv.org/abs/2602.23166) | NeurIPS 2026 | Tool Environment | Long Tool Workflows | 209 Tasks | [Code](https://github.com/hkust-nlp/AgentVista) · [Data](https://huggingface.co/datasets/Warrieryes/AgentVista) |
+| [EgoBench](https://arxiv.org/abs/2605.27820v2) | NeurIPS 2026 | Tool Environment | Video / Tool / User Goals | 1,590 Tasks | [Code](https://github.com/Wind-Flipped/EgoBench) · [Data](https://huggingface.co/datasets/emodiary/EgoBench) |
+| [3DCodeBench](https://arxiv.org/abs/2606.01057) | NeurIPS 2026 | 3D Modeling | 3D Code Refinement | 212 Object Categories | [Code](https://github.com/gaoypeng/3dcodebench) · [Data](https://huggingface.co/datasets/YipengGao/3DCodeBench) |
+| [3DHarnessBench](https://arxiv.org/abs/2609.06535) | arXiv 2026 | 3D Modeling | View / Geometry Access | 100 Objects | [Code](https://github.com/llada60/3DHarnessBench) · [Data](https://huggingface.co/datasets/lingada/3DHarnessBench) |
+| [PPT-Eval](https://arxiv.org/abs/2606.31154) | ICML 2026 | Interactive GUI | Slide Creation / Editing | 120 Tasks | [Code](https://github.com/microsoft/ppteval) · [Data](https://github.com/microsoft/ppteval/tree/main/task_registry) |
+| [WeGenEditBench](https://arxiv.org/abs/2610.41210) | arXiv 2026 | Offline | Editing Constraint Checks | 2,740 Eval. Instances | — |
+| [RefCraft](https://arxiv.org/abs/2610.26826v2) | arXiv 2026 | Tool Environment | Reference-Guided Webpages | 300 Tasks | [Code](https://github.com/wangyuchi369/RefCraft) · [Data](https://huggingface.co/datasets/YuchiWang/RefCraft) |
+| [GenEvolve-Bench](https://arxiv.org/abs/2605.21605) | NeurIPS 2026 | Tool Environment | Tool-Assisted Generation | 594 Held-Out Prompts | [Code](https://github.com/MeiGen-AI/GenEvolve) · [Data](https://huggingface.co/datasets/MeiGen-AI/GenEvolve-Data-Bench) |
+| [ComfyBench](https://arxiv.org/abs/2409.01392) | CVPR 2025 | Tool Environment | Visual Workflow Outputs | 200 Tasks | [Code](https://github.com/xxyQwQ/ComfyBench) · [Data](https://github.com/xxyQwQ/ComfyBench/tree/main/dataset) |
+| [VAB-CSS](https://proceedings.iclr.cc/paper_files/paper/2025/hash/eea71dc576381b88f2a0ca4dedc2140d-Abstract-Conference.html) | ICLR 2025 | Tool Environment | Target Screenshot Match | 165 Test Cases | [Code](https://github.com/THUDM/VisualAgentBench) |
+| [VPI-Bench](https://arxiv.org/abs/2506.02456) | ICLR 2026 | Interactive GUI | Visual Prompt Injection | 306 Test Cases | [Code](https://github.com/cua-framework/agents) · [Data](https://huggingface.co/datasets/VPI-Bench/vpi-bench) |
+| [CUA-Recovery](https://arxiv.org/abs/2610.27645) | arXiv 2026 | Interactive GUI | Inherited-Error Recovery | 2,250 Error States | [Code](https://github.com/xu-hu-2002/CUA-Recovery) |
+| [ProBench](https://arxiv.org/abs/2511.09157) | AAAI 2026 | Mobile GUI | Process-Sensitive Outcomes | &gt;200 Tasks | — |
+| [FailBench](https://arxiv.org/abs/2609.03611) | arXiv 2026 | Offline | Robot Task-Success Judging | 2,197 Attempts | — |
+| [SAFE-VERSE](https://arxiv.org/abs/2506.14697) | CVPR 2026 | Simulation | Safe Execution | 1,350 Hazardous Tasks | — |
+| [IS-Bench](https://arxiv.org/abs/2506.16402) | AAAI 2026 | Simulation | Safe Action Ordering | 161 Eval. Scenarios | [Code](https://github.com/AI45Lab/IS-Bench) · [Data](https://huggingface.co/datasets/Ursulalala/IS_Bench_dataset) |
+| RecoverBench | NeurIPS 2026 | Simulation | Manipulation Recovery | 1,360 Error Scenes | [Code](https://github.com/ErrorRecoveryBenchmark/ErrorRecoveryBenchmark) · [Data](https://huggingface.co/datasets/ErrorRecovery/ErrorRecoveryBenchmark) |
+| [FRBench-Sim](https://arxiv.org/abs/2605.09410) | NeurIPS 2026 | Simulation | Post-Failure Recovery | 10 Evaluated Tasks | [Code](https://github.com/1018weijia/FR_Bench) |
+| [Safety-CHORES](https://proceedings.neurips.cc/paper_files/paper/2025/hash/e185c7be603426028c32ae1003a59d78-Abstract-Conference.html) | NeurIPS 2025 | Simulation | Cumulative Safety Cost | 3 Task Families | [Code](https://github.com/PKU-Alignment/SafeVLA) · [Data](https://huggingface.co/SafetyEmbodiedAI) |
+
+</details>
+
+<a name="self-evolution-evaluation"></a>
+
+<details>
+<summary><strong>📈 Evaluation of Self-Evolution</strong> (20)</summary>
+
+These protocols track what agents learn, retain, and transfer across tasks or sessions.
+
+| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
+| --- | --- | --- | --- | --- | --- |
+| [Continual Manipulation](https://arxiv.org/abs/2605.26820v3) | arXiv 2026 | Physical Robot | Acquisition / Retention | 10 Robot Tasks | [Code](https://github.com/Agentic-Intelligence-Lab/ContinualVLA) · [Data&#42;](https://github.com/Agentic-Intelligence-Lab/RoboNever) |
+| [World-Model CL Benchmark](https://arxiv.org/abs/2609.22055) | arXiv 2026 | Simulation | Visual Dynamics / Forgetting | 6 Task Suites | [Code](https://github.com/object814/Compositional-Continual-Learning-Benchmark) |
+| [LIBERO](https://arxiv.org/abs/2306.03310) | NeurIPS 2023 | Simulation | Manipulation / Forgetting | 130 Tasks in 4 Suites | [Code](https://github.com/Lifelong-Robot-Learning/LIBERO) · [Data](https://libero-project.github.io/datasets) |
+| [CHORES (CORA)](https://proceedings.mlr.press/v199/powers22b.html) | CoLLAs 2022 | Simulation | Isolated Forgetting | 4 Task Sequences | [Code](https://github.com/AGI-Labs/continual_rl) |
+| [MemGUI-Bench](https://arxiv.org/abs/2602.06075) | ACM MM 2026 | Mobile GUI | Cross-Session Memory | 128 GUI Tasks | [Code](https://github.com/lgy0404/MemGUI-Bench) · [Data](https://huggingface.co/datasets/lgy0404/MemGUI-Bench) |
+| [M3-Bench](https://arxiv.org/abs/2508.09736) | ICLR 2026 | Offline | Audiovisual Recall | 1,020 Videos | [Code](https://github.com/ByteDance-Seed/m3-agent) · [Data](https://huggingface.co/datasets/ByteDance-Seed/M3-Bench) |
+| [SLVMBench](https://arxiv.org/abs/2607.11312) | NeurIPS 2026 | Offline | Tutorial Learning / Recall | 2,261 QA Pairs | [Data](https://huggingface.co/datasets/tsinghua-ee/SLVMBench) |
+| [EgoStream](https://arxiv.org/abs/2605.31557) | NeurIPS 2026 | Offline | Answer Obsolescence | 2,250 Base Questions | [Code](https://github.com/coai-iplab/EgoStream) |
+| [WorldMemArena](https://arxiv.org/abs/2605.29341) | NeurIPS 2026 | Offline | Memory Maintenance / Use | 461 Multi-Session Tasks | [Code](https://github.com/UCSB-AI/WorldMemArena) · [Data](https://huggingface.co/datasets/LCZZZZ/WorldMemArena) |
+| [Mem-Gallery](https://aclanthology.org/2026.acl-long.1892/) | ACL 2026 | Offline | Multimodal Memory Updates | 1,711 QA Pairs | [Code](https://github.com/YuanchenBei/Mem-Gallery) · [Data](https://huggingface.co/datasets/Ethan-Bei/Mem-Gallery) |
+| [MemLeak](https://arxiv.org/abs/2606.29788) | NeurIPS 2026 | Offline | Deletion Residuals | 300 Probes / Mode | [Code](https://github.com/kuan-wang/memleak-bench) · [Data](https://huggingface.co/datasets/memleak-bench/memleak-benchmark) |
+| [LMEE-Bench](https://arxiv.org/abs/2601.10744) | CVPR 2026 | Simulation | Exploration / Recall | 166 Test Tasks | [Code](https://github.com/wangsen99/LMEE) · [Data](https://huggingface.co/datasets/wangsen99/LMEE-Bench) |
+| [EvoNav-Bench](https://arxiv.org/abs/2609.08292v2) | arXiv 2026 | Simulation | Reuse / Outdated Scenes | 776 Test Tasks | — |
+| [IR2R-CE](https://arxiv.org/abs/2210.03087) | CVPR 2023 | Simulation | Cross-Episode Map Reuse | 414 Navigation Tours | [Code](https://github.com/jacobkrantz/IVLN-CE) |
+| [EmbodiedCLBench](https://arxiv.org/abs/2610.13021) | arXiv 2026 | Offline Visual Graph | Visual Skill Composition | 268 Task Graphs | [Code](https://github.com/PKU-VaLuE-Lab/EmbodiedCLBench) · [Data](https://huggingface.co/datasets/PKU-VaLuE-Lab/EmbodiedCLBench) |
+| [SEAR](https://arxiv.org/abs/2610.18792) | arXiv 2026 | Sim. / Physical | Skill Reuse / Transfer | 335 Robot Tasks | [Code&#42;](https://github.com/Self-Evolving-Agentic-Robotics/SEAR) |
+| [PhysRSI-eval](https://arxiv.org/abs/2610.26848v1) | arXiv 2026 | Simulation | Robot Revision / Transfer | 18 Robot Tasks | [Code&#42;](https://github.com/PhysRSI-Eval/PhysRSI-Eval-code) |
+| [OpenRSI Index](https://index.openrsi.foundation/) | Project release 2026 | General RSI Suite | Web / Video Context | 2 Named Visual Tasks | [Code](https://github.com/OpenRSI-Foundation/OpenRSI-Index) · [Data&#42;](https://huggingface.co/datasets/OpenRSI-Foundation/OpenRSI-Index-Logs) |
+| [SelfImprove-Bench](https://arxiv.org/abs/2611.02797) | arXiv 2026 | Visual Games | Cross-Game Transfer | 10 Test Tasks | [Code](https://github.com/theseus-labs-rsi/SelfImprove-Bench) |
+| [Procgen Curriculum Suite](https://openreview.net/forum?id=DlnvWfoIgv) | TMLR 2026 | Visual Games | Adaptive Task Sampling | 16 Games | [Code](https://github.com/montrealrobotics/curate-code) |
+
+</details>
+
+<a name="recursive-self-improvement-evaluation"></a>
+
+<details>
+<summary><strong>🔁 Evaluation of Recursive Self-Improvement</strong> (5)</summary>
+
+Flex-RSI evaluates repeated harness updates on vision and robotics tasks. The other suites include selected visual tasks for testing update methods, procedures, or evaluators.
+
+| 📋 Benchmark | 📅 Venue / Year | Setting | 🎯 Evaluation focus | Scale | 🔗 Code / Data |
+| --- | --- | --- | --- | --- | --- |
+| [Flex-RSI](https://arxiv.org/abs/2611.08946v1) | arXiv 2026 | Vision / Robotics | Recursive Harness Updates | — | [Code&#42;](https://github.com/flex-rsi/rsi-bench) · [Data&#42;](https://huggingface.co/datasets/Flex-RSI/RSI-Dataset) |
+| [AI4AI-Bench](https://arxiv.org/abs/2608.20318v1) | arXiv 2026 | General RSI Suite | Diffusion RL / CLIP Merge | 2 Visual Families | [Code](https://github.com/Einsia/AI4AI-Bench) |
+| [RSI-Exam](https://rsi-exam.ai/) | Project release 2026 | General RSI Suite | VLM Reward / Training | 1 Counting Task | [Code&#42;](https://github.com/aiming-lab/RSI-Exam) · [Data&#42;](https://huggingface.co/datasets/RSI-Exam/RSI-Exam) |
+| [AutoResearchExam](https://benchmarks.bespokelabs.ai/autoresearchexam/) | Project release 2026 | Research Suite | CLIP Merge / Video Caching | 2 Named Visual Tasks | [Code](https://github.com/bespokelabsai/AutoResearchExam) |
+| [Vals RSI Index](https://vals-ai.com/benchmarks/rsi_index) | Project release 2026 | General RSI Suite | Visual Web-App Judge | 24 Held-Out Apps | — |
+
+</details>
+
+<a name="open-challenges-and-future-directions"></a>
+
+## 🔭 Open Challenges and Future Directions
+
+- **Balancing Capability Retention and Generalization.** Retain useful capabilities while adapting to new observations, environments, and tasks.
+- **Preventing Objective Hacking in Visual Agent Evolution.** Distinguish genuine gains from shortcuts that exploit evaluation objectives or execution environments.
+- **Maintaining Consistency in Long-Horizon Execution.** Keep goals, intermediate decisions, and environmental state aligned across successive interactions.
+- **Verifying the Mechanisms of Recursive Self-Improvement.** Establish whether a revised updater improves the update process across rounds.
+- **Benchmarking Development for Visual Agents.** Assess how individual components contribute to performance and how capabilities change over successive revisions.
+
+<a name="conclusion"></a>
+
+## 📝 Conclusion
+
+The survey connects methods for within-task adaptation, self-evolution, and emerging recursive self-improvement with benchmarks that assess task reliability, retention and transfer of capabilities, and evidence of improvements to the update mechanism.
 
 <a name="related-surveys"></a>
 
